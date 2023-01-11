@@ -114,6 +114,11 @@ class Create_Header
      */
     protected $WarehouseId = null;
 
+    /**
+     * @var string $TaxSystemId
+     */
+    protected $TaxSystemId = null;
+
 
     public function __construct()
     {
@@ -291,7 +296,7 @@ class Create_Header
         if ($ExternalReferenceDate == null) {
             $this->ExternalReferenceDate = null;
         } else {
-            $this->ExternalReferenceDate = $ExternalReferenceDate->format(\DateTime::ATOM);
+            $this->ExternalReferenceDate = $ExternalReferenceDate->format("Y-m-d");
         }
         return $this;
     }
@@ -562,4 +567,26 @@ class Create_Header
         return $this;
     }
 
+    /**
+     * @return string
+     */
+    public function getTaxSystemId()
+    {
+        return $this->TaxSystemId;
+    }
+
+    /**
+     * @param string $taxSystemId
+     *
+     * @return Create_Header
+     */
+    public function setTaxSystemId($taxSystemId = null)
+    {
+        if ($taxSystemId == null) {
+            $this->TaxSystemId = null;
+        } else {
+            $this->TaxSystemId = $taxSystemId;
+        }
+        return $this;
+    }
 }

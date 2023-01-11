@@ -15,10 +15,14 @@ class CreditCard
      */
     protected $TransactionNumber = null;
 
-    
+    /**
+     * @var string $TransactionIssuer
+     */
+    protected $TransactionIssuer = null;
+
     public function __construct()
     {
-    
+
     }
 
     /**
@@ -57,4 +61,21 @@ class CreditCard
       return $this;
     }
 
+    /**
+     * @return string
+     */
+    public function getTransactionIssuer()
+    {
+        return $this->TransactionIssuer;
+    }
+
+    /**
+     * @param string $TransactionIssuer
+     * @return CreditCard
+     */
+    public function setTransactionIssuer($TransactionIssuer)
+    {
+        $this->TransactionIssuer = $TransactionIssuer;
+        return $this;
+    }
 }

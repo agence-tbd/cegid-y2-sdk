@@ -10,8 +10,14 @@ Consume CEGID/Y2's SOAP API.
 ## Installation
 
 ```
-composer require pgrimaud/cegid-y2-sdk
+composer require jeros-tbd/cegid-y2-sdk
 ```
+
+## Forked
+
+Forked by pgrimaud/cegid-y2-sdk
+
+
 ## Basic usage
 
 Hello world :
