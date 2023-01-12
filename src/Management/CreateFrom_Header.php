@@ -313,7 +313,7 @@ class CreateFrom_Header
     }
 
     /**
-     * @param CreateFromCustomerOrderDocumentTypeCreat $Type
+     * @param string $Type
      * @return CreateFrom_Header
      */
     public function setType($Type)

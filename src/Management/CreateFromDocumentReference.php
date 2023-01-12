@@ -15,7 +15,7 @@ class CreateFromDocumentReference
     protected $InternalReference = null;
 
     /**
-     * @var CreateFromCustomerOrderDocumentTypeCreat $Type
+     * @var CreateFromCustomerOrderDocumentTypeOriginTransfo $Type
      */
     protected $Type = null;
 
