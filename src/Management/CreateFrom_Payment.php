@@ -126,12 +126,12 @@ class CreateFrom_Payment
      * @param \DateTime $DueDate
      * @return CreateFrom_Payment
      */
-    public function setDueDate(\DateTime $DueDate = null)
+    public function setDueDate(\DateTime $DueDate = null, $format=\DateTime::ATOM)
     {
         if ($DueDate == null) {
             $this->DueDate = null;
         } else {
-            $this->DueDate = $DueDate->format('Y-m-d');
+            $this->DueDate = $DueDate->format($format);
         }
         return $this;
     }

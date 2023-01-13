@@ -202,7 +202,7 @@ class Create_Header
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTime|false|null
      */
     public function getDate()
     {
@@ -222,12 +222,12 @@ class Create_Header
      *
      * @return Create_Header
      */
-    public function setDate(\DateTime $Date = null)
+    public function setDate(\DateTime $Date = null, $format=\DateTime::ATOM)
     {
         if ($Date == null) {
             $this->Date = null;
         } else {
-            $this->Date = $Date->format('Y-m-d');
+            $this->Date = $Date->format($format);
         }
         return $this;
     }
@@ -271,7 +271,7 @@ class Create_Header
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTime|false|null
      */
     public function getExternalReferenceDate()
     {
@@ -291,12 +291,12 @@ class Create_Header
      *
      * @return Create_Header
      */
-    public function setExternalReferenceDate(\DateTime $ExternalReferenceDate = null)
+    public function setExternalReferenceDate(\DateTime $ExternalReferenceDate = null, $format=\DateTime::ATOM)
     {
         if ($ExternalReferenceDate == null) {
             $this->ExternalReferenceDate = null;
         } else {
-            $this->ExternalReferenceDate = $ExternalReferenceDate->format("Y-m-d");
+            $this->ExternalReferenceDate = $ExternalReferenceDate->format($format);
         }
         return $this;
     }

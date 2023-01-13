@@ -105,10 +105,10 @@ class CustomersReservationCreate_Header
      */
     protected $WarehouseId = null;
 
-    
+
     public function __construct()
     {
-    
+
     }
 
     /**
@@ -184,7 +184,7 @@ class CustomersReservationCreate_Header
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTime|false|null
      */
     public function getDate()
     {
@@ -203,12 +203,12 @@ class CustomersReservationCreate_Header
      * @param \DateTime $Date
      * @return CustomersReservationCreate_Header
      */
-    public function setDate(\DateTime $Date = null)
+    public function setDate(\DateTime $Date = null, $format=\DateTime::ATOM)
     {
       if ($Date == null) {
        $this->Date = null;
       } else {
-        $this->Date = $Date->format(\DateTime::ATOM);
+        $this->Date = $Date->format($format);
       }
       return $this;
     }
@@ -232,7 +232,7 @@ class CustomersReservationCreate_Header
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTime|false|null
      */
     public function getExpirationDate()
     {
@@ -251,12 +251,12 @@ class CustomersReservationCreate_Header
      * @param \DateTime $ExpirationDate
      * @return CustomersReservationCreate_Header
      */
-    public function setExpirationDate(\DateTime $ExpirationDate = null)
+    public function setExpirationDate(\DateTime $ExpirationDate = null, $format=\DateTime::ATOM)
     {
       if ($ExpirationDate == null) {
        $this->ExpirationDate = null;
       } else {
-        $this->ExpirationDate = $ExpirationDate->format(\DateTime::ATOM);
+        $this->ExpirationDate = $ExpirationDate->format($format);
       }
       return $this;
     }
@@ -280,7 +280,7 @@ class CustomersReservationCreate_Header
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTime|false|null
      */
     public function getExternalReferenceDate()
     {
@@ -299,12 +299,12 @@ class CustomersReservationCreate_Header
      * @param \DateTime $ExternalReferenceDate
      * @return CustomersReservationCreate_Header
      */
-    public function setExternalReferenceDate(\DateTime $ExternalReferenceDate = null)
+    public function setExternalReferenceDate(\DateTime $ExternalReferenceDate = null, $format=\DateTime::ATOM)
     {
       if ($ExternalReferenceDate == null) {
        $this->ExternalReferenceDate = null;
       } else {
-        $this->ExternalReferenceDate = $ExternalReferenceDate->format(\DateTime::ATOM);
+        $this->ExternalReferenceDate = $ExternalReferenceDate->format($format);
       }
       return $this;
     }

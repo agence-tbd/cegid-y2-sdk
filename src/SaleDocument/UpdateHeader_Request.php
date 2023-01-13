@@ -70,10 +70,10 @@ class UpdateHeader_Request
      */
     protected $UserFields = null;
 
-    
+
     public function __construct()
     {
-    
+
     }
 
     /**
@@ -131,7 +131,7 @@ class UpdateHeader_Request
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTime|false|null
      */
     public function getExternalReferenceDate()
     {
@@ -150,12 +150,12 @@ class UpdateHeader_Request
      * @param \DateTime $ExternalReferenceDate
      * @return UpdateHeader_Request
      */
-    public function setExternalReferenceDate(\DateTime $ExternalReferenceDate = null)
+    public function setExternalReferenceDate(\DateTime $ExternalReferenceDate = null, $format=\DateTime::ATOM)
     {
       if ($ExternalReferenceDate == null) {
        $this->ExternalReferenceDate = null;
       } else {
-        $this->ExternalReferenceDate = $ExternalReferenceDate->format(\DateTime::ATOM);
+        $this->ExternalReferenceDate = $ExternalReferenceDate->format($format);
       }
       return $this;
     }

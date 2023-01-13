@@ -125,10 +125,10 @@ class Get_Line
      */
     protected $WarehouseId = null;
 
-    
+
     public function __construct()
     {
-    
+
     }
 
     /**
@@ -186,7 +186,7 @@ class Get_Line
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTime|false|null
      */
     public function getDeliveryDate()
     {
@@ -205,12 +205,12 @@ class Get_Line
      * @param \DateTime $DeliveryDate
      * @return Get_Line
      */
-    public function setDeliveryDate(\DateTime $DeliveryDate = null)
+    public function setDeliveryDate(\DateTime $DeliveryDate = null, $format=\DateTime::ATOM)
     {
       if ($DeliveryDate == null) {
        $this->DeliveryDate = null;
       } else {
-        $this->DeliveryDate = $DeliveryDate->format(\DateTime::ATOM);
+        $this->DeliveryDate = $DeliveryDate->format($format);
       }
       return $this;
     }
@@ -252,7 +252,7 @@ class Get_Line
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTime|false|null
      */
     public function getInitialDeliveryDate()
     {
@@ -271,12 +271,12 @@ class Get_Line
      * @param \DateTime $InitialDeliveryDate
      * @return Get_Line
      */
-    public function setInitialDeliveryDate(\DateTime $InitialDeliveryDate = null)
+    public function setInitialDeliveryDate(\DateTime $InitialDeliveryDate = null, $format=\DateTime::ATOM)
     {
       if ($InitialDeliveryDate == null) {
        $this->InitialDeliveryDate = null;
       } else {
-        $this->InitialDeliveryDate = $InitialDeliveryDate->format(\DateTime::ATOM);
+        $this->InitialDeliveryDate = $InitialDeliveryDate->format($format);
       }
       return $this;
     }

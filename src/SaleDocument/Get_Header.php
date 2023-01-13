@@ -100,10 +100,10 @@ class Get_Header
      */
     protected $WarehouseId = null;
 
-    
+
     public function __construct()
     {
-    
+
     }
 
     /**
@@ -179,7 +179,7 @@ class Get_Header
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTime|false|null
      */
     public function getDate()
     {
@@ -198,12 +198,12 @@ class Get_Header
      * @param \DateTime $Date
      * @return Get_Header
      */
-    public function setDate(\DateTime $Date = null)
+    public function setDate(\DateTime $Date = null, $format=\DateTime::ATOM)
     {
       if ($Date == null) {
        $this->Date = null;
       } else {
-        $this->Date = $Date->format(\DateTime::ATOM);
+        $this->Date = $Date->format($format);
       }
       return $this;
     }

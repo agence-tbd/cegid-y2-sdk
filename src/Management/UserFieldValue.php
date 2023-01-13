@@ -44,7 +44,7 @@ class UserFieldValue
 
     /**
      * @param boolean $BooleanValue
-     * @return UserField
+     * @return UserFieldValue
      */
     public function setBooleanValue($BooleanValue)
     {
@@ -72,12 +72,12 @@ class UserFieldValue
      * @param \DateTime $DateValue
      * @return UserFieldValue
      */
-    public function setDateValue(\DateTime $DateValue = null)
+    public function setDateValue(\DateTime $DateValue = null, $format=\DateTime::ATOM)
     {
         if ($DateValue == null) {
             $this->DateValue = null;
         } else {
-            $this->DateValue = $DateValue->format(\DateTime::ATOM);
+            $this->DateValue = $DateValue->format($format);
         }
         return $this;
     }

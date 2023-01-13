@@ -15,10 +15,10 @@ class UserDefinedDate
      */
     protected $Value = null;
 
-    
+
     public function __construct()
     {
-    
+
     }
 
     /**
@@ -40,7 +40,7 @@ class UserDefinedDate
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTime|false|null
      */
     public function getValue()
     {
@@ -59,12 +59,12 @@ class UserDefinedDate
      * @param \DateTime $Value
      * @return UserDefinedDate
      */
-    public function setValue(\DateTime $Value = null)
+    public function setValue(\DateTime $Value = null, $format=\DateTime::ATOM)
     {
       if ($Value == null) {
        $this->Value = null;
       } else {
-        $this->Value = $Value->format(\DateTime::ATOM);
+        $this->Value = $Value->format($format);
       }
       return $this;
     }

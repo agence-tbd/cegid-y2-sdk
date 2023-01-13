@@ -188,7 +188,7 @@ class Create_Line
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTime|false|null
      */
     public function getDeliveryDate()
     {
@@ -208,12 +208,12 @@ class Create_Line
      *
      * @return Create_Line
      */
-    public function setDeliveryDate(\DateTime $DeliveryDate = null)
+    public function setDeliveryDate(\DateTime $DeliveryDate = null, $format=\DateTime::ATOM)
     {
         if ($DeliveryDate == null) {
             $this->DeliveryDate = null;
         } else {
-            $this->DeliveryDate = $DeliveryDate->format('Y-m-d');
+            $this->DeliveryDate = $DeliveryDate->format($format);
         }
         return $this;
     }
@@ -257,7 +257,7 @@ class Create_Line
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTime|false|null
      */
     public function getInitialDeliveryDate()
     {
@@ -277,12 +277,12 @@ class Create_Line
      *
      * @return Create_Line
      */
-    public function setInitialDeliveryDate(\DateTime $InitialDeliveryDate = null)
+    public function setInitialDeliveryDate(\DateTime $InitialDeliveryDate = null, $format=\DateTime::ATOM)
     {
         if ($InitialDeliveryDate == null) {
             $this->InitialDeliveryDate = null;
         } else {
-            $this->InitialDeliveryDate = $InitialDeliveryDate->format('Y-m-d');
+            $this->InitialDeliveryDate = $InitialDeliveryDate->format($format);
         }
         return $this;
     }

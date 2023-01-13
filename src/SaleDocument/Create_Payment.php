@@ -135,7 +135,7 @@ class Create_Payment
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTime|false|null
      */
     public function getDueDate()
     {
@@ -155,12 +155,12 @@ class Create_Payment
      *
      * @return Create_Payment
      */
-    public function setDueDate(\DateTime $DueDate = null)
+    public function setDueDate(\DateTime $DueDate = null, $format=\DateTime::ATOM)
     {
         if ($DueDate == null) {
             $this->DueDate = null;
         } else {
-            $this->DueDate = $DueDate->format('Y-m-d');
+            $this->DueDate = $DueDate->format($format);
         }
         return $this;
     }

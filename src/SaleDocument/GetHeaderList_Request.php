@@ -40,10 +40,10 @@ class GetHeaderList_Request
      */
     protected $StoreIds = null;
 
-    
+
     public function __construct()
     {
-    
+
     }
 
     /**
@@ -65,7 +65,7 @@ class GetHeaderList_Request
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTime|false|null
      */
     public function getBeginDate()
     {
@@ -84,12 +84,12 @@ class GetHeaderList_Request
      * @param \DateTime $BeginDate
      * @return GetHeaderList_Request
      */
-    public function setBeginDate(\DateTime $BeginDate = null)
+    public function setBeginDate(\DateTime $BeginDate = null, $format=\DateTime::ATOM)
     {
       if ($BeginDate == null) {
        $this->BeginDate = null;
       } else {
-        $this->BeginDate = $BeginDate->format(\DateTime::ATOM);
+        $this->BeginDate = $BeginDate->format($format);
       }
       return $this;
     }
@@ -131,7 +131,7 @@ class GetHeaderList_Request
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTime|false|null
      */
     public function getEndDate()
     {
@@ -150,12 +150,12 @@ class GetHeaderList_Request
      * @param \DateTime $EndDate
      * @return GetHeaderList_Request
      */
-    public function setEndDate(\DateTime $EndDate = null)
+    public function setEndDate(\DateTime $EndDate = null, $format=\DateTime::ATOM)
     {
       if ($EndDate == null) {
        $this->EndDate = null;
       } else {
-        $this->EndDate = $EndDate->format(\DateTime::ATOM);
+        $this->EndDate = $EndDate->format($format);
       }
       return $this;
     }

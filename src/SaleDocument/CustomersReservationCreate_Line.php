@@ -75,10 +75,10 @@ class CustomersReservationCreate_Line
      */
     protected $UnitPrice = null;
 
-    
+
     public function __construct()
     {
-    
+
     }
 
     /**
@@ -118,7 +118,7 @@ class CustomersReservationCreate_Line
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTime|false|null
      */
     public function getDeliveryDate()
     {
@@ -137,12 +137,12 @@ class CustomersReservationCreate_Line
      * @param \DateTime $DeliveryDate
      * @return CustomersReservationCreate_Line
      */
-    public function setDeliveryDate(\DateTime $DeliveryDate = null)
+    public function setDeliveryDate(\DateTime $DeliveryDate = null, $format=\DateTime::ATOM)
     {
       if ($DeliveryDate == null) {
        $this->DeliveryDate = null;
       } else {
-        $this->DeliveryDate = $DeliveryDate->format(\DateTime::ATOM);
+        $this->DeliveryDate = $DeliveryDate->format($format);
       }
       return $this;
     }
@@ -184,7 +184,7 @@ class CustomersReservationCreate_Line
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTime|false|null
      */
     public function getInitialDeliveryDate()
     {
@@ -203,12 +203,12 @@ class CustomersReservationCreate_Line
      * @param \DateTime $InitialDeliveryDate
      * @return CustomersReservationCreate_Line
      */
-    public function setInitialDeliveryDate(\DateTime $InitialDeliveryDate = null)
+    public function setInitialDeliveryDate(\DateTime $InitialDeliveryDate = null, $format=\DateTime::ATOM)
     {
       if ($InitialDeliveryDate == null) {
        $this->InitialDeliveryDate = null;
       } else {
-        $this->InitialDeliveryDate = $InitialDeliveryDate->format(\DateTime::ATOM);
+        $this->InitialDeliveryDate = $InitialDeliveryDate->format($format);
       }
       return $this;
     }

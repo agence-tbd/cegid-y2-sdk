@@ -114,12 +114,12 @@ class CreateFrom_Header
      * @param \DateTime $Date
      * @return CreateFrom_Header
      */
-    public function setDate(\DateTime $Date = null)
+    public function setDate(\DateTime $Date = null, $format=\DateTime::ATOM)
     {
         if ($Date == null) {
             $this->Date = null;
         } else {
-            $this->Date = $Date->format(\DateTime::ATOM);
+            $this->Date = $Date->format($format);
         }
         return $this;
     }

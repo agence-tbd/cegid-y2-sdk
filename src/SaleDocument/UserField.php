@@ -40,10 +40,10 @@ class UserField
      */
     protected $ValueType = null;
 
-    
+
     public function __construct()
     {
-    
+
     }
 
     /**
@@ -65,7 +65,7 @@ class UserField
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTime|false|null
      */
     public function getDateValue()
     {
@@ -84,12 +84,12 @@ class UserField
      * @param \DateTime $DateValue
      * @return UserField
      */
-    public function setDateValue(\DateTime $DateValue = null)
+    public function setDateValue(\DateTime $DateValue = null, $format=\DateTime::ATOM)
     {
       if ($DateValue == null) {
        $this->DateValue = null;
       } else {
-        $this->DateValue = $DateValue->format(\DateTime::ATOM);
+        $this->DateValue = $DateValue->format($format);
       }
       return $this;
     }

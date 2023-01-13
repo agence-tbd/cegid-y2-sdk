@@ -105,10 +105,10 @@ class OmniChannel
      */
     protected $Transporter = null;
 
-    
+
     public function __construct()
     {
-    
+
     }
 
     /**
@@ -130,7 +130,7 @@ class OmniChannel
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTime|false|null
      */
     public function getCancelDate()
     {
@@ -149,12 +149,12 @@ class OmniChannel
      * @param \DateTime $CancelDate
      * @return OmniChannel
      */
-    public function setCancelDate(\DateTime $CancelDate = null)
+    public function setCancelDate(\DateTime $CancelDate = null, $format=\DateTime::ATOM)
     {
       if ($CancelDate == null) {
        $this->CancelDate = null;
       } else {
-        $this->CancelDate = $CancelDate->format(\DateTime::ATOM);
+        $this->CancelDate = $CancelDate->format($format);
       }
       return $this;
     }
@@ -322,7 +322,7 @@ class OmniChannel
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTime|false|null
      */
     public function getLockingDate()
     {
@@ -341,12 +341,12 @@ class OmniChannel
      * @param \DateTime $LockingDate
      * @return OmniChannel
      */
-    public function setLockingDate(\DateTime $LockingDate = null)
+    public function setLockingDate(\DateTime $LockingDate = null, $format=\DateTime::ATOM)
     {
       if ($LockingDate == null) {
        $this->LockingDate = null;
       } else {
-        $this->LockingDate = $LockingDate->format(\DateTime::ATOM);
+        $this->LockingDate = $LockingDate->format($format);
       }
       return $this;
     }
