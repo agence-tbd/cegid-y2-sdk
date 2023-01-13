@@ -317,7 +317,7 @@ class CustomerDataBase
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTime|false|null
      */
     public function getLastModificationDate()
     {
@@ -337,12 +337,12 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setLastModificationDate(\DateTime $LastModificationDate = null)
+    public function setLastModificationDate(\DateTime $LastModificationDate = null, $format=\DateTime::ATOM)
     {
         if ($LastModificationDate == null) {
             $this->LastModificationDate = null;
         } else {
-            $this->LastModificationDate = $LastModificationDate->format(\DateTime::ATOM);
+            $this->LastModificationDate = $LastModificationDate->format($format);
         }
         return $this;
     }

@@ -165,7 +165,7 @@ class CustomerQueryData extends CustomerData
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTime|false|null
      */
     public function getLastDateUpdate()
     {
@@ -185,12 +185,12 @@ class CustomerQueryData extends CustomerData
      *
      * @return CustomerQueryData
      */
-    public function setLastDateUpdate(\DateTime $LastDateUpdate = null)
+    public function setLastDateUpdate(\DateTime $LastDateUpdate = null, $format=\DateTime::ATOM)
     {
         if ($LastDateUpdate == null) {
             $this->LastDateUpdate = null;
         } else {
-            $this->LastDateUpdate = $LastDateUpdate->format(\DateTime::ATOM);
+            $this->LastDateUpdate = $LastDateUpdate->format($format);
         }
         return $this;
     }
