@@ -10,7 +10,7 @@ Consume CEGID/Y2's SOAP API.
 ## Installation
 
 ```
-composer require jeros-tbd/cegid-y2-sdk
+composer require agence-tbd/cegid-y2-sdk:dev-master
 ```
 
 ## Forked
