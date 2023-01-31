@@ -202,7 +202,8 @@ class Get_Line
     }
 
     /**
-     * @param \DateTime $DeliveryDate
+     * @param \DateTime|null $DeliveryDate
+     * @param string $format
      * @return Get_Line
      */
     public function setDeliveryDate(\DateTime $DeliveryDate = null, $format=\DateTime::ATOM)
@@ -268,7 +269,8 @@ class Get_Line
     }
 
     /**
-     * @param \DateTime $InitialDeliveryDate
+     * @param \DateTime|null $InitialDeliveryDate
+     * @param string $format
      * @return Get_Line
      */
     public function setInitialDeliveryDate(\DateTime $InitialDeliveryDate = null, $format=\DateTime::ATOM)

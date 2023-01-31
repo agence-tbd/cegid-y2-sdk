@@ -195,7 +195,8 @@ class Get_Header
     }
 
     /**
-     * @param \DateTime $Date
+     * @param \DateTime|null $Date
+     * @param string $format
      * @return Get_Header
      */
     public function setDate(\DateTime $Date = null, $format=\DateTime::ATOM)

@@ -56,7 +56,8 @@ class UserDefinedDate
     }
 
     /**
-     * @param \DateTime $Value
+     * @param \DateTime|null $Value
+     * @param string $format
      * @return UserDefinedDate
      */
     public function setValue(\DateTime $Value = null, $format=\DateTime::ATOM)

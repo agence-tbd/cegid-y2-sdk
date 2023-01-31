@@ -200,7 +200,8 @@ class CustomersReservationCreate_Header
     }
 
     /**
-     * @param \DateTime $Date
+     * @param \DateTime|null $Date
+     * @param string $format
      * @return CustomersReservationCreate_Header
      */
     public function setDate(\DateTime $Date = null, $format=\DateTime::ATOM)
@@ -248,7 +249,8 @@ class CustomersReservationCreate_Header
     }
 
     /**
-     * @param \DateTime $ExpirationDate
+     * @param \DateTime|null $ExpirationDate
+     * @param string $format
      * @return CustomersReservationCreate_Header
      */
     public function setExpirationDate(\DateTime $ExpirationDate = null, $format=\DateTime::ATOM)
@@ -296,7 +298,8 @@ class CustomersReservationCreate_Header
     }
 
     /**
-     * @param \DateTime $ExternalReferenceDate
+     * @param \DateTime|null $ExternalReferenceDate
+     * @param string $format
      * @return CustomersReservationCreate_Header
      */
     public function setExternalReferenceDate(\DateTime $ExternalReferenceDate = null, $format=\DateTime::ATOM)

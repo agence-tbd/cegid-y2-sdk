@@ -218,8 +218,8 @@ class Create_Header
     }
 
     /**
-     * @param \DateTime $Date
-     *
+     * @param \DateTime|null $Date
+     * @param string $format
      * @return Create_Header
      */
     public function setDate(\DateTime $Date = null, $format=\DateTime::ATOM)
@@ -287,8 +287,8 @@ class Create_Header
     }
 
     /**
-     * @param \DateTime $ExternalReferenceDate
-     *
+     * @param \DateTime|null $ExternalReferenceDate
+     * @param string $format
      * @return Create_Header
      */
     public function setExternalReferenceDate(\DateTime $ExternalReferenceDate = null, $format=\DateTime::ATOM)

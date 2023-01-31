@@ -146,7 +146,8 @@ class OmniChannel
     }
 
     /**
-     * @param \DateTime $CancelDate
+     * @param \DateTime|null $CancelDate
+     * @param string $format
      * @return OmniChannel
      */
     public function setCancelDate(\DateTime $CancelDate = null, $format=\DateTime::ATOM)
@@ -178,7 +179,7 @@ class OmniChannel
     }
 
     /**
-     * @return CancelStatus
+     * @return string
      */
     public function getCancelStatus()
     {
@@ -186,7 +187,7 @@ class OmniChannel
     }
 
     /**
-     * @param CancelStatus $CancelStatus
+     * @param string $CancelStatus
      * @return OmniChannel
      */
     public function setCancelStatus($CancelStatus)
@@ -338,7 +339,8 @@ class OmniChannel
     }
 
     /**
-     * @param \DateTime $LockingDate
+     * @param \DateTime|null $LockingDate
+     * @param string $format
      * @return OmniChannel
      */
     public function setLockingDate(\DateTime $LockingDate = null, $format=\DateTime::ATOM)

@@ -81,7 +81,8 @@ class UserField
     }
 
     /**
-     * @param \DateTime $DateValue
+     * @param \DateTime|null $DateValue
+     * @param string $format
      * @return UserField
      */
     public function setDateValue(\DateTime $DateValue = null, $format=\DateTime::ATOM)

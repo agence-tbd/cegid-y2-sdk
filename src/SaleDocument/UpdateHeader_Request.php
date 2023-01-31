@@ -147,7 +147,8 @@ class UpdateHeader_Request
     }
 
     /**
-     * @param \DateTime $ExternalReferenceDate
+     * @param \DateTime|null $ExternalReferenceDate
+     * @param string $format
      * @return UpdateHeader_Request
      */
     public function setExternalReferenceDate(\DateTime $ExternalReferenceDate = null, $format=\DateTime::ATOM)

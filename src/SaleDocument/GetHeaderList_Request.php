@@ -81,7 +81,8 @@ class GetHeaderList_Request
     }
 
     /**
-     * @param \DateTime $BeginDate
+     * @param \DateTime|null $BeginDate
+     * @param string $format
      * @return GetHeaderList_Request
      */
     public function setBeginDate(\DateTime $BeginDate = null, $format=\DateTime::ATOM)
@@ -147,7 +148,8 @@ class GetHeaderList_Request
     }
 
     /**
-     * @param \DateTime $EndDate
+     * @param \DateTime|null $EndDate
+     * @param string $format
      * @return GetHeaderList_Request
      */
     public function setEndDate(\DateTime $EndDate = null, $format=\DateTime::ATOM)

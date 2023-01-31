@@ -147,7 +147,8 @@ class Update_Payment
     }
 
     /**
-     * @param \DateTime $DueDate
+     * @param \DateTime|null $DueDate
+     * @param string $format
      * @return Update_Payment
      */
     public function setDueDate(\DateTime $DueDate = null, $format=\DateTime::ATOM)
