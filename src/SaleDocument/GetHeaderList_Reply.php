@@ -19,7 +19,7 @@ class GetHeaderList_Reply
     /**
      * @return ArrayOfGet_Header
      */
-    public function getHeaders()
+    public function getHeaders(): ArrayOfGet_Header
     {
       return $this->Headers;
     }
@@ -28,7 +28,7 @@ class GetHeaderList_Reply
      * @param ArrayOfGet_Header $Headers
      * @return GetHeaderList_Reply
      */
-    public function setHeaders($Headers)
+    public function setHeaders(ArrayOfGet_Header $Headers): GetHeaderList_Reply
     {
       $this->Headers = $Headers;
       return $this;

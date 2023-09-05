@@ -17,7 +17,7 @@ class ArrayOfAvailableQtyByItemByStore implements \ArrayAccess, \Iterator, \Coun
     /**
      * @return AvailableQtyByItemByStore[]
      */
-    public function getAvailableQtyByItemByStore()
+    public function getAvailableQtyByItemByStore(): array
     {
         return $this->AvailableQtyByItemByStore;
     }
@@ -27,7 +27,7 @@ class ArrayOfAvailableQtyByItemByStore implements \ArrayAccess, \Iterator, \Coun
      *
      * @return ArrayOfAvailableQtyByItemByStore
      */
-    public function setAvailableQtyByItemByStore(array $AvailableQtyByItemByStore = null)
+    public function setAvailableQtyByItemByStore(array $AvailableQtyByItemByStore = null): ArrayOfAvailableQtyByItemByStore
     {
         $this->AvailableQtyByItemByStore = $AvailableQtyByItemByStore;
         return $this;
@@ -40,7 +40,7 @@ class ArrayOfAvailableQtyByItemByStore implements \ArrayAccess, \Iterator, \Coun
      *
      * @return boolean true on success or false on failure
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->AvailableQtyByItemByStore[$offset]);
     }
@@ -52,7 +52,7 @@ class ArrayOfAvailableQtyByItemByStore implements \ArrayAccess, \Iterator, \Coun
      *
      * @return AvailableQtyByItemByStore
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): AvailableQtyByItemByStore
     {
         return $this->AvailableQtyByItemByStore[$offset];
     }
@@ -65,7 +65,7 @@ class ArrayOfAvailableQtyByItemByStore implements \ArrayAccess, \Iterator, \Coun
      *
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet(mixed $offset, mixed $value): void
     {
         if (!isset($offset)) {
             $this->AvailableQtyByItemByStore[] = $value;
@@ -81,7 +81,7 @@ class ArrayOfAvailableQtyByItemByStore implements \ArrayAccess, \Iterator, \Coun
      *
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         unset($this->AvailableQtyByItemByStore[$offset]);
     }
@@ -91,7 +91,7 @@ class ArrayOfAvailableQtyByItemByStore implements \ArrayAccess, \Iterator, \Coun
      *
      * @return AvailableQtyByItemByStore Return the current element
      */
-    public function current()
+    public function current(): AvailableQtyByItemByStore
     {
         return current($this->AvailableQtyByItemByStore);
     }
@@ -102,7 +102,7 @@ class ArrayOfAvailableQtyByItemByStore implements \ArrayAccess, \Iterator, \Coun
      *
      * @return void
      */
-    public function next()
+    public function next(): void
     {
         next($this->AvailableQtyByItemByStore);
     }
@@ -112,7 +112,7 @@ class ArrayOfAvailableQtyByItemByStore implements \ArrayAccess, \Iterator, \Coun
      *
      * @return string|null Return the key of the current element or null
      */
-    public function key()
+    public function key(): ?string
     {
         return key($this->AvailableQtyByItemByStore);
     }
@@ -122,7 +122,7 @@ class ArrayOfAvailableQtyByItemByStore implements \ArrayAccess, \Iterator, \Coun
      *
      * @return boolean Return the validity of the current position
      */
-    public function valid()
+    public function valid(): bool
     {
         return $this->key() !== null;
     }
@@ -133,7 +133,7 @@ class ArrayOfAvailableQtyByItemByStore implements \ArrayAccess, \Iterator, \Coun
      *
      * @return void
      */
-    public function rewind()
+    public function rewind(): void
     {
         reset($this->AvailableQtyByItemByStore);
     }
@@ -141,9 +141,9 @@ class ArrayOfAvailableQtyByItemByStore implements \ArrayAccess, \Iterator, \Coun
     /**
      * Countable implementation
      *
-     * @return AvailableQtyByItemByStore Return count of elements
+     * @return int Return count of elements
      */
-    public function count()
+    public function count(): int
     {
         return count($this->AvailableQtyByItemByStore);
     }

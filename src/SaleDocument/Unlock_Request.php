@@ -19,7 +19,7 @@ class Unlock_Request
     /**
      * @return SaleDocumentIdentifier
      */
-    public function getIdentifier()
+    public function getIdentifier(): SaleDocumentIdentifier
     {
       return $this->Identifier;
     }
@@ -28,7 +28,7 @@ class Unlock_Request
      * @param SaleDocumentIdentifier $Identifier
      * @return Unlock_Request
      */
-    public function setIdentifier($Identifier)
+    public function setIdentifier(SaleDocumentIdentifier $Identifier): Unlock_Request
     {
       $this->Identifier = $Identifier;
       return $this;

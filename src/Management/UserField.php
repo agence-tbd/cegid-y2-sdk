@@ -27,7 +27,7 @@ class UserField
     /**
      * @return int
      */
-    public function getId()
+    public function getId(): int
     {
         return $this->Id;
     }
@@ -36,7 +36,7 @@ class UserField
      * @param int $Id
      * @return UserField
      */
-    public function setId($Id)
+    public function setId(int $Id): UserField
     {
         $this->Id = $Id;
         return $this;
@@ -45,7 +45,7 @@ class UserField
     /**
      * @return UserFieldValue
      */
-    public function getValue()
+    public function getValue(): UserFieldValue
     {
         return $this->Value;
     }
@@ -54,7 +54,7 @@ class UserField
      * @param UserFieldValue $Value
      * @return UserField
      */
-    public function setValue($Value)
+    public function setValue(UserFieldValue $Value): UserField
     {
         $this->Value = $Value;
         return $this;

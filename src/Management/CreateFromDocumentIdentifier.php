@@ -22,7 +22,7 @@ class CreateFromDocumentIdentifier
     /**
      * @return CreateFromDocumentKey
      */
-    public function getKey()
+    public function getKey(): CreateFromDocumentKey
     {
       return $this->Key;
     }
@@ -31,7 +31,7 @@ class CreateFromDocumentIdentifier
      * @param CreateFromDocumentKey $Key
      * @return CreateFromDocumentIdentifier
      */
-    public function setKey($Key)
+    public function setKey(CreateFromDocumentKey $Key): CreateFromDocumentIdentifier
     {
       $this->Key = $Key;
       return $this;
@@ -40,7 +40,7 @@ class CreateFromDocumentIdentifier
     /**
      * @return CreateFromDocumentReference
      */
-    public function getReference()
+    public function getReference(): CreateFromDocumentReference
     {
       return $this->Reference;
     }
@@ -49,7 +49,7 @@ class CreateFromDocumentIdentifier
      * @param CreateFromDocumentReference $Reference
      * @return CreateFromDocumentIdentifier
      */
-    public function setReference($Reference)
+    public function setReference(CreateFromDocumentReference $Reference): CreateFromDocumentIdentifier
     {
       $this->Reference = $Reference;
       return $this;

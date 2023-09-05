@@ -19,7 +19,7 @@ class HelloWorld
      * @param string $text
      * @param RetailContext $clientContext
      */
-    public function __construct($text, $clientContext)
+    public function __construct(string $text, RetailContext $clientContext)
     {
       $this->text = $text;
       $this->clientContext = $clientContext;
@@ -28,7 +28,7 @@ class HelloWorld
     /**
      * @return string
      */
-    public function getText()
+    public function getText(): string
     {
       return $this->text;
     }
@@ -37,7 +37,7 @@ class HelloWorld
      * @param string $text
      * @return HelloWorld
      */
-    public function setText($text)
+    public function setText(string $text): HelloWorld
     {
       $this->text = $text;
       return $this;
@@ -46,7 +46,7 @@ class HelloWorld
     /**
      * @return RetailContext
      */
-    public function getClientContext()
+    public function getClientContext(): RetailContext
     {
       return $this->clientContext;
     }
@@ -55,7 +55,7 @@ class HelloWorld
      * @param RetailContext $clientContext
      * @return HelloWorld
      */
-    public function setClientContext($clientContext)
+    public function setClientContext(RetailContext $clientContext): HelloWorld
     {
       $this->clientContext = $clientContext;
       return $this;

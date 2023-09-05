@@ -17,7 +17,7 @@ class ArrayOfCreateFrom_Line implements \ArrayAccess, \Iterator, \Countable
     /**
      * @return CreateFrom_Line[]
      */
-    public function getLine()
+    public function getLine(): array
     {
       return $this->Line;
     }
@@ -26,7 +26,7 @@ class ArrayOfCreateFrom_Line implements \ArrayAccess, \Iterator, \Countable
      * @param CreateFrom_Line[] $Lines
      * @return ArrayOfCreateFrom_Line
      */
-    public function setLine(array $Lines = null)
+    public function setLine(array $Lines = null): ArrayOfCreateFrom_Line
     {
       $this->Line = $Lines;
       return $this;
@@ -38,7 +38,7 @@ class ArrayOfCreateFrom_Line implements \ArrayAccess, \Iterator, \Countable
      * @param mixed $offset An offset to check for
      * @return boolean true on success or false on failure
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
       return isset($this->Line[$offset]);
     }
@@ -49,7 +49,7 @@ class ArrayOfCreateFrom_Line implements \ArrayAccess, \Iterator, \Countable
      * @param mixed $offset The offset to retrieve
      * @return CreateFrom_Line
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): CreateFrom_Line
     {
       return $this->Line[$offset];
     }
@@ -61,7 +61,7 @@ class ArrayOfCreateFrom_Line implements \ArrayAccess, \Iterator, \Countable
      * @param CreateFrom_Line $value The value to set
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet(mixed $offset, mixed $value): void
     {
       if (!isset($offset)) {
         $this->Line[] = $value;
@@ -76,7 +76,7 @@ class ArrayOfCreateFrom_Line implements \ArrayAccess, \Iterator, \Countable
      * @param mixed $offset The offset to unset
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
       unset($this->Line[$offset]);
     }
@@ -86,7 +86,7 @@ class ArrayOfCreateFrom_Line implements \ArrayAccess, \Iterator, \Countable
      *
      * @return CreateFrom_Line Return the current element
      */
-    public function current()
+    public function current(): CreateFrom_Line
     {
       return current($this->Line);
     }
@@ -97,7 +97,7 @@ class ArrayOfCreateFrom_Line implements \ArrayAccess, \Iterator, \Countable
      *
      * @return void
      */
-    public function next()
+    public function next(): void
     {
       next($this->Line);
     }
@@ -107,7 +107,7 @@ class ArrayOfCreateFrom_Line implements \ArrayAccess, \Iterator, \Countable
      *
      * @return string|null Return the key of the current element or null
      */
-    public function key()
+    public function key(): ?string
     {
       return key($this->Line);
     }
@@ -117,7 +117,7 @@ class ArrayOfCreateFrom_Line implements \ArrayAccess, \Iterator, \Countable
      *
      * @return boolean Return the validity of the current position
      */
-    public function valid()
+    public function valid(): bool
     {
       return $this->key() !== null;
     }
@@ -128,7 +128,7 @@ class ArrayOfCreateFrom_Line implements \ArrayAccess, \Iterator, \Countable
      *
      * @return void
      */
-    public function rewind()
+    public function rewind(): void
     {
       reset($this->Line);
     }
@@ -138,7 +138,7 @@ class ArrayOfCreateFrom_Line implements \ArrayAccess, \Iterator, \Countable
      *
      * @return int Return count of elements
      */
-    public function count()
+    public function count(): int
     {
       return count($this->Line);
     }

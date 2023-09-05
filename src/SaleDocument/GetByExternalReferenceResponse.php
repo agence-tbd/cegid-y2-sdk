@@ -13,7 +13,7 @@ class GetByExternalReferenceResponse
     /**
      * @param GetByExternalReference_Reply $GetByExternalReferenceResult
      */
-    public function __construct($GetByExternalReferenceResult)
+    public function __construct(GetByExternalReference_Reply $GetByExternalReferenceResult)
     {
       $this->GetByExternalReferenceResult = $GetByExternalReferenceResult;
     }
@@ -21,7 +21,7 @@ class GetByExternalReferenceResponse
     /**
      * @return GetByExternalReference_Reply
      */
-    public function getGetByExternalReferenceResult()
+    public function getGetByExternalReferenceResult(): GetByExternalReference_Reply
     {
       return $this->GetByExternalReferenceResult;
     }
@@ -30,7 +30,7 @@ class GetByExternalReferenceResponse
      * @param GetByExternalReference_Reply $GetByExternalReferenceResult
      * @return GetByExternalReferenceResponse
      */
-    public function setGetByExternalReferenceResult($GetByExternalReferenceResult)
+    public function setGetByExternalReferenceResult(GetByExternalReference_Reply $GetByExternalReferenceResult): GetByExternalReferenceResponse
     {
       $this->GetByExternalReferenceResult = $GetByExternalReferenceResult;
       return $this;

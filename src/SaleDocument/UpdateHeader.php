@@ -19,7 +19,7 @@ class UpdateHeader
      * @param UpdateHeader_Request $updateHeaderRequest
      * @param RetailContext $clientContext
      */
-    public function __construct($updateHeaderRequest, $clientContext)
+    public function __construct(UpdateHeader_Request $updateHeaderRequest, RetailContext $clientContext)
     {
       $this->updateHeaderRequest = $updateHeaderRequest;
       $this->clientContext = $clientContext;
@@ -28,7 +28,7 @@ class UpdateHeader
     /**
      * @return UpdateHeader_Request
      */
-    public function getUpdateHeaderRequest()
+    public function getUpdateHeaderRequest(): UpdateHeader_Request
     {
       return $this->updateHeaderRequest;
     }
@@ -37,7 +37,7 @@ class UpdateHeader
      * @param UpdateHeader_Request $updateHeaderRequest
      * @return UpdateHeader
      */
-    public function setUpdateHeaderRequest($updateHeaderRequest)
+    public function setUpdateHeaderRequest(UpdateHeader_Request $updateHeaderRequest): UpdateHeader
     {
       $this->updateHeaderRequest = $updateHeaderRequest;
       return $this;
@@ -46,7 +46,7 @@ class UpdateHeader
     /**
      * @return RetailContext
      */
-    public function getClientContext()
+    public function getClientContext(): RetailContext
     {
       return $this->clientContext;
     }
@@ -55,7 +55,7 @@ class UpdateHeader
      * @param RetailContext $clientContext
      * @return UpdateHeader
      */
-    public function setClientContext($clientContext)
+    public function setClientContext(RetailContext $clientContext): UpdateHeader
     {
       $this->clientContext = $clientContext;
       return $this;

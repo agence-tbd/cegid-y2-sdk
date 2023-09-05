@@ -53,7 +53,7 @@ class Update_Payment
     /**
      * @param int $Id
      */
-    public function __construct($Id)
+    public function __construct(int $Id)
     {
       $this->Id = $Id;
     }
@@ -61,7 +61,7 @@ class Update_Payment
     /**
      * @return float
      */
-    public function getAmount()
+    public function getAmount(): float
     {
       return $this->Amount;
     }
@@ -70,7 +70,7 @@ class Update_Payment
      * @param float $Amount
      * @return Update_Payment
      */
-    public function setAmount($Amount)
+    public function setAmount(float $Amount): Update_Payment
     {
       $this->Amount = $Amount;
       return $this;
@@ -79,7 +79,7 @@ class Update_Payment
     /**
      * @return string
      */
-    public function getBonId()
+    public function getBonId(): string
     {
       return $this->BonId;
     }
@@ -88,7 +88,7 @@ class Update_Payment
      * @param string $BonId
      * @return Update_Payment
      */
-    public function setBonId($BonId)
+    public function setBonId(string $BonId): Update_Payment
     {
       $this->BonId = $BonId;
       return $this;
@@ -97,7 +97,7 @@ class Update_Payment
     /**
      * @return CreditCard
      */
-    public function getCreditCard()
+    public function getCreditCard(): CreditCard
     {
       return $this->CreditCard;
     }
@@ -106,7 +106,7 @@ class Update_Payment
      * @param CreditCard $CreditCard
      * @return Update_Payment
      */
-    public function setCreditCard($CreditCard)
+    public function setCreditCard(CreditCard $CreditCard): Update_Payment
     {
       $this->CreditCard = $CreditCard;
       return $this;
@@ -115,7 +115,7 @@ class Update_Payment
     /**
      * @return string
      */
-    public function getCurrencyId()
+    public function getCurrencyId(): string
     {
       return $this->CurrencyId;
     }
@@ -124,7 +124,7 @@ class Update_Payment
      * @param string $CurrencyId
      * @return Update_Payment
      */
-    public function setCurrencyId($CurrencyId)
+    public function setCurrencyId(string $CurrencyId): Update_Payment
     {
       $this->CurrencyId = $CurrencyId;
       return $this;
@@ -151,7 +151,7 @@ class Update_Payment
      * @param string $format
      * @return Update_Payment
      */
-    public function setDueDate(\DateTime $DueDate = null, $format=\DateTime::ATOM)
+    public function setDueDate(\DateTime $DueDate = null, string $format=\DateTime::ATOM): Update_Payment
     {
       if ($DueDate == null) {
        $this->DueDate = null;
@@ -164,7 +164,7 @@ class Update_Payment
     /**
      * @return int
      */
-    public function getId()
+    public function getId(): int
     {
       return $this->Id;
     }
@@ -173,7 +173,7 @@ class Update_Payment
      * @param int $Id
      * @return Update_Payment
      */
-    public function setId($Id)
+    public function setId(int $Id): Update_Payment
     {
       $this->Id = $Id;
       return $this;
@@ -182,7 +182,7 @@ class Update_Payment
     /**
      * @return boolean
      */
-    public function getIsReceivedPayment()
+    public function getIsReceivedPayment(): bool
     {
       return $this->IsReceivedPayment;
     }
@@ -191,7 +191,7 @@ class Update_Payment
      * @param boolean $IsReceivedPayment
      * @return Update_Payment
      */
-    public function setIsReceivedPayment($IsReceivedPayment)
+    public function setIsReceivedPayment(bool $IsReceivedPayment): Update_Payment
     {
       $this->IsReceivedPayment = $IsReceivedPayment;
       return $this;
@@ -200,7 +200,7 @@ class Update_Payment
     /**
      * @return string
      */
-    public function getMethodId()
+    public function getMethodId(): string
     {
       return $this->MethodId;
     }
@@ -209,7 +209,7 @@ class Update_Payment
      * @param string $MethodId
      * @return Update_Payment
      */
-    public function setMethodId($MethodId)
+    public function setMethodId(string $MethodId): Update_Payment
     {
       $this->MethodId = $MethodId;
       return $this;
@@ -218,7 +218,7 @@ class Update_Payment
     /**
      * @return string
      */
-    public function getRegisterOperationForReceivedPayment()
+    public function getRegisterOperationForReceivedPayment(): string
     {
       return $this->RegisterOperationForReceivedPayment;
     }
@@ -227,7 +227,7 @@ class Update_Payment
      * @param string $RegisterOperationForReceivedPayment
      * @return Update_Payment
      */
-    public function setRegisterOperationForReceivedPayment($RegisterOperationForReceivedPayment)
+    public function setRegisterOperationForReceivedPayment(string $RegisterOperationForReceivedPayment): Update_Payment
     {
       $this->RegisterOperationForReceivedPayment = $RegisterOperationForReceivedPayment;
       return $this;

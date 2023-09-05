@@ -141,7 +141,7 @@ class SaleDocumentService extends \SoapClient
      *
      * @return HelloWorldResponse
      */
-    public function HelloWorld(HelloWorld $parameters)
+    public function HelloWorld(HelloWorld $parameters): HelloWorldResponse
     {
         return $this->__soapCall('HelloWorld', array($parameters));
     }
@@ -151,7 +151,7 @@ class SaleDocumentService extends \SoapClient
      *
      * @return GetHeaderListResponse
      */
-    public function GetHeaderList(GetHeaderList $parameters)
+    public function GetHeaderList(GetHeaderList $parameters): GetHeaderListResponse
     {
         return $this->__soapCall('GetHeaderList', array($parameters));
     }
@@ -161,7 +161,7 @@ class SaleDocumentService extends \SoapClient
      *
      * @return GetByKeyResponse
      */
-    public function GetByKey(GetByKey $parameters)
+    public function GetByKey(GetByKey $parameters): GetByKeyResponse
     {
         return $this->__soapCall('GetByKey', array($parameters));
     }
@@ -171,7 +171,7 @@ class SaleDocumentService extends \SoapClient
      *
      * @return GetByReferenceResponse
      */
-    public function GetByReference(GetByReference $parameters)
+    public function GetByReference(GetByReference $parameters): GetByReferenceResponse
     {
         return $this->__soapCall('GetByReference', array($parameters));
     }
@@ -181,7 +181,7 @@ class SaleDocumentService extends \SoapClient
      *
      * @return CreateResponse
      */
-    public function Create(Create $parameters)
+    public function Create(Create $parameters): CreateResponse
     {
         return $this->__soapCall('Create', array($parameters));
     }
@@ -191,7 +191,7 @@ class SaleDocumentService extends \SoapClient
      *
      * @return CancelResponse
      */
-    public function Cancel(Cancel $parameters)
+    public function Cancel(Cancel $parameters): CancelResponse
     {
         return $this->__soapCall('Cancel', array($parameters));
     }
@@ -201,7 +201,7 @@ class SaleDocumentService extends \SoapClient
      *
      * @return CloseResponse
      */
-    public function Close(Close $parameters)
+    public function Close(Close $parameters): CloseResponse
     {
         return $this->__soapCall('Close', array($parameters));
     }
@@ -211,7 +211,7 @@ class SaleDocumentService extends \SoapClient
      *
      * @return UpdateResponse
      */
-    public function Update(Update $parameters)
+    public function Update(Update $parameters): UpdateResponse
     {
         return $this->__soapCall('Update', array($parameters));
     }
@@ -221,7 +221,7 @@ class SaleDocumentService extends \SoapClient
      *
      * @return UpdatePaymentsResponse
      */
-    public function UpdatePayments(UpdatePayments $parameters)
+    public function UpdatePayments(UpdatePayments $parameters): UpdatePaymentsResponse
     {
         return $this->__soapCall('UpdatePayments', array($parameters));
     }
@@ -231,7 +231,7 @@ class SaleDocumentService extends \SoapClient
      *
      * @return UpdateHeaderResponse
      */
-    public function UpdateHeader(UpdateHeader $parameters)
+    public function UpdateHeader(UpdateHeader $parameters): UpdateHeaderResponse
     {
         return $this->__soapCall('UpdateHeader', array($parameters));
     }
@@ -241,7 +241,7 @@ class SaleDocumentService extends \SoapClient
      *
      * @return GetByExternalReferenceResponse
      */
-    public function GetByExternalReference(GetByExternalReference $parameters)
+    public function GetByExternalReference(GetByExternalReference $parameters): GetByExternalReferenceResponse
     {
         return $this->__soapCall('GetByExternalReference', array($parameters));
     }
@@ -251,7 +251,7 @@ class SaleDocumentService extends \SoapClient
      *
      * @return LockResponse
      */
-    public function Lock(Lock $parameters)
+    public function Lock(Lock $parameters): LockResponse
     {
         return $this->__soapCall('Lock', array($parameters));
     }
@@ -261,7 +261,7 @@ class SaleDocumentService extends \SoapClient
      *
      * @return UnlockResponse
      */
-    public function Unlock(Unlock $parameters)
+    public function Unlock(Unlock $parameters): UnlockResponse
     {
         return $this->__soapCall('Unlock', array($parameters));
     }
@@ -271,7 +271,7 @@ class SaleDocumentService extends \SoapClient
      *
      * @return CustomersReservationCreateResponse
      */
-    public function CustomersReservationCreate(CustomersReservationCreate $parameters)
+    public function CustomersReservationCreate(CustomersReservationCreate $parameters): CustomersReservationCreateResponse
     {
         return $this->__soapCall('CustomersReservationCreate', array($parameters));
     }

@@ -19,7 +19,7 @@ class OmniChannelLine
     /**
      * @return string
      */
-    public function getWarehouseId()
+    public function getWarehouseId(): string
     {
       return $this->WarehouseId;
     }
@@ -28,7 +28,7 @@ class OmniChannelLine
      * @param string $WarehouseId
      * @return OmniChannelLine
      */
-    public function setWarehouseId($WarehouseId)
+    public function setWarehouseId(string $WarehouseId): OmniChannelLine
     {
       $this->WarehouseId = $WarehouseId;
       return $this;

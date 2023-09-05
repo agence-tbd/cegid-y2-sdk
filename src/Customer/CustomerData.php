@@ -65,32 +65,32 @@ class CustomerData extends CustomerDataBase
     protected $NationalityId = null;
 
     /**
-     * @var CustomerInformationType $OptinAlternativeEmail
+     * @var string $OptinAlternativeEmail
      */
     protected $OptinAlternativeEmail = null;
 
     /**
-     * @var CustomerInformationType $OptinEmail
+     * @var string $OptinEmail
      */
     protected $OptinEmail = null;
 
     /**
-     * @var CustomerInformationType $OptinHomePhone
+     * @var string $OptinHomePhone
      */
     protected $OptinHomePhone = null;
 
     /**
-     * @var CustomerInformationType $OptinMobile
+     * @var string $OptinMobile
      */
     protected $OptinMobile = null;
 
     /**
-     * @var CustomerInformationType $OptinOfficePhone
+     * @var string $OptinOfficePhone
      */
     protected $OptinOfficePhone = null;
 
     /**
-     * @var CustomerInformationType $OptinPostal
+     * @var string $OptinPostal
      */
     protected $OptinPostal = null;
 
@@ -153,7 +153,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getActivityCode()
+    public function getActivityCode(): string
     {
         return $this->ActivityCode;
     }
@@ -163,7 +163,7 @@ class CustomerData extends CustomerDataBase
      *
      * @return CustomerData
      */
-    public function setActivityCode($ActivityCode)
+    public function setActivityCode(string $ActivityCode): CustomerData
     {
         $this->ActivityCode = $ActivityCode;
         return $this;
@@ -172,7 +172,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getBarcode()
+    public function getBarcode(): string
     {
         return $this->Barcode;
     }
@@ -182,7 +182,7 @@ class CustomerData extends CustomerDataBase
      *
      * @return CustomerData
      */
-    public function setBarcode($Barcode)
+    public function setBarcode(string $Barcode): CustomerData
     {
         $this->Barcode = $Barcode;
         return $this;
@@ -191,7 +191,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return BirthDateDataType
      */
-    public function getBirthDateData()
+    public function getBirthDateData(): BirthDateDataType
     {
         return $this->BirthDateData;
     }
@@ -201,7 +201,7 @@ class CustomerData extends CustomerDataBase
      *
      * @return CustomerData
      */
-    public function setBirthDateData($BirthDateData)
+    public function setBirthDateData(BirthDateDataType $BirthDateData): CustomerData
     {
         $this->BirthDateData = $BirthDateData;
         return $this;
@@ -210,7 +210,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getCompanyIdNumber()
+    public function getCompanyIdNumber(): string
     {
         return $this->CompanyIdNumber;
     }
@@ -220,7 +220,7 @@ class CustomerData extends CustomerDataBase
      *
      * @return CustomerData
      */
-    public function setCompanyIdNumber($CompanyIdNumber)
+    public function setCompanyIdNumber(string $CompanyIdNumber): CustomerData
     {
         $this->CompanyIdNumber = $CompanyIdNumber;
         return $this;
@@ -229,7 +229,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getCompanyTitleId()
+    public function getCompanyTitleId(): string
     {
         return $this->CompanyTitleId;
     }
@@ -239,7 +239,7 @@ class CustomerData extends CustomerDataBase
      *
      * @return CustomerData
      */
-    public function setCompanyTitleId($CompanyTitleId)
+    public function setCompanyTitleId(string $CompanyTitleId): CustomerData
     {
         $this->CompanyTitleId = $CompanyTitleId;
         return $this;
@@ -248,7 +248,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getCurrencyId()
+    public function getCurrencyId(): string
     {
         return $this->CurrencyId;
     }
@@ -258,7 +258,7 @@ class CustomerData extends CustomerDataBase
      *
      * @return CustomerData
      */
-    public function setCurrencyId($CurrencyId)
+    public function setCurrencyId(string $CurrencyId): CustomerData
     {
         $this->CurrencyId = $CurrencyId;
         return $this;
@@ -267,7 +267,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return boolean
      */
-    public function getDirectMail()
+    public function getDirectMail(): bool
     {
         return $this->DirectMail;
     }
@@ -277,7 +277,7 @@ class CustomerData extends CustomerDataBase
      *
      * @return CustomerData
      */
-    public function setDirectMail($DirectMail)
+    public function setDirectMail(bool $DirectMail): CustomerData
     {
         $this->DirectMail = $DirectMail;
         return $this;
@@ -286,7 +286,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getFiscalId()
+    public function getFiscalId(): string
     {
         return $this->FiscalId;
     }
@@ -296,7 +296,7 @@ class CustomerData extends CustomerDataBase
      *
      * @return CustomerData
      */
-    public function setFiscalId($FiscalId)
+    public function setFiscalId(string $FiscalId): CustomerData
     {
         $this->FiscalId = $FiscalId;
         return $this;
@@ -305,7 +305,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getItalianFiscalId()
+    public function getItalianFiscalId(): string
     {
         return $this->ItalianFiscalId;
     }
@@ -315,7 +315,7 @@ class CustomerData extends CustomerDataBase
      *
      * @return CustomerData
      */
-    public function setItalianFiscalId($ItalianFiscalId)
+    public function setItalianFiscalId(string $ItalianFiscalId): CustomerData
     {
         $this->ItalianFiscalId = $ItalianFiscalId;
         return $this;
@@ -324,7 +324,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getLanguageId()
+    public function getLanguageId(): string
     {
         return $this->LanguageId;
     }
@@ -334,7 +334,7 @@ class CustomerData extends CustomerDataBase
      *
      * @return CustomerData
      */
-    public function setLanguageId($LanguageId)
+    public function setLanguageId(string $LanguageId): CustomerData
     {
         $this->LanguageId = $LanguageId;
         return $this;
@@ -343,7 +343,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getLongDescription()
+    public function getLongDescription(): string
     {
         return $this->LongDescription;
     }
@@ -353,7 +353,7 @@ class CustomerData extends CustomerDataBase
      *
      * @return CustomerData
      */
-    public function setLongDescription($LongDescription)
+    public function setLongDescription(string $LongDescription): CustomerData
     {
         $this->LongDescription = $LongDescription;
         return $this;
@@ -362,7 +362,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getNationalityId()
+    public function getNationalityId(): string
     {
         return $this->NationalityId;
     }
@@ -372,121 +372,121 @@ class CustomerData extends CustomerDataBase
      *
      * @return CustomerData
      */
-    public function setNationalityId($NationalityId)
+    public function setNationalityId(string $NationalityId): CustomerData
     {
         $this->NationalityId = $NationalityId;
         return $this;
     }
 
     /**
-     * @return CustomerInformationType
+     * @return string
      */
-    public function getOptinAlternativeEmail()
+    public function getOptinAlternativeEmail(): string
     {
         return $this->OptinAlternativeEmail;
     }
 
     /**
-     * @param CustomerInformationType $OptinAlternativeEmail
+     * @param string $OptinAlternativeEmail
      *
      * @return CustomerData
      */
-    public function setOptinAlternativeEmail($OptinAlternativeEmail)
+    public function setOptinAlternativeEmail(string $OptinAlternativeEmail): CustomerData
     {
         $this->OptinAlternativeEmail = $OptinAlternativeEmail;
         return $this;
     }
 
     /**
-     * @return CustomerInformationType
+     * @return string
      */
-    public function getOptinEmail()
+    public function getOptinEmail(): string
     {
         return $this->OptinEmail;
     }
 
     /**
-     * @param CustomerInformationType $OptinEmail
+     * @param string $OptinEmail
      *
      * @return CustomerData
      */
-    public function setOptinEmail($OptinEmail)
+    public function setOptinEmail(string $OptinEmail): CustomerData
     {
         $this->OptinEmail = $OptinEmail;
         return $this;
     }
 
     /**
-     * @return CustomerInformationType
+     * @return string
      */
-    public function getOptinHomePhone()
+    public function getOptinHomePhone(): string
     {
         return $this->OptinHomePhone;
     }
 
     /**
-     * @param CustomerInformationType $OptinHomePhone
+     * @param string $OptinHomePhone
      *
      * @return CustomerData
      */
-    public function setOptinHomePhone($OptinHomePhone)
+    public function setOptinHomePhone(string $OptinHomePhone): CustomerData
     {
         $this->OptinHomePhone = $OptinHomePhone;
         return $this;
     }
 
     /**
-     * @return CustomerInformationType
+     * @return string
      */
-    public function getOptinMobile()
+    public function getOptinMobile(): string
     {
         return $this->OptinMobile;
     }
 
     /**
-     * @param CustomerInformationType $OptinMobile
+     * @param string $OptinMobile
      *
      * @return CustomerData
      */
-    public function setOptinMobile($OptinMobile)
+    public function setOptinMobile(string $OptinMobile): CustomerData
     {
         $this->OptinMobile = $OptinMobile;
         return $this;
     }
 
     /**
-     * @return CustomerInformationType
+     * @return string
      */
-    public function getOptinOfficePhone()
+    public function getOptinOfficePhone(): string
     {
         return $this->OptinOfficePhone;
     }
 
     /**
-     * @param CustomerInformationType $OptinOfficePhone
+     * @param string $OptinOfficePhone
      *
      * @return CustomerData
      */
-    public function setOptinOfficePhone($OptinOfficePhone)
+    public function setOptinOfficePhone(string $OptinOfficePhone): CustomerData
     {
         $this->OptinOfficePhone = $OptinOfficePhone;
         return $this;
     }
 
     /**
-     * @return CustomerInformationType
+     * @return string
      */
-    public function getOptinPostal()
+    public function getOptinPostal(): string
     {
         return $this->OptinPostal;
     }
 
     /**
-     * @param CustomerInformationType $OptinPostal
+     * @param string $OptinPostal
      *
      * @return CustomerData
      */
-    public function setOptinPostal($OptinPostal)
+    public function setOptinPostal(string $OptinPostal): CustomerData
     {
         $this->OptinPostal = $OptinPostal;
         return $this;
@@ -495,7 +495,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getPassportNumber()
+    public function getPassportNumber(): string
     {
         return $this->PassportNumber;
     }
@@ -505,7 +505,7 @@ class CustomerData extends CustomerDataBase
      *
      * @return CustomerData
      */
-    public function setPassportNumber($PassportNumber)
+    public function setPassportNumber(string $PassportNumber): CustomerData
     {
         $this->PassportNumber = $PassportNumber;
         return $this;
@@ -514,7 +514,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getSex()
+    public function getSex(): string
     {
         return $this->Sex;
     }
@@ -524,7 +524,7 @@ class CustomerData extends CustomerDataBase
      *
      * @return CustomerData
      */
-    public function setSex($Sex)
+    public function setSex(string $Sex): CustomerData
     {
         $this->Sex = $Sex;
         return $this;
@@ -533,7 +533,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getShortName()
+    public function getShortName(): string
     {
         return $this->ShortName;
     }
@@ -543,7 +543,7 @@ class CustomerData extends CustomerDataBase
      *
      * @return CustomerData
      */
-    public function setShortName($ShortName)
+    public function setShortName(string $ShortName): CustomerData
     {
         $this->ShortName = $ShortName;
         return $this;
@@ -552,7 +552,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return ArrayOfUserField
      */
-    public function getUserFields()
+    public function getUserFields(): ArrayOfUserField
     {
         return $this->UserFields;
     }
@@ -562,7 +562,7 @@ class CustomerData extends CustomerDataBase
      *
      * @return CustomerData
      */
-    public function setUserFields($UserFields)
+    public function setUserFields(ArrayOfUserField $UserFields): CustomerData
     {
         $this->UserFields = $UserFields;
         return $this;
@@ -571,7 +571,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getVATSystem()
+    public function getVATSystem(): string
     {
         return $this->VATSystem;
     }
@@ -581,7 +581,7 @@ class CustomerData extends CustomerDataBase
      *
      * @return CustomerData
      */
-    public function setVATSystem($VATSystem)
+    public function setVATSystem(string $VATSystem): CustomerData
     {
         $this->VATSystem = $VATSystem;
         return $this;
@@ -590,7 +590,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return boolean
      */
-    public function getValidAlternativeEmail()
+    public function getValidAlternativeEmail(): bool
     {
         return $this->ValidAlternativeEmail;
     }
@@ -600,7 +600,7 @@ class CustomerData extends CustomerDataBase
      *
      * @return CustomerData
      */
-    public function setValidAlternativeEmail($ValidAlternativeEmail)
+    public function setValidAlternativeEmail(bool $ValidAlternativeEmail): CustomerData
     {
         $this->ValidAlternativeEmail = $ValidAlternativeEmail;
         return $this;
@@ -609,7 +609,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return boolean
      */
-    public function getValidEmail()
+    public function getValidEmail(): bool
     {
         return $this->ValidEmail;
     }
@@ -619,7 +619,7 @@ class CustomerData extends CustomerDataBase
      *
      * @return CustomerData
      */
-    public function setValidEmail($ValidEmail)
+    public function setValidEmail(bool $ValidEmail): CustomerData
     {
         $this->ValidEmail = $ValidEmail;
         return $this;
@@ -628,7 +628,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return boolean
      */
-    public function getValidHomePhone()
+    public function getValidHomePhone(): bool
     {
         return $this->ValidHomePhone;
     }
@@ -638,7 +638,7 @@ class CustomerData extends CustomerDataBase
      *
      * @return CustomerData
      */
-    public function setValidHomePhone($ValidHomePhone)
+    public function setValidHomePhone(bool $ValidHomePhone): CustomerData
     {
         $this->ValidHomePhone = $ValidHomePhone;
         return $this;
@@ -647,7 +647,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return boolean
      */
-    public function getValidMobile()
+    public function getValidMobile(): bool
     {
         return $this->ValidMobile;
     }
@@ -657,7 +657,7 @@ class CustomerData extends CustomerDataBase
      *
      * @return CustomerData
      */
-    public function setValidMobile($ValidMobile)
+    public function setValidMobile(bool $ValidMobile): CustomerData
     {
         $this->ValidMobile = $ValidMobile;
         return $this;
@@ -666,7 +666,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return boolean
      */
-    public function getValidOfficePhone()
+    public function getValidOfficePhone(): bool
     {
         return $this->ValidOfficePhone;
     }
@@ -676,7 +676,7 @@ class CustomerData extends CustomerDataBase
      *
      * @return CustomerData
      */
-    public function setValidOfficePhone($ValidOfficePhone)
+    public function setValidOfficePhone(bool $ValidOfficePhone): CustomerData
     {
         $this->ValidOfficePhone = $ValidOfficePhone;
         return $this;

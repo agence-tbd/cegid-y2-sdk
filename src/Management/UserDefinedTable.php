@@ -22,7 +22,7 @@ class UserDefinedTable
     /**
      * @return int
      */
-    public function getId()
+    public function getId(): int
     {
       return $this->Id;
     }
@@ -31,7 +31,7 @@ class UserDefinedTable
      * @param int $Id
      * @return UserDefinedTable
      */
-    public function setId($Id)
+    public function setId(int $Id): UserDefinedTable
     {
       $this->Id = $Id;
       return $this;
@@ -40,7 +40,7 @@ class UserDefinedTable
     /**
      * @return string
      */
-    public function getValue()
+    public function getValue(): string
     {
       return $this->Value;
     }
@@ -49,7 +49,7 @@ class UserDefinedTable
      * @param string $Value
      * @return UserDefinedTable
      */
-    public function setValue($Value)
+    public function setValue(string $Value): UserDefinedTable
     {
       $this->Value = $Value;
       return $this;

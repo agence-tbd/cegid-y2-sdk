@@ -19,7 +19,7 @@ class UpdatePayments
      * @param UpdatePayments_Request $updatePaymentsRequest
      * @param RetailContext $clientContext
      */
-    public function __construct($updatePaymentsRequest, $clientContext)
+    public function __construct(UpdatePayments_Request $updatePaymentsRequest, RetailContext $clientContext)
     {
       $this->updatePaymentsRequest = $updatePaymentsRequest;
       $this->clientContext = $clientContext;
@@ -28,7 +28,7 @@ class UpdatePayments
     /**
      * @return UpdatePayments_Request
      */
-    public function getUpdatePaymentsRequest()
+    public function getUpdatePaymentsRequest(): UpdatePayments_Request
     {
       return $this->updatePaymentsRequest;
     }
@@ -37,7 +37,7 @@ class UpdatePayments
      * @param UpdatePayments_Request $updatePaymentsRequest
      * @return UpdatePayments
      */
-    public function setUpdatePaymentsRequest($updatePaymentsRequest)
+    public function setUpdatePaymentsRequest(UpdatePayments_Request $updatePaymentsRequest): UpdatePayments
     {
       $this->updatePaymentsRequest = $updatePaymentsRequest;
       return $this;
@@ -46,7 +46,7 @@ class UpdatePayments
     /**
      * @return RetailContext
      */
-    public function getClientContext()
+    public function getClientContext(): RetailContext
     {
       return $this->clientContext;
     }
@@ -55,7 +55,7 @@ class UpdatePayments
      * @param RetailContext $clientContext
      * @return UpdatePayments
      */
-    public function setClientContext($clientContext)
+    public function setClientContext(RetailContext $clientContext): UpdatePayments
     {
       $this->clientContext = $clientContext;
       return $this;

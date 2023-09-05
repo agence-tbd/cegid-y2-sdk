@@ -19,7 +19,7 @@ class ArrayOfUpdate_Line implements \ArrayAccess, \Iterator, \Countable
     /**
      * @return Update_Line[]
      */
-    public function getUpdate_Line()
+    public function getUpdate_Line(): array
     {
       return $this->Update_Line;
     }
@@ -28,7 +28,7 @@ class ArrayOfUpdate_Line implements \ArrayAccess, \Iterator, \Countable
      * @param Update_Line[] $Update_Line
      * @return ArrayOfUpdate_Line
      */
-    public function setUpdate_Line(array $Update_Line = null)
+    public function setUpdate_Line(array $Update_Line = null): ArrayOfUpdate_Line
     {
       $this->Update_Line = $Update_Line;
       return $this;
@@ -40,7 +40,7 @@ class ArrayOfUpdate_Line implements \ArrayAccess, \Iterator, \Countable
      * @param mixed $offset An offset to check for
      * @return boolean true on success or false on failure
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
       return isset($this->Update_Line[$offset]);
     }
@@ -51,7 +51,7 @@ class ArrayOfUpdate_Line implements \ArrayAccess, \Iterator, \Countable
      * @param mixed $offset The offset to retrieve
      * @return Update_Line
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): Update_Line
     {
       return $this->Update_Line[$offset];
     }
@@ -63,7 +63,7 @@ class ArrayOfUpdate_Line implements \ArrayAccess, \Iterator, \Countable
      * @param Update_Line $value The value to set
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet(mixed $offset, mixed $value): void
     {
       if (!isset($offset)) {
         $this->Update_Line[] = $value;
@@ -78,7 +78,7 @@ class ArrayOfUpdate_Line implements \ArrayAccess, \Iterator, \Countable
      * @param mixed $offset The offset to unset
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
       unset($this->Update_Line[$offset]);
     }
@@ -88,7 +88,7 @@ class ArrayOfUpdate_Line implements \ArrayAccess, \Iterator, \Countable
      *
      * @return Update_Line Return the current element
      */
-    public function current()
+    public function current(): Update_Line
     {
       return current($this->Update_Line);
     }
@@ -99,7 +99,7 @@ class ArrayOfUpdate_Line implements \ArrayAccess, \Iterator, \Countable
      *
      * @return void
      */
-    public function next()
+    public function next(): void
     {
       next($this->Update_Line);
     }
@@ -109,7 +109,7 @@ class ArrayOfUpdate_Line implements \ArrayAccess, \Iterator, \Countable
      *
      * @return string|null Return the key of the current element or null
      */
-    public function key()
+    public function key(): ?string
     {
       return key($this->Update_Line);
     }
@@ -119,7 +119,7 @@ class ArrayOfUpdate_Line implements \ArrayAccess, \Iterator, \Countable
      *
      * @return boolean Return the validity of the current position
      */
-    public function valid()
+    public function valid(): bool
     {
       return $this->key() !== null;
     }
@@ -130,7 +130,7 @@ class ArrayOfUpdate_Line implements \ArrayAccess, \Iterator, \Countable
      *
      * @return void
      */
-    public function rewind()
+    public function rewind(): void
     {
       reset($this->Update_Line);
     }
@@ -138,9 +138,9 @@ class ArrayOfUpdate_Line implements \ArrayAccess, \Iterator, \Countable
     /**
      * Countable implementation
      *
-     * @return Update_Line Return count of elements
+     * @return int Return count of elements
      */
-    public function count()
+    public function count(): int
     {
       return count($this->Update_Line);
     }

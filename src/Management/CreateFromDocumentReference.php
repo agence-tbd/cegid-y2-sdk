@@ -15,7 +15,7 @@ class CreateFromDocumentReference
     protected $InternalReference = null;
 
     /**
-     * @var CreateFromCustomerOrderDocumentTypeOriginTransfo $Type
+     * @var string $Type
      */
     protected $Type = null;
 
@@ -28,7 +28,7 @@ class CreateFromDocumentReference
     /**
      * @return string
      */
-    public function getCustomerId()
+    public function getCustomerId(): string
     {
       return $this->CustomerId;
     }
@@ -37,7 +37,7 @@ class CreateFromDocumentReference
      * @param string $CustomerId
      * @return CreateFromDocumentReference
      */
-    public function setCustomerId($CustomerId)
+    public function setCustomerId(string $CustomerId): CreateFromDocumentReference
     {
       $this->CustomerId = $CustomerId;
       return $this;
@@ -46,7 +46,7 @@ class CreateFromDocumentReference
     /**
      * @return string
      */
-    public function getInternalReference()
+    public function getInternalReference(): string
     {
       return $this->InternalReference;
     }
@@ -55,7 +55,7 @@ class CreateFromDocumentReference
      * @param string $InternalReference
      * @return CreateFromDocumentReference
      */
-    public function setInternalReference($InternalReference)
+    public function setInternalReference(string $InternalReference): CreateFromDocumentReference
     {
       $this->InternalReference = $InternalReference;
       return $this;
@@ -64,7 +64,7 @@ class CreateFromDocumentReference
     /**
      * @return string
      */
-    public function getType()
+    public function getType(): string
     {
       return $this->Type;
     }
@@ -73,7 +73,7 @@ class CreateFromDocumentReference
      * @param string $Type
      * @return CreateFromDocumentReference
      */
-    public function setType($Type)
+    public function setType(string $Type): CreateFromDocumentReference
     {
       $this->Type = $Type;
       return $this;

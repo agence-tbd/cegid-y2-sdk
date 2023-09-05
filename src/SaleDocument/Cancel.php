@@ -19,7 +19,7 @@ class Cancel
      * @param Cancel_Request $cancelRequest
      * @param RetailContext $clientContext
      */
-    public function __construct($cancelRequest, $clientContext)
+    public function __construct(Cancel_Request $cancelRequest, RetailContext $clientContext)
     {
       $this->cancelRequest = $cancelRequest;
       $this->clientContext = $clientContext;
@@ -28,7 +28,7 @@ class Cancel
     /**
      * @return Cancel_Request
      */
-    public function getCancelRequest()
+    public function getCancelRequest(): Cancel_Request
     {
       return $this->cancelRequest;
     }
@@ -37,7 +37,7 @@ class Cancel
      * @param Cancel_Request $cancelRequest
      * @return Cancel
      */
-    public function setCancelRequest($cancelRequest)
+    public function setCancelRequest(Cancel_Request $cancelRequest): Cancel
     {
       $this->cancelRequest = $cancelRequest;
       return $this;
@@ -46,7 +46,7 @@ class Cancel
     /**
      * @return RetailContext
      */
-    public function getClientContext()
+    public function getClientContext(): RetailContext
     {
       return $this->clientContext;
     }
@@ -55,7 +55,7 @@ class Cancel
      * @param RetailContext $clientContext
      * @return Cancel
      */
-    public function setClientContext($clientContext)
+    public function setClientContext(RetailContext $clientContext): Cancel
     {
       $this->clientContext = $clientContext;
       return $this;

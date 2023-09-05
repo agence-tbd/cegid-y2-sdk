@@ -32,7 +32,7 @@ class StoreAvailableQty
     /**
      * @return float
      */
-    public function getAvailableQuantity()
+    public function getAvailableQuantity(): float
     {
         return $this->AvailableQuantity;
     }
@@ -41,7 +41,7 @@ class StoreAvailableQty
      * @param float $AvailableQuantity
      * @return StoreAvailableQty
      */
-    public function setAvailableQuantity($AvailableQuantity)
+    public function setAvailableQuantity(float $AvailableQuantity): StoreAvailableQty
     {
         $this->AvailableQuantity = $AvailableQuantity;
         return $this;
@@ -50,7 +50,7 @@ class StoreAvailableQty
     /**
      * @return ArrayOfAvailableSkuQty
      */
-    public function getAvailableSkusQty()
+    public function getAvailableSkusQty(): ArrayOfAvailableSkuQty
     {
         return $this->AvailableSkusQty;
     }
@@ -59,7 +59,7 @@ class StoreAvailableQty
      * @param ArrayOfAvailableSkuQty $AvailableSkusQty
      * @return StoreAvailableQty
      */
-    public function setAvailableSkusQty($AvailableSkusQty)
+    public function setAvailableSkusQty(ArrayOfAvailableSkuQty $AvailableSkusQty): StoreAvailableQty
     {
         $this->AvailableSkusQty = $AvailableSkusQty;
         return $this;
@@ -68,7 +68,7 @@ class StoreAvailableQty
     /**
      * @return string
      */
-    public function getStoreId()
+    public function getStoreId(): string
     {
         return $this->StoreId;
     }
@@ -77,7 +77,7 @@ class StoreAvailableQty
      * @param string $StoreId
      * @return StoreAvailableQty
      */
-    public function setStoreId($StoreId)
+    public function setStoreId(string $StoreId): StoreAvailableQty
     {
         $this->StoreId = $StoreId;
         return $this;
@@ -86,7 +86,7 @@ class StoreAvailableQty
     /**
      * @return string
      */
-    public function getStoreName()
+    public function getStoreName(): string
     {
         return $this->StoreName;
     }
@@ -95,7 +95,7 @@ class StoreAvailableQty
      * @param string $StoreName
      * @return StoreAvailableQty
      */
-    public function setStoreName($StoreName)
+    public function setStoreName(string $StoreName): StoreAvailableQty
     {
         $this->StoreName = $StoreName;
         return $this;

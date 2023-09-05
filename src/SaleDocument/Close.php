@@ -19,7 +19,7 @@ class Close
      * @param Close_Request $closeRequest
      * @param RetailContext $clientContext
      */
-    public function __construct($closeRequest, $clientContext)
+    public function __construct(Close_Request $closeRequest, RetailContext $clientContext)
     {
       $this->closeRequest = $closeRequest;
       $this->clientContext = $clientContext;
@@ -28,7 +28,7 @@ class Close
     /**
      * @return Close_Request
      */
-    public function getCloseRequest()
+    public function getCloseRequest(): Close_Request
     {
       return $this->closeRequest;
     }
@@ -37,7 +37,7 @@ class Close
      * @param Close_Request $closeRequest
      * @return Close
      */
-    public function setCloseRequest($closeRequest)
+    public function setCloseRequest(Close_Request $closeRequest): Close
     {
       $this->closeRequest = $closeRequest;
       return $this;
@@ -46,7 +46,7 @@ class Close
     /**
      * @return RetailContext
      */
-    public function getClientContext()
+    public function getClientContext(): RetailContext
     {
       return $this->clientContext;
     }
@@ -55,7 +55,7 @@ class Close
      * @param RetailContext $clientContext
      * @return Close
      */
-    public function setClientContext($clientContext)
+    public function setClientContext(RetailContext $clientContext): Close
     {
       $this->clientContext = $clientContext;
       return $this;

@@ -13,7 +13,7 @@ class CustomersReservationCreateResponse
     /**
      * @param CustomersReservationCreate_Reply $CustomersReservationCreateResult
      */
-    public function __construct($CustomersReservationCreateResult)
+    public function __construct(CustomersReservationCreate_Reply $CustomersReservationCreateResult)
     {
       $this->CustomersReservationCreateResult = $CustomersReservationCreateResult;
     }
@@ -21,7 +21,7 @@ class CustomersReservationCreateResponse
     /**
      * @return CustomersReservationCreate_Reply
      */
-    public function getCustomersReservationCreateResult()
+    public function getCustomersReservationCreateResult(): CustomersReservationCreate_Reply
     {
       return $this->CustomersReservationCreateResult;
     }
@@ -30,7 +30,7 @@ class CustomersReservationCreateResponse
      * @param CustomersReservationCreate_Reply $CustomersReservationCreateResult
      * @return CustomersReservationCreateResponse
      */
-    public function setCustomersReservationCreateResult($CustomersReservationCreateResult)
+    public function setCustomersReservationCreateResult(CustomersReservationCreate_Reply $CustomersReservationCreateResult): CustomersReservationCreateResponse
     {
       $this->CustomersReservationCreateResult = $CustomersReservationCreateResult;
       return $this;

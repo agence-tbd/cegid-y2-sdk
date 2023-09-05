@@ -22,7 +22,7 @@ class UserDefinedText
     /**
      * @return UserDefinedId
      */
-    public function getId()
+    public function getId(): UserDefinedId
     {
         return $this->Id;
     }
@@ -32,7 +32,7 @@ class UserDefinedText
      *
      * @return UserDefinedText
      */
-    public function setId($Id)
+    public function setId(UserDefinedId $Id): UserDefinedText
     {
         $this->Id = $Id;
         return $this;
@@ -41,7 +41,7 @@ class UserDefinedText
     /**
      * @return string
      */
-    public function getValue()
+    public function getValue(): string
     {
         return $this->Value;
     }
@@ -51,7 +51,7 @@ class UserDefinedText
      *
      * @return UserDefinedText
      */
-    public function setValue($Value)
+    public function setValue(string $Value): UserDefinedText
     {
         $this->Value = $Value;
         return $this;

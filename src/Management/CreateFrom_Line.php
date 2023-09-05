@@ -57,7 +57,7 @@ class CreateFrom_Line
     /**
      * @return string
      */
-    public function getAdditionalDescription()
+    public function getAdditionalDescription(): string
     {
         return $this->AdditionalDescription;
     }
@@ -66,7 +66,7 @@ class CreateFrom_Line
      * @param string $AdditionalDescription
      * @return CreateFrom_Line
      */
-    public function setAdditionalDescription($AdditionalDescription)
+    public function setAdditionalDescription(string $AdditionalDescription): CreateFrom_Line
     {
         $this->AdditionalDescription = $AdditionalDescription;
         return $this;
@@ -75,7 +75,7 @@ class CreateFrom_Line
     /**
      * @return string
      */
-    public function getCatalogReference()
+    public function getCatalogReference(): string
     {
         return $this->CatalogReference;
     }
@@ -84,7 +84,7 @@ class CreateFrom_Line
      * @param string $CatalogReference
      * @return CreateFrom_Line
      */
-    public function setCatalogReference($CatalogReference)
+    public function setCatalogReference(string $CatalogReference): CreateFrom_Line
     {
         $this->CatalogReference = $CatalogReference;
         return $this;
@@ -93,7 +93,7 @@ class CreateFrom_Line
     /**
      * @return string
      */
-    public function getExternalReference()
+    public function getExternalReference(): string
     {
         return $this->ExternalReference;
     }
@@ -102,7 +102,7 @@ class CreateFrom_Line
      * @param string $ExternalReference
      * @return CreateFrom_Line
      */
-    public function setExternalReference($ExternalReference)
+    public function setExternalReference(string $ExternalReference): CreateFrom_Line
     {
         $this->ExternalReference = $ExternalReference;
         return $this;
@@ -111,7 +111,7 @@ class CreateFrom_Line
     /**
      * @return ItemIdentifier
      */
-    public function getItemIdentifier()
+    public function getItemIdentifier(): ItemIdentifier
     {
         return $this->ItemIdentifier;
     }
@@ -120,7 +120,7 @@ class CreateFrom_Line
      * @param ItemIdentifier $ItemIdentifier
      * @return CreateFrom_Line
      */
-    public function setItemIdentifier($ItemIdentifier)
+    public function setItemIdentifier(ItemIdentifier $ItemIdentifier): CreateFrom_Line
     {
         $this->ItemIdentifier = $ItemIdentifier;
         return $this;
@@ -129,7 +129,7 @@ class CreateFrom_Line
     /**
      * @return string
      */
-    public function getPackageReference()
+    public function getPackageReference(): string
     {
         return $this->PackageReference;
     }
@@ -138,7 +138,7 @@ class CreateFrom_Line
      * @param string $PackageReference
      * @return CreateFrom_Line
      */
-    public function setPackageReference($PackageReference)
+    public function setPackageReference(string $PackageReference): CreateFrom_Line
     {
         $this->PackageReference = $PackageReference;
         return $this;
@@ -147,7 +147,7 @@ class CreateFrom_Line
     /**
      * @return float
      */
-    public function getQuantity()
+    public function getQuantity(): float
     {
         return $this->Quantity;
     }
@@ -156,7 +156,7 @@ class CreateFrom_Line
      * @param float $Quantity
      * @return CreateFrom_Line
      */
-    public function setQuantity($Quantity)
+    public function setQuantity(float $Quantity): CreateFrom_Line
     {
         $this->Quantity = $Quantity;
         return $this;
@@ -165,7 +165,7 @@ class CreateFrom_Line
     /**
      * @return string
      */
-    public function getSalesPersonId()
+    public function getSalesPersonId(): string
     {
         return $this->SalesPersonId;
     }
@@ -174,7 +174,7 @@ class CreateFrom_Line
      * @param string $SalesPersonId
      * @return CreateFrom_Line
      */
-    public function setSalesPersonId($SalesPersonId)
+    public function setSalesPersonId(string $SalesPersonId): CreateFrom_Line
     {
         $this->SalesPersonId = $SalesPersonId;
         return $this;
@@ -183,7 +183,7 @@ class CreateFrom_Line
     /**
      * @return string
      */
-    public function getSerialNumberId()
+    public function getSerialNumberId(): string
     {
         return $this->SerialNumberId;
     }
@@ -192,7 +192,7 @@ class CreateFrom_Line
      * @param string $SerialNumberId
      * @return CreateFrom_Line
      */
-    public function setSerialNumberId($SerialNumberId)
+    public function setSerialNumberId(string $SerialNumberId): CreateFrom_Line
     {
         $this->SerialNumberId = $SerialNumberId;
         return $this;
@@ -201,7 +201,7 @@ class CreateFrom_Line
     /**
      * @return string
      */
-    public function getWarehouseId()
+    public function getWarehouseId(): string
     {
         return $this->WarehouseId;
     }
@@ -210,7 +210,7 @@ class CreateFrom_Line
      * @param string $WarehouseId
      * @return CreateFrom_Line
      */
-    public function setWarehouseId($WarehouseId)
+    public function setWarehouseId(string $WarehouseId): CreateFrom_Line
     {
         $this->WarehouseId = $WarehouseId;
         return $this;

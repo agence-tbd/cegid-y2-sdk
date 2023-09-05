@@ -99,7 +99,7 @@ class Update_Line
     /**
      * @return string
      */
-    public function getCatalogReference()
+    public function getCatalogReference(): string
     {
       return $this->CatalogReference;
     }
@@ -108,7 +108,7 @@ class Update_Line
      * @param string $CatalogReference
      * @return Update_Line
      */
-    public function setCatalogReference($CatalogReference)
+    public function setCatalogReference(string $CatalogReference): Update_Line
     {
       $this->CatalogReference = $CatalogReference;
       return $this;
@@ -117,7 +117,7 @@ class Update_Line
     /**
      * @return string
      */
-    public function getComment()
+    public function getComment(): string
     {
       return $this->Comment;
     }
@@ -126,7 +126,7 @@ class Update_Line
      * @param string $Comment
      * @return Update_Line
      */
-    public function setComment($Comment)
+    public function setComment(string $Comment): Update_Line
     {
       $this->Comment = $Comment;
       return $this;
@@ -135,7 +135,7 @@ class Update_Line
     /**
      * @return string
      */
-    public function getComplementaryDescription()
+    public function getComplementaryDescription(): string
     {
       return $this->ComplementaryDescription;
     }
@@ -144,7 +144,7 @@ class Update_Line
      * @param string $ComplementaryDescription
      * @return Update_Line
      */
-    public function setComplementaryDescription($ComplementaryDescription)
+    public function setComplementaryDescription(string $ComplementaryDescription): Update_Line
     {
       $this->ComplementaryDescription = $ComplementaryDescription;
       return $this;
@@ -171,7 +171,7 @@ class Update_Line
      * @param string $format
      * @return Update_Line
      */
-    public function setDeliveryDate(\DateTime $DeliveryDate = null, $format=\DateTime::ATOM)
+    public function setDeliveryDate(\DateTime $DeliveryDate = null, string $format=\DateTime::ATOM): Update_Line
     {
       if ($DeliveryDate == null) {
        $this->DeliveryDate = null;
@@ -184,7 +184,7 @@ class Update_Line
     /**
      * @return string
      */
-    public function getDiscountTypeId()
+    public function getDiscountTypeId(): string
     {
       return $this->DiscountTypeId;
     }
@@ -193,7 +193,7 @@ class Update_Line
      * @param string $DiscountTypeId
      * @return Update_Line
      */
-    public function setDiscountTypeId($DiscountTypeId)
+    public function setDiscountTypeId(string $DiscountTypeId): Update_Line
     {
       $this->DiscountTypeId = $DiscountTypeId;
       return $this;
@@ -220,7 +220,7 @@ class Update_Line
      * @param string $format
      * @return Update_Line
      */
-    public function setInitialDeliveryDate(\DateTime $InitialDeliveryDate = null, $format=\DateTime::ATOM)
+    public function setInitialDeliveryDate(\DateTime $InitialDeliveryDate = null, string $format=\DateTime::ATOM): Update_Line
     {
       if ($InitialDeliveryDate == null) {
        $this->InitialDeliveryDate = null;
@@ -233,7 +233,7 @@ class Update_Line
     /**
      * @return ItemIdentifier
      */
-    public function getItemIdentifier()
+    public function getItemIdentifier(): ItemIdentifier
     {
       return $this->ItemIdentifier;
     }
@@ -242,7 +242,7 @@ class Update_Line
      * @param ItemIdentifier $ItemIdentifier
      * @return Update_Line
      */
-    public function setItemIdentifier($ItemIdentifier)
+    public function setItemIdentifier(ItemIdentifier $ItemIdentifier): Update_Line
     {
       $this->ItemIdentifier = $ItemIdentifier;
       return $this;
@@ -251,7 +251,7 @@ class Update_Line
     /**
      * @return string
      */
-    public function getLabel()
+    public function getLabel(): string
     {
       return $this->Label;
     }
@@ -260,7 +260,7 @@ class Update_Line
      * @param string $Label
      * @return Update_Line
      */
-    public function setLabel($Label)
+    public function setLabel(string $Label): Update_Line
     {
       $this->Label = $Label;
       return $this;
@@ -269,7 +269,7 @@ class Update_Line
     /**
      * @return float
      */
-    public function getNetUnitPrice()
+    public function getNetUnitPrice(): float
     {
       return $this->NetUnitPrice;
     }
@@ -278,7 +278,7 @@ class Update_Line
      * @param float $NetUnitPrice
      * @return Update_Line
      */
-    public function setNetUnitPrice($NetUnitPrice)
+    public function setNetUnitPrice(float $NetUnitPrice): Update_Line
     {
       $this->NetUnitPrice = $NetUnitPrice;
       return $this;
@@ -287,7 +287,7 @@ class Update_Line
     /**
      * @return OmniChannelLine
      */
-    public function getOmniChannel()
+    public function getOmniChannel(): OmniChannelLine
     {
       return $this->OmniChannel;
     }
@@ -296,7 +296,7 @@ class Update_Line
      * @param OmniChannelLine $OmniChannel
      * @return Update_Line
      */
-    public function setOmniChannel($OmniChannel)
+    public function setOmniChannel(OmniChannelLine $OmniChannel): Update_Line
     {
       $this->OmniChannel = $OmniChannel;
       return $this;
@@ -305,7 +305,7 @@ class Update_Line
     /**
      * @return DocumentOrigin
      */
-    public function getOrigin()
+    public function getOrigin(): DocumentOrigin
     {
       return $this->Origin;
     }
@@ -314,7 +314,7 @@ class Update_Line
      * @param DocumentOrigin $Origin
      * @return Update_Line
      */
-    public function setOrigin($Origin)
+    public function setOrigin(DocumentOrigin $Origin): Update_Line
     {
       $this->Origin = $Origin;
       return $this;
@@ -323,7 +323,7 @@ class Update_Line
     /**
      * @return string
      */
-    public function getPackageReference()
+    public function getPackageReference(): string
     {
       return $this->PackageReference;
     }
@@ -332,7 +332,7 @@ class Update_Line
      * @param string $PackageReference
      * @return Update_Line
      */
-    public function setPackageReference($PackageReference)
+    public function setPackageReference(string $PackageReference): Update_Line
     {
       $this->PackageReference = $PackageReference;
       return $this;
@@ -341,7 +341,7 @@ class Update_Line
     /**
      * @return float
      */
-    public function getQuantity()
+    public function getQuantity(): float
     {
       return $this->Quantity;
     }
@@ -350,7 +350,7 @@ class Update_Line
      * @param float $Quantity
      * @return Update_Line
      */
-    public function setQuantity($Quantity)
+    public function setQuantity(float $Quantity): Update_Line
     {
       $this->Quantity = $Quantity;
       return $this;
@@ -359,7 +359,7 @@ class Update_Line
     /**
      * @return string
      */
-    public function getSalesPersonId()
+    public function getSalesPersonId(): string
     {
       return $this->SalesPersonId;
     }
@@ -368,7 +368,7 @@ class Update_Line
      * @param string $SalesPersonId
      * @return Update_Line
      */
-    public function setSalesPersonId($SalesPersonId)
+    public function setSalesPersonId(string $SalesPersonId): Update_Line
     {
       $this->SalesPersonId = $SalesPersonId;
       return $this;
@@ -377,7 +377,7 @@ class Update_Line
     /**
      * @return string
      */
-    public function getSerialNumberId()
+    public function getSerialNumberId(): string
     {
       return $this->SerialNumberId;
     }
@@ -386,7 +386,7 @@ class Update_Line
      * @param string $SerialNumberId
      * @return Update_Line
      */
-    public function setSerialNumberId($SerialNumberId)
+    public function setSerialNumberId(string $SerialNumberId): Update_Line
     {
       $this->SerialNumberId = $SerialNumberId;
       return $this;
@@ -395,7 +395,7 @@ class Update_Line
     /**
      * @return ArrayOfUpdate_Tax
      */
-    public function getTaxes()
+    public function getTaxes(): ArrayOfUpdate_Tax
     {
       return $this->Taxes;
     }
@@ -404,7 +404,7 @@ class Update_Line
      * @param ArrayOfUpdate_Tax $Taxes
      * @return Update_Line
      */
-    public function setTaxes($Taxes)
+    public function setTaxes(ArrayOfUpdate_Tax $Taxes): Update_Line
     {
       $this->Taxes = $Taxes;
       return $this;
@@ -413,7 +413,7 @@ class Update_Line
     /**
      * @return float
      */
-    public function getUnitPrice()
+    public function getUnitPrice(): float
     {
       return $this->UnitPrice;
     }
@@ -422,7 +422,7 @@ class Update_Line
      * @param float $UnitPrice
      * @return Update_Line
      */
-    public function setUnitPrice($UnitPrice)
+    public function setUnitPrice(float $UnitPrice): Update_Line
     {
       $this->UnitPrice = $UnitPrice;
       return $this;

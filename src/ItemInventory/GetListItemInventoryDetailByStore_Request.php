@@ -47,7 +47,7 @@ class GetListItemInventoryDetailByStore_Request
     /**
      * @return boolean
      */
-    public function getAllAvailableWarehouse()
+    public function getAllAvailableWarehouse(): bool
     {
         return $this->AllAvailableWarehouse;
     }
@@ -56,7 +56,7 @@ class GetListItemInventoryDetailByStore_Request
      * @param boolean $AllAvailableWarehouse
      * @return GetListItemInventoryDetailByStore_Request
      */
-    public function setAllAvailableWarehouse($AllAvailableWarehouse)
+    public function setAllAvailableWarehouse(bool $AllAvailableWarehouse): GetListItemInventoryDetailByStore_Request
     {
         $this->AllAvailableWarehouse = $AllAvailableWarehouse;
         return $this;
@@ -65,7 +65,7 @@ class GetListItemInventoryDetailByStore_Request
     /**
      * @return boolean
      */
-    public function getDetailSku()
+    public function getDetailSku(): bool
     {
         return $this->DetailSku;
     }
@@ -74,7 +74,7 @@ class GetListItemInventoryDetailByStore_Request
      * @param boolean $DetailSku
      * @return GetListItemInventoryDetailByStore_Request
      */
-    public function setDetailSku($DetailSku)
+    public function setDetailSku(bool $DetailSku): GetListItemInventoryDetailByStore_Request
     {
         $this->DetailSku = $DetailSku;
         return $this;
@@ -83,7 +83,7 @@ class GetListItemInventoryDetailByStore_Request
     /**
      * @return ArrayOfItemIdentifier
      */
-    public function getItemIdentifiers()
+    public function getItemIdentifiers(): ArrayOfItemIdentifier
     {
         return $this->ItemIdentifiers;
     }
@@ -92,7 +92,7 @@ class GetListItemInventoryDetailByStore_Request
      * @param ArrayOfItemIdentifier $ItemIdentifiers
      * @return GetListItemInventoryDetailByStore_Request
      */
-    public function setItemIdentifiers($ItemIdentifiers)
+    public function setItemIdentifiers(ArrayOfItemIdentifier $ItemIdentifiers): GetListItemInventoryDetailByStore_Request
     {
         $this->ItemIdentifiers = $ItemIdentifiers;
         return $this;
@@ -101,7 +101,7 @@ class GetListItemInventoryDetailByStore_Request
     /**
      * @return boolean
      */
-    public function getOnlyAvailableStock()
+    public function getOnlyAvailableStock(): bool
     {
         return $this->OnlyAvailableStock;
     }
@@ -110,7 +110,7 @@ class GetListItemInventoryDetailByStore_Request
      * @param boolean $OnlyAvailableStock
      * @return GetListItemInventoryDetailByStore_Request
      */
-    public function setOnlyAvailableStock($OnlyAvailableStock)
+    public function setOnlyAvailableStock(bool $OnlyAvailableStock): GetListItemInventoryDetailByStore_Request
     {
         $this->OnlyAvailableStock = $OnlyAvailableStock;
         return $this;
@@ -119,7 +119,7 @@ class GetListItemInventoryDetailByStore_Request
     /**
      * @return Pager
      */
-    public function getPager()
+    public function getPager(): Pager
     {
         return $this->Pager;
     }
@@ -128,7 +128,7 @@ class GetListItemInventoryDetailByStore_Request
      * @param Pager $Pager
      * @return GetListItemInventoryDetailByStore_Request
      */
-    public function setPager($Pager)
+    public function setPager(Pager $Pager): GetListItemInventoryDetailByStore_Request
     {
         $this->Pager = $Pager;
         return $this;
@@ -137,7 +137,7 @@ class GetListItemInventoryDetailByStore_Request
     /**
      * @return ArrayOfstring
      */
-    public function getStoreIds()
+    public function getStoreIds(): ArrayOfstring
     {
         return $this->StoreIds;
     }
@@ -146,7 +146,7 @@ class GetListItemInventoryDetailByStore_Request
      * @param ArrayOfstring $StoreIds
      * @return GetListItemInventoryDetailByStore_Request
      */
-    public function setStoreIds($StoreIds)
+    public function setStoreIds(ArrayOfstring $StoreIds): GetListItemInventoryDetailByStore_Request
     {
         $this->StoreIds = $StoreIds;
         return $this;
@@ -155,7 +155,7 @@ class GetListItemInventoryDetailByStore_Request
     /**
      * @return boolean
      */
-    public function getWithStoreName()
+    public function getWithStoreName(): bool
     {
         return $this->WithStoreName;
     }
@@ -164,7 +164,7 @@ class GetListItemInventoryDetailByStore_Request
      * @param boolean $WithStoreName
      * @return GetListItemInventoryDetailByStore_Request
      */
-    public function setWithStoreName($WithStoreName)
+    public function setWithStoreName(bool $WithStoreName): GetListItemInventoryDetailByStore_Request
     {
         $this->WithStoreName = $WithStoreName;
         return $this;

@@ -19,7 +19,7 @@ class ArrayOfCreate_ShippingTax implements \ArrayAccess, \Iterator, \Countable
     /**
      * @return Create_ShippingTax[]
      */
-    public function getCreate_ShippingTax()
+    public function getCreate_ShippingTax(): array
     {
       return $this->Create_ShippingTax;
     }
@@ -28,7 +28,7 @@ class ArrayOfCreate_ShippingTax implements \ArrayAccess, \Iterator, \Countable
      * @param Create_ShippingTax[] $Create_ShippingTax
      * @return ArrayOfCreate_ShippingTax
      */
-    public function setCreate_ShippingTax(array $Create_ShippingTax = null)
+    public function setCreate_ShippingTax(array $Create_ShippingTax = null): ArrayOfCreate_ShippingTax
     {
       $this->Create_ShippingTax = $Create_ShippingTax;
       return $this;
@@ -40,7 +40,7 @@ class ArrayOfCreate_ShippingTax implements \ArrayAccess, \Iterator, \Countable
      * @param mixed $offset An offset to check for
      * @return boolean true on success or false on failure
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
       return isset($this->Create_ShippingTax[$offset]);
     }
@@ -51,7 +51,7 @@ class ArrayOfCreate_ShippingTax implements \ArrayAccess, \Iterator, \Countable
      * @param mixed $offset The offset to retrieve
      * @return Create_ShippingTax
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): Create_ShippingTax
     {
       return $this->Create_ShippingTax[$offset];
     }
@@ -63,7 +63,7 @@ class ArrayOfCreate_ShippingTax implements \ArrayAccess, \Iterator, \Countable
      * @param Create_ShippingTax $value The value to set
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet(mixed $offset, mixed $value): void
     {
       if (!isset($offset)) {
         $this->Create_ShippingTax[] = $value;
@@ -78,7 +78,7 @@ class ArrayOfCreate_ShippingTax implements \ArrayAccess, \Iterator, \Countable
      * @param mixed $offset The offset to unset
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
       unset($this->Create_ShippingTax[$offset]);
     }
@@ -88,7 +88,7 @@ class ArrayOfCreate_ShippingTax implements \ArrayAccess, \Iterator, \Countable
      *
      * @return Create_ShippingTax Return the current element
      */
-    public function current()
+    public function current(): Create_ShippingTax
     {
       return current($this->Create_ShippingTax);
     }
@@ -99,7 +99,7 @@ class ArrayOfCreate_ShippingTax implements \ArrayAccess, \Iterator, \Countable
      *
      * @return void
      */
-    public function next()
+    public function next(): void
     {
       next($this->Create_ShippingTax);
     }
@@ -109,7 +109,7 @@ class ArrayOfCreate_ShippingTax implements \ArrayAccess, \Iterator, \Countable
      *
      * @return string|null Return the key of the current element or null
      */
-    public function key()
+    public function key(): ?string
     {
       return key($this->Create_ShippingTax);
     }
@@ -119,7 +119,7 @@ class ArrayOfCreate_ShippingTax implements \ArrayAccess, \Iterator, \Countable
      *
      * @return boolean Return the validity of the current position
      */
-    public function valid()
+    public function valid(): bool
     {
       return $this->key() !== null;
     }
@@ -130,7 +130,7 @@ class ArrayOfCreate_ShippingTax implements \ArrayAccess, \Iterator, \Countable
      *
      * @return void
      */
-    public function rewind()
+    public function rewind(): void
     {
       reset($this->Create_ShippingTax);
     }
@@ -138,9 +138,9 @@ class ArrayOfCreate_ShippingTax implements \ArrayAccess, \Iterator, \Countable
     /**
      * Countable implementation
      *
-     * @return Create_ShippingTax Return count of elements
+     * @return int Return count of elements
      */
-    public function count()
+    public function count(): int
     {
       return count($this->Create_ShippingTax);
     }

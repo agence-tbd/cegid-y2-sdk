@@ -18,7 +18,7 @@ class SearchCustomerIds
      * @param CustomerSearchDataType $searchData
      * @param RetailContext          $clientContext
      */
-    public function __construct($searchData, $clientContext)
+    public function __construct(CustomerSearchDataType $searchData, RetailContext $clientContext)
     {
         $this->searchData    = $searchData;
         $this->clientContext = $clientContext;
@@ -27,7 +27,7 @@ class SearchCustomerIds
     /**
      * @return CustomerSearchDataType
      */
-    public function getSearchData()
+    public function getSearchData(): CustomerSearchDataType
     {
         return $this->searchData;
     }
@@ -37,7 +37,7 @@ class SearchCustomerIds
      *
      * @return SearchCustomerIds
      */
-    public function setSearchData($searchData)
+    public function setSearchData(CustomerSearchDataType $searchData): SearchCustomerIds
     {
         $this->searchData = $searchData;
         return $this;
@@ -46,7 +46,7 @@ class SearchCustomerIds
     /**
      * @return RetailContext
      */
-    public function getClientContext()
+    public function getClientContext(): RetailContext
     {
         return $this->clientContext;
     }
@@ -56,7 +56,7 @@ class SearchCustomerIds
      *
      * @return SearchCustomerIds
      */
-    public function setClientContext($clientContext)
+    public function setClientContext(RetailContext $clientContext): SearchCustomerIds
     {
         $this->clientContext = $clientContext;
         return $this;

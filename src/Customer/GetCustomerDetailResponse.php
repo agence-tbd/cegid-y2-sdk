@@ -12,7 +12,7 @@ class GetCustomerDetailResponse
     /**
      * @param CustomerQueryData $GetCustomerDetailResult
      */
-    public function __construct($GetCustomerDetailResult)
+    public function __construct(CustomerQueryData $GetCustomerDetailResult)
     {
         $this->GetCustomerDetailResult = $GetCustomerDetailResult;
     }
@@ -20,7 +20,7 @@ class GetCustomerDetailResponse
     /**
      * @return CustomerQueryData
      */
-    public function getGetCustomerDetailResult()
+    public function getGetCustomerDetailResult(): CustomerQueryData
     {
         return $this->GetCustomerDetailResult;
     }
@@ -30,7 +30,7 @@ class GetCustomerDetailResponse
      *
      * @return GetCustomerDetailResponse
      */
-    public function setGetCustomerDetailResult($GetCustomerDetailResult)
+    public function setGetCustomerDetailResult(CustomerQueryData $GetCustomerDetailResult): GetCustomerDetailResponse
     {
         $this->GetCustomerDetailResult = $GetCustomerDetailResult;
         return $this;

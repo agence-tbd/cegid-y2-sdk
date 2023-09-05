@@ -44,7 +44,7 @@ class Create_Request
     /**
      * @return Address
      */
-    public function getDeliveryAddress()
+    public function getDeliveryAddress(): Address
     {
       return $this->DeliveryAddress;
     }
@@ -53,7 +53,7 @@ class Create_Request
      * @param Address $DeliveryAddress
      * @return Create_Request
      */
-    public function setDeliveryAddress($DeliveryAddress)
+    public function setDeliveryAddress(Address $DeliveryAddress): Create_Request
     {
       $this->DeliveryAddress = $DeliveryAddress;
       return $this;
@@ -62,7 +62,7 @@ class Create_Request
     /**
      * @return Create_Header
      */
-    public function getHeader()
+    public function getHeader(): Create_Header
     {
       return $this->Header;
     }
@@ -71,7 +71,7 @@ class Create_Request
      * @param Create_Header $Header
      * @return Create_Request
      */
-    public function setHeader($Header)
+    public function setHeader(Create_Header $Header): Create_Request
     {
       $this->Header = $Header;
       return $this;
@@ -80,7 +80,7 @@ class Create_Request
     /**
      * @return Address
      */
-    public function getInvoicingAddress()
+    public function getInvoicingAddress(): Address
     {
       return $this->InvoicingAddress;
     }
@@ -89,7 +89,7 @@ class Create_Request
      * @param Address $InvoicingAddress
      * @return Create_Request
      */
-    public function setInvoicingAddress($InvoicingAddress)
+    public function setInvoicingAddress(Address $InvoicingAddress): Create_Request
     {
       $this->InvoicingAddress = $InvoicingAddress;
       return $this;
@@ -98,7 +98,7 @@ class Create_Request
     /**
      * @return ArrayOfCreate_Line
      */
-    public function getLines()
+    public function getLines(): ArrayOfCreate_Line
     {
       return $this->Lines;
     }
@@ -107,7 +107,7 @@ class Create_Request
      * @param ArrayOfCreate_Line $Lines
      * @return Create_Request
      */
-    public function setLines($Lines)
+    public function setLines(ArrayOfCreate_Line $Lines): Create_Request
     {
       $this->Lines = $Lines;
       return $this;
@@ -116,7 +116,7 @@ class Create_Request
     /**
      * @return ArrayOfCreate_Payment
      */
-    public function getPayments()
+    public function getPayments(): ArrayOfCreate_Payment
     {
       return $this->Payments;
     }
@@ -125,7 +125,7 @@ class Create_Request
      * @param ArrayOfCreate_Payment $Payments
      * @return Create_Request
      */
-    public function setPayments($Payments)
+    public function setPayments(ArrayOfCreate_Payment $Payments): Create_Request
     {
       $this->Payments = $Payments;
       return $this;
@@ -134,7 +134,7 @@ class Create_Request
     /**
      * @return ArrayOfCreate_ShippingTax
      */
-    public function getShippingTaxes()
+    public function getShippingTaxes(): ArrayOfCreate_ShippingTax
     {
       return $this->ShippingTaxes;
     }
@@ -143,7 +143,7 @@ class Create_Request
      * @param ArrayOfCreate_ShippingTax $ShippingTaxes
      * @return Create_Request
      */
-    public function setShippingTaxes($ShippingTaxes)
+    public function setShippingTaxes(ArrayOfCreate_ShippingTax $ShippingTaxes): Create_Request
     {
       $this->ShippingTaxes = $ShippingTaxes;
       return $this;

@@ -59,7 +59,7 @@ class Get_Payment
     /**
      * @return float
      */
-    public function getAmount()
+    public function getAmount(): float
     {
       return $this->Amount;
     }
@@ -68,7 +68,7 @@ class Get_Payment
      * @param float $Amount
      * @return Get_Payment
      */
-    public function setAmount($Amount)
+    public function setAmount(float $Amount): Get_Payment
     {
       $this->Amount = $Amount;
       return $this;
@@ -77,7 +77,7 @@ class Get_Payment
     /**
      * @return float
      */
-    public function getCashAmount()
+    public function getCashAmount(): float
     {
       return $this->CashAmount;
     }
@@ -86,7 +86,7 @@ class Get_Payment
      * @param float $CashAmount
      * @return Get_Payment
      */
-    public function setCashAmount($CashAmount)
+    public function setCashAmount(float $CashAmount): Get_Payment
     {
       $this->CashAmount = $CashAmount;
       return $this;
@@ -95,7 +95,7 @@ class Get_Payment
     /**
      * @return string
      */
-    public function getCode()
+    public function getCode(): string
     {
       return $this->Code;
     }
@@ -104,7 +104,7 @@ class Get_Payment
      * @param string $Code
      * @return Get_Payment
      */
-    public function setCode($Code)
+    public function setCode(string $Code): Get_Payment
     {
       $this->Code = $Code;
       return $this;
@@ -113,7 +113,7 @@ class Get_Payment
     /**
      * @return CreditCard
      */
-    public function getCreditCard()
+    public function getCreditCard(): CreditCard
     {
       return $this->CreditCard;
     }
@@ -122,7 +122,7 @@ class Get_Payment
      * @param CreditCard $CreditCard
      * @return Get_Payment
      */
-    public function setCreditCard($CreditCard)
+    public function setCreditCard(CreditCard $CreditCard): Get_Payment
     {
       $this->CreditCard = $CreditCard;
       return $this;
@@ -131,7 +131,7 @@ class Get_Payment
     /**
      * @return string
      */
-    public function getCurrency()
+    public function getCurrency(): string
     {
       return $this->Currency;
     }
@@ -140,7 +140,7 @@ class Get_Payment
      * @param string $Currency
      * @return Get_Payment
      */
-    public function setCurrency($Currency)
+    public function setCurrency(string $Currency): Get_Payment
     {
       $this->Currency = $Currency;
       return $this;
@@ -149,7 +149,7 @@ class Get_Payment
     /**
      * @return string
      */
-    public function getCurrencySymbol()
+    public function getCurrencySymbol(): string
     {
       return $this->CurrencySymbol;
     }
@@ -158,7 +158,7 @@ class Get_Payment
      * @param string $CurrencySymbol
      * @return Get_Payment
      */
-    public function setCurrencySymbol($CurrencySymbol)
+    public function setCurrencySymbol(string $CurrencySymbol): Get_Payment
     {
       $this->CurrencySymbol = $CurrencySymbol;
       return $this;
@@ -185,7 +185,7 @@ class Get_Payment
      * @param string $format
      * @return Get_Payment
      */
-    public function setDueDate(\DateTime $DueDate = null, $format=\DateTime::ATOM)
+    public function setDueDate(\DateTime $DueDate = null, string $format=\DateTime::ATOM): Get_Payment
     {
       if ($DueDate == null) {
        $this->DueDate = null;
@@ -198,7 +198,7 @@ class Get_Payment
     /**
      * @return boolean
      */
-    public function getIsReceivedPayment()
+    public function getIsReceivedPayment(): bool
     {
       return $this->IsReceivedPayment;
     }
@@ -207,7 +207,7 @@ class Get_Payment
      * @param boolean $IsReceivedPayment
      * @return Get_Payment
      */
-    public function setIsReceivedPayment($IsReceivedPayment)
+    public function setIsReceivedPayment(bool $IsReceivedPayment): Get_Payment
     {
       $this->IsReceivedPayment = $IsReceivedPayment;
       return $this;
@@ -216,7 +216,7 @@ class Get_Payment
     /**
      * @return string
      */
-    public function getLabel()
+    public function getLabel(): string
     {
       return $this->Label;
     }
@@ -225,7 +225,7 @@ class Get_Payment
      * @param string $Label
      * @return Get_Payment
      */
-    public function setLabel($Label)
+    public function setLabel(string $Label): Get_Payment
     {
       $this->Label = $Label;
       return $this;

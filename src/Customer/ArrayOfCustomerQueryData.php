@@ -7,7 +7,7 @@ class ArrayOfCustomerQueryData implements \ArrayAccess, \Iterator, \Countable
     /**
      * @var CustomerQueryData[] $CustomerQueryData
      */
-    protected $CustomerQueryData = null;
+    protected array|null $CustomerQueryData = null;
 
     public function __construct()
     {
@@ -17,7 +17,7 @@ class ArrayOfCustomerQueryData implements \ArrayAccess, \Iterator, \Countable
     /**
      * @return CustomerQueryData[]
      */
-    public function getCustomerQueryData()
+    public function getCustomerQueryData(): array
     {
         return $this->CustomerQueryData;
     }
@@ -27,7 +27,7 @@ class ArrayOfCustomerQueryData implements \ArrayAccess, \Iterator, \Countable
      *
      * @return ArrayOfCustomerQueryData
      */
-    public function setCustomerQueryData(array $CustomerQueryData = null)
+    public function setCustomerQueryData(array $CustomerQueryData = null): ArrayOfCustomerQueryData
     {
         $this->CustomerQueryData = $CustomerQueryData;
         return $this;
@@ -40,7 +40,7 @@ class ArrayOfCustomerQueryData implements \ArrayAccess, \Iterator, \Countable
      *
      * @return boolean true on success or false on failure
      */
-    public function offsetExists($offset)
+    public function offsetExists(mixed $offset): bool
     {
         return isset($this->CustomerQueryData[$offset]);
     }
@@ -52,7 +52,7 @@ class ArrayOfCustomerQueryData implements \ArrayAccess, \Iterator, \Countable
      *
      * @return CustomerQueryData
      */
-    public function offsetGet($offset)
+    public function offsetGet(mixed $offset): CustomerQueryData
     {
         return $this->CustomerQueryData[$offset];
     }
@@ -65,7 +65,7 @@ class ArrayOfCustomerQueryData implements \ArrayAccess, \Iterator, \Countable
      *
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet(mixed $offset, mixed $value): void
     {
         if (!isset($offset)) {
             $this->CustomerQueryData[] = $value;
@@ -81,7 +81,7 @@ class ArrayOfCustomerQueryData implements \ArrayAccess, \Iterator, \Countable
      *
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset(mixed $offset): void
     {
         unset($this->CustomerQueryData[$offset]);
     }
@@ -91,7 +91,7 @@ class ArrayOfCustomerQueryData implements \ArrayAccess, \Iterator, \Countable
      *
      * @return CustomerQueryData Return the current element
      */
-    public function current()
+    public function current(): CustomerQueryData
     {
         return current($this->CustomerQueryData);
     }
@@ -102,7 +102,7 @@ class ArrayOfCustomerQueryData implements \ArrayAccess, \Iterator, \Countable
      *
      * @return void
      */
-    public function next()
+    public function next(): void
     {
         next($this->CustomerQueryData);
     }
@@ -112,7 +112,7 @@ class ArrayOfCustomerQueryData implements \ArrayAccess, \Iterator, \Countable
      *
      * @return string|null Return the key of the current element or null
      */
-    public function key()
+    public function key(): ?string
     {
         return key($this->CustomerQueryData);
     }
@@ -122,7 +122,7 @@ class ArrayOfCustomerQueryData implements \ArrayAccess, \Iterator, \Countable
      *
      * @return boolean Return the validity of the current position
      */
-    public function valid()
+    public function valid(): bool
     {
         return $this->key() !== null;
     }
@@ -133,7 +133,7 @@ class ArrayOfCustomerQueryData implements \ArrayAccess, \Iterator, \Countable
      *
      * @return void
      */
-    public function rewind()
+    public function rewind(): void
     {
         reset($this->CustomerQueryData);
     }
@@ -141,9 +141,9 @@ class ArrayOfCustomerQueryData implements \ArrayAccess, \Iterator, \Countable
     /**
      * Countable implementation
      *
-     * @return CustomerQueryData Return count of elements
+     * @return int Return count of elements
      */
-    public function count()
+    public function count(): int
     {
         return count($this->CustomerQueryData);
     }

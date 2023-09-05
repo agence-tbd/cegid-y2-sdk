@@ -19,7 +19,7 @@ class GetByKey
      * @param GetByKey_Request $searchRequest
      * @param RetailContext $clientContext
      */
-    public function __construct($searchRequest, $clientContext)
+    public function __construct(GetByKey_Request $searchRequest, RetailContext $clientContext)
     {
       $this->searchRequest = $searchRequest;
       $this->clientContext = $clientContext;
@@ -28,7 +28,7 @@ class GetByKey
     /**
      * @return GetByKey_Request
      */
-    public function getSearchRequest()
+    public function getSearchRequest(): GetByKey_Request
     {
       return $this->searchRequest;
     }
@@ -37,7 +37,7 @@ class GetByKey
      * @param GetByKey_Request $searchRequest
      * @return GetByKey
      */
-    public function setSearchRequest($searchRequest)
+    public function setSearchRequest(GetByKey_Request $searchRequest): GetByKey
     {
       $this->searchRequest = $searchRequest;
       return $this;
@@ -46,7 +46,7 @@ class GetByKey
     /**
      * @return RetailContext
      */
-    public function getClientContext()
+    public function getClientContext(): RetailContext
     {
       return $this->clientContext;
     }
@@ -55,7 +55,7 @@ class GetByKey
      * @param RetailContext $clientContext
      * @return GetByKey
      */
-    public function setClientContext($clientContext)
+    public function setClientContext(RetailContext $clientContext): GetByKey
     {
       $this->clientContext = $clientContext;
       return $this;

@@ -12,7 +12,7 @@ class GetCustomerIdByReferenceResponse
     /**
      * @param string $GetCustomerIdByReferenceResult
      */
-    public function __construct($GetCustomerIdByReferenceResult)
+    public function __construct(string $GetCustomerIdByReferenceResult)
     {
         $this->GetCustomerIdByReferenceResult = $GetCustomerIdByReferenceResult;
     }
@@ -20,7 +20,7 @@ class GetCustomerIdByReferenceResponse
     /**
      * @return string
      */
-    public function getGetCustomerIdByReferenceResult()
+    public function getGetCustomerIdByReferenceResult(): string
     {
         return $this->GetCustomerIdByReferenceResult;
     }
@@ -30,7 +30,7 @@ class GetCustomerIdByReferenceResponse
      *
      * @return GetCustomerIdByReferenceResponse
      */
-    public function setGetCustomerIdByReferenceResult($GetCustomerIdByReferenceResult)
+    public function setGetCustomerIdByReferenceResult(string $GetCustomerIdByReferenceResult): GetCustomerIdByReferenceResponse
     {
         $this->GetCustomerIdByReferenceResult = $GetCustomerIdByReferenceResult;
         return $this;

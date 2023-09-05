@@ -18,7 +18,7 @@ class UpdateShoppingCart
      * @param UpdateShoppingCart_Request $request
      * @param RetailContext $clientContext
      */
-    public function __construct($request, $clientContext)
+    public function __construct(UpdateShoppingCart_Request $request, RetailContext $clientContext)
     {
         $this->request       = $request;
         $this->clientContext = $clientContext;
@@ -27,7 +27,7 @@ class UpdateShoppingCart
     /**
      * @return UpdateShoppingCart_Request
      */
-    public function getRequest()
+    public function getRequest(): UpdateShoppingCart_Request
     {
         return $this->request;
     }
@@ -36,7 +36,7 @@ class UpdateShoppingCart
      * @param UpdateShoppingCart_Request $request
      * @return UpdateShoppingCart
      */
-    public function setRequest($request)
+    public function setRequest(UpdateShoppingCart_Request $request): UpdateShoppingCart
     {
         $this->request = $request;
         return $this;
@@ -45,7 +45,7 @@ class UpdateShoppingCart
     /**
      * @return RetailContext
      */
-    public function getClientContext()
+    public function getClientContext(): RetailContext
     {
         return $this->clientContext;
     }
@@ -54,7 +54,7 @@ class UpdateShoppingCart
      * @param RetailContext $clientContext
      * @return UpdateShoppingCart
      */
-    public function setClientContext($clientContext)
+    public function setClientContext(RetailContext $clientContext): UpdateShoppingCart
     {
         $this->clientContext = $clientContext;
         return $this;

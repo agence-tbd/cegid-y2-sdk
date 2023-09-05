@@ -98,7 +98,7 @@ class CustomerSearchDataType extends CustomerDataBase
     /**
      * @return string
      */
-    public function getActivityCode()
+    public function getActivityCode(): string
     {
         return $this->ActivityCode;
     }
@@ -108,7 +108,7 @@ class CustomerSearchDataType extends CustomerDataBase
      *
      * @return CustomerSearchDataType
      */
-    public function setActivityCode($ActivityCode)
+    public function setActivityCode(string $ActivityCode): CustomerSearchDataType
     {
         $this->ActivityCode = $ActivityCode;
         return $this;
@@ -117,7 +117,7 @@ class CustomerSearchDataType extends CustomerDataBase
     /**
      * @return string
      */
-    public function getBarcode()
+    public function getBarcode(): string
     {
         return $this->Barcode;
     }
@@ -127,7 +127,7 @@ class CustomerSearchDataType extends CustomerDataBase
      *
      * @return CustomerSearchDataType
      */
-    public function setBarcode($Barcode)
+    public function setBarcode(string $Barcode): CustomerSearchDataType
     {
         $this->Barcode = $Barcode;
         return $this;
@@ -136,7 +136,7 @@ class CustomerSearchDataType extends CustomerDataBase
     /**
      * @return BirthDateDataType
      */
-    public function getBirthDateData()
+    public function getBirthDateData(): BirthDateDataType
     {
         return $this->BirthDateData;
     }
@@ -146,7 +146,7 @@ class CustomerSearchDataType extends CustomerDataBase
      *
      * @return CustomerSearchDataType
      */
-    public function setBirthDateData($BirthDateData)
+    public function setBirthDateData(BirthDateDataType $BirthDateData): CustomerSearchDataType
     {
         $this->BirthDateData = $BirthDateData;
         return $this;
@@ -155,7 +155,7 @@ class CustomerSearchDataType extends CustomerDataBase
     /**
      * @return boolean
      */
-    public function getClosed()
+    public function getClosed(): bool
     {
         return $this->Closed;
     }
@@ -165,7 +165,7 @@ class CustomerSearchDataType extends CustomerDataBase
      *
      * @return CustomerSearchDataType
      */
-    public function setClosed($Closed)
+    public function setClosed(bool $Closed): CustomerSearchDataType
     {
         $this->Closed = $Closed;
         return $this;
@@ -174,7 +174,7 @@ class CustomerSearchDataType extends CustomerDataBase
     /**
      * @return string
      */
-    public function getCompanyIdNumber()
+    public function getCompanyIdNumber(): string
     {
         return $this->CompanyIdNumber;
     }
@@ -184,7 +184,7 @@ class CustomerSearchDataType extends CustomerDataBase
      *
      * @return CustomerSearchDataType
      */
-    public function setCompanyIdNumber($CompanyIdNumber)
+    public function setCompanyIdNumber(string $CompanyIdNumber): CustomerSearchDataType
     {
         $this->CompanyIdNumber = $CompanyIdNumber;
         return $this;
@@ -193,7 +193,7 @@ class CustomerSearchDataType extends CustomerDataBase
     /**
      * @return string
      */
-    public function getCreationStoreId()
+    public function getCreationStoreId(): string
     {
         return $this->CreationStoreId;
     }
@@ -203,7 +203,7 @@ class CustomerSearchDataType extends CustomerDataBase
      *
      * @return CustomerSearchDataType
      */
-    public function setCreationStoreId($CreationStoreId)
+    public function setCreationStoreId(string $CreationStoreId): CustomerSearchDataType
     {
         $this->CreationStoreId = $CreationStoreId;
         return $this;
@@ -212,7 +212,7 @@ class CustomerSearchDataType extends CustomerDataBase
     /**
      * @return string
      */
-    public function getCustomerId()
+    public function getCustomerId(): string
     {
         return $this->CustomerId;
     }
@@ -222,7 +222,7 @@ class CustomerSearchDataType extends CustomerDataBase
      *
      * @return CustomerSearchDataType
      */
-    public function setCustomerId($CustomerId)
+    public function setCustomerId(string $CustomerId): CustomerSearchDataType
     {
         $this->CustomerId = $CustomerId;
         return $this;
@@ -231,7 +231,7 @@ class CustomerSearchDataType extends CustomerDataBase
     /**
      * @return string
      */
-    public function getCustomerReference()
+    public function getCustomerReference(): string
     {
         return $this->CustomerReference;
     }
@@ -241,7 +241,7 @@ class CustomerSearchDataType extends CustomerDataBase
      *
      * @return CustomerSearchDataType
      */
-    public function setCustomerReference($CustomerReference)
+    public function setCustomerReference(string $CustomerReference): CustomerSearchDataType
     {
         $this->CustomerReference = $CustomerReference;
         return $this;
@@ -250,7 +250,7 @@ class CustomerSearchDataType extends CustomerDataBase
     /**
      * @return boolean
      */
-    public function getDirectMail()
+    public function getDirectMail(): bool
     {
         return $this->DirectMail;
     }
@@ -260,7 +260,7 @@ class CustomerSearchDataType extends CustomerDataBase
      *
      * @return CustomerSearchDataType
      */
-    public function setDirectMail($DirectMail)
+    public function setDirectMail(bool $DirectMail): CustomerSearchDataType
     {
         $this->DirectMail = $DirectMail;
         return $this;
@@ -269,7 +269,7 @@ class CustomerSearchDataType extends CustomerDataBase
     /**
      * @return string
      */
-    public function getFiscalId()
+    public function getFiscalId(): string
     {
         return $this->FiscalId;
     }
@@ -279,7 +279,7 @@ class CustomerSearchDataType extends CustomerDataBase
      *
      * @return CustomerSearchDataType
      */
-    public function setFiscalId($FiscalId)
+    public function setFiscalId(string $FiscalId): CustomerSearchDataType
     {
         $this->FiscalId = $FiscalId;
         return $this;
@@ -288,7 +288,7 @@ class CustomerSearchDataType extends CustomerDataBase
     /**
      * @return string
      */
-    public function getInvoiceCustomerId()
+    public function getInvoiceCustomerId(): string
     {
         return $this->InvoiceCustomerId;
     }
@@ -298,7 +298,7 @@ class CustomerSearchDataType extends CustomerDataBase
      *
      * @return CustomerSearchDataType
      */
-    public function setInvoiceCustomerId($InvoiceCustomerId)
+    public function setInvoiceCustomerId(string $InvoiceCustomerId): CustomerSearchDataType
     {
         $this->InvoiceCustomerId = $InvoiceCustomerId;
         return $this;
@@ -307,7 +307,7 @@ class CustomerSearchDataType extends CustomerDataBase
     /**
      * @return boolean
      */
-    public function getIsCustomer()
+    public function getIsCustomer(): bool
     {
         return $this->IsCustomer;
     }
@@ -317,7 +317,7 @@ class CustomerSearchDataType extends CustomerDataBase
      *
      * @return CustomerSearchDataType
      */
-    public function setIsCustomer($IsCustomer)
+    public function setIsCustomer(bool $IsCustomer): CustomerSearchDataType
     {
         $this->IsCustomer = $IsCustomer;
         return $this;
@@ -326,7 +326,7 @@ class CustomerSearchDataType extends CustomerDataBase
     /**
      * @return boolean
      */
-    public function getIsProspect()
+    public function getIsProspect(): bool
     {
         return $this->IsProspect;
     }
@@ -336,7 +336,7 @@ class CustomerSearchDataType extends CustomerDataBase
      *
      * @return CustomerSearchDataType
      */
-    public function setIsProspect($IsProspect)
+    public function setIsProspect(bool $IsProspect): CustomerSearchDataType
     {
         $this->IsProspect = $IsProspect;
         return $this;
@@ -345,7 +345,7 @@ class CustomerSearchDataType extends CustomerDataBase
     /**
      * @return string
      */
-    public function getItalianFiscalId()
+    public function getItalianFiscalId(): string
     {
         return $this->ItalianFiscalId;
     }
@@ -355,7 +355,7 @@ class CustomerSearchDataType extends CustomerDataBase
      *
      * @return CustomerSearchDataType
      */
-    public function setItalianFiscalId($ItalianFiscalId)
+    public function setItalianFiscalId(string $ItalianFiscalId): CustomerSearchDataType
     {
         $this->ItalianFiscalId = $ItalianFiscalId;
         return $this;
@@ -364,7 +364,7 @@ class CustomerSearchDataType extends CustomerDataBase
     /**
      * @return int
      */
-    public function getMaxNumberOfCustomers()
+    public function getMaxNumberOfCustomers(): int
     {
         return $this->MaxNumberOfCustomers;
     }
@@ -374,7 +374,7 @@ class CustomerSearchDataType extends CustomerDataBase
      *
      * @return CustomerSearchDataType
      */
-    public function setMaxNumberOfCustomers($MaxNumberOfCustomers)
+    public function setMaxNumberOfCustomers(int $MaxNumberOfCustomers): CustomerSearchDataType
     {
         $this->MaxNumberOfCustomers = $MaxNumberOfCustomers;
         return $this;
@@ -383,7 +383,7 @@ class CustomerSearchDataType extends CustomerDataBase
     /**
      * @return NationalityDataType
      */
-    public function getNationalityData()
+    public function getNationalityData(): NationalityDataType
     {
         return $this->NationalityData;
     }
@@ -393,7 +393,7 @@ class CustomerSearchDataType extends CustomerDataBase
      *
      * @return CustomerSearchDataType
      */
-    public function setNationalityData($NationalityData)
+    public function setNationalityData(NationalityDataType $NationalityData): CustomerSearchDataType
     {
         $this->NationalityData = $NationalityData;
         return $this;
@@ -402,7 +402,7 @@ class CustomerSearchDataType extends CustomerDataBase
     /**
      * @return string
      */
-    public function getPassportNumber()
+    public function getPassportNumber(): string
     {
         return $this->PassportNumber;
     }
@@ -412,7 +412,7 @@ class CustomerSearchDataType extends CustomerDataBase
      *
      * @return CustomerSearchDataType
      */
-    public function setPassportNumber($PassportNumber)
+    public function setPassportNumber(string $PassportNumber): CustomerSearchDataType
     {
         $this->PassportNumber = $PassportNumber;
         return $this;

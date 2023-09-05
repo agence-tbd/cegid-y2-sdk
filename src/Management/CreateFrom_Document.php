@@ -22,7 +22,7 @@ class CreateFrom_Document
     /**
      * @return string
      */
-    public function getReference()
+    public function getReference(): string
     {
         return $this->InternalReference;
     }
@@ -31,7 +31,7 @@ class CreateFrom_Document
      * @param string $InternalReference
      * @return CreateFrom_Document
      */
-    public function setReference($InternalReference)
+    public function setReference(string $InternalReference): CreateFrom_Document
     {
         $this->InternalReference = $InternalReference;
         return $this;
@@ -40,7 +40,7 @@ class CreateFrom_Document
     /**
      * @return CreateFromDocumentKey
      */
-    public function getKey()
+    public function getKey(): CreateFromDocumentKey
     {
       return $this->Key;
     }
@@ -49,7 +49,7 @@ class CreateFrom_Document
      * @param CreateFromDocumentKey $Key
      * @return CreateFrom_Document
      */
-    public function setKey($Key)
+    public function setKey(CreateFromDocumentKey $Key): CreateFrom_Document
     {
       $this->Key = $Key;
       return $this;

@@ -24,7 +24,7 @@ class GetOmniChannelLine
     /**
      * @return string
      */
-    public function getFollowUpStatus()
+    public function getFollowUpStatus(): string
     {
       return $this->FollowUpStatus;
     }
@@ -33,7 +33,7 @@ class GetOmniChannelLine
      * @param string $FollowUpStatus
      * @return GetOmniChannelLine
      */
-    public function setFollowUpStatus($FollowUpStatus)
+    public function setFollowUpStatus(string $FollowUpStatus): GetOmniChannelLine
     {
       $this->FollowUpStatus = $FollowUpStatus;
       return $this;
@@ -42,7 +42,7 @@ class GetOmniChannelLine
     /**
      * @return string
      */
-    public function getWarehouseId()
+    public function getWarehouseId(): string
     {
       return $this->WarehouseId;
     }
@@ -51,7 +51,7 @@ class GetOmniChannelLine
      * @param string $WarehouseId
      * @return GetOmniChannelLine
      */
-    public function setWarehouseId($WarehouseId)
+    public function setWarehouseId(string $WarehouseId): GetOmniChannelLine
     {
       $this->WarehouseId = $WarehouseId;
       return $this;

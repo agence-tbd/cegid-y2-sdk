@@ -114,7 +114,7 @@ class CustomersReservationCreate_Header
     /**
      * @return boolean
      */
-    public function getActive()
+    public function getActive(): bool
     {
       return $this->Active;
     }
@@ -123,7 +123,7 @@ class CustomersReservationCreate_Header
      * @param boolean $Active
      * @return CustomersReservationCreate_Header
      */
-    public function setActive($Active)
+    public function setActive(bool $Active): CustomersReservationCreate_Header
     {
       $this->Active = $Active;
       return $this;
@@ -132,7 +132,7 @@ class CustomersReservationCreate_Header
     /**
      * @return string
      */
-    public function getComment()
+    public function getComment(): string
     {
       return $this->Comment;
     }
@@ -141,7 +141,7 @@ class CustomersReservationCreate_Header
      * @param string $Comment
      * @return CustomersReservationCreate_Header
      */
-    public function setComment($Comment)
+    public function setComment(string $Comment): CustomersReservationCreate_Header
     {
       $this->Comment = $Comment;
       return $this;
@@ -150,7 +150,7 @@ class CustomersReservationCreate_Header
     /**
      * @return string
      */
-    public function getCurrencyId()
+    public function getCurrencyId(): string
     {
       return $this->CurrencyId;
     }
@@ -159,7 +159,7 @@ class CustomersReservationCreate_Header
      * @param string $CurrencyId
      * @return CustomersReservationCreate_Header
      */
-    public function setCurrencyId($CurrencyId)
+    public function setCurrencyId(string $CurrencyId): CustomersReservationCreate_Header
     {
       $this->CurrencyId = $CurrencyId;
       return $this;
@@ -168,7 +168,7 @@ class CustomersReservationCreate_Header
     /**
      * @return string
      */
-    public function getCustomerId()
+    public function getCustomerId(): string
     {
       return $this->CustomerId;
     }
@@ -177,7 +177,7 @@ class CustomersReservationCreate_Header
      * @param string $CustomerId
      * @return CustomersReservationCreate_Header
      */
-    public function setCustomerId($CustomerId)
+    public function setCustomerId(string $CustomerId): CustomersReservationCreate_Header
     {
       $this->CustomerId = $CustomerId;
       return $this;
@@ -204,7 +204,7 @@ class CustomersReservationCreate_Header
      * @param string $format
      * @return CustomersReservationCreate_Header
      */
-    public function setDate(\DateTime $Date = null, $format=\DateTime::ATOM)
+    public function setDate(\DateTime $Date = null, string $format=\DateTime::ATOM): CustomersReservationCreate_Header
     {
       if ($Date == null) {
        $this->Date = null;
@@ -217,7 +217,7 @@ class CustomersReservationCreate_Header
     /**
      * @return SaleDocumentLineIdentifier
      */
-    public function getDeposit()
+    public function getDeposit(): SaleDocumentLineIdentifier
     {
       return $this->Deposit;
     }
@@ -226,7 +226,7 @@ class CustomersReservationCreate_Header
      * @param SaleDocumentLineIdentifier $Deposit
      * @return CustomersReservationCreate_Header
      */
-    public function setDeposit($Deposit)
+    public function setDeposit(SaleDocumentLineIdentifier $Deposit): CustomersReservationCreate_Header
     {
       $this->Deposit = $Deposit;
       return $this;
@@ -253,7 +253,7 @@ class CustomersReservationCreate_Header
      * @param string $format
      * @return CustomersReservationCreate_Header
      */
-    public function setExpirationDate(\DateTime $ExpirationDate = null, $format=\DateTime::ATOM)
+    public function setExpirationDate(\DateTime $ExpirationDate = null, string $format=\DateTime::ATOM): CustomersReservationCreate_Header
     {
       if ($ExpirationDate == null) {
        $this->ExpirationDate = null;
@@ -266,7 +266,7 @@ class CustomersReservationCreate_Header
     /**
      * @return string
      */
-    public function getExternalReference()
+    public function getExternalReference(): string
     {
       return $this->ExternalReference;
     }
@@ -275,7 +275,7 @@ class CustomersReservationCreate_Header
      * @param string $ExternalReference
      * @return CustomersReservationCreate_Header
      */
-    public function setExternalReference($ExternalReference)
+    public function setExternalReference(string $ExternalReference): CustomersReservationCreate_Header
     {
       $this->ExternalReference = $ExternalReference;
       return $this;
@@ -302,7 +302,7 @@ class CustomersReservationCreate_Header
      * @param string $format
      * @return CustomersReservationCreate_Header
      */
-    public function setExternalReferenceDate(\DateTime $ExternalReferenceDate = null, $format=\DateTime::ATOM)
+    public function setExternalReferenceDate(\DateTime $ExternalReferenceDate = null, string $format=\DateTime::ATOM): CustomersReservationCreate_Header
     {
       if ($ExternalReferenceDate == null) {
        $this->ExternalReferenceDate = null;
@@ -315,7 +315,7 @@ class CustomersReservationCreate_Header
     /**
      * @return string
      */
-    public function getFollowedReference()
+    public function getFollowedReference(): string
     {
       return $this->FollowedReference;
     }
@@ -324,7 +324,7 @@ class CustomersReservationCreate_Header
      * @param string $FollowedReference
      * @return CustomersReservationCreate_Header
      */
-    public function setFollowedReference($FollowedReference)
+    public function setFollowedReference(string $FollowedReference): CustomersReservationCreate_Header
     {
       $this->FollowedReference = $FollowedReference;
       return $this;
@@ -333,7 +333,7 @@ class CustomersReservationCreate_Header
     /**
      * @return string
      */
-    public function getInternalReference()
+    public function getInternalReference(): string
     {
       return $this->InternalReference;
     }
@@ -342,7 +342,7 @@ class CustomersReservationCreate_Header
      * @param string $InternalReference
      * @return CustomersReservationCreate_Header
      */
-    public function setInternalReference($InternalReference)
+    public function setInternalReference(string $InternalReference): CustomersReservationCreate_Header
     {
       $this->InternalReference = $InternalReference;
       return $this;
@@ -351,7 +351,7 @@ class CustomersReservationCreate_Header
     /**
      * @return boolean
      */
-    public function getLinesUnmodifiable()
+    public function getLinesUnmodifiable(): bool
     {
       return $this->LinesUnmodifiable;
     }
@@ -360,7 +360,7 @@ class CustomersReservationCreate_Header
      * @param boolean $LinesUnmodifiable
      * @return CustomersReservationCreate_Header
      */
-    public function setLinesUnmodifiable($LinesUnmodifiable)
+    public function setLinesUnmodifiable(bool $LinesUnmodifiable): CustomersReservationCreate_Header
     {
       $this->LinesUnmodifiable = $LinesUnmodifiable;
       return $this;
@@ -369,7 +369,7 @@ class CustomersReservationCreate_Header
     /**
      * @return string
      */
-    public function getSalesPersonId()
+    public function getSalesPersonId(): string
     {
       return $this->SalesPersonId;
     }
@@ -378,7 +378,7 @@ class CustomersReservationCreate_Header
      * @param string $SalesPersonId
      * @return CustomersReservationCreate_Header
      */
-    public function setSalesPersonId($SalesPersonId)
+    public function setSalesPersonId(string $SalesPersonId): CustomersReservationCreate_Header
     {
       $this->SalesPersonId = $SalesPersonId;
       return $this;
@@ -387,7 +387,7 @@ class CustomersReservationCreate_Header
     /**
      * @return string
      */
-    public function getStoreId()
+    public function getStoreId(): string
     {
       return $this->StoreId;
     }
@@ -396,7 +396,7 @@ class CustomersReservationCreate_Header
      * @param string $StoreId
      * @return CustomersReservationCreate_Header
      */
-    public function setStoreId($StoreId)
+    public function setStoreId(string $StoreId): CustomersReservationCreate_Header
     {
       $this->StoreId = $StoreId;
       return $this;
@@ -405,7 +405,7 @@ class CustomersReservationCreate_Header
     /**
      * @return boolean
      */
-    public function getTaxExcluded()
+    public function getTaxExcluded(): bool
     {
       return $this->TaxExcluded;
     }
@@ -414,7 +414,7 @@ class CustomersReservationCreate_Header
      * @param boolean $TaxExcluded
      * @return CustomersReservationCreate_Header
      */
-    public function setTaxExcluded($TaxExcluded)
+    public function setTaxExcluded(bool $TaxExcluded): CustomersReservationCreate_Header
     {
       $this->TaxExcluded = $TaxExcluded;
       return $this;
@@ -423,7 +423,7 @@ class CustomersReservationCreate_Header
     /**
      * @return ArrayOfUserDefinedDate
      */
-    public function getUserDefinedDates()
+    public function getUserDefinedDates(): ArrayOfUserDefinedDate
     {
       return $this->UserDefinedDates;
     }
@@ -432,7 +432,7 @@ class CustomersReservationCreate_Header
      * @param ArrayOfUserDefinedDate $UserDefinedDates
      * @return CustomersReservationCreate_Header
      */
-    public function setUserDefinedDates($UserDefinedDates)
+    public function setUserDefinedDates(ArrayOfUserDefinedDate $UserDefinedDates): CustomersReservationCreate_Header
     {
       $this->UserDefinedDates = $UserDefinedDates;
       return $this;
@@ -441,7 +441,7 @@ class CustomersReservationCreate_Header
     /**
      * @return ArrayOfUserDefinedTableCustomer
      */
-    public function getUserDefinedTableCustomers()
+    public function getUserDefinedTableCustomers(): ArrayOfUserDefinedTableCustomer
     {
       return $this->UserDefinedTableCustomers;
     }
@@ -450,7 +450,7 @@ class CustomersReservationCreate_Header
      * @param ArrayOfUserDefinedTableCustomer $UserDefinedTableCustomers
      * @return CustomersReservationCreate_Header
      */
-    public function setUserDefinedTableCustomers($UserDefinedTableCustomers)
+    public function setUserDefinedTableCustomers(ArrayOfUserDefinedTableCustomer $UserDefinedTableCustomers): CustomersReservationCreate_Header
     {
       $this->UserDefinedTableCustomers = $UserDefinedTableCustomers;
       return $this;
@@ -459,7 +459,7 @@ class CustomersReservationCreate_Header
     /**
      * @return ArrayOfUserDefinedTable
      */
-    public function getUserDefinedTables()
+    public function getUserDefinedTables(): ArrayOfUserDefinedTable
     {
       return $this->UserDefinedTables;
     }
@@ -468,7 +468,7 @@ class CustomersReservationCreate_Header
      * @param ArrayOfUserDefinedTable $UserDefinedTables
      * @return CustomersReservationCreate_Header
      */
-    public function setUserDefinedTables($UserDefinedTables)
+    public function setUserDefinedTables(ArrayOfUserDefinedTable $UserDefinedTables): CustomersReservationCreate_Header
     {
       $this->UserDefinedTables = $UserDefinedTables;
       return $this;
@@ -477,7 +477,7 @@ class CustomersReservationCreate_Header
     /**
      * @return ArrayOfUserField
      */
-    public function getUserFields()
+    public function getUserFields(): ArrayOfUserField
     {
       return $this->UserFields;
     }
@@ -486,7 +486,7 @@ class CustomersReservationCreate_Header
      * @param ArrayOfUserField $UserFields
      * @return CustomersReservationCreate_Header
      */
-    public function setUserFields($UserFields)
+    public function setUserFields(ArrayOfUserField $UserFields): CustomersReservationCreate_Header
     {
       $this->UserFields = $UserFields;
       return $this;
@@ -495,7 +495,7 @@ class CustomersReservationCreate_Header
     /**
      * @return string
      */
-    public function getWarehouseId()
+    public function getWarehouseId(): string
     {
       return $this->WarehouseId;
     }
@@ -504,7 +504,7 @@ class CustomersReservationCreate_Header
      * @param string $WarehouseId
      * @return CustomersReservationCreate_Header
      */
-    public function setWarehouseId($WarehouseId)
+    public function setWarehouseId(string $WarehouseId): CustomersReservationCreate_Header
     {
       $this->WarehouseId = $WarehouseId;
       return $this;

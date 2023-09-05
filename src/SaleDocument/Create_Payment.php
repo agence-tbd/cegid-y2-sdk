@@ -53,7 +53,7 @@ class Create_Payment
     /**
      * @param int $Id
      */
-    public function __construct($Id)
+    public function __construct(int $Id)
     {
         $this->Id = $Id;
     }
@@ -61,7 +61,7 @@ class Create_Payment
     /**
      * @return float
      */
-    public function getAmount()
+    public function getAmount(): float
     {
         return $this->Amount;
     }
@@ -71,7 +71,7 @@ class Create_Payment
      *
      * @return Create_Payment
      */
-    public function setAmount($Amount)
+    public function setAmount(float $Amount): Create_Payment
     {
         $this->Amount = $Amount;
         return $this;
@@ -80,7 +80,7 @@ class Create_Payment
     /**
      * @return string
      */
-    public function getBonId()
+    public function getBonId(): string
     {
         return $this->BonId;
     }
@@ -90,7 +90,7 @@ class Create_Payment
      *
      * @return Create_Payment
      */
-    public function setBonId($BonId)
+    public function setBonId(string $BonId): Create_Payment
     {
         $this->BonId = $BonId;
         return $this;
@@ -99,7 +99,7 @@ class Create_Payment
     /**
      * @return CreditCard
      */
-    public function getCreditCard()
+    public function getCreditCard(): CreditCard
     {
         return $this->CreditCard;
     }
@@ -109,7 +109,7 @@ class Create_Payment
      *
      * @return Create_Payment
      */
-    public function setCreditCard($CreditCard)
+    public function setCreditCard(CreditCard $CreditCard): Create_Payment
     {
         $this->CreditCard = $CreditCard;
         return $this;
@@ -118,7 +118,7 @@ class Create_Payment
     /**
      * @return string
      */
-    public function getCurrencyId()
+    public function getCurrencyId(): string
     {
         return $this->CurrencyId;
     }
@@ -128,7 +128,7 @@ class Create_Payment
      *
      * @return Create_Payment
      */
-    public function setCurrencyId($CurrencyId)
+    public function setCurrencyId(string $CurrencyId): Create_Payment
     {
         $this->CurrencyId = $CurrencyId;
         return $this;
@@ -155,7 +155,7 @@ class Create_Payment
      * @param string $format
      * @return Create_Payment
      */
-    public function setDueDate(\DateTime $DueDate = null, $format=\DateTime::ATOM)
+    public function setDueDate(\DateTime $DueDate = null, string $format=\DateTime::ATOM): Create_Payment
     {
         if ($DueDate == null) {
             $this->DueDate = null;
@@ -168,7 +168,7 @@ class Create_Payment
     /**
      * @return int
      */
-    public function getId()
+    public function getId(): int
     {
         return $this->Id;
     }
@@ -178,7 +178,7 @@ class Create_Payment
      *
      * @return Create_Payment
      */
-    public function setId($Id)
+    public function setId(int $Id): Create_Payment
     {
         $this->Id = $Id;
         return $this;
@@ -187,7 +187,7 @@ class Create_Payment
     /**
      * @return boolean
      */
-    public function getIsReceivedPayment()
+    public function getIsReceivedPayment(): bool
     {
         return $this->IsReceivedPayment;
     }
@@ -197,7 +197,7 @@ class Create_Payment
      *
      * @return Create_Payment
      */
-    public function setIsReceivedPayment($IsReceivedPayment)
+    public function setIsReceivedPayment(bool $IsReceivedPayment): Create_Payment
     {
         $this->IsReceivedPayment = $IsReceivedPayment;
         return $this;
@@ -206,7 +206,7 @@ class Create_Payment
     /**
      * @return string
      */
-    public function getMethodId()
+    public function getMethodId(): string
     {
         return $this->MethodId;
     }
@@ -216,7 +216,7 @@ class Create_Payment
      *
      * @return Create_Payment
      */
-    public function setMethodId($MethodId)
+    public function setMethodId(string $MethodId): Create_Payment
     {
         $this->MethodId = $MethodId;
         return $this;
@@ -225,7 +225,7 @@ class Create_Payment
     /**
      * @return string
      */
-    public function getRegisterOperationForReceivedPayment()
+    public function getRegisterOperationForReceivedPayment(): string
     {
         return $this->RegisterOperationForReceivedPayment;
     }
@@ -235,7 +235,7 @@ class Create_Payment
      *
      * @return Create_Payment
      */
-    public function setRegisterOperationForReceivedPayment($RegisterOperationForReceivedPayment)
+    public function setRegisterOperationForReceivedPayment(string $RegisterOperationForReceivedPayment): Create_Payment
     {
         $this->RegisterOperationForReceivedPayment = $RegisterOperationForReceivedPayment;
         return $this;

@@ -148,7 +148,7 @@ class CustomerDataBase
     /**
      * @return string
      */
-    public function getActivitySectorCode()
+    public function getActivitySectorCode(): string
     {
         return $this->ActivitySectorCode;
     }
@@ -158,7 +158,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setActivitySectorCode($ActivitySectorCode)
+    public function setActivitySectorCode(string $ActivitySectorCode): CustomerDataBase
     {
         $this->ActivitySectorCode = $ActivitySectorCode;
         return $this;
@@ -167,7 +167,7 @@ class CustomerDataBase
     /**
      * @return AddressDataType
      */
-    public function getAddressData()
+    public function getAddressData(): AddressDataType
     {
         return $this->AddressData;
     }
@@ -177,7 +177,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setAddressData($AddressData)
+    public function setAddressData(AddressDataType $AddressData): CustomerDataBase
     {
         $this->AddressData = $AddressData;
         return $this;
@@ -186,7 +186,7 @@ class CustomerDataBase
     /**
      * @return string
      */
-    public function getAlternateFirstName()
+    public function getAlternateFirstName(): string
     {
         return $this->AlternateFirstName;
     }
@@ -196,7 +196,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setAlternateFirstName($AlternateFirstName)
+    public function setAlternateFirstName(string $AlternateFirstName): CustomerDataBase
     {
         $this->AlternateFirstName = $AlternateFirstName;
         return $this;
@@ -205,7 +205,7 @@ class CustomerDataBase
     /**
      * @return string
      */
-    public function getAlternateLastName()
+    public function getAlternateLastName(): string
     {
         return $this->AlternateLastName;
     }
@@ -215,7 +215,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setAlternateLastName($AlternateLastName)
+    public function setAlternateLastName(string $AlternateLastName): CustomerDataBase
     {
         $this->AlternateLastName = $AlternateLastName;
         return $this;
@@ -224,7 +224,7 @@ class CustomerDataBase
     /**
      * @return string
      */
-    public function getBusinessAreaCode()
+    public function getBusinessAreaCode(): string
     {
         return $this->BusinessAreaCode;
     }
@@ -234,7 +234,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setBusinessAreaCode($BusinessAreaCode)
+    public function setBusinessAreaCode(string $BusinessAreaCode): CustomerDataBase
     {
         $this->BusinessAreaCode = $BusinessAreaCode;
         return $this;
@@ -243,7 +243,7 @@ class CustomerDataBase
     /**
      * @return string
      */
-    public function getCpfCnpjCode()
+    public function getCpfCnpjCode(): string
     {
         return $this->CpfCnpjCode;
     }
@@ -253,7 +253,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setCpfCnpjCode($CpfCnpjCode)
+    public function setCpfCnpjCode(string $CpfCnpjCode): CustomerDataBase
     {
         $this->CpfCnpjCode = $CpfCnpjCode;
         return $this;
@@ -262,7 +262,7 @@ class CustomerDataBase
     /**
      * @return EmailDataType
      */
-    public function getEmailData()
+    public function getEmailData(): EmailDataType
     {
         return $this->EmailData;
     }
@@ -272,7 +272,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setEmailData($EmailData)
+    public function setEmailData(EmailDataType $EmailData): CustomerDataBase
     {
         $this->EmailData = $EmailData;
         return $this;
@@ -281,7 +281,7 @@ class CustomerDataBase
     /**
      * @return string
      */
-    public function getFirstName()
+    public function getFirstName(): string
     {
         return $this->FirstName;
     }
@@ -291,7 +291,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setFirstName($FirstName)
+    public function setFirstName(string $FirstName): CustomerDataBase
     {
         $this->FirstName = $FirstName;
         return $this;
@@ -300,7 +300,7 @@ class CustomerDataBase
     /**
      * @return boolean
      */
-    public function getIsCompany()
+    public function getIsCompany(): bool
     {
         return $this->IsCompany;
     }
@@ -310,7 +310,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setIsCompany($IsCompany)
+    public function setIsCompany(bool $IsCompany): CustomerDataBase
     {
         $this->IsCompany = $IsCompany;
         return $this;
@@ -333,24 +333,20 @@ class CustomerDataBase
     }
 
     /**
-     * @param \DateTime $LastModificationDate
-     *
+     * @param \DateTime|null $LastModificationDate
+     * @param string $format
      * @return CustomerDataBase
      */
-    public function setLastModificationDate(\DateTime $LastModificationDate = null, $format=\DateTime::ATOM)
+    public function setLastModificationDate(\DateTime $LastModificationDate = null, string $format=\DateTime::ATOM): CustomerDataBase
     {
-        if ($LastModificationDate == null) {
-            $this->LastModificationDate = null;
-        } else {
-            $this->LastModificationDate = $LastModificationDate->format($format);
-        }
+        $this->LastModificationDate = $LastModificationDate?->format($format);
         return $this;
     }
 
     /**
      * @return string
      */
-    public function getLastName()
+    public function getLastName(): string
     {
         return $this->LastName;
     }
@@ -360,7 +356,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setLastName($LastName)
+    public function setLastName(string $LastName): CustomerDataBase
     {
         $this->LastName = $LastName;
         return $this;
@@ -369,7 +365,7 @@ class CustomerDataBase
     /**
      * @return string
      */
-    public function getMunicipalRegistration()
+    public function getMunicipalRegistration(): string
     {
         return $this->MunicipalRegistration;
     }
@@ -379,7 +375,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setMunicipalRegistration($MunicipalRegistration)
+    public function setMunicipalRegistration(string $MunicipalRegistration): CustomerDataBase
     {
         $this->MunicipalRegistration = $MunicipalRegistration;
         return $this;
@@ -388,7 +384,7 @@ class CustomerDataBase
     /**
      * @return string
      */
-    public function getOriginCode()
+    public function getOriginCode(): string
     {
         return $this->OriginCode;
     }
@@ -398,7 +394,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setOriginCode($OriginCode)
+    public function setOriginCode(string $OriginCode): CustomerDataBase
     {
         $this->OriginCode = $OriginCode;
         return $this;
@@ -407,7 +403,7 @@ class CustomerDataBase
     /**
      * @return PhoneDataType
      */
-    public function getPhoneData()
+    public function getPhoneData(): PhoneDataType
     {
         return $this->PhoneData;
     }
@@ -417,7 +413,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setPhoneData($PhoneData)
+    public function setPhoneData(PhoneDataType $PhoneData): CustomerDataBase
     {
         $this->PhoneData = $PhoneData;
         return $this;
@@ -426,7 +422,7 @@ class CustomerDataBase
     /**
      * @return string
      */
-    public function getPriceListCode()
+    public function getPriceListCode(): string
     {
         return $this->PriceListCode;
     }
@@ -436,7 +432,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setPriceListCode($PriceListCode)
+    public function setPriceListCode(string $PriceListCode): CustomerDataBase
     {
         $this->PriceListCode = $PriceListCode;
         return $this;
@@ -445,7 +441,7 @@ class CustomerDataBase
     /**
      * @return string
      */
-    public function getRegionalRegistration()
+    public function getRegionalRegistration(): string
     {
         return $this->RegionalRegistration;
     }
@@ -455,7 +451,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setRegionalRegistration($RegionalRegistration)
+    public function setRegionalRegistration(string $RegionalRegistration): CustomerDataBase
     {
         $this->RegionalRegistration = $RegionalRegistration;
         return $this;
@@ -464,7 +460,7 @@ class CustomerDataBase
     /**
      * @return string
      */
-    public function getRiskLevel()
+    public function getRiskLevel(): string
     {
         return $this->RiskLevel;
     }
@@ -474,7 +470,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setRiskLevel($RiskLevel)
+    public function setRiskLevel(string $RiskLevel): CustomerDataBase
     {
         $this->RiskLevel = $RiskLevel;
         return $this;
@@ -483,7 +479,7 @@ class CustomerDataBase
     /**
      * @return string
      */
-    public function getSalesPerson2Id()
+    public function getSalesPerson2Id(): string
     {
         return $this->SalesPerson2Id;
     }
@@ -493,7 +489,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setSalesPerson2Id($SalesPerson2Id)
+    public function setSalesPerson2Id(string $SalesPerson2Id): CustomerDataBase
     {
         $this->SalesPerson2Id = $SalesPerson2Id;
         return $this;
@@ -502,7 +498,7 @@ class CustomerDataBase
     /**
      * @return string
      */
-    public function getSalesPerson3Id()
+    public function getSalesPerson3Id(): string
     {
         return $this->SalesPerson3Id;
     }
@@ -512,7 +508,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setSalesPerson3Id($SalesPerson3Id)
+    public function setSalesPerson3Id(string $SalesPerson3Id): CustomerDataBase
     {
         $this->SalesPerson3Id = $SalesPerson3Id;
         return $this;
@@ -521,7 +517,7 @@ class CustomerDataBase
     /**
      * @return string
      */
-    public function getSalesPersonId()
+    public function getSalesPersonId(): string
     {
         return $this->SalesPersonId;
     }
@@ -531,7 +527,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setSalesPersonId($SalesPersonId)
+    public function setSalesPersonId(string $SalesPersonId): CustomerDataBase
     {
         $this->SalesPersonId = $SalesPersonId;
         return $this;
@@ -540,7 +536,7 @@ class CustomerDataBase
     /**
      * @return string
      */
-    public function getTitleId()
+    public function getTitleId(): string
     {
         return $this->TitleId;
     }
@@ -550,7 +546,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setTitleId($TitleId)
+    public function setTitleId(string $TitleId): CustomerDataBase
     {
         $this->TitleId = $TitleId;
         return $this;
@@ -559,7 +555,7 @@ class CustomerDataBase
     /**
      * @return ArrayOfUserDefinedBoolean
      */
-    public function getUserDefinedBooleans()
+    public function getUserDefinedBooleans(): ArrayOfUserDefinedBoolean
     {
         return $this->UserDefinedBooleans;
     }
@@ -569,7 +565,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setUserDefinedBooleans($UserDefinedBooleans)
+    public function setUserDefinedBooleans(ArrayOfUserDefinedBoolean $UserDefinedBooleans): CustomerDataBase
     {
         $this->UserDefinedBooleans = $UserDefinedBooleans;
         return $this;
@@ -578,7 +574,7 @@ class CustomerDataBase
     /**
      * @return UserDefinedDataType
      */
-    public function getUserDefinedData()
+    public function getUserDefinedData(): UserDefinedDataType
     {
         return $this->UserDefinedData;
     }
@@ -588,7 +584,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setUserDefinedData($UserDefinedData)
+    public function setUserDefinedData(UserDefinedDataType $UserDefinedData): CustomerDataBase
     {
         $this->UserDefinedData = $UserDefinedData;
         return $this;
@@ -597,7 +593,7 @@ class CustomerDataBase
     /**
      * @return ArrayOfUserDefinedDate
      */
-    public function getUserDefinedDates()
+    public function getUserDefinedDates(): ArrayOfUserDefinedDate
     {
         return $this->UserDefinedDates;
     }
@@ -607,7 +603,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setUserDefinedDates($UserDefinedDates)
+    public function setUserDefinedDates(ArrayOfUserDefinedDate $UserDefinedDates): CustomerDataBase
     {
         $this->UserDefinedDates = $UserDefinedDates;
         return $this;
@@ -616,7 +612,7 @@ class CustomerDataBase
     /**
      * @return ArrayOfUserDefinedText
      */
-    public function getUserDefinedTexts()
+    public function getUserDefinedTexts(): ArrayOfUserDefinedText
     {
         return $this->UserDefinedTexts;
     }
@@ -626,7 +622,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setUserDefinedTexts($UserDefinedTexts)
+    public function setUserDefinedTexts(ArrayOfUserDefinedText $UserDefinedTexts): CustomerDataBase
     {
         $this->UserDefinedTexts = $UserDefinedTexts;
         return $this;
@@ -635,7 +631,7 @@ class CustomerDataBase
     /**
      * @return ArrayOfUserDefinedValue
      */
-    public function getUserDefinedValues()
+    public function getUserDefinedValues(): ArrayOfUserDefinedValue
     {
         return $this->UserDefinedValues;
     }
@@ -645,7 +641,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setUserDefinedValues($UserDefinedValues)
+    public function setUserDefinedValues(ArrayOfUserDefinedValue $UserDefinedValues): CustomerDataBase
     {
         $this->UserDefinedValues = $UserDefinedValues;
         return $this;
@@ -654,7 +650,7 @@ class CustomerDataBase
     /**
      * @return string
      */
-    public function getUsualStoreId()
+    public function getUsualStoreId(): string
     {
         return $this->UsualStoreId;
     }
@@ -664,7 +660,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setUsualStoreId($UsualStoreId)
+    public function setUsualStoreId(string $UsualStoreId): CustomerDataBase
     {
         $this->UsualStoreId = $UsualStoreId;
         return $this;

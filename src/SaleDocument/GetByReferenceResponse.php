@@ -13,7 +13,7 @@ class GetByReferenceResponse
     /**
      * @param Get_Reply $GetByReferenceResult
      */
-    public function __construct($GetByReferenceResult)
+    public function __construct(Get_Reply $GetByReferenceResult)
     {
       $this->GetByReferenceResult = $GetByReferenceResult;
     }
@@ -21,7 +21,7 @@ class GetByReferenceResponse
     /**
      * @return Get_Reply
      */
-    public function getGetByReferenceResult()
+    public function getGetByReferenceResult(): Get_Reply
     {
       return $this->GetByReferenceResult;
     }
@@ -30,7 +30,7 @@ class GetByReferenceResponse
      * @param Get_Reply $GetByReferenceResult
      * @return GetByReferenceResponse
      */
-    public function setGetByReferenceResult($GetByReferenceResult)
+    public function setGetByReferenceResult(Get_Reply $GetByReferenceResult): GetByReferenceResponse
     {
       $this->GetByReferenceResult = $GetByReferenceResult;
       return $this;

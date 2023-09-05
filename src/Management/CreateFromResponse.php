@@ -12,7 +12,7 @@ class CreateFromResponse
     /**
      * @param CreateFrom_Reply $CreateFromResult
      */
-    public function __construct($CreateFromResult)
+    public function __construct(CreateFrom_Reply $CreateFromResult)
     {
       $this->CreateFromResult = $CreateFromResult;
     }
@@ -20,7 +20,7 @@ class CreateFromResponse
     /**
      * @return CreateFrom_Reply
      */
-    public function getCreateFromResult()
+    public function getCreateFromResult(): CreateFrom_Reply
     {
       return $this->CreateFromResult;
     }
@@ -29,7 +29,7 @@ class CreateFromResponse
      * @param CreateFrom_Reply $CreateFromResult
      * @return CreateFromResponse
      */
-    public function setCreateFromResult($CreateFromResult)
+    public function setCreateFromResult(CreateFrom_Reply $CreateFromResult): CreateFromResponse
     {
       $this->CreateFromResult = $CreateFromResult;
       return $this;

@@ -18,7 +18,7 @@ class GetCustomerIdByReference
      * @param string        $customerReference
      * @param RetailContext $clientContext
      */
-    public function __construct($customerReference, $clientContext)
+    public function __construct(string $customerReference, RetailContext $clientContext)
     {
         $this->customerReference = $customerReference;
         $this->clientContext     = $clientContext;
@@ -27,7 +27,7 @@ class GetCustomerIdByReference
     /**
      * @return string
      */
-    public function getCustomerReference()
+    public function getCustomerReference(): string
     {
         return $this->customerReference;
     }
@@ -37,7 +37,7 @@ class GetCustomerIdByReference
      *
      * @return GetCustomerIdByReference
      */
-    public function setCustomerReference($customerReference)
+    public function setCustomerReference(string $customerReference): GetCustomerIdByReference
     {
         $this->customerReference = $customerReference;
         return $this;
@@ -46,7 +46,7 @@ class GetCustomerIdByReference
     /**
      * @return RetailContext
      */
-    public function getClientContext()
+    public function getClientContext(): RetailContext
     {
         return $this->clientContext;
     }
@@ -56,7 +56,7 @@ class GetCustomerIdByReference
      *
      * @return GetCustomerIdByReference
      */
-    public function setClientContext($clientContext)
+    public function setClientContext(RetailContext $clientContext): GetCustomerIdByReference
     {
         $this->clientContext = $clientContext;
         return $this;

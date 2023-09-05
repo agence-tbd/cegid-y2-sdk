@@ -15,7 +15,7 @@ class CreateFromDocumentKey
     protected $Stub = null;
 
     /**
-     * @var CreateFromCustomerOrderDocumentTypeCreatResult $Type
+     * @var string $Type
      */
     protected $Type = null;
 
@@ -27,7 +27,7 @@ class CreateFromDocumentKey
     /**
      * @return int
      */
-    public function getNumber()
+    public function getNumber(): int
     {
       return $this->Number;
     }
@@ -36,7 +36,7 @@ class CreateFromDocumentKey
      * @param int $Number
      * @return CreateFromDocumentKey
      */
-    public function setNumber($Number)
+    public function setNumber(int $Number): CreateFromDocumentKey
     {
       $this->Number = $Number;
       return $this;
@@ -45,7 +45,7 @@ class CreateFromDocumentKey
     /**
      * @return string
      */
-    public function getStub()
+    public function getStub(): string
     {
       return $this->Stub;
     }
@@ -54,7 +54,7 @@ class CreateFromDocumentKey
      * @param string $Stub
      * @return CreateFromDocumentKey
      */
-    public function setStub($Stub)
+    public function setStub(string $Stub): CreateFromDocumentKey
     {
       $this->Stub = $Stub;
       return $this;
@@ -63,7 +63,7 @@ class CreateFromDocumentKey
     /**
      * @return string
      */
-    public function getType()
+    public function getType(): string
     {
       return $this->Type;
     }
@@ -72,7 +72,7 @@ class CreateFromDocumentKey
      * @param string $Type
      * @return CreateFromDocumentKey
      */
-    public function setType($Type)
+    public function setType(string $Type): CreateFromDocumentKey
     {
       $this->Type = $Type;
       return $this;

@@ -84,7 +84,7 @@ class Update_Header
     /**
      * @return boolean
      */
-    public function getActive()
+    public function getActive(): bool
     {
       return $this->Active;
     }
@@ -93,7 +93,7 @@ class Update_Header
      * @param boolean $Active
      * @return Update_Header
      */
-    public function setActive($Active)
+    public function setActive(bool $Active): Update_Header
     {
       $this->Active = $Active;
       return $this;
@@ -102,7 +102,7 @@ class Update_Header
     /**
      * @return string
      */
-    public function getComment()
+    public function getComment(): string
     {
       return $this->Comment;
     }
@@ -111,7 +111,7 @@ class Update_Header
      * @param string $Comment
      * @return Update_Header
      */
-    public function setComment($Comment)
+    public function setComment(string $Comment): Update_Header
     {
       $this->Comment = $Comment;
       return $this;
@@ -138,7 +138,7 @@ class Update_Header
      * @param string $format
      * @return Update_Header
      */
-    public function setDate(\DateTime $Date = null, $format=\DateTime::ATOM)
+    public function setDate(\DateTime $Date = null, string $format=\DateTime::ATOM): Update_Header
     {
       if ($Date == null) {
        $this->Date = null;
@@ -151,7 +151,7 @@ class Update_Header
     /**
      * @return string
      */
-    public function getExternalReference()
+    public function getExternalReference(): string
     {
       return $this->ExternalReference;
     }
@@ -160,7 +160,7 @@ class Update_Header
      * @param string $ExternalReference
      * @return Update_Header
      */
-    public function setExternalReference($ExternalReference)
+    public function setExternalReference(string $ExternalReference): Update_Header
     {
       $this->ExternalReference = $ExternalReference;
       return $this;
@@ -187,7 +187,7 @@ class Update_Header
      * @param string $format
      * @return Update_Header
      */
-    public function setExternalReferenceDate(\DateTime $ExternalReferenceDate = null, $format=\DateTime::ATOM)
+    public function setExternalReferenceDate(\DateTime $ExternalReferenceDate = null, string $format=\DateTime::ATOM): Update_Header
     {
       if ($ExternalReferenceDate == null) {
        $this->ExternalReferenceDate = null;
@@ -200,7 +200,7 @@ class Update_Header
     /**
      * @return string
      */
-    public function getFollowedReference()
+    public function getFollowedReference(): string
     {
       return $this->FollowedReference;
     }
@@ -209,7 +209,7 @@ class Update_Header
      * @param string $FollowedReference
      * @return Update_Header
      */
-    public function setFollowedReference($FollowedReference)
+    public function setFollowedReference(string $FollowedReference): Update_Header
     {
       $this->FollowedReference = $FollowedReference;
       return $this;
@@ -218,7 +218,7 @@ class Update_Header
     /**
      * @return boolean
      */
-    public function getLinesUnmodifiable()
+    public function getLinesUnmodifiable(): bool
     {
       return $this->LinesUnmodifiable;
     }
@@ -227,7 +227,7 @@ class Update_Header
      * @param boolean $LinesUnmodifiable
      * @return Update_Header
      */
-    public function setLinesUnmodifiable($LinesUnmodifiable)
+    public function setLinesUnmodifiable(bool $LinesUnmodifiable): Update_Header
     {
       $this->LinesUnmodifiable = $LinesUnmodifiable;
       return $this;
@@ -236,7 +236,7 @@ class Update_Header
     /**
      * @return OmniChannel
      */
-    public function getOmniChannel()
+    public function getOmniChannel(): OmniChannel
     {
       return $this->OmniChannel;
     }
@@ -245,7 +245,7 @@ class Update_Header
      * @param OmniChannel $OmniChannel
      * @return Update_Header
      */
-    public function setOmniChannel($OmniChannel)
+    public function setOmniChannel(OmniChannel $OmniChannel): Update_Header
     {
       $this->OmniChannel = $OmniChannel;
       return $this;
@@ -254,7 +254,7 @@ class Update_Header
     /**
      * @return DocumentOrigin
      */
-    public function getOrigin()
+    public function getOrigin(): DocumentOrigin
     {
       return $this->Origin;
     }
@@ -263,7 +263,7 @@ class Update_Header
      * @param DocumentOrigin $Origin
      * @return Update_Header
      */
-    public function setOrigin($Origin)
+    public function setOrigin(DocumentOrigin $Origin): Update_Header
     {
       $this->Origin = $Origin;
       return $this;
@@ -272,7 +272,7 @@ class Update_Header
     /**
      * @return string
      */
-    public function getSalesPersonId()
+    public function getSalesPersonId(): string
     {
       return $this->SalesPersonId;
     }
@@ -281,7 +281,7 @@ class Update_Header
      * @param string $SalesPersonId
      * @return Update_Header
      */
-    public function setSalesPersonId($SalesPersonId)
+    public function setSalesPersonId(string $SalesPersonId): Update_Header
     {
       $this->SalesPersonId = $SalesPersonId;
       return $this;
@@ -290,7 +290,7 @@ class Update_Header
     /**
      * @return boolean
      */
-    public function getTaxExcluded()
+    public function getTaxExcluded(): bool
     {
       return $this->TaxExcluded;
     }
@@ -299,7 +299,7 @@ class Update_Header
      * @param boolean $TaxExcluded
      * @return Update_Header
      */
-    public function setTaxExcluded($TaxExcluded)
+    public function setTaxExcluded(bool $TaxExcluded): Update_Header
     {
       $this->TaxExcluded = $TaxExcluded;
       return $this;
@@ -308,7 +308,7 @@ class Update_Header
     /**
      * @return ArrayOfUserDefinedDate
      */
-    public function getUserDefinedDates()
+    public function getUserDefinedDates(): ArrayOfUserDefinedDate
     {
       return $this->UserDefinedDates;
     }
@@ -317,7 +317,7 @@ class Update_Header
      * @param ArrayOfUserDefinedDate $UserDefinedDates
      * @return Update_Header
      */
-    public function setUserDefinedDates($UserDefinedDates)
+    public function setUserDefinedDates(ArrayOfUserDefinedDate $UserDefinedDates): Update_Header
     {
       $this->UserDefinedDates = $UserDefinedDates;
       return $this;
@@ -326,7 +326,7 @@ class Update_Header
     /**
      * @return ArrayOfUserDefinedTable
      */
-    public function getUserDefinedTables()
+    public function getUserDefinedTables(): ArrayOfUserDefinedTable
     {
       return $this->UserDefinedTables;
     }
@@ -335,7 +335,7 @@ class Update_Header
      * @param ArrayOfUserDefinedTable $UserDefinedTables
      * @return Update_Header
      */
-    public function setUserDefinedTables($UserDefinedTables)
+    public function setUserDefinedTables(ArrayOfUserDefinedTable $UserDefinedTables): Update_Header
     {
       $this->UserDefinedTables = $UserDefinedTables;
       return $this;
@@ -344,7 +344,7 @@ class Update_Header
     /**
      * @return ArrayOfUserField
      */
-    public function getUserFields()
+    public function getUserFields(): ArrayOfUserField
     {
       return $this->UserFields;
     }
@@ -353,7 +353,7 @@ class Update_Header
      * @param ArrayOfUserField $UserFields
      * @return Update_Header
      */
-    public function setUserFields($UserFields)
+    public function setUserFields(ArrayOfUserField $UserFields): Update_Header
     {
       $this->UserFields = $UserFields;
       return $this;

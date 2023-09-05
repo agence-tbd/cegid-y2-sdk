@@ -19,7 +19,7 @@ class Unlock
      * @param Unlock_Request $unlockRequest
      * @param RetailContext $clientContext
      */
-    public function __construct($unlockRequest, $clientContext)
+    public function __construct(Unlock_Request $unlockRequest, RetailContext $clientContext)
     {
       $this->unlockRequest = $unlockRequest;
       $this->clientContext = $clientContext;
@@ -28,7 +28,7 @@ class Unlock
     /**
      * @return Unlock_Request
      */
-    public function getUnlockRequest()
+    public function getUnlockRequest(): Unlock_Request
     {
       return $this->unlockRequest;
     }
@@ -37,7 +37,7 @@ class Unlock
      * @param Unlock_Request $unlockRequest
      * @return Unlock
      */
-    public function setUnlockRequest($unlockRequest)
+    public function setUnlockRequest(Unlock_Request $unlockRequest): Unlock
     {
       $this->unlockRequest = $unlockRequest;
       return $this;
@@ -46,7 +46,7 @@ class Unlock
     /**
      * @return RetailContext
      */
-    public function getClientContext()
+    public function getClientContext(): RetailContext
     {
       return $this->clientContext;
     }
@@ -55,7 +55,7 @@ class Unlock
      * @param RetailContext $clientContext
      * @return Unlock
      */
-    public function setClientContext($clientContext)
+    public function setClientContext(RetailContext $clientContext): Unlock
     {
       $this->clientContext = $clientContext;
       return $this;

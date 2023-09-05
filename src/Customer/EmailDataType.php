@@ -32,7 +32,7 @@ class EmailDataType
     /**
      * @return string
      */
-    public function getAlternativeEmail()
+    public function getAlternativeEmail(): string
     {
         return $this->AlternativeEmail;
     }
@@ -42,7 +42,7 @@ class EmailDataType
      *
      * @return EmailDataType
      */
-    public function setAlternativeEmail($AlternativeEmail)
+    public function setAlternativeEmail(string $AlternativeEmail): EmailDataType
     {
         $this->AlternativeEmail = $AlternativeEmail;
         return $this;
@@ -51,7 +51,7 @@ class EmailDataType
     /**
      * @return string
      */
-    public function getEmail()
+    public function getEmail(): string
     {
         return $this->Email;
     }
@@ -61,7 +61,7 @@ class EmailDataType
      *
      * @return EmailDataType
      */
-    public function setEmail($Email)
+    public function setEmail(string $Email): EmailDataType
     {
         $this->Email = $Email;
         return $this;
@@ -70,7 +70,7 @@ class EmailDataType
     /**
      * @return boolean
      */
-    public function getEmailingAccepted()
+    public function getEmailingAccepted(): bool
     {
         return $this->EmailingAccepted;
     }
@@ -80,7 +80,7 @@ class EmailDataType
      *
      * @return EmailDataType
      */
-    public function setEmailingAccepted($EmailingAccepted)
+    public function setEmailingAccepted(bool $EmailingAccepted): EmailDataType
     {
         $this->EmailingAccepted = $EmailingAccepted;
         return $this;
@@ -89,7 +89,7 @@ class EmailDataType
     /**
      * @return boolean
      */
-    public function getSendReceiptByMail()
+    public function getSendReceiptByMail(): bool
     {
         return $this->SendReceiptByMail;
     }
@@ -99,7 +99,7 @@ class EmailDataType
      *
      * @return EmailDataType
      */
-    public function setSendReceiptByMail($SendReceiptByMail)
+    public function setSendReceiptByMail(bool $SendReceiptByMail): EmailDataType
     {
         $this->SendReceiptByMail = $SendReceiptByMail;
         return $this;

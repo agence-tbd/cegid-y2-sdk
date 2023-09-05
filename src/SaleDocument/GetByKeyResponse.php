@@ -13,7 +13,7 @@ class GetByKeyResponse
     /**
      * @param Get_Reply $GetByKeyResult
      */
-    public function __construct($GetByKeyResult)
+    public function __construct(Get_Reply $GetByKeyResult)
     {
       $this->GetByKeyResult = $GetByKeyResult;
     }
@@ -21,7 +21,7 @@ class GetByKeyResponse
     /**
      * @return Get_Reply
      */
-    public function getGetByKeyResult()
+    public function getGetByKeyResult(): Get_Reply
     {
       return $this->GetByKeyResult;
     }
@@ -30,7 +30,7 @@ class GetByKeyResponse
      * @param Get_Reply $GetByKeyResult
      * @return GetByKeyResponse
      */
-    public function setGetByKeyResult($GetByKeyResult)
+    public function setGetByKeyResult(Get_Reply $GetByKeyResult): GetByKeyResponse
     {
       $this->GetByKeyResult = $GetByKeyResult;
       return $this;

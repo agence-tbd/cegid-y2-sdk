@@ -62,7 +62,7 @@ class UserDefinedDataType
     /**
      * @return string
      */
-    public function getUserDefinedTable0Value()
+    public function getUserDefinedTable0Value(): string
     {
         return $this->UserDefinedTable0Value;
     }
@@ -72,7 +72,7 @@ class UserDefinedDataType
      *
      * @return UserDefinedDataType
      */
-    public function setUserDefinedTable0Value($UserDefinedTable0Value)
+    public function setUserDefinedTable0Value(string $UserDefinedTable0Value): UserDefinedDataType
     {
         $this->UserDefinedTable0Value = $UserDefinedTable0Value;
         return $this;
@@ -81,7 +81,7 @@ class UserDefinedDataType
     /**
      * @return string
      */
-    public function getUserDefinedTable1Value()
+    public function getUserDefinedTable1Value(): string
     {
         return $this->UserDefinedTable1Value;
     }
@@ -91,7 +91,7 @@ class UserDefinedDataType
      *
      * @return UserDefinedDataType
      */
-    public function setUserDefinedTable1Value($UserDefinedTable1Value)
+    public function setUserDefinedTable1Value(string $UserDefinedTable1Value): UserDefinedDataType
     {
         $this->UserDefinedTable1Value = $UserDefinedTable1Value;
         return $this;
@@ -100,7 +100,7 @@ class UserDefinedDataType
     /**
      * @return string
      */
-    public function getUserDefinedTable2Value()
+    public function getUserDefinedTable2Value(): string
     {
         return $this->UserDefinedTable2Value;
     }
@@ -110,7 +110,7 @@ class UserDefinedDataType
      *
      * @return UserDefinedDataType
      */
-    public function setUserDefinedTable2Value($UserDefinedTable2Value)
+    public function setUserDefinedTable2Value(string $UserDefinedTable2Value): UserDefinedDataType
     {
         $this->UserDefinedTable2Value = $UserDefinedTable2Value;
         return $this;
@@ -119,7 +119,7 @@ class UserDefinedDataType
     /**
      * @return string
      */
-    public function getUserDefinedTable3Value()
+    public function getUserDefinedTable3Value(): string
     {
         return $this->UserDefinedTable3Value;
     }
@@ -129,7 +129,7 @@ class UserDefinedDataType
      *
      * @return UserDefinedDataType
      */
-    public function setUserDefinedTable3Value($UserDefinedTable3Value)
+    public function setUserDefinedTable3Value(string $UserDefinedTable3Value): UserDefinedDataType
     {
         $this->UserDefinedTable3Value = $UserDefinedTable3Value;
         return $this;
@@ -138,7 +138,7 @@ class UserDefinedDataType
     /**
      * @return string
      */
-    public function getUserDefinedTable4Value()
+    public function getUserDefinedTable4Value(): string
     {
         return $this->UserDefinedTable4Value;
     }
@@ -148,7 +148,7 @@ class UserDefinedDataType
      *
      * @return UserDefinedDataType
      */
-    public function setUserDefinedTable4Value($UserDefinedTable4Value)
+    public function setUserDefinedTable4Value(string $UserDefinedTable4Value): UserDefinedDataType
     {
         $this->UserDefinedTable4Value = $UserDefinedTable4Value;
         return $this;
@@ -157,7 +157,7 @@ class UserDefinedDataType
     /**
      * @return string
      */
-    public function getUserDefinedTable5Value()
+    public function getUserDefinedTable5Value(): string
     {
         return $this->UserDefinedTable5Value;
     }
@@ -167,7 +167,7 @@ class UserDefinedDataType
      *
      * @return UserDefinedDataType
      */
-    public function setUserDefinedTable5Value($UserDefinedTable5Value)
+    public function setUserDefinedTable5Value(string $UserDefinedTable5Value): UserDefinedDataType
     {
         $this->UserDefinedTable5Value = $UserDefinedTable5Value;
         return $this;
@@ -176,7 +176,7 @@ class UserDefinedDataType
     /**
      * @return string
      */
-    public function getUserDefinedTable6Value()
+    public function getUserDefinedTable6Value(): string
     {
         return $this->UserDefinedTable6Value;
     }
@@ -186,7 +186,7 @@ class UserDefinedDataType
      *
      * @return UserDefinedDataType
      */
-    public function setUserDefinedTable6Value($UserDefinedTable6Value)
+    public function setUserDefinedTable6Value(string $UserDefinedTable6Value): UserDefinedDataType
     {
         $this->UserDefinedTable6Value = $UserDefinedTable6Value;
         return $this;
@@ -195,7 +195,7 @@ class UserDefinedDataType
     /**
      * @return string
      */
-    public function getUserDefinedTable7Value()
+    public function getUserDefinedTable7Value(): string
     {
         return $this->UserDefinedTable7Value;
     }
@@ -205,7 +205,7 @@ class UserDefinedDataType
      *
      * @return UserDefinedDataType
      */
-    public function setUserDefinedTable7Value($UserDefinedTable7Value)
+    public function setUserDefinedTable7Value(string $UserDefinedTable7Value): UserDefinedDataType
     {
         $this->UserDefinedTable7Value = $UserDefinedTable7Value;
         return $this;
@@ -214,7 +214,7 @@ class UserDefinedDataType
     /**
      * @return string
      */
-    public function getUserDefinedTable8Value()
+    public function getUserDefinedTable8Value(): string
     {
         return $this->UserDefinedTable8Value;
     }
@@ -224,7 +224,7 @@ class UserDefinedDataType
      *
      * @return UserDefinedDataType
      */
-    public function setUserDefinedTable8Value($UserDefinedTable8Value)
+    public function setUserDefinedTable8Value(string $UserDefinedTable8Value): UserDefinedDataType
     {
         $this->UserDefinedTable8Value = $UserDefinedTable8Value;
         return $this;
@@ -233,7 +233,7 @@ class UserDefinedDataType
     /**
      * @return string
      */
-    public function getUserDefinedTable9Value()
+    public function getUserDefinedTable9Value(): string
     {
         return $this->UserDefinedTable9Value;
     }
@@ -243,7 +243,7 @@ class UserDefinedDataType
      *
      * @return UserDefinedDataType
      */
-    public function setUserDefinedTable9Value($UserDefinedTable9Value)
+    public function setUserDefinedTable9Value(string $UserDefinedTable9Value): UserDefinedDataType
     {
         $this->UserDefinedTable9Value = $UserDefinedTable9Value;
         return $this;

@@ -10,7 +10,7 @@ class InternalGuid
     protected $CheckGuid = null;
 
     /**
-     * @var guid $Guid
+     * @var string $Guid
      */
     protected $Guid = null;
 
@@ -22,7 +22,7 @@ class InternalGuid
     /**
      * @return boolean
      */
-    public function getCheckGuid()
+    public function getCheckGuid(): bool
     {
         return $this->CheckGuid;
     }
@@ -32,26 +32,26 @@ class InternalGuid
      *
      * @return InternalGuid
      */
-    public function setCheckGuid($CheckGuid)
+    public function setCheckGuid(bool $CheckGuid): InternalGuid
     {
         $this->CheckGuid = $CheckGuid;
         return $this;
     }
 
     /**
-     * @return guid
+     * @return string
      */
-    public function getGuid()
+    public function getGuid(): string
     {
         return $this->Guid;
     }
 
     /**
-     * @param guid $Guid
+     * @param string $Guid
      *
      * @return InternalGuid
      */
-    public function setGuid($Guid)
+    public function setGuid(string $Guid): InternalGuid
     {
         $this->Guid = $Guid;
         return $this;

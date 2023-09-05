@@ -42,7 +42,7 @@ class AvailableSkuQty
     /**
      * @return float
      */
-    public function getAvailableQty()
+    public function getAvailableQty(): float
     {
         return $this->AvailableQty;
     }
@@ -51,7 +51,7 @@ class AvailableSkuQty
      * @param float $AvailableQty
      * @return AvailableSkuQty
      */
-    public function setAvailableQty($AvailableQty)
+    public function setAvailableQty(float $AvailableQty): AvailableSkuQty
     {
         $this->AvailableQty = $AvailableQty;
         return $this;
@@ -60,7 +60,7 @@ class AvailableSkuQty
     /**
      * @return string
      */
-    public function getDimension1()
+    public function getDimension1(): string
     {
         return $this->Dimension1;
     }
@@ -69,7 +69,7 @@ class AvailableSkuQty
      * @param string $Dimension1
      * @return AvailableSkuQty
      */
-    public function setDimension1($Dimension1)
+    public function setDimension1(string $Dimension1): AvailableSkuQty
     {
         $this->Dimension1 = $Dimension1;
         return $this;
@@ -78,7 +78,7 @@ class AvailableSkuQty
     /**
      * @return string
      */
-    public function getDimension2()
+    public function getDimension2(): string
     {
         return $this->Dimension2;
     }
@@ -87,7 +87,7 @@ class AvailableSkuQty
      * @param string $Dimension2
      * @return AvailableSkuQty
      */
-    public function setDimension2($Dimension2)
+    public function setDimension2(string $Dimension2): AvailableSkuQty
     {
         $this->Dimension2 = $Dimension2;
         return $this;
@@ -96,7 +96,7 @@ class AvailableSkuQty
     /**
      * @return string
      */
-    public function getDimension3()
+    public function getDimension3(): string
     {
         return $this->Dimension3;
     }
@@ -105,7 +105,7 @@ class AvailableSkuQty
      * @param string $Dimension3
      * @return AvailableSkuQty
      */
-    public function setDimension3($Dimension3)
+    public function setDimension3(string $Dimension3): AvailableSkuQty
     {
         $this->Dimension3 = $Dimension3;
         return $this;
@@ -114,7 +114,7 @@ class AvailableSkuQty
     /**
      * @return string
      */
-    public function getDimension4()
+    public function getDimension4(): string
     {
         return $this->Dimension4;
     }
@@ -123,7 +123,7 @@ class AvailableSkuQty
      * @param string $Dimension4
      * @return AvailableSkuQty
      */
-    public function setDimension4($Dimension4)
+    public function setDimension4(string $Dimension4): AvailableSkuQty
     {
         $this->Dimension4 = $Dimension4;
         return $this;
@@ -132,7 +132,7 @@ class AvailableSkuQty
     /**
      * @return string
      */
-    public function getDimension5()
+    public function getDimension5(): string
     {
         return $this->Dimension5;
     }
@@ -141,7 +141,7 @@ class AvailableSkuQty
      * @param string $Dimension5
      * @return AvailableSkuQty
      */
-    public function setDimension5($Dimension5)
+    public function setDimension5(string $Dimension5): AvailableSkuQty
     {
         $this->Dimension5 = $Dimension5;
         return $this;

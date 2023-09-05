@@ -19,7 +19,7 @@ class GetByExternalReference
      * @param GetByExternalReference_Request $searchRequest
      * @param RetailContext $clientContext
      */
-    public function __construct($searchRequest, $clientContext)
+    public function __construct(GetByExternalReference_Request $searchRequest, RetailContext $clientContext)
     {
       $this->searchRequest = $searchRequest;
       $this->clientContext = $clientContext;
@@ -28,7 +28,7 @@ class GetByExternalReference
     /**
      * @return GetByExternalReference_Request
      */
-    public function getSearchRequest()
+    public function getSearchRequest(): GetByExternalReference_Request
     {
       return $this->searchRequest;
     }
@@ -37,7 +37,7 @@ class GetByExternalReference
      * @param GetByExternalReference_Request $searchRequest
      * @return GetByExternalReference
      */
-    public function setSearchRequest($searchRequest)
+    public function setSearchRequest(GetByExternalReference_Request $searchRequest): GetByExternalReference
     {
       $this->searchRequest = $searchRequest;
       return $this;
@@ -46,7 +46,7 @@ class GetByExternalReference
     /**
      * @return RetailContext
      */
-    public function getClientContext()
+    public function getClientContext(): RetailContext
     {
       return $this->clientContext;
     }
@@ -55,7 +55,7 @@ class GetByExternalReference
      * @param RetailContext $clientContext
      * @return GetByExternalReference
      */
-    public function setClientContext($clientContext)
+    public function setClientContext(RetailContext $clientContext): GetByExternalReference
     {
       $this->clientContext = $clientContext;
       return $this;

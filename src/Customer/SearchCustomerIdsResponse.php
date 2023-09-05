@@ -13,7 +13,7 @@ class SearchCustomerIdsResponse
     /**
      * @param ArrayOfCustomerQueryData $SearchCustomerIdsResult
      */
-    public function __construct($SearchCustomerIdsResult)
+    public function __construct(ArrayOfCustomerQueryData $SearchCustomerIdsResult)
     {
         $this->SearchCustomerIdsResult = $SearchCustomerIdsResult;
     }
@@ -21,7 +21,7 @@ class SearchCustomerIdsResponse
     /**
      * @return ArrayOfCustomerQueryData
      */
-    public function getSearchCustomerIdsResult()
+    public function getSearchCustomerIdsResult(): ArrayOfCustomerQueryData
     {
         return $this->SearchCustomerIdsResult;
     }
@@ -31,7 +31,7 @@ class SearchCustomerIdsResponse
      *
      * @return SearchCustomerIdsResponse
      */
-    public function setSearchCustomerIdsResult($SearchCustomerIdsResult)
+    public function setSearchCustomerIdsResult(ArrayOfCustomerQueryData $SearchCustomerIdsResult): SearchCustomerIdsResponse
     {
         $this->SearchCustomerIdsResult = $SearchCustomerIdsResult;
         return $this;

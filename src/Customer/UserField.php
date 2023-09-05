@@ -47,7 +47,7 @@ class UserField
     /**
      * @return boolean
      */
-    public function getBooleanValue()
+    public function getBooleanValue(): bool
     {
         return $this->BooleanValue;
     }
@@ -57,7 +57,7 @@ class UserField
      *
      * @return UserField
      */
-    public function setBooleanValue($BooleanValue)
+    public function setBooleanValue(bool $BooleanValue): UserField
     {
         $this->BooleanValue = $BooleanValue;
         return $this;
@@ -80,24 +80,20 @@ class UserField
     }
 
     /**
-     * @param \DateTime $DateValue
-     *
+     * @param \DateTime|null $DateValue
+     * @param string $format
      * @return UserField
      */
-    public function setDateValue(\DateTime $DateValue = null, $format=\DateTime::ATOM)
+    public function setDateValue(\DateTime $DateValue = null, string $format=\DateTime::ATOM): UserField
     {
-        if ($DateValue == null) {
-            $this->DateValue = null;
-        } else {
-            $this->DateValue = $DateValue->format($format);
-        }
+        $this->DateValue = $DateValue?->format($format);
         return $this;
     }
 
     /**
      * @return int
      */
-    public function getId()
+    public function getId(): int
     {
         return $this->Id;
     }
@@ -107,7 +103,7 @@ class UserField
      *
      * @return UserField
      */
-    public function setId($Id)
+    public function setId(int $Id): UserField
     {
         $this->Id = $Id;
         return $this;
@@ -116,7 +112,7 @@ class UserField
     /**
      * @return string
      */
-    public function getListElementValue()
+    public function getListElementValue(): string
     {
         return $this->ListElementValue;
     }
@@ -126,7 +122,7 @@ class UserField
      *
      * @return UserField
      */
-    public function setListElementValue($ListElementValue)
+    public function setListElementValue(string $ListElementValue): UserField
     {
         $this->ListElementValue = $ListElementValue;
         return $this;
@@ -135,7 +131,7 @@ class UserField
     /**
      * @return float
      */
-    public function getNumberValue()
+    public function getNumberValue(): float
     {
         return $this->NumberValue;
     }
@@ -145,7 +141,7 @@ class UserField
      *
      * @return UserField
      */
-    public function setNumberValue($NumberValue)
+    public function setNumberValue(float $NumberValue): UserField
     {
         $this->NumberValue = $NumberValue;
         return $this;
@@ -154,7 +150,7 @@ class UserField
     /**
      * @return string
      */
-    public function getTextValue()
+    public function getTextValue(): string
     {
         return $this->TextValue;
     }
@@ -164,7 +160,7 @@ class UserField
      *
      * @return UserField
      */
-    public function setTextValue($TextValue)
+    public function setTextValue(string $TextValue): UserField
     {
         $this->TextValue = $TextValue;
         return $this;
@@ -173,7 +169,7 @@ class UserField
     /**
      * @return UserFieldKind
      */
-    public function getValueType()
+    public function getValueType(): UserFieldKind
     {
         return $this->ValueType;
     }
@@ -183,7 +179,7 @@ class UserField
      *
      * @return UserField
      */
-    public function setValueType($ValueType)
+    public function setValueType(UserFieldKind $ValueType): UserField
     {
         $this->ValueType = $ValueType;
         return $this;

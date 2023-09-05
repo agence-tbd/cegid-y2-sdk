@@ -49,7 +49,7 @@ class GetHeaderList_Request
     /**
      * @return boolean
      */
-    public function getActive()
+    public function getActive(): bool
     {
       return $this->Active;
     }
@@ -58,7 +58,7 @@ class GetHeaderList_Request
      * @param boolean $Active
      * @return GetHeaderList_Request
      */
-    public function setActive($Active)
+    public function setActive(bool $Active): GetHeaderList_Request
     {
       $this->Active = $Active;
       return $this;
@@ -85,7 +85,7 @@ class GetHeaderList_Request
      * @param string $format
      * @return GetHeaderList_Request
      */
-    public function setBeginDate(\DateTime $BeginDate = null, $format=\DateTime::ATOM)
+    public function setBeginDate(\DateTime $BeginDate = null, string $format=\DateTime::ATOM): GetHeaderList_Request
     {
       if ($BeginDate == null) {
        $this->BeginDate = null;
@@ -98,7 +98,7 @@ class GetHeaderList_Request
     /**
      * @return string
      */
-    public function getCustomerId()
+    public function getCustomerId(): string
     {
       return $this->CustomerId;
     }
@@ -107,7 +107,7 @@ class GetHeaderList_Request
      * @param string $CustomerId
      * @return GetHeaderList_Request
      */
-    public function setCustomerId($CustomerId)
+    public function setCustomerId(string $CustomerId): GetHeaderList_Request
     {
       $this->CustomerId = $CustomerId;
       return $this;
@@ -116,7 +116,7 @@ class GetHeaderList_Request
     /**
      * @return ArrayOfSaleDocumentType
      */
-    public function getDocumentTypes()
+    public function getDocumentTypes(): ArrayOfSaleDocumentType
     {
       return $this->DocumentTypes;
     }
@@ -125,7 +125,7 @@ class GetHeaderList_Request
      * @param ArrayOfSaleDocumentType $DocumentTypes
      * @return GetHeaderList_Request
      */
-    public function setDocumentTypes($DocumentTypes)
+    public function setDocumentTypes(ArrayOfSaleDocumentType $DocumentTypes): GetHeaderList_Request
     {
       $this->DocumentTypes = $DocumentTypes;
       return $this;
@@ -152,7 +152,7 @@ class GetHeaderList_Request
      * @param string $format
      * @return GetHeaderList_Request
      */
-    public function setEndDate(\DateTime $EndDate = null, $format=\DateTime::ATOM)
+    public function setEndDate(\DateTime $EndDate = null, string $format=\DateTime::ATOM): GetHeaderList_Request
     {
       if ($EndDate == null) {
        $this->EndDate = null;
@@ -165,7 +165,7 @@ class GetHeaderList_Request
     /**
      * @return Pager
      */
-    public function getPager()
+    public function getPager(): Pager
     {
       return $this->Pager;
     }
@@ -174,7 +174,7 @@ class GetHeaderList_Request
      * @param Pager $Pager
      * @return GetHeaderList_Request
      */
-    public function setPager($Pager)
+    public function setPager(Pager $Pager): GetHeaderList_Request
     {
       $this->Pager = $Pager;
       return $this;
@@ -183,7 +183,7 @@ class GetHeaderList_Request
     /**
      * @return ArrayOfstring
      */
-    public function getStoreIds()
+    public function getStoreIds(): ArrayOfstring
     {
       return $this->StoreIds;
     }
@@ -192,7 +192,7 @@ class GetHeaderList_Request
      * @param ArrayOfstring $StoreIds
      * @return GetHeaderList_Request
      */
-    public function setStoreIds($StoreIds)
+    public function setStoreIds(ArrayOfstring $StoreIds): GetHeaderList_Request
     {
       $this->StoreIds = $StoreIds;
       return $this;

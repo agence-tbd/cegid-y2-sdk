@@ -13,7 +13,7 @@ class HelloWorldResponse
     /**
      * @param string $HelloWorldResult
      */
-    public function __construct($HelloWorldResult)
+    public function __construct(string $HelloWorldResult)
     {
       $this->HelloWorldResult = $HelloWorldResult;
     }
@@ -21,7 +21,7 @@ class HelloWorldResponse
     /**
      * @return string
      */
-    public function getHelloWorldResult()
+    public function getHelloWorldResult(): string
     {
       return $this->HelloWorldResult;
     }
@@ -30,7 +30,7 @@ class HelloWorldResponse
      * @param string $HelloWorldResult
      * @return HelloWorldResponse
      */
-    public function setHelloWorldResult($HelloWorldResult)
+    public function setHelloWorldResult(string $HelloWorldResult): HelloWorldResponse
     {
       $this->HelloWorldResult = $HelloWorldResult;
       return $this;

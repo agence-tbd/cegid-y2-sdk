@@ -12,7 +12,7 @@ class UpdateCustomerResponse
     /**
      * @param string $UpdateCustomerResult
      */
-    public function __construct($UpdateCustomerResult)
+    public function __construct(string $UpdateCustomerResult)
     {
         $this->UpdateCustomerResult = $UpdateCustomerResult;
     }
@@ -20,7 +20,7 @@ class UpdateCustomerResponse
     /**
      * @return string
      */
-    public function getUpdateCustomerResult()
+    public function getUpdateCustomerResult(): string
     {
         return $this->UpdateCustomerResult;
     }
@@ -30,7 +30,7 @@ class UpdateCustomerResponse
      *
      * @return UpdateCustomerResponse
      */
-    public function setUpdateCustomerResult($UpdateCustomerResult)
+    public function setUpdateCustomerResult(string $UpdateCustomerResult): UpdateCustomerResponse
     {
         $this->UpdateCustomerResult = $UpdateCustomerResult;
         return $this;

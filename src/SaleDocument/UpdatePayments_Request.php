@@ -24,7 +24,7 @@ class UpdatePayments_Request
     /**
      * @return SaleDocumentIdentifier
      */
-    public function getIdentifier()
+    public function getIdentifier(): SaleDocumentIdentifier
     {
       return $this->Identifier;
     }
@@ -33,7 +33,7 @@ class UpdatePayments_Request
      * @param SaleDocumentIdentifier $Identifier
      * @return UpdatePayments_Request
      */
-    public function setIdentifier($Identifier)
+    public function setIdentifier(SaleDocumentIdentifier $Identifier): UpdatePayments_Request
     {
       $this->Identifier = $Identifier;
       return $this;
@@ -42,7 +42,7 @@ class UpdatePayments_Request
     /**
      * @return ArrayOfUpdate_Payment
      */
-    public function getPayments()
+    public function getPayments(): ArrayOfUpdate_Payment
     {
       return $this->Payments;
     }
@@ -51,7 +51,7 @@ class UpdatePayments_Request
      * @param ArrayOfUpdate_Payment $Payments
      * @return UpdatePayments_Request
      */
-    public function setPayments($Payments)
+    public function setPayments(ArrayOfUpdate_Payment $Payments): UpdatePayments_Request
     {
       $this->Payments = $Payments;
       return $this;

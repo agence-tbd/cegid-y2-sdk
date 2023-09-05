@@ -19,7 +19,7 @@ class GetByExternalReference_Reply
     /**
      * @return ArrayOfGet_Reply
      */
-    public function getGet_Replies()
+    public function getGet_Replies(): ArrayOfGet_Reply
     {
       return $this->Get_Replies;
     }
@@ -28,7 +28,7 @@ class GetByExternalReference_Reply
      * @param ArrayOfGet_Reply $Get_Replies
      * @return GetByExternalReference_Reply
      */
-    public function setGet_Replies($Get_Replies)
+    public function setGet_Replies(ArrayOfGet_Reply $Get_Replies): GetByExternalReference_Reply
     {
       $this->Get_Replies = $Get_Replies;
       return $this;

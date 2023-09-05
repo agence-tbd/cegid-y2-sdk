@@ -32,7 +32,7 @@ class CustomerInputData extends CustomerData
     /**
      * @return boolean
      */
-    public function getClosed()
+    public function getClosed(): bool
     {
         return $this->Closed;
     }
@@ -42,7 +42,7 @@ class CustomerInputData extends CustomerData
      *
      * @return CustomerInputData
      */
-    public function setClosed($Closed)
+    public function setClosed(bool $Closed): CustomerInputData
     {
         $this->Closed = $Closed;
         return $this;
@@ -51,7 +51,7 @@ class CustomerInputData extends CustomerData
     /**
      * @return string
      */
-    public function getInvoiceCustomerId()
+    public function getInvoiceCustomerId(): string
     {
         return $this->InvoiceCustomerId;
     }
@@ -61,7 +61,7 @@ class CustomerInputData extends CustomerData
      *
      * @return CustomerInputData
      */
-    public function setInvoiceCustomerId($InvoiceCustomerId)
+    public function setInvoiceCustomerId(string $InvoiceCustomerId): CustomerInputData
     {
         $this->InvoiceCustomerId = $InvoiceCustomerId;
         return $this;
@@ -70,7 +70,7 @@ class CustomerInputData extends CustomerData
     /**
      * @return boolean
      */
-    public function getIsProspect()
+    public function getIsProspect(): bool
     {
         return $this->IsProspect;
     }
@@ -80,7 +80,7 @@ class CustomerInputData extends CustomerData
      *
      * @return CustomerInputData
      */
-    public function setIsProspect($IsProspect)
+    public function setIsProspect(bool $IsProspect): CustomerInputData
     {
         $this->IsProspect = $IsProspect;
         return $this;
@@ -89,7 +89,7 @@ class CustomerInputData extends CustomerData
     /**
      * @return string
      */
-    public function getNotepad()
+    public function getNotepad(): string
     {
         return $this->Notepad;
     }
@@ -99,7 +99,7 @@ class CustomerInputData extends CustomerData
      *
      * @return CustomerInputData
      */
-    public function setNotepad($Notepad)
+    public function setNotepad(string $Notepad): CustomerInputData
     {
         $this->Notepad = $Notepad;
         return $this;

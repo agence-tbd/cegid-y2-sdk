@@ -12,7 +12,7 @@ class GetAvailableQtyResponse
     /**
      * @param AvailableQtyReturn $GetAvailableQtyResult
      */
-    public function __construct($GetAvailableQtyResult)
+    public function __construct(AvailableQtyReturn $GetAvailableQtyResult)
     {
         $this->GetAvailableQtyResult = $GetAvailableQtyResult;
     }
@@ -20,7 +20,7 @@ class GetAvailableQtyResponse
     /**
      * @return AvailableQtyReturn
      */
-    public function getGetAvailableQtyResult()
+    public function getGetAvailableQtyResult(): AvailableQtyReturn
     {
         return $this->GetAvailableQtyResult;
     }
@@ -29,7 +29,7 @@ class GetAvailableQtyResponse
      * @param AvailableQtyReturn $GetAvailableQtyResult
      * @return GetAvailableQtyResponse
      */
-    public function setGetAvailableQtyResult($GetAvailableQtyResult)
+    public function setGetAvailableQtyResult(AvailableQtyReturn $GetAvailableQtyResult): GetAvailableQtyResponse
     {
         $this->GetAvailableQtyResult = $GetAvailableQtyResult;
         return $this;

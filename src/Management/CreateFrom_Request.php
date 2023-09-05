@@ -27,7 +27,7 @@ class CreateFrom_Request
     /**
      * @return CreateFrom_Header
      */
-    public function getHeader()
+    public function getHeader(): CreateFrom_Header
     {
       return $this->Header;
     }
@@ -36,7 +36,7 @@ class CreateFrom_Request
      * @param CreateFrom_Header $Header
      * @return CreateFrom_Request
      */
-    public function setHeader($Header)
+    public function setHeader(CreateFrom_Header $Header): CreateFrom_Request
     {
       $this->Header = $Header;
       return $this;
@@ -45,7 +45,7 @@ class CreateFrom_Request
     /**
      * @return ArrayOfCreateFrom_Line
      */
-    public function getLines()
+    public function getLines(): ArrayOfCreateFrom_Line
     {
       return $this->Lines;
     }
@@ -54,7 +54,7 @@ class CreateFrom_Request
      * @param ArrayOfCreateFrom_Line $Lines
      * @return CreateFrom_Request
      */
-    public function setLines($Lines)
+    public function setLines(ArrayOfCreateFrom_Line $Lines): CreateFrom_Request
     {
       $this->Lines = $Lines;
       return $this;
@@ -63,7 +63,7 @@ class CreateFrom_Request
     /**
      * @return ArrayOfCreateFrom_Payment
      */
-    public function getPayments()
+    public function getPayments(): ArrayOfCreateFrom_Payment
     {
       return $this->Payments;
     }
@@ -72,7 +72,7 @@ class CreateFrom_Request
      * @param ArrayOfCreateFrom_Payment $Payments
      * @return CreateFrom_Request
      */
-    public function setPayments($Payments)
+    public function setPayments(ArrayOfCreateFrom_Payment $Payments): CreateFrom_Request
     {
       $this->Payments = $Payments;
       return $this;

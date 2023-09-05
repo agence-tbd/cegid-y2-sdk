@@ -13,7 +13,7 @@ class GetHeaderListResponse
     /**
      * @param GetHeaderList_Reply $GetHeaderListResult
      */
-    public function __construct($GetHeaderListResult)
+    public function __construct(GetHeaderList_Reply $GetHeaderListResult)
     {
       $this->GetHeaderListResult = $GetHeaderListResult;
     }
@@ -21,7 +21,7 @@ class GetHeaderListResponse
     /**
      * @return GetHeaderList_Reply
      */
-    public function getGetHeaderListResult()
+    public function getGetHeaderListResult(): GetHeaderList_Reply
     {
       return $this->GetHeaderListResult;
     }
@@ -30,7 +30,7 @@ class GetHeaderListResponse
      * @param GetHeaderList_Reply $GetHeaderListResult
      * @return GetHeaderListResponse
      */
-    public function setGetHeaderListResult($GetHeaderListResult)
+    public function setGetHeaderListResult(GetHeaderList_Reply $GetHeaderListResult): GetHeaderListResponse
     {
       $this->GetHeaderListResult = $GetHeaderListResult;
       return $this;

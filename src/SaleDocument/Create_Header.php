@@ -65,7 +65,8 @@ class Create_Header
     protected $OmniChannel = null;
 
     /**
-     * @var DocumentOrigin $Origin
+     * @see DocumentOrigin
+     * @var string $Origin
      */
     protected $Origin = null;
 
@@ -128,7 +129,7 @@ class Create_Header
     /**
      * @return boolean
      */
-    public function getActive()
+    public function getActive(): bool
     {
         return $this->Active;
     }
@@ -138,7 +139,7 @@ class Create_Header
      *
      * @return Create_Header
      */
-    public function setActive($Active)
+    public function setActive(bool $Active): Create_Header
     {
         $this->Active = $Active;
         return $this;
@@ -147,7 +148,7 @@ class Create_Header
     /**
      * @return string
      */
-    public function getComment()
+    public function getComment(): string
     {
         return $this->Comment;
     }
@@ -157,7 +158,7 @@ class Create_Header
      *
      * @return Create_Header
      */
-    public function setComment($Comment)
+    public function setComment(string $Comment): Create_Header
     {
         $this->Comment = $Comment;
         return $this;
@@ -166,7 +167,7 @@ class Create_Header
     /**
      * @return string
      */
-    public function getCurrencyId()
+    public function getCurrencyId(): string
     {
         return $this->CurrencyId;
     }
@@ -176,7 +177,7 @@ class Create_Header
      *
      * @return Create_Header
      */
-    public function setCurrencyId($CurrencyId)
+    public function setCurrencyId(string $CurrencyId): Create_Header
     {
         $this->CurrencyId = $CurrencyId;
         return $this;
@@ -185,7 +186,7 @@ class Create_Header
     /**
      * @return string
      */
-    public function getCustomerId()
+    public function getCustomerId(): string
     {
         return $this->CustomerId;
     }
@@ -195,7 +196,7 @@ class Create_Header
      *
      * @return Create_Header
      */
-    public function setCustomerId($CustomerId)
+    public function setCustomerId(string $CustomerId): Create_Header
     {
         $this->CustomerId = $CustomerId;
         return $this;
@@ -222,7 +223,7 @@ class Create_Header
      * @param string $format
      * @return Create_Header
      */
-    public function setDate(\DateTime $Date = null, $format=\DateTime::ATOM)
+    public function setDate(\DateTime $Date = null, string $format=\DateTime::ATOM): Create_Header
     {
         if ($Date == null) {
             $this->Date = null;
@@ -235,7 +236,7 @@ class Create_Header
     /**
      * @return SaleDocumentLineIdentifier
      */
-    public function getDeposit()
+    public function getDeposit(): SaleDocumentLineIdentifier
     {
         return $this->Deposit;
     }
@@ -245,7 +246,7 @@ class Create_Header
      *
      * @return Create_Header
      */
-    public function setDeposit($Deposit)
+    public function setDeposit(SaleDocumentLineIdentifier $Deposit): Create_Header
     {
         $this->Deposit = $Deposit;
         return $this;
@@ -254,7 +255,7 @@ class Create_Header
     /**
      * @return string
      */
-    public function getExternalReference()
+    public function getExternalReference(): string
     {
         return $this->ExternalReference;
     }
@@ -264,7 +265,7 @@ class Create_Header
      *
      * @return Create_Header
      */
-    public function setExternalReference($ExternalReference)
+    public function setExternalReference(string $ExternalReference): Create_Header
     {
         $this->ExternalReference = $ExternalReference;
         return $this;
@@ -291,7 +292,7 @@ class Create_Header
      * @param string $format
      * @return Create_Header
      */
-    public function setExternalReferenceDate(\DateTime $ExternalReferenceDate = null, $format=\DateTime::ATOM)
+    public function setExternalReferenceDate(\DateTime $ExternalReferenceDate = null, string $format=\DateTime::ATOM): Create_Header
     {
         if ($ExternalReferenceDate == null) {
             $this->ExternalReferenceDate = null;
@@ -304,7 +305,7 @@ class Create_Header
     /**
      * @return string
      */
-    public function getFollowedReference()
+    public function getFollowedReference(): string
     {
         return $this->FollowedReference;
     }
@@ -314,7 +315,7 @@ class Create_Header
      *
      * @return Create_Header
      */
-    public function setFollowedReference($FollowedReference)
+    public function setFollowedReference(string $FollowedReference): Create_Header
     {
         $this->FollowedReference = $FollowedReference;
         return $this;
@@ -323,7 +324,7 @@ class Create_Header
     /**
      * @return string
      */
-    public function getInternalReference()
+    public function getInternalReference(): string
     {
         return $this->InternalReference;
     }
@@ -333,7 +334,7 @@ class Create_Header
      *
      * @return Create_Header
      */
-    public function setInternalReference($InternalReference)
+    public function setInternalReference(string $InternalReference): Create_Header
     {
         $this->InternalReference = $InternalReference;
         return $this;
@@ -342,7 +343,7 @@ class Create_Header
     /**
      * @return boolean
      */
-    public function getLinesUnmodifiable()
+    public function getLinesUnmodifiable(): bool
     {
         return $this->LinesUnmodifiable;
     }
@@ -352,7 +353,7 @@ class Create_Header
      *
      * @return Create_Header
      */
-    public function setLinesUnmodifiable($LinesUnmodifiable)
+    public function setLinesUnmodifiable(bool $LinesUnmodifiable): Create_Header
     {
         $this->LinesUnmodifiable = $LinesUnmodifiable;
         return $this;
@@ -361,7 +362,7 @@ class Create_Header
     /**
      * @return OmniChannel
      */
-    public function getOmniChannel()
+    public function getOmniChannel(): OmniChannel
     {
         return $this->OmniChannel;
     }
@@ -371,7 +372,7 @@ class Create_Header
      *
      * @return Create_Header
      */
-    public function setOmniChannel($OmniChannel)
+    public function setOmniChannel(OmniChannel $OmniChannel): Create_Header
     {
         $this->OmniChannel = $OmniChannel;
         return $this;
@@ -380,7 +381,7 @@ class Create_Header
     /**
      * @return string
      */
-    public function getOrigin()
+    public function getOrigin(): string
     {
         return $this->Origin;
     }
@@ -390,7 +391,7 @@ class Create_Header
      *
      * @return Create_Header
      */
-    public function setOrigin($Origin)
+    public function setOrigin(string $Origin): Create_Header
     {
         $this->Origin = $Origin;
         return $this;
@@ -399,7 +400,7 @@ class Create_Header
     /**
      * @return string
      */
-    public function getSalesPersonId()
+    public function getSalesPersonId(): string
     {
         return $this->SalesPersonId;
     }
@@ -409,7 +410,7 @@ class Create_Header
      *
      * @return Create_Header
      */
-    public function setSalesPersonId($SalesPersonId)
+    public function setSalesPersonId(string $SalesPersonId): Create_Header
     {
         $this->SalesPersonId = $SalesPersonId;
         return $this;
@@ -418,7 +419,7 @@ class Create_Header
     /**
      * @return string
      */
-    public function getStoreId()
+    public function getStoreId(): string
     {
         return $this->StoreId;
     }
@@ -428,7 +429,7 @@ class Create_Header
      *
      * @return Create_Header
      */
-    public function setStoreId($StoreId)
+    public function setStoreId(string $StoreId): Create_Header
     {
         $this->StoreId = $StoreId;
         return $this;
@@ -437,7 +438,7 @@ class Create_Header
     /**
      * @return boolean
      */
-    public function getTaxExcluded()
+    public function getTaxExcluded(): bool
     {
         return $this->TaxExcluded;
     }
@@ -447,7 +448,7 @@ class Create_Header
      *
      * @return Create_Header
      */
-    public function setTaxExcluded($TaxExcluded)
+    public function setTaxExcluded(bool $TaxExcluded): Create_Header
     {
         $this->TaxExcluded = $TaxExcluded;
         return $this;
@@ -456,7 +457,7 @@ class Create_Header
     /**
      * @return string
      */
-    public function getType()
+    public function getType(): string
     {
         return $this->Type;
     }
@@ -466,7 +467,7 @@ class Create_Header
      *
      * @return Create_Header
      */
-    public function setType($Type)
+    public function setType(string $Type): Create_Header
     {
         $this->Type = $Type;
         return $this;
@@ -475,7 +476,7 @@ class Create_Header
     /**
      * @return ArrayOfUserDefinedDate
      */
-    public function getUserDefinedDates()
+    public function getUserDefinedDates(): ArrayOfUserDefinedDate
     {
         return $this->UserDefinedDates;
     }
@@ -485,7 +486,7 @@ class Create_Header
      *
      * @return Create_Header
      */
-    public function setUserDefinedDates($UserDefinedDates)
+    public function setUserDefinedDates(ArrayOfUserDefinedDate $UserDefinedDates): Create_Header
     {
         $this->UserDefinedDates = $UserDefinedDates;
         return $this;
@@ -494,7 +495,7 @@ class Create_Header
     /**
      * @return ArrayOfUserDefinedTableCustomer
      */
-    public function getUserDefinedTableCustomers()
+    public function getUserDefinedTableCustomers(): ArrayOfUserDefinedTableCustomer
     {
         return $this->UserDefinedTableCustomers;
     }
@@ -504,7 +505,7 @@ class Create_Header
      *
      * @return Create_Header
      */
-    public function setUserDefinedTableCustomers($UserDefinedTableCustomers)
+    public function setUserDefinedTableCustomers(ArrayOfUserDefinedTableCustomer $UserDefinedTableCustomers): Create_Header
     {
         $this->UserDefinedTableCustomers = $UserDefinedTableCustomers;
         return $this;
@@ -513,7 +514,7 @@ class Create_Header
     /**
      * @return ArrayOfUserDefinedTable
      */
-    public function getUserDefinedTables()
+    public function getUserDefinedTables(): ArrayOfUserDefinedTable
     {
         return $this->UserDefinedTables;
     }
@@ -523,7 +524,7 @@ class Create_Header
      *
      * @return Create_Header
      */
-    public function setUserDefinedTables($UserDefinedTables)
+    public function setUserDefinedTables(ArrayOfUserDefinedTable $UserDefinedTables): Create_Header
     {
         $this->UserDefinedTables = $UserDefinedTables;
         return $this;
@@ -532,7 +533,7 @@ class Create_Header
     /**
      * @return ArrayOfUserField
      */
-    public function getUserFields()
+    public function getUserFields(): ArrayOfUserField
     {
         return $this->UserFields;
     }
@@ -542,7 +543,7 @@ class Create_Header
      *
      * @return Create_Header
      */
-    public function setUserFields($UserFields)
+    public function setUserFields(ArrayOfUserField $UserFields): Create_Header
     {
         $this->UserFields = $UserFields;
         return $this;
@@ -551,7 +552,7 @@ class Create_Header
     /**
      * @return string
      */
-    public function getWarehouseId()
+    public function getWarehouseId(): string
     {
         return $this->WarehouseId;
     }
@@ -561,7 +562,7 @@ class Create_Header
      *
      * @return Create_Header
      */
-    public function setWarehouseId($WarehouseId)
+    public function setWarehouseId(string $WarehouseId): Create_Header
     {
         $this->WarehouseId = $WarehouseId;
         return $this;
@@ -570,7 +571,7 @@ class Create_Header
     /**
      * @return string
      */
-    public function getTaxSystemId()
+    public function getTaxSystemId(): string
     {
         return $this->TaxSystemId;
     }
@@ -580,7 +581,7 @@ class Create_Header
      *
      * @return Create_Header
      */
-    public function setTaxSystemId($taxSystemId = null)
+    public function setTaxSystemId(string $taxSystemId = null): Create_Header
     {
         if ($taxSystemId == null) {
             $this->TaxSystemId = null;

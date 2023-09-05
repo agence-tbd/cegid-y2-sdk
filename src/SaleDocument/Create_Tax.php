@@ -24,7 +24,7 @@ class Create_Tax
     /**
      * @return float
      */
-    public function getAmount()
+    public function getAmount(): float
     {
       return $this->Amount;
     }
@@ -33,7 +33,7 @@ class Create_Tax
      * @param float $Amount
      * @return Create_Tax
      */
-    public function setAmount($Amount)
+    public function setAmount(float $Amount): Create_Tax
     {
       $this->Amount = $Amount;
       return $this;
@@ -42,7 +42,7 @@ class Create_Tax
     /**
      * @return string
      */
-    public function getFamilyId()
+    public function getFamilyId(): string
     {
       return $this->FamilyId;
     }
@@ -51,7 +51,7 @@ class Create_Tax
      * @param string $FamilyId
      * @return Create_Tax
      */
-    public function setFamilyId($FamilyId)
+    public function setFamilyId(string $FamilyId): Create_Tax
     {
       $this->FamilyId = $FamilyId;
       return $this;

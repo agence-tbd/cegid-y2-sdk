@@ -12,7 +12,7 @@ class GetAvailableCumulativeQtyAllStoresResponse
     /**
      * @param AvailableQtyReturn $GetAvailableCumulativeQtyAllStoresResult
      */
-    public function __construct($GetAvailableCumulativeQtyAllStoresResult)
+    public function __construct(AvailableQtyReturn $GetAvailableCumulativeQtyAllStoresResult)
     {
         $this->GetAvailableCumulativeQtyAllStoresResult = $GetAvailableCumulativeQtyAllStoresResult;
     }
@@ -20,7 +20,7 @@ class GetAvailableCumulativeQtyAllStoresResponse
     /**
      * @return AvailableQtyReturn
      */
-    public function getGetAvailableCumulativeQtyAllStoresResult()
+    public function getGetAvailableCumulativeQtyAllStoresResult(): AvailableQtyReturn
     {
         return $this->GetAvailableCumulativeQtyAllStoresResult;
     }
@@ -29,7 +29,7 @@ class GetAvailableCumulativeQtyAllStoresResponse
      * @param AvailableQtyReturn $GetAvailableCumulativeQtyAllStoresResult
      * @return GetAvailableCumulativeQtyAllStoresResponse
      */
-    public function setGetAvailableCumulativeQtyAllStoresResult($GetAvailableCumulativeQtyAllStoresResult)
+    public function setGetAvailableCumulativeQtyAllStoresResult(AvailableQtyReturn $GetAvailableCumulativeQtyAllStoresResult): GetAvailableCumulativeQtyAllStoresResponse
     {
         $this->GetAvailableCumulativeQtyAllStoresResult = $GetAvailableCumulativeQtyAllStoresResult;
         return $this;

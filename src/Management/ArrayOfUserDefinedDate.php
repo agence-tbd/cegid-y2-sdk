@@ -17,7 +17,7 @@ class ArrayOfUserDefinedDate implements \ArrayAccess, \Iterator, \Countable
     /**
      * @return UserDefinedDate[]
      */
-    public function getUserDefinedDate()
+    public function getUserDefinedDate(): array
     {
       return $this->UserDefinedDate;
     }
@@ -26,7 +26,7 @@ class ArrayOfUserDefinedDate implements \ArrayAccess, \Iterator, \Countable
      * @param UserDefinedDate[] $UserDefinedDate
      * @return ArrayOfUserDefinedDate
      */
-    public function setUserDefinedDate(array $UserDefinedDate = null)
+    public function setUserDefinedDate(array $UserDefinedDate = null): ArrayOfUserDefinedDate
     {
       $this->UserDefinedDate = $UserDefinedDate;
       return $this;
@@ -38,7 +38,7 @@ class ArrayOfUserDefinedDate implements \ArrayAccess, \Iterator, \Countable
      * @param mixed $offset An offset to check for
      * @return boolean true on success or false on failure
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
       return isset($this->UserDefinedDate[$offset]);
     }
@@ -49,7 +49,7 @@ class ArrayOfUserDefinedDate implements \ArrayAccess, \Iterator, \Countable
      * @param mixed $offset The offset to retrieve
      * @return UserDefinedDate
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): UserDefinedDate
     {
       return $this->UserDefinedDate[$offset];
     }
@@ -61,7 +61,7 @@ class ArrayOfUserDefinedDate implements \ArrayAccess, \Iterator, \Countable
      * @param UserDefinedDate $value The value to set
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet(mixed $offset, mixed $value): void
     {
       if (!isset($offset)) {
         $this->UserDefinedDate[] = $value;
@@ -76,7 +76,7 @@ class ArrayOfUserDefinedDate implements \ArrayAccess, \Iterator, \Countable
      * @param mixed $offset The offset to unset
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
       unset($this->UserDefinedDate[$offset]);
     }
@@ -86,7 +86,7 @@ class ArrayOfUserDefinedDate implements \ArrayAccess, \Iterator, \Countable
      *
      * @return UserDefinedDate Return the current element
      */
-    public function current()
+    public function current(): UserDefinedDate
     {
       return current($this->UserDefinedDate);
     }
@@ -97,7 +97,7 @@ class ArrayOfUserDefinedDate implements \ArrayAccess, \Iterator, \Countable
      *
      * @return void
      */
-    public function next()
+    public function next(): void
     {
       next($this->UserDefinedDate);
     }
@@ -107,7 +107,7 @@ class ArrayOfUserDefinedDate implements \ArrayAccess, \Iterator, \Countable
      *
      * @return string|null Return the key of the current element or null
      */
-    public function key()
+    public function key(): ?string
     {
       return key($this->UserDefinedDate);
     }
@@ -117,7 +117,7 @@ class ArrayOfUserDefinedDate implements \ArrayAccess, \Iterator, \Countable
      *
      * @return boolean Return the validity of the current position
      */
-    public function valid()
+    public function valid(): bool
     {
       return $this->key() !== null;
     }
@@ -128,7 +128,7 @@ class ArrayOfUserDefinedDate implements \ArrayAccess, \Iterator, \Countable
      *
      * @return void
      */
-    public function rewind()
+    public function rewind(): void
     {
       reset($this->UserDefinedDate);
     }
@@ -138,7 +138,7 @@ class ArrayOfUserDefinedDate implements \ArrayAccess, \Iterator, \Countable
      *
      * @return int Return count of elements
      */
-    public function count()
+    public function count(): int
     {
       return count($this->UserDefinedDate);
     }

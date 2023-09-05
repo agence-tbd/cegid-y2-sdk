@@ -24,7 +24,7 @@ class Pager
     /**
      * @return int
      */
-    public function getPageIndex()
+    public function getPageIndex(): int
     {
       return $this->PageIndex;
     }
@@ -33,7 +33,7 @@ class Pager
      * @param int $PageIndex
      * @return Pager
      */
-    public function setPageIndex($PageIndex)
+    public function setPageIndex(int $PageIndex): Pager
     {
       $this->PageIndex = $PageIndex;
       return $this;
@@ -42,7 +42,7 @@ class Pager
     /**
      * @return int
      */
-    public function getPageSize()
+    public function getPageSize(): int
     {
       return $this->PageSize;
     }
@@ -51,7 +51,7 @@ class Pager
      * @param int $PageSize
      * @return Pager
      */
-    public function setPageSize($PageSize)
+    public function setPageSize(int $PageSize): Pager
     {
       $this->PageSize = $PageSize;
       return $this;

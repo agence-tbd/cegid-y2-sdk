@@ -37,7 +37,7 @@ class NationalityDataType
     /**
      * @return string
      */
-    public function getISO2()
+    public function getISO2(): string
     {
         return $this->ISO2;
     }
@@ -47,7 +47,7 @@ class NationalityDataType
      *
      * @return NationalityDataType
      */
-    public function setISO2($ISO2)
+    public function setISO2(string $ISO2): NationalityDataType
     {
         $this->ISO2 = $ISO2;
         return $this;
@@ -56,7 +56,7 @@ class NationalityDataType
     /**
      * @return string
      */
-    public function getISO3()
+    public function getISO3(): string
     {
         return $this->ISO3;
     }
@@ -66,7 +66,7 @@ class NationalityDataType
      *
      * @return NationalityDataType
      */
-    public function setISO3($ISO3)
+    public function setISO3(string $ISO3): NationalityDataType
     {
         $this->ISO3 = $ISO3;
         return $this;
@@ -75,7 +75,7 @@ class NationalityDataType
     /**
      * @return string
      */
-    public function getISO3Num()
+    public function getISO3Num(): string
     {
         return $this->ISO3Num;
     }
@@ -85,7 +85,7 @@ class NationalityDataType
      *
      * @return NationalityDataType
      */
-    public function setISO3Num($ISO3Num)
+    public function setISO3Num(string $ISO3Num): NationalityDataType
     {
         $this->ISO3Num = $ISO3Num;
         return $this;
@@ -94,7 +94,7 @@ class NationalityDataType
     /**
      * @return string
      */
-    public function getId()
+    public function getId(): string
     {
         return $this->Id;
     }
@@ -104,7 +104,7 @@ class NationalityDataType
      *
      * @return NationalityDataType
      */
-    public function setId($Id)
+    public function setId(string $Id): NationalityDataType
     {
         $this->Id = $Id;
         return $this;
@@ -113,7 +113,7 @@ class NationalityDataType
     /**
      * @return string
      */
-    public function getLabel()
+    public function getLabel(): string
     {
         return $this->Label;
     }
@@ -123,7 +123,7 @@ class NationalityDataType
      *
      * @return NationalityDataType
      */
-    public function setLabel($Label)
+    public function setLabel(string $Label): NationalityDataType
     {
         $this->Label = $Label;
         return $this;

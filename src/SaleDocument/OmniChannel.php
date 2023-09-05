@@ -6,7 +6,8 @@ class OmniChannel
 {
 
     /**
-     * @var BillingStatus $BillingStatus
+     * @see BillingStatus
+     * @var string $BillingStatus
      */
     protected $BillingStatus = null;
 
@@ -21,7 +22,8 @@ class OmniChannel
     protected $CancelReasonId = null;
 
     /**
-     * @var CancelStatus $CancelStatus
+     * @see CancelStatus
+     * @var string $CancelStatus
      */
     protected $CancelStatus = null;
 
@@ -36,7 +38,8 @@ class OmniChannel
     protected $DeliveryStoreId = null;
 
     /**
-     * @var DeliveryType $DeliveryType
+     * @see DeliveryType
+     * @var string $DeliveryType
      */
     protected $DeliveryType = null;
 
@@ -46,7 +49,8 @@ class OmniChannel
     protected $DeliveryWarehouseId = null;
 
     /**
-     * @var FollowUpStatus $FollowUpStatus
+     * @see FollowUpStatus
+     * @var string $FollowUpStatus
      */
     protected $FollowUpStatus = null;
 
@@ -76,22 +80,26 @@ class OmniChannel
     protected $PaymentMethodId = null;
 
     /**
-     * @var PaymentStatus $PaymentStatus
+     * @see PaymentStatus
+     * @var string $PaymentStatus
      */
     protected $PaymentStatus = null;
 
     /**
-     * @var OrderReturnStatus $ReturnStatus
+     * @see OrderReturnStatus
+     * @var string $ReturnStatus
      */
     protected $ReturnStatus = null;
 
     /**
-     * @var ReturnType $ReturnType
+     * @see ReturnType
+     * @var string $ReturnType
      */
     protected $ReturnType = null;
 
     /**
-     * @var ShippingStatus $ShippingStatus
+     * @see ShippingStatus
+     * @var string $ShippingStatus
      */
     protected $ShippingStatus = null;
 
@@ -114,7 +122,7 @@ class OmniChannel
     /**
      * @return string
      */
-    public function getBillingStatus()
+    public function getBillingStatus(): string
     {
       return $this->BillingStatus;
     }
@@ -123,7 +131,7 @@ class OmniChannel
      * @param string $BillingStatus
      * @return OmniChannel
      */
-    public function setBillingStatus($BillingStatus)
+    public function setBillingStatus(string $BillingStatus): OmniChannel
     {
       $this->BillingStatus = $BillingStatus;
       return $this;
@@ -150,7 +158,7 @@ class OmniChannel
      * @param string $format
      * @return OmniChannel
      */
-    public function setCancelDate(\DateTime $CancelDate = null, $format=\DateTime::ATOM)
+    public function setCancelDate(\DateTime $CancelDate = null, string $format=\DateTime::ATOM): OmniChannel
     {
       if ($CancelDate == null) {
        $this->CancelDate = null;
@@ -163,7 +171,7 @@ class OmniChannel
     /**
      * @return string
      */
-    public function getCancelReasonId()
+    public function getCancelReasonId(): string
     {
       return $this->CancelReasonId;
     }
@@ -172,7 +180,7 @@ class OmniChannel
      * @param string $CancelReasonId
      * @return OmniChannel
      */
-    public function setCancelReasonId($CancelReasonId)
+    public function setCancelReasonId(string $CancelReasonId): OmniChannel
     {
       $this->CancelReasonId = $CancelReasonId;
       return $this;
@@ -181,7 +189,7 @@ class OmniChannel
     /**
      * @return string
      */
-    public function getCancelStatus()
+    public function getCancelStatus(): string
     {
       return $this->CancelStatus;
     }
@@ -190,7 +198,7 @@ class OmniChannel
      * @param string $CancelStatus
      * @return OmniChannel
      */
-    public function setCancelStatus($CancelStatus)
+    public function setCancelStatus(string $CancelStatus): OmniChannel
     {
       $this->CancelStatus = $CancelStatus;
       return $this;
@@ -199,7 +207,7 @@ class OmniChannel
     /**
      * @return string
      */
-    public function getComment()
+    public function getComment(): string
     {
       return $this->Comment;
     }
@@ -208,7 +216,7 @@ class OmniChannel
      * @param string $Comment
      * @return OmniChannel
      */
-    public function setComment($Comment)
+    public function setComment(string $Comment): OmniChannel
     {
       $this->Comment = $Comment;
       return $this;
@@ -217,7 +225,7 @@ class OmniChannel
     /**
      * @return string
      */
-    public function getDeliveryStoreId()
+    public function getDeliveryStoreId(): string
     {
       return $this->DeliveryStoreId;
     }
@@ -226,7 +234,7 @@ class OmniChannel
      * @param string $DeliveryStoreId
      * @return OmniChannel
      */
-    public function setDeliveryStoreId($DeliveryStoreId)
+    public function setDeliveryStoreId(string $DeliveryStoreId): OmniChannel
     {
       $this->DeliveryStoreId = $DeliveryStoreId;
       return $this;
@@ -235,7 +243,7 @@ class OmniChannel
     /**
      * @return string
      */
-    public function getDeliveryType()
+    public function getDeliveryType(): string
     {
       return $this->DeliveryType;
     }
@@ -244,7 +252,7 @@ class OmniChannel
      * @param string $DeliveryType
      * @return OmniChannel
      */
-    public function setDeliveryType($DeliveryType)
+    public function setDeliveryType(string $DeliveryType): OmniChannel
     {
       $this->DeliveryType = $DeliveryType;
       return $this;
@@ -253,7 +261,7 @@ class OmniChannel
     /**
      * @return string
      */
-    public function getDeliveryWarehouseId()
+    public function getDeliveryWarehouseId(): string
     {
       return $this->DeliveryWarehouseId;
     }
@@ -262,7 +270,7 @@ class OmniChannel
      * @param string $DeliveryWarehouseId
      * @return OmniChannel
      */
-    public function setDeliveryWarehouseId($DeliveryWarehouseId)
+    public function setDeliveryWarehouseId(string $DeliveryWarehouseId): OmniChannel
     {
       $this->DeliveryWarehouseId = $DeliveryWarehouseId;
       return $this;
@@ -271,7 +279,7 @@ class OmniChannel
     /**
      * @return string
      */
-    public function getFollowUpStatus()
+    public function getFollowUpStatus(): string
     {
       return $this->FollowUpStatus;
     }
@@ -280,7 +288,7 @@ class OmniChannel
      * @param string $FollowUpStatus
      * @return OmniChannel
      */
-    public function setFollowUpStatus($FollowUpStatus)
+    public function setFollowUpStatus(string $FollowUpStatus): OmniChannel
     {
       $this->FollowUpStatus = $FollowUpStatus;
       return $this;
@@ -289,7 +297,7 @@ class OmniChannel
     /**
      * @return string
      */
-    public function getGiftMessage()
+    public function getGiftMessage(): string
     {
       return $this->GiftMessage;
     }
@@ -298,7 +306,7 @@ class OmniChannel
      * @param string $GiftMessage
      * @return OmniChannel
      */
-    public function setGiftMessage($GiftMessage)
+    public function setGiftMessage(string $GiftMessage): OmniChannel
     {
       $this->GiftMessage = $GiftMessage;
       return $this;
@@ -307,7 +315,7 @@ class OmniChannel
     /**
      * @return GiftMessageType
      */
-    public function getGiftMessageType()
+    public function getGiftMessageType(): GiftMessageType
     {
       return $this->GiftMessageType;
     }
@@ -316,7 +324,7 @@ class OmniChannel
      * @param GiftMessageType $GiftMessageType
      * @return OmniChannel
      */
-    public function setGiftMessageType($GiftMessageType)
+    public function setGiftMessageType(GiftMessageType $GiftMessageType): OmniChannel
     {
       $this->GiftMessageType = $GiftMessageType;
       return $this;
@@ -343,7 +351,7 @@ class OmniChannel
      * @param string $format
      * @return OmniChannel
      */
-    public function setLockingDate(\DateTime $LockingDate = null, $format=\DateTime::ATOM)
+    public function setLockingDate(\DateTime $LockingDate = null, string $format=\DateTime::ATOM): OmniChannel
     {
       if ($LockingDate == null) {
        $this->LockingDate = null;
@@ -356,7 +364,7 @@ class OmniChannel
     /**
      * @return SaleDocumentIdentifier
      */
-    public function getOriginalDocument()
+    public function getOriginalDocument(): SaleDocumentIdentifier
     {
       return $this->OriginalDocument;
     }
@@ -365,7 +373,7 @@ class OmniChannel
      * @param SaleDocumentIdentifier $OriginalDocument
      * @return OmniChannel
      */
-    public function setOriginalDocument($OriginalDocument)
+    public function setOriginalDocument(SaleDocumentIdentifier $OriginalDocument): OmniChannel
     {
       $this->OriginalDocument = $OriginalDocument;
       return $this;
@@ -374,7 +382,7 @@ class OmniChannel
     /**
      * @return string
      */
-    public function getPaymentMethodId()
+    public function getPaymentMethodId(): string
     {
       return $this->PaymentMethodId;
     }
@@ -383,7 +391,7 @@ class OmniChannel
      * @param string $PaymentMethodId
      * @return OmniChannel
      */
-    public function setPaymentMethodId($PaymentMethodId)
+    public function setPaymentMethodId(string $PaymentMethodId): OmniChannel
     {
       $this->PaymentMethodId = $PaymentMethodId;
       return $this;
@@ -392,7 +400,7 @@ class OmniChannel
     /**
      * @return string
      */
-    public function getPaymentStatus()
+    public function getPaymentStatus(): string
     {
       return $this->PaymentStatus;
     }
@@ -401,7 +409,7 @@ class OmniChannel
      * @param string $PaymentStatus
      * @return OmniChannel
      */
-    public function setPaymentStatus($PaymentStatus)
+    public function setPaymentStatus(string $PaymentStatus): OmniChannel
     {
       $this->PaymentStatus = $PaymentStatus;
       return $this;
@@ -410,7 +418,7 @@ class OmniChannel
     /**
      * @return string
      */
-    public function getReturnStatus()
+    public function getReturnStatus(): string
     {
       return $this->ReturnStatus;
     }
@@ -419,7 +427,7 @@ class OmniChannel
      * @param string $ReturnStatus
      * @return OmniChannel
      */
-    public function setReturnStatus($ReturnStatus)
+    public function setReturnStatus(string $ReturnStatus): OmniChannel
     {
       $this->ReturnStatus = $ReturnStatus;
       return $this;
@@ -428,7 +436,7 @@ class OmniChannel
     /**
      * @return string
      */
-    public function getReturnType()
+    public function getReturnType(): string
     {
       return $this->ReturnType;
     }
@@ -437,7 +445,7 @@ class OmniChannel
      * @param string $ReturnType
      * @return OmniChannel
      */
-    public function setReturnType($ReturnType)
+    public function setReturnType(string $ReturnType): OmniChannel
     {
       $this->ReturnType = $ReturnType;
       return $this;
@@ -446,7 +454,7 @@ class OmniChannel
     /**
      * @return string
      */
-    public function getShippingStatus()
+    public function getShippingStatus(): string
     {
       return $this->ShippingStatus;
     }
@@ -455,7 +463,7 @@ class OmniChannel
      * @param string $ShippingStatus
      * @return OmniChannel
      */
-    public function setShippingStatus($ShippingStatus)
+    public function setShippingStatus(string $ShippingStatus): OmniChannel
     {
       $this->ShippingStatus = $ShippingStatus;
       return $this;
@@ -464,7 +472,7 @@ class OmniChannel
     /**
      * @return string
      */
-    public function getTracking()
+    public function getTracking(): string
     {
       return $this->Tracking;
     }
@@ -473,7 +481,7 @@ class OmniChannel
      * @param string $Tracking
      * @return OmniChannel
      */
-    public function setTracking($Tracking)
+    public function setTracking(string $Tracking): OmniChannel
     {
       $this->Tracking = $Tracking;
       return $this;
@@ -482,7 +490,7 @@ class OmniChannel
     /**
      * @return string
      */
-    public function getTransporter()
+    public function getTransporter(): string
     {
       return $this->Transporter;
     }
@@ -491,7 +499,7 @@ class OmniChannel
      * @param string $Transporter
      * @return OmniChannel
      */
-    public function setTransporter($Transporter)
+    public function setTransporter(string $Transporter): OmniChannel
     {
       $this->Transporter = $Transporter;
       return $this;

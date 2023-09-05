@@ -24,7 +24,7 @@ class SaleDocumentIdentifier
     /**
      * @return SaleDocumentKey
      */
-    public function getKey()
+    public function getKey(): SaleDocumentKey
     {
       return $this->Key;
     }
@@ -33,7 +33,7 @@ class SaleDocumentIdentifier
      * @param SaleDocumentKey $Key
      * @return SaleDocumentIdentifier
      */
-    public function setKey($Key)
+    public function setKey(SaleDocumentKey $Key): SaleDocumentIdentifier
     {
       $this->Key = $Key;
       return $this;
@@ -42,7 +42,7 @@ class SaleDocumentIdentifier
     /**
      * @return SaleDocumentReference
      */
-    public function getReference()
+    public function getReference(): SaleDocumentReference
     {
       return $this->Reference;
     }
@@ -51,7 +51,7 @@ class SaleDocumentIdentifier
      * @param SaleDocumentReference $Reference
      * @return SaleDocumentIdentifier
      */
-    public function setReference($Reference)
+    public function setReference(SaleDocumentReference $Reference): SaleDocumentIdentifier
     {
       $this->Reference = $Reference;
       return $this;

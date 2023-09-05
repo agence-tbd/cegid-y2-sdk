@@ -18,7 +18,7 @@ class GetListItemInventoryDetailByStore
      * @param GetListItemInventoryDetailByStore_Request $inventoryStoreItemDetailRequest
      * @param RetailContext $clientContext
      */
-    public function __construct($inventoryStoreItemDetailRequest, $clientContext)
+    public function __construct(GetListItemInventoryDetailByStore_Request $inventoryStoreItemDetailRequest, RetailContext $clientContext)
     {
         $this->inventoryStoreItemDetailRequest = $inventoryStoreItemDetailRequest;
         $this->clientContext                   = $clientContext;
@@ -27,7 +27,7 @@ class GetListItemInventoryDetailByStore
     /**
      * @return GetListItemInventoryDetailByStore_Request
      */
-    public function getInventoryStoreItemDetailRequest()
+    public function getInventoryStoreItemDetailRequest(): GetListItemInventoryDetailByStore_Request
     {
         return $this->inventoryStoreItemDetailRequest;
     }
@@ -36,7 +36,7 @@ class GetListItemInventoryDetailByStore
      * @param GetListItemInventoryDetailByStore_Request $inventoryStoreItemDetailRequest
      * @return GetListItemInventoryDetailByStore
      */
-    public function setInventoryStoreItemDetailRequest($inventoryStoreItemDetailRequest)
+    public function setInventoryStoreItemDetailRequest(GetListItemInventoryDetailByStore_Request $inventoryStoreItemDetailRequest): GetListItemInventoryDetailByStore
     {
         $this->inventoryStoreItemDetailRequest = $inventoryStoreItemDetailRequest;
         return $this;
@@ -45,7 +45,7 @@ class GetListItemInventoryDetailByStore
     /**
      * @return RetailContext
      */
-    public function getClientContext()
+    public function getClientContext(): RetailContext
     {
         return $this->clientContext;
     }
@@ -54,7 +54,7 @@ class GetListItemInventoryDetailByStore
      * @param RetailContext $clientContext
      * @return GetListItemInventoryDetailByStore
      */
-    public function setClientContext($clientContext)
+    public function setClientContext(RetailContext $clientContext): GetListItemInventoryDetailByStore
     {
         $this->clientContext = $clientContext;
         return $this;

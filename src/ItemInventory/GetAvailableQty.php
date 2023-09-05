@@ -36,7 +36,7 @@ class GetAvailableQty
      * @param string         $warehouseId
      * @param RetailContext  $clientContext
      */
-    public function __construct($itemIdentifier, $itemId = null, $storeId = null, $warehouseId = null, $clientContext = null)
+    public function __construct(ItemIdentifier $itemIdentifier, string $itemId = null, string $storeId = null, string $warehouseId = null, RetailContext $clientContext = null)
     {
         $this->itemIdentifier = $itemIdentifier;
         $this->itemId         = $itemId;
@@ -48,7 +48,7 @@ class GetAvailableQty
     /**
      * @return string
      */
-    public function getItemId()
+    public function getItemId(): string
     {
         return $this->itemId;
     }
@@ -58,7 +58,7 @@ class GetAvailableQty
      *
      * @return GetAvailableQty
      */
-    public function setItemId($itemId)
+    public function setItemId(string $itemId): GetAvailableQty
     {
         $this->itemId = $itemId;
         return $this;
@@ -67,7 +67,7 @@ class GetAvailableQty
     /**
      * @return ItemIdentifier
      */
-    public function getItemIdentifier()
+    public function getItemIdentifier(): ItemIdentifier
     {
         return $this->itemIdentifier;
     }
@@ -77,7 +77,7 @@ class GetAvailableQty
      *
      * @return GetAvailableQty
      */
-    public function setItemIdentifier($itemIdentifier)
+    public function setItemIdentifier(ItemIdentifier $itemIdentifier): GetAvailableQty
     {
         $this->itemIdentifier = $itemIdentifier;
         return $this;
@@ -86,7 +86,7 @@ class GetAvailableQty
     /**
      * @return string
      */
-    public function getStoreId()
+    public function getStoreId(): string
     {
         return $this->storeId;
     }
@@ -96,7 +96,7 @@ class GetAvailableQty
      *
      * @return GetAvailableQty
      */
-    public function setStoreId($storeId)
+    public function setStoreId(string $storeId): GetAvailableQty
     {
         $this->storeId = $storeId;
         return $this;
@@ -105,7 +105,7 @@ class GetAvailableQty
     /**
      * @return string
      */
-    public function getWarehouseId()
+    public function getWarehouseId(): string
     {
         return $this->warehouseId;
     }
@@ -115,7 +115,7 @@ class GetAvailableQty
      *
      * @return GetAvailableQty
      */
-    public function setWarehouseId($warehouseId)
+    public function setWarehouseId(string $warehouseId): GetAvailableQty
     {
         $this->warehouseId = $warehouseId;
         return $this;
@@ -124,7 +124,7 @@ class GetAvailableQty
     /**
      * @return RetailContext
      */
-    public function getClientContext()
+    public function getClientContext(): RetailContext
     {
         return $this->clientContext;
     }
@@ -134,7 +134,7 @@ class GetAvailableQty
      *
      * @return GetAvailableQty
      */
-    public function setClientContext($clientContext)
+    public function setClientContext(RetailContext $clientContext): GetAvailableQty
     {
         $this->clientContext = $clientContext;
         return $this;

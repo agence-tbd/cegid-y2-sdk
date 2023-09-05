@@ -28,7 +28,7 @@ class BirthDateDataType
     /**
      * @return int
      */
-    public function getBirthDateDay()
+    public function getBirthDateDay(): int
     {
         return $this->BirthDateDay;
     }
@@ -38,7 +38,7 @@ class BirthDateDataType
      *
      * @return BirthDateDataType
      */
-    public function setBirthDateDay($BirthDateDay)
+    public function setBirthDateDay(int $BirthDateDay): BirthDateDataType
     {
         $this->BirthDateDay = $BirthDateDay;
         return $this;
@@ -47,7 +47,7 @@ class BirthDateDataType
     /**
      * @return int
      */
-    public function getBirthDateMonth()
+    public function getBirthDateMonth(): int
     {
         return $this->BirthDateMonth;
     }
@@ -57,7 +57,7 @@ class BirthDateDataType
      *
      * @return BirthDateDataType
      */
-    public function setBirthDateMonth($BirthDateMonth)
+    public function setBirthDateMonth(int $BirthDateMonth): BirthDateDataType
     {
         $this->BirthDateMonth = $BirthDateMonth;
         return $this;
@@ -66,7 +66,7 @@ class BirthDateDataType
     /**
      * @return int
      */
-    public function getBirthDateYear()
+    public function getBirthDateYear(): int
     {
         return $this->BirthDateYear;
     }
@@ -76,7 +76,7 @@ class BirthDateDataType
      *
      * @return BirthDateDataType
      */
-    public function setBirthDateYear($BirthDateYear)
+    public function setBirthDateYear(int $BirthDateYear): BirthDateDataType
     {
         $this->BirthDateYear = $BirthDateYear;
         return $this;

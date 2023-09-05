@@ -21,7 +21,8 @@ class Address
     protected $CountryId = null;
 
     /**
-     * @var CountryIdType $CountryIdType
+     * @see CountryIdType
+     * @var string $CountryIdType
      */
     protected $CountryIdType = null;
 
@@ -79,7 +80,7 @@ class Address
     /**
      * @return string
      */
-    public function getCity()
+    public function getCity(): string
     {
       return $this->City;
     }
@@ -88,7 +89,7 @@ class Address
      * @param string $City
      * @return Address
      */
-    public function setCity($City)
+    public function setCity(string $City): Address
     {
       $this->City = $City;
       return $this;
@@ -97,7 +98,7 @@ class Address
     /**
      * @return int
      */
-    public function getContactNumber()
+    public function getContactNumber(): int
     {
       return $this->ContactNumber;
     }
@@ -106,7 +107,7 @@ class Address
      * @param int $ContactNumber
      * @return Address
      */
-    public function setContactNumber($ContactNumber)
+    public function setContactNumber(int $ContactNumber): Address
     {
       $this->ContactNumber = $ContactNumber;
       return $this;
@@ -115,7 +116,7 @@ class Address
     /**
      * @return string
      */
-    public function getCountryId()
+    public function getCountryId(): string
     {
       return $this->CountryId;
     }
@@ -124,7 +125,7 @@ class Address
      * @param string $CountryId
      * @return Address
      */
-    public function setCountryId($CountryId)
+    public function setCountryId(string $CountryId): Address
     {
       $this->CountryId = $CountryId;
       return $this;
@@ -133,7 +134,7 @@ class Address
     /**
      * @return string
      */
-    public function getCountryIdType()
+    public function getCountryIdType(): string
     {
       return $this->CountryIdType;
     }
@@ -142,7 +143,7 @@ class Address
      * @param string $CountryIdType
      * @return Address
      */
-    public function setCountryIdType($CountryIdType)
+    public function setCountryIdType(string $CountryIdType): Address
     {
       $this->CountryIdType = $CountryIdType;
       return $this;
@@ -151,7 +152,7 @@ class Address
     /**
      * @return string
      */
-    public function getFirstName()
+    public function getFirstName(): string
     {
       return $this->FirstName;
     }
@@ -160,7 +161,7 @@ class Address
      * @param string $FirstName
      * @return Address
      */
-    public function setFirstName($FirstName)
+    public function setFirstName(string $FirstName): Address
     {
       $this->FirstName = $FirstName;
       return $this;
@@ -169,7 +170,7 @@ class Address
     /**
      * @return string
      */
-    public function getLastName()
+    public function getLastName(): string
     {
       return $this->LastName;
     }
@@ -178,7 +179,7 @@ class Address
      * @param string $LastName
      * @return Address
      */
-    public function setLastName($LastName)
+    public function setLastName(string $LastName): Address
     {
       $this->LastName = $LastName;
       return $this;
@@ -187,7 +188,7 @@ class Address
     /**
      * @return string
      */
-    public function getLine1()
+    public function getLine1(): string
     {
       return $this->Line1;
     }
@@ -196,7 +197,7 @@ class Address
      * @param string $Line1
      * @return Address
      */
-    public function setLine1($Line1)
+    public function setLine1(string $Line1): Address
     {
       $this->Line1 = $Line1;
       return $this;
@@ -205,7 +206,7 @@ class Address
     /**
      * @return string
      */
-    public function getLine2()
+    public function getLine2(): string
     {
       return $this->Line2;
     }
@@ -214,7 +215,7 @@ class Address
      * @param string $Line2
      * @return Address
      */
-    public function setLine2($Line2)
+    public function setLine2(string $Line2): Address
     {
       $this->Line2 = $Line2;
       return $this;
@@ -223,7 +224,7 @@ class Address
     /**
      * @return string
      */
-    public function getLine3()
+    public function getLine3(): string
     {
       return $this->Line3;
     }
@@ -232,7 +233,7 @@ class Address
      * @param string $Line3
      * @return Address
      */
-    public function setLine3($Line3)
+    public function setLine3(string $Line3): Address
     {
       $this->Line3 = $Line3;
       return $this;
@@ -241,7 +242,7 @@ class Address
     /**
      * @return string
      */
-    public function getPhoneNumber()
+    public function getPhoneNumber(): string
     {
       return $this->PhoneNumber;
     }
@@ -250,7 +251,7 @@ class Address
      * @param string $PhoneNumber
      * @return Address
      */
-    public function setPhoneNumber($PhoneNumber)
+    public function setPhoneNumber(string $PhoneNumber): Address
     {
       $this->PhoneNumber = $PhoneNumber;
       return $this;
@@ -259,7 +260,7 @@ class Address
     /**
      * @return string
      */
-    public function getRegion()
+    public function getRegion(): string
     {
       return $this->Region;
     }
@@ -268,7 +269,7 @@ class Address
      * @param string $Region
      * @return Address
      */
-    public function setRegion($Region)
+    public function setRegion(string $Region): Address
     {
       $this->Region = $Region;
       return $this;
@@ -277,7 +278,7 @@ class Address
     /**
      * @return string
      */
-    public function getTitleId()
+    public function getTitleId(): string
     {
       return $this->TitleId;
     }
@@ -286,7 +287,7 @@ class Address
      * @param string $TitleId
      * @return Address
      */
-    public function setTitleId($TitleId)
+    public function setTitleId(string $TitleId): Address
     {
       $this->TitleId = $TitleId;
       return $this;
@@ -295,7 +296,7 @@ class Address
     /**
      * @return string
      */
-    public function getZipCode()
+    public function getZipCode(): string
     {
       return $this->ZipCode;
     }
@@ -304,7 +305,7 @@ class Address
      * @param string $ZipCode
      * @return Address
      */
-    public function setZipCode($ZipCode)
+    public function setZipCode(string $ZipCode): Address
     {
       $this->ZipCode = $ZipCode;
       return $this;

@@ -23,7 +23,7 @@ class UserDefinedValue
     /**
      * @return UserDefinedId
      */
-    public function getId()
+    public function getId(): UserDefinedId
     {
         return $this->Id;
     }
@@ -33,7 +33,7 @@ class UserDefinedValue
      *
      * @return UserDefinedValue
      */
-    public function setId($Id)
+    public function setId(UserDefinedId $Id): UserDefinedValue
     {
         $this->Id = $Id;
         return $this;
@@ -42,7 +42,7 @@ class UserDefinedValue
     /**
      * @return float
      */
-    public function getValue()
+    public function getValue(): float
     {
         return $this->Value;
     }
@@ -52,7 +52,7 @@ class UserDefinedValue
      *
      * @return UserDefinedValue
      */
-    public function setValue($Value)
+    public function setValue(float $Value): UserDefinedValue
     {
         $this->Value = $Value;
         return $this;

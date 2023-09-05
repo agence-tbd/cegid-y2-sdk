@@ -22,7 +22,7 @@ class UserDefinedDate
     /**
      * @return int
      */
-    public function getId()
+    public function getId(): int
     {
       return $this->Id;
     }
@@ -31,7 +31,7 @@ class UserDefinedDate
      * @param int $Id
      * @return UserDefinedDate
      */
-    public function setId($Id)
+    public function setId(int $Id): UserDefinedDate
     {
       $this->Id = $Id;
       return $this;
@@ -57,7 +57,7 @@ class UserDefinedDate
      * @param \DateTime $Value
      * @return UserDefinedDate
      */
-    public function setValue(\DateTime $Value = null, $format=\DateTime::ATOM)
+    public function setValue(\DateTime $Value = null, $format=\DateTime::ATOM): UserDefinedDate
     {
       if ($Value == null) {
        $this->Value = null;

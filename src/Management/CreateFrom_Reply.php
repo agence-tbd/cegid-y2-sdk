@@ -22,7 +22,7 @@ class CreateFrom_Reply
     /**
      * @return boolean
      */
-    public function getDocumentCreated()
+    public function getDocumentCreated(): bool
     {
       return $this->DocumentCreated;
     }
@@ -31,7 +31,7 @@ class CreateFrom_Reply
      * @param boolean $DocumentCreated
      * @return CreateFrom_Reply
      */
-    public function setDocumentCreated($DocumentCreated)
+    public function setDocumentCreated(bool $DocumentCreated): CreateFrom_Reply
     {
       $this->DocumentCreated = $DocumentCreated;
       return $this;
@@ -40,7 +40,7 @@ class CreateFrom_Reply
     /**
      * @return ArrayOfCreateFrom_Document
      */
-    public function getDocuments()
+    public function getDocuments(): ArrayOfCreateFrom_Document
     {
         return $this->Documents;
     }
@@ -49,7 +49,7 @@ class CreateFrom_Reply
      * @param ArrayOfCreateFrom_Document $Documents
      * @return CreateFrom_Reply
      */
-    public function setDocuments($Documents)
+    public function setDocuments(ArrayOfCreateFrom_Document $Documents): CreateFrom_Reply
     {
         $this->Documents = $Documents;
         return $this;

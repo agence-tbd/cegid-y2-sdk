@@ -19,7 +19,7 @@ class ArrayOfGet_Payment implements \ArrayAccess, \Iterator, \Countable
     /**
      * @return Get_Payment[]
      */
-    public function getGet_Payment()
+    public function getGet_Payment(): array
     {
       return $this->Get_Payment;
     }
@@ -28,7 +28,7 @@ class ArrayOfGet_Payment implements \ArrayAccess, \Iterator, \Countable
      * @param Get_Payment[] $Get_Payment
      * @return ArrayOfGet_Payment
      */
-    public function setGet_Payment(array $Get_Payment = null)
+    public function setGet_Payment(array $Get_Payment = null): ArrayOfGet_Payment
     {
       $this->Get_Payment = $Get_Payment;
       return $this;
@@ -40,7 +40,7 @@ class ArrayOfGet_Payment implements \ArrayAccess, \Iterator, \Countable
      * @param mixed $offset An offset to check for
      * @return boolean true on success or false on failure
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
       return isset($this->Get_Payment[$offset]);
     }
@@ -51,7 +51,7 @@ class ArrayOfGet_Payment implements \ArrayAccess, \Iterator, \Countable
      * @param mixed $offset The offset to retrieve
      * @return Get_Payment
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): Get_Payment
     {
       return $this->Get_Payment[$offset];
     }
@@ -63,7 +63,7 @@ class ArrayOfGet_Payment implements \ArrayAccess, \Iterator, \Countable
      * @param Get_Payment $value The value to set
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet(mixed $offset, mixed $value): void
     {
       if (!isset($offset)) {
         $this->Get_Payment[] = $value;
@@ -78,7 +78,7 @@ class ArrayOfGet_Payment implements \ArrayAccess, \Iterator, \Countable
      * @param mixed $offset The offset to unset
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
       unset($this->Get_Payment[$offset]);
     }
@@ -88,7 +88,7 @@ class ArrayOfGet_Payment implements \ArrayAccess, \Iterator, \Countable
      *
      * @return Get_Payment Return the current element
      */
-    public function current()
+    public function current(): Get_Payment
     {
       return current($this->Get_Payment);
     }
@@ -99,7 +99,7 @@ class ArrayOfGet_Payment implements \ArrayAccess, \Iterator, \Countable
      *
      * @return void
      */
-    public function next()
+    public function next(): void
     {
       next($this->Get_Payment);
     }
@@ -109,7 +109,7 @@ class ArrayOfGet_Payment implements \ArrayAccess, \Iterator, \Countable
      *
      * @return string|null Return the key of the current element or null
      */
-    public function key()
+    public function key(): ?string
     {
       return key($this->Get_Payment);
     }
@@ -119,7 +119,7 @@ class ArrayOfGet_Payment implements \ArrayAccess, \Iterator, \Countable
      *
      * @return boolean Return the validity of the current position
      */
-    public function valid()
+    public function valid(): bool
     {
       return $this->key() !== null;
     }
@@ -130,7 +130,7 @@ class ArrayOfGet_Payment implements \ArrayAccess, \Iterator, \Countable
      *
      * @return void
      */
-    public function rewind()
+    public function rewind(): void
     {
       reset($this->Get_Payment);
     }
@@ -138,9 +138,9 @@ class ArrayOfGet_Payment implements \ArrayAccess, \Iterator, \Countable
     /**
      * Countable implementation
      *
-     * @return Get_Payment Return count of elements
+     * @return int Return count of elements
      */
-    public function count()
+    public function count(): int
     {
       return count($this->Get_Payment);
     }

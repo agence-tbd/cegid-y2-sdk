@@ -27,7 +27,7 @@ class CreateFrom_ReceivedPayment
     /**
      * @return boolean
      */
-    public function getIsActive()
+    public function getIsActive(): bool
     {
       return $this->IsActive;
     }
@@ -36,7 +36,7 @@ class CreateFrom_ReceivedPayment
      * @param string $Id
      * @return CreateFrom_ReceivedPayment
      */
-    public function setIsActive($IsActive)
+    public function setIsActive($IsActive): CreateFrom_ReceivedPayment
     {
       $this->IsActive = $IsActive;
       return $this;
@@ -45,7 +45,7 @@ class CreateFrom_ReceivedPayment
     /**
      * @return string
      */
-    public function getRegistredOperationId()
+    public function getRegistredOperationId(): string
     {
       return $this->RegisterOperationId;
     }
@@ -54,7 +54,7 @@ class CreateFrom_ReceivedPayment
      * @param string $RegisterOperationId
      * @return CreateFrom_ReceivedPayment
      */
-    public function setRegistredOperationId($RegisterOperationId)
+    public function setRegistredOperationId(string $RegisterOperationId): CreateFrom_ReceivedPayment
     {
       $this->RegisterOperationId = $RegisterOperationId;
       return $this;

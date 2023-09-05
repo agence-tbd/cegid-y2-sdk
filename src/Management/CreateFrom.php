@@ -18,7 +18,7 @@ class CreateFrom
      * @param CreateFrom_Request $Request
      * @param RetailContext $Context
      */
-    public function __construct($Request, $Context)
+    public function __construct(CreateFrom_Request $Request, RetailContext $Context)
     {
       $this->Request = $Request;
       $this->Context = $Context;
@@ -27,7 +27,7 @@ class CreateFrom
     /**
      * @return CreateFrom_Request
      */
-    public function getRequest()
+    public function getRequest(): CreateFrom_Request
     {
       return $this->Request;
     }
@@ -36,7 +36,7 @@ class CreateFrom
      * @param CreateFrom_Request $Request
      * @return CreateFrom
      */
-    public function setRequest($Request)
+    public function setRequest(CreateFrom_Request $Request): CreateFrom
     {
       $this->Request = $Request;
       return $this;
@@ -45,7 +45,7 @@ class CreateFrom
     /**
      * @return RetailContext
      */
-    public function getContext()
+    public function getContext(): RetailContext
     {
       return $this->Context;
     }
@@ -54,7 +54,7 @@ class CreateFrom
      * @param RetailContext $Context
      * @return CreateFrom
      */
-    public function setContext($Context)
+    public function setContext(RetailContext $Context): CreateFrom
     {
       $this->Context = $Context;
       return $this;

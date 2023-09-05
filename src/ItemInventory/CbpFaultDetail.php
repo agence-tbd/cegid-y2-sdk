@@ -42,7 +42,7 @@ class CbpFaultDetail
     /**
      * @return string
      */
-    public function getCause()
+    public function getCause(): string
     {
         return $this->Cause;
     }
@@ -51,7 +51,7 @@ class CbpFaultDetail
      * @param string $Cause
      * @return CbpFaultDetail
      */
-    public function setCause($Cause)
+    public function setCause(string $Cause): CbpFaultDetail
     {
         $this->Cause = $Cause;
         return $this;
@@ -60,7 +60,7 @@ class CbpFaultDetail
     /**
      * @return string
      */
-    public function getDescription()
+    public function getDescription(): string
     {
         return $this->Description;
     }
@@ -69,7 +69,7 @@ class CbpFaultDetail
      * @param string $Description
      * @return CbpFaultDetail
      */
-    public function setDescription($Description)
+    public function setDescription(string $Description): CbpFaultDetail
     {
         $this->Description = $Description;
         return $this;
@@ -78,7 +78,7 @@ class CbpFaultDetail
     /**
      * @return string
      */
-    public function getId()
+    public function getId(): string
     {
         return $this->Id;
     }
@@ -87,7 +87,7 @@ class CbpFaultDetail
      * @param string $Id
      * @return CbpFaultDetail
      */
-    public function setId($Id)
+    public function setId(string $Id): CbpFaultDetail
     {
         $this->Id = $Id;
         return $this;
@@ -96,7 +96,7 @@ class CbpFaultDetail
     /**
      * @return string
      */
-    public function getMessage()
+    public function getMessage(): string
     {
         return $this->Message;
     }
@@ -105,7 +105,7 @@ class CbpFaultDetail
      * @param string $Message
      * @return CbpFaultDetail
      */
-    public function setMessage($Message)
+    public function setMessage(string $Message): CbpFaultDetail
     {
         $this->Message = $Message;
         return $this;
@@ -114,7 +114,7 @@ class CbpFaultDetail
     /**
      * @return string
      */
-    public function getSourceLocation()
+    public function getSourceLocation(): string
     {
         return $this->SourceLocation;
     }
@@ -123,7 +123,7 @@ class CbpFaultDetail
      * @param string $SourceLocation
      * @return CbpFaultDetail
      */
-    public function setSourceLocation($SourceLocation)
+    public function setSourceLocation(string $SourceLocation): CbpFaultDetail
     {
         $this->SourceLocation = $SourceLocation;
         return $this;
@@ -132,7 +132,7 @@ class CbpFaultDetail
     /**
      * @return string
      */
-    public function getToDo()
+    public function getToDo(): string
     {
         return $this->ToDo;
     }
@@ -141,7 +141,7 @@ class CbpFaultDetail
      * @param string $ToDo
      * @return CbpFaultDetail
      */
-    public function setToDo($ToDo)
+    public function setToDo(string $ToDo): CbpFaultDetail
     {
         $this->ToDo = $ToDo;
         return $this;

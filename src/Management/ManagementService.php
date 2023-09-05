@@ -75,7 +75,7 @@ class ManagementService extends \SoapClient
      *
      * @return HelloWorldResponse
      */
-    public function HelloWorld(HelloWorld $parameters)
+    public function HelloWorld(HelloWorld $parameters): HelloWorldResponse
     {
         return $this->__soapCall('HelloWorld', array($parameters));
     }

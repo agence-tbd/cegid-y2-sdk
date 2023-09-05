@@ -37,7 +37,7 @@ class UserFieldValue
     /**
      * @return boolean
      */
-    public function getBooleanValue()
+    public function getBooleanValue(): bool
     {
         return $this->BooleanValue;
     }
@@ -46,7 +46,7 @@ class UserFieldValue
      * @param boolean $BooleanValue
      * @return UserFieldValue
      */
-    public function setBooleanValue($BooleanValue)
+    public function setBooleanValue(bool $BooleanValue): UserFieldValue
     {
         $this->BooleanValue = $BooleanValue;
         return $this;
@@ -72,7 +72,7 @@ class UserFieldValue
      * @param \DateTime $DateValue
      * @return UserFieldValue
      */
-    public function setDateValue(\DateTime $DateValue = null, $format=\DateTime::ATOM)
+    public function setDateValue(\DateTime $DateValue = null, $format=\DateTime::ATOM): UserFieldValue
     {
         if ($DateValue == null) {
             $this->DateValue = null;
@@ -85,7 +85,7 @@ class UserFieldValue
     /**
      * @return string
      */
-    public function getListElementValue()
+    public function getListElementValue(): string
     {
         return $this->ListElementValue;
     }
@@ -94,7 +94,7 @@ class UserFieldValue
      * @param string $ListElementValue
      * @return UserFieldValue
      */
-    public function setListElementValue($ListElementValue)
+    public function setListElementValue(string $ListElementValue): UserFieldValue
     {
         $this->ListElementValue = $ListElementValue;
         return $this;
@@ -103,7 +103,7 @@ class UserFieldValue
     /**
      * @return float
      */
-    public function getNumberValue()
+    public function getNumberValue(): float
     {
         return $this->NumberValue;
     }
@@ -112,7 +112,7 @@ class UserFieldValue
      * @param float $NumberValue
      * @return UserFieldValue
      */
-    public function setNumberValue($NumberValue)
+    public function setNumberValue(float $NumberValue): UserFieldValue
     {
         $this->NumberValue = $NumberValue;
         return $this;
@@ -121,7 +121,7 @@ class UserFieldValue
     /**
      * @return string
      */
-    public function getTextValue()
+    public function getTextValue(): string
     {
         return $this->TextValue;
     }
@@ -130,7 +130,7 @@ class UserFieldValue
      * @param string $TextValue
      * @return UserFieldValue
      */
-    public function setTextValue($TextValue)
+    public function setTextValue(string $TextValue): UserFieldValue
     {
         $this->TextValue = $TextValue;
         return $this;

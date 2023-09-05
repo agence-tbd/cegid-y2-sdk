@@ -114,7 +114,7 @@ class CreateFrom_Header
      * @param \DateTime $Date
      * @return CreateFrom_Header
      */
-    public function setDate(\DateTime $Date = null, $format=\DateTime::ATOM)
+    public function setDate(\DateTime $Date = null, $format=\DateTime::ATOM): CreateFrom_Header
     {
         if ($Date == null) {
             $this->Date = null;
@@ -127,7 +127,7 @@ class CreateFrom_Header
     /**
      * @return string
      */
-    public function getDeviceId()
+    public function getDeviceId(): string
     {
         return $this->DeviceId;
     }
@@ -136,7 +136,7 @@ class CreateFrom_Header
      * @param string $DeviceId
      * @return CreateFrom_Header
      */
-    public function setDeviceId($DeviceId)
+    public function setDeviceId(string $DeviceId): CreateFrom_Header
     {
         $this->DeviceId = $DeviceId;
         return $this;
@@ -145,7 +145,7 @@ class CreateFrom_Header
     /**
      * @return bool
      */
-    public function isDisableMergeLines()
+    public function isDisableMergeLines(): bool
     {
         return $this->DisableMergeLines;
     }
@@ -154,7 +154,7 @@ class CreateFrom_Header
      * @param bool $DisableMergeLines
      * @return CreateFrom_Header
      */
-    public function setDisableMergeLines($DisableMergeLines)
+    public function setDisableMergeLines(bool $DisableMergeLines): CreateFrom_Header
     {
         $this->DisableMergeLines = $DisableMergeLines;
         return $this;
@@ -163,7 +163,7 @@ class CreateFrom_Header
     /**
      * @return string
      */
-    public function getExternalReference()
+    public function getExternalReference(): string
     {
         return $this->ExternalReference;
     }
@@ -172,7 +172,7 @@ class CreateFrom_Header
      * @param string $ExternalReference
      * @return CreateFrom_Header
      */
-    public function setExternalReference($ExternalReference)
+    public function setExternalReference(string $ExternalReference): CreateFrom_Header
     {
         $this->ExternalReference = $ExternalReference;
         return $this;
@@ -181,7 +181,7 @@ class CreateFrom_Header
     /**
      * @return string
      */
-    public function getFollowUpReference()
+    public function getFollowUpReference(): string
     {
         return $this->FollowUpReference;
     }
@@ -190,7 +190,7 @@ class CreateFrom_Header
      * @param string $FollowUpReference
      * @return CreateFrom_Header
      */
-    public function setFollowUpReference($FollowUpReference)
+    public function setFollowUpReference(string $FollowUpReference): CreateFrom_Header
     {
         $this->FollowUpReference = $FollowUpReference;
         return $this;
@@ -199,7 +199,7 @@ class CreateFrom_Header
     /**
      * @return string
      */
-    public function getInternalReference()
+    public function getInternalReference(): string
     {
         return $this->InternalReference;
     }
@@ -208,7 +208,7 @@ class CreateFrom_Header
      * @param string $InternalReference
      * @return CreateFrom_Header
      */
-    public function setInternalReference($InternalReference)
+    public function setInternalReference(string $InternalReference): CreateFrom_Header
     {
         $this->InternalReference = $InternalReference;
         return $this;
@@ -217,7 +217,7 @@ class CreateFrom_Header
     /**
      * @return string
      */
-    public function getMovementReasonId()
+    public function getMovementReasonId(): string
     {
         return $this->MovementReasonId;
     }
@@ -226,7 +226,7 @@ class CreateFrom_Header
      * @param string $MovementReasonId
      * @return CreateFrom_Header
      */
-    public function setMovementReasonId($MovementReasonId)
+    public function setMovementReasonId(string $MovementReasonId): CreateFrom_Header
     {
         $this->MovementReasonId = $MovementReasonId;
         return $this;
@@ -235,7 +235,7 @@ class CreateFrom_Header
     /**
      * @return string
      */
-    public function getOperationUid()
+    public function getOperationUid(): string
     {
         return $this->OperationUid;
     }
@@ -244,7 +244,7 @@ class CreateFrom_Header
      * @param string $OperationUid
      * @return CreateFrom_Header
      */
-    public function setOperationUid($OperationUid)
+    public function setOperationUid(string $OperationUid): CreateFrom_Header
     {
         $this->OperationUid = $OperationUid;
         return $this;
@@ -253,7 +253,7 @@ class CreateFrom_Header
     /**
      * @return CreateFromDocumentIdentifier
      */
-    public function getOriginalDocumentIdentifier()
+    public function getOriginalDocumentIdentifier(): CreateFromDocumentIdentifier
     {
         return $this->OriginalDocumentIdentifier;
     }
@@ -262,7 +262,7 @@ class CreateFrom_Header
      * @param CreateFromDocumentIdentifier $OriginalDocumentIdentifier
      * @return CreateFrom_Header
      */
-    public function setOriginalDocumentIdentifier($OriginalDocumentIdentifier)
+    public function setOriginalDocumentIdentifier(CreateFromDocumentIdentifier $OriginalDocumentIdentifier): CreateFrom_Header
     {
         $this->OriginalDocumentIdentifier = $OriginalDocumentIdentifier;
         return $this;
@@ -271,7 +271,7 @@ class CreateFrom_Header
     /**
      * @return CreateFromRemainderManagement
      */
-    public function getRemainderManagement()
+    public function getRemainderManagement(): CreateFromRemainderManagement
     {
         return $this->RemainderManagement;
     }
@@ -280,7 +280,7 @@ class CreateFrom_Header
      * @param CreateFromRemainderManagement $RemainderManagement
      * @return CreateFrom_Header
      */
-    public function setRemainderManagement($RemainderManagement)
+    public function setRemainderManagement(CreateFromRemainderManagement $RemainderManagement): CreateFrom_Header
     {
         $this->RemainderManagement = $RemainderManagement;
         return $this;
@@ -289,7 +289,7 @@ class CreateFrom_Header
     /**
      * @return string
      */
-    public function getSalesPersonId()
+    public function getSalesPersonId(): string
     {
         return $this->SalesPersonId;
     }
@@ -298,7 +298,7 @@ class CreateFrom_Header
      * @param string $SalesPersonId
      * @return CreateFrom_Header
      */
-    public function setSalesPersonId($SalesPersonId)
+    public function setSalesPersonId(string $SalesPersonId): CreateFrom_Header
     {
         $this->SalesPersonId = $SalesPersonId;
         return $this;
@@ -307,7 +307,7 @@ class CreateFrom_Header
     /**
      * @return CreateFromCustomerOrderDocumentTypeCreat
      */
-    public function getType()
+    public function getType(): CreateFromCustomerOrderDocumentTypeCreat
     {
         return $this->Type;
     }
@@ -316,7 +316,7 @@ class CreateFrom_Header
      * @param string $Type
      * @return CreateFrom_Header
      */
-    public function setType($Type)
+    public function setType(string $Type): CreateFrom_Header
     {
         $this->Type = $Type;
         return $this;
@@ -325,7 +325,7 @@ class CreateFrom_Header
     /**
      * @return ArrayOfUserDefinedDate
      */
-    public function getUserDefinedDates()
+    public function getUserDefinedDates(): ArrayOfUserDefinedDate
     {
         return $this->UserDefinedDates;
     }
@@ -334,7 +334,7 @@ class CreateFrom_Header
      * @param ArrayOfUserDefinedDate $UserDefinedDates
      * @return CreateFrom_Header
      */
-    public function setUserDefinedDates($UserDefinedDates)
+    public function setUserDefinedDates(ArrayOfUserDefinedDate $UserDefinedDates): CreateFrom_Header
     {
         $this->UserDefinedDates = $UserDefinedDates;
         return $this;
@@ -343,7 +343,7 @@ class CreateFrom_Header
     /**
      * @return ArrayOfUserDefinedTableCustomer
      */
-    public function getUserDefinedTableCustomers()
+    public function getUserDefinedTableCustomers(): ArrayOfUserDefinedTableCustomer
     {
         return $this->UserDefinedTableCustomers;
     }
@@ -352,7 +352,7 @@ class CreateFrom_Header
      * @param ArrayOfUserDefinedTableCustomer $UserDefinedTableCustomers
      * @return CreateFrom_Header
      */
-    public function setUserDefinedTableCustomers($UserDefinedTableCustomers)
+    public function setUserDefinedTableCustomers(ArrayOfUserDefinedTableCustomer $UserDefinedTableCustomers): CreateFrom_Header
     {
         $this->UserDefinedTableCustomers = $UserDefinedTableCustomers;
         return $this;
@@ -361,7 +361,7 @@ class CreateFrom_Header
     /**
      * @return ArrayOfUserDefinedTable
      */
-    public function getUserDefinedTables()
+    public function getUserDefinedTables(): ArrayOfUserDefinedTable
     {
         return $this->UserDefinedTables;
     }
@@ -370,7 +370,7 @@ class CreateFrom_Header
      * @param ArrayOfUserDefinedTable $UserDefinedTables
      * @return CreateFrom_Header
      */
-    public function setUserDefinedTables($UserDefinedTables)
+    public function setUserDefinedTables(ArrayOfUserDefinedTable $UserDefinedTables): CreateFrom_Header
     {
         $this->UserDefinedTables = $UserDefinedTables;
         return $this;
@@ -379,7 +379,7 @@ class CreateFrom_Header
     /**
      * @return ArrayOfUserField
      */
-    public function getUserFields()
+    public function getUserFields(): ArrayOfUserField
     {
         return $this->UserFields;
     }
@@ -388,7 +388,7 @@ class CreateFrom_Header
      * @param ArrayOfUserField $UserFields
      * @return CreateFrom_Header
      */
-    public function setUserFields($UserFields)
+    public function setUserFields(ArrayOfUserField $UserFields): CreateFrom_Header
     {
         $this->UserFields = $UserFields;
         return $this;
@@ -397,7 +397,7 @@ class CreateFrom_Header
     /**
      * @return string
      */
-    public function getWarehouseId()
+    public function getWarehouseId(): string
     {
         return $this->WarehouseId;
     }
@@ -406,7 +406,7 @@ class CreateFrom_Header
      * @param string $WarehouseId
      * @return CreateFrom_Header
      */
-    public function setWarehouseId($WarehouseId)
+    public function setWarehouseId(string $WarehouseId): CreateFrom_Header
     {
         $this->WarehouseId = $WarehouseId;
         return $this;

@@ -19,7 +19,7 @@ class ArrayOfCustomersReservationCreate_Line implements \ArrayAccess, \Iterator,
     /**
      * @return CustomersReservationCreate_Line[]
      */
-    public function getCustomersReservationCreate_Line()
+    public function getCustomersReservationCreate_Line(): array
     {
       return $this->CustomersReservationCreate_Line;
     }
@@ -28,7 +28,7 @@ class ArrayOfCustomersReservationCreate_Line implements \ArrayAccess, \Iterator,
      * @param CustomersReservationCreate_Line[] $CustomersReservationCreate_Line
      * @return ArrayOfCustomersReservationCreate_Line
      */
-    public function setCustomersReservationCreate_Line(array $CustomersReservationCreate_Line = null)
+    public function setCustomersReservationCreate_Line(array $CustomersReservationCreate_Line = null): ArrayOfCustomersReservationCreate_Line
     {
       $this->CustomersReservationCreate_Line = $CustomersReservationCreate_Line;
       return $this;
@@ -40,7 +40,7 @@ class ArrayOfCustomersReservationCreate_Line implements \ArrayAccess, \Iterator,
      * @param mixed $offset An offset to check for
      * @return boolean true on success or false on failure
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
       return isset($this->CustomersReservationCreate_Line[$offset]);
     }
@@ -51,7 +51,7 @@ class ArrayOfCustomersReservationCreate_Line implements \ArrayAccess, \Iterator,
      * @param mixed $offset The offset to retrieve
      * @return CustomersReservationCreate_Line
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): CustomersReservationCreate_Line
     {
       return $this->CustomersReservationCreate_Line[$offset];
     }
@@ -63,7 +63,7 @@ class ArrayOfCustomersReservationCreate_Line implements \ArrayAccess, \Iterator,
      * @param CustomersReservationCreate_Line $value The value to set
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet(mixed $offset, mixed $value): void
     {
       if (!isset($offset)) {
         $this->CustomersReservationCreate_Line[] = $value;
@@ -78,7 +78,7 @@ class ArrayOfCustomersReservationCreate_Line implements \ArrayAccess, \Iterator,
      * @param mixed $offset The offset to unset
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
       unset($this->CustomersReservationCreate_Line[$offset]);
     }
@@ -88,7 +88,7 @@ class ArrayOfCustomersReservationCreate_Line implements \ArrayAccess, \Iterator,
      *
      * @return CustomersReservationCreate_Line Return the current element
      */
-    public function current()
+    public function current(): CustomersReservationCreate_Line
     {
       return current($this->CustomersReservationCreate_Line);
     }
@@ -99,7 +99,7 @@ class ArrayOfCustomersReservationCreate_Line implements \ArrayAccess, \Iterator,
      *
      * @return void
      */
-    public function next()
+    public function next(): void
     {
       next($this->CustomersReservationCreate_Line);
     }
@@ -109,7 +109,7 @@ class ArrayOfCustomersReservationCreate_Line implements \ArrayAccess, \Iterator,
      *
      * @return string|null Return the key of the current element or null
      */
-    public function key()
+    public function key(): ?string
     {
       return key($this->CustomersReservationCreate_Line);
     }
@@ -119,7 +119,7 @@ class ArrayOfCustomersReservationCreate_Line implements \ArrayAccess, \Iterator,
      *
      * @return boolean Return the validity of the current position
      */
-    public function valid()
+    public function valid(): bool
     {
       return $this->key() !== null;
     }
@@ -130,7 +130,7 @@ class ArrayOfCustomersReservationCreate_Line implements \ArrayAccess, \Iterator,
      *
      * @return void
      */
-    public function rewind()
+    public function rewind(): void
     {
       reset($this->CustomersReservationCreate_Line);
     }
@@ -138,9 +138,9 @@ class ArrayOfCustomersReservationCreate_Line implements \ArrayAccess, \Iterator,
     /**
      * Countable implementation
      *
-     * @return CustomersReservationCreate_Line Return count of elements
+     * @return int Return count of elements
      */
-    public function count()
+    public function count(): int
     {
       return count($this->CustomersReservationCreate_Line);
     }

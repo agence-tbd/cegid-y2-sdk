@@ -17,7 +17,7 @@ class ArrayOfstring implements \ArrayAccess, \Iterator, \Countable
     /**
      * @return string[]
      */
-    public function getString()
+    public function getString(): array
     {
         return $this->string;
     }
@@ -27,7 +27,7 @@ class ArrayOfstring implements \ArrayAccess, \Iterator, \Countable
      *
      * @return ArrayOfstring
      */
-    public function setString(array $string = null)
+    public function setString(array $string = null): ArrayOfstring
     {
         $this->string = $string;
         return $this;
@@ -40,7 +40,7 @@ class ArrayOfstring implements \ArrayAccess, \Iterator, \Countable
      *
      * @return boolean true on success or false on failure
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->string[$offset]);
     }
@@ -52,7 +52,7 @@ class ArrayOfstring implements \ArrayAccess, \Iterator, \Countable
      *
      * @return string
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): string
     {
         return $this->string[$offset];
     }
@@ -61,11 +61,11 @@ class ArrayOfstring implements \ArrayAccess, \Iterator, \Countable
      * ArrayAccess implementation
      *
      * @param mixed  $offset The offset to assign the value to
-     * @param string $value The value to set
+     * @param mixed $value The value to set
      *
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet(mixed $offset, mixed $value): void
     {
         if (!isset($offset)) {
             $this->string[] = $value;
@@ -81,7 +81,7 @@ class ArrayOfstring implements \ArrayAccess, \Iterator, \Countable
      *
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         unset($this->string[$offset]);
     }
@@ -91,7 +91,7 @@ class ArrayOfstring implements \ArrayAccess, \Iterator, \Countable
      *
      * @return string Return the current element
      */
-    public function current()
+    public function current(): string
     {
         return current($this->string);
     }
@@ -102,7 +102,7 @@ class ArrayOfstring implements \ArrayAccess, \Iterator, \Countable
      *
      * @return void
      */
-    public function next()
+    public function next(): void
     {
         next($this->string);
     }
@@ -112,7 +112,7 @@ class ArrayOfstring implements \ArrayAccess, \Iterator, \Countable
      *
      * @return string|null Return the key of the current element or null
      */
-    public function key()
+    public function key(): ?string
     {
         return key($this->string);
     }
@@ -122,7 +122,7 @@ class ArrayOfstring implements \ArrayAccess, \Iterator, \Countable
      *
      * @return boolean Return the validity of the current position
      */
-    public function valid()
+    public function valid(): bool
     {
         return $this->key() !== null;
     }
@@ -133,7 +133,7 @@ class ArrayOfstring implements \ArrayAccess, \Iterator, \Countable
      *
      * @return void
      */
-    public function rewind()
+    public function rewind(): void
     {
         reset($this->string);
     }
@@ -141,9 +141,9 @@ class ArrayOfstring implements \ArrayAccess, \Iterator, \Countable
     /**
      * Countable implementation
      *
-     * @return string Return count of elements
+     * @return int Return count of elements
      */
-    public function count()
+    public function count(): int
     {
         return count($this->string);
     }

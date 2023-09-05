@@ -12,7 +12,7 @@ class GetInventoryDetailByStoreResponse
     /**
      * @param ArrayOfAvailableQtyByStore $GetInventoryDetailByStoreResult
      */
-    public function __construct($GetInventoryDetailByStoreResult)
+    public function __construct(ArrayOfAvailableQtyByStore $GetInventoryDetailByStoreResult)
     {
         $this->GetInventoryDetailByStoreResult = $GetInventoryDetailByStoreResult;
     }
@@ -20,7 +20,7 @@ class GetInventoryDetailByStoreResponse
     /**
      * @return ArrayOfAvailableQtyByStore
      */
-    public function getGetInventoryDetailByStoreResult()
+    public function getGetInventoryDetailByStoreResult(): ArrayOfAvailableQtyByStore
     {
         return $this->GetInventoryDetailByStoreResult;
     }
@@ -29,7 +29,7 @@ class GetInventoryDetailByStoreResponse
      * @param ArrayOfAvailableQtyByStore $GetInventoryDetailByStoreResult
      * @return GetInventoryDetailByStoreResponse
      */
-    public function setGetInventoryDetailByStoreResult($GetInventoryDetailByStoreResult)
+    public function setGetInventoryDetailByStoreResult(ArrayOfAvailableQtyByStore $GetInventoryDetailByStoreResult): GetInventoryDetailByStoreResponse
     {
         $this->GetInventoryDetailByStoreResult = $GetInventoryDetailByStoreResult;
         return $this;

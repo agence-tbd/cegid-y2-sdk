@@ -22,7 +22,7 @@ class AvailableQtyReturn
     /**
      * @return float
      */
-    public function getAvailableQty()
+    public function getAvailableQty(): float
     {
         return $this->AvailableQty;
     }
@@ -31,7 +31,7 @@ class AvailableQtyReturn
      * @param float $AvailableQty
      * @return AvailableQtyReturn
      */
-    public function setAvailableQty($AvailableQty)
+    public function setAvailableQty(float $AvailableQty): AvailableQtyReturn
     {
         $this->AvailableQty = $AvailableQty;
         return $this;
@@ -40,7 +40,7 @@ class AvailableQtyReturn
     /**
      * @return QueryExecutionStatus
      */
-    public function getQueryStatus()
+    public function getQueryStatus(): QueryExecutionStatus
     {
         return $this->QueryStatus;
     }
@@ -49,7 +49,7 @@ class AvailableQtyReturn
      * @param QueryExecutionStatus $QueryStatus
      * @return AvailableQtyReturn
      */
-    public function setQueryStatus($QueryStatus)
+    public function setQueryStatus(QueryExecutionStatus $QueryStatus): AvailableQtyReturn
     {
         $this->QueryStatus = $QueryStatus;
         return $this;

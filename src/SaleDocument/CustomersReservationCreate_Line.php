@@ -84,7 +84,7 @@ class CustomersReservationCreate_Line
     /**
      * @return string
      */
-    public function getCatalogReference()
+    public function getCatalogReference(): string
     {
       return $this->CatalogReference;
     }
@@ -93,7 +93,7 @@ class CustomersReservationCreate_Line
      * @param string $CatalogReference
      * @return CustomersReservationCreate_Line
      */
-    public function setCatalogReference($CatalogReference)
+    public function setCatalogReference(string $CatalogReference): CustomersReservationCreate_Line
     {
       $this->CatalogReference = $CatalogReference;
       return $this;
@@ -102,7 +102,7 @@ class CustomersReservationCreate_Line
     /**
      * @return string
      */
-    public function getComplementaryDescription()
+    public function getComplementaryDescription(): string
     {
       return $this->ComplementaryDescription;
     }
@@ -111,7 +111,7 @@ class CustomersReservationCreate_Line
      * @param string $ComplementaryDescription
      * @return CustomersReservationCreate_Line
      */
-    public function setComplementaryDescription($ComplementaryDescription)
+    public function setComplementaryDescription(string $ComplementaryDescription): CustomersReservationCreate_Line
     {
       $this->ComplementaryDescription = $ComplementaryDescription;
       return $this;
@@ -138,7 +138,7 @@ class CustomersReservationCreate_Line
      * @param string $format
      * @return CustomersReservationCreate_Line
      */
-    public function setDeliveryDate(\DateTime $DeliveryDate = null, $format=\DateTime::ATOM)
+    public function setDeliveryDate(\DateTime $DeliveryDate = null, string $format=\DateTime::ATOM): CustomersReservationCreate_Line
     {
       if ($DeliveryDate == null) {
        $this->DeliveryDate = null;
@@ -151,7 +151,7 @@ class CustomersReservationCreate_Line
     /**
      * @return string
      */
-    public function getDiscountTypeId()
+    public function getDiscountTypeId(): string
     {
       return $this->DiscountTypeId;
     }
@@ -160,7 +160,7 @@ class CustomersReservationCreate_Line
      * @param string $DiscountTypeId
      * @return CustomersReservationCreate_Line
      */
-    public function setDiscountTypeId($DiscountTypeId)
+    public function setDiscountTypeId(string $DiscountTypeId): CustomersReservationCreate_Line
     {
       $this->DiscountTypeId = $DiscountTypeId;
       return $this;
@@ -169,7 +169,7 @@ class CustomersReservationCreate_Line
     /**
      * @return string
      */
-    public function getExternalReference()
+    public function getExternalReference(): string
     {
       return $this->ExternalReference;
     }
@@ -178,7 +178,7 @@ class CustomersReservationCreate_Line
      * @param string $ExternalReference
      * @return CustomersReservationCreate_Line
      */
-    public function setExternalReference($ExternalReference)
+    public function setExternalReference(string $ExternalReference): CustomersReservationCreate_Line
     {
       $this->ExternalReference = $ExternalReference;
       return $this;
@@ -205,7 +205,7 @@ class CustomersReservationCreate_Line
      * @param string $format
      * @return CustomersReservationCreate_Line
      */
-    public function setInitialDeliveryDate(\DateTime $InitialDeliveryDate = null, $format=\DateTime::ATOM)
+    public function setInitialDeliveryDate(\DateTime $InitialDeliveryDate = null, string $format=\DateTime::ATOM): CustomersReservationCreate_Line
     {
       if ($InitialDeliveryDate == null) {
        $this->InitialDeliveryDate = null;
@@ -218,7 +218,7 @@ class CustomersReservationCreate_Line
     /**
      * @return ItemIdentifier
      */
-    public function getItemIdentifier()
+    public function getItemIdentifier(): ItemIdentifier
     {
       return $this->ItemIdentifier;
     }
@@ -227,7 +227,7 @@ class CustomersReservationCreate_Line
      * @param ItemIdentifier $ItemIdentifier
      * @return CustomersReservationCreate_Line
      */
-    public function setItemIdentifier($ItemIdentifier)
+    public function setItemIdentifier(ItemIdentifier $ItemIdentifier): CustomersReservationCreate_Line
     {
       $this->ItemIdentifier = $ItemIdentifier;
       return $this;
@@ -236,7 +236,7 @@ class CustomersReservationCreate_Line
     /**
      * @return string
      */
-    public function getLabel()
+    public function getLabel(): string
     {
       return $this->Label;
     }
@@ -245,7 +245,7 @@ class CustomersReservationCreate_Line
      * @param string $Label
      * @return CustomersReservationCreate_Line
      */
-    public function setLabel($Label)
+    public function setLabel(string $Label): CustomersReservationCreate_Line
     {
       $this->Label = $Label;
       return $this;
@@ -254,7 +254,7 @@ class CustomersReservationCreate_Line
     /**
      * @return float
      */
-    public function getNetUnitPrice()
+    public function getNetUnitPrice(): float
     {
       return $this->NetUnitPrice;
     }
@@ -263,7 +263,7 @@ class CustomersReservationCreate_Line
      * @param float $NetUnitPrice
      * @return CustomersReservationCreate_Line
      */
-    public function setNetUnitPrice($NetUnitPrice)
+    public function setNetUnitPrice(float $NetUnitPrice): CustomersReservationCreate_Line
     {
       $this->NetUnitPrice = $NetUnitPrice;
       return $this;
@@ -272,7 +272,7 @@ class CustomersReservationCreate_Line
     /**
      * @return float
      */
-    public function getQuantity()
+    public function getQuantity(): float
     {
       return $this->Quantity;
     }
@@ -281,7 +281,7 @@ class CustomersReservationCreate_Line
      * @param float $Quantity
      * @return CustomersReservationCreate_Line
      */
-    public function setQuantity($Quantity)
+    public function setQuantity(float $Quantity): CustomersReservationCreate_Line
     {
       $this->Quantity = $Quantity;
       return $this;
@@ -290,7 +290,7 @@ class CustomersReservationCreate_Line
     /**
      * @return string
      */
-    public function getSalesPersonId()
+    public function getSalesPersonId(): string
     {
       return $this->SalesPersonId;
     }
@@ -299,7 +299,7 @@ class CustomersReservationCreate_Line
      * @param string $SalesPersonId
      * @return CustomersReservationCreate_Line
      */
-    public function setSalesPersonId($SalesPersonId)
+    public function setSalesPersonId(string $SalesPersonId): CustomersReservationCreate_Line
     {
       $this->SalesPersonId = $SalesPersonId;
       return $this;
@@ -308,7 +308,7 @@ class CustomersReservationCreate_Line
     /**
      * @return string
      */
-    public function getSerialNumberId()
+    public function getSerialNumberId(): string
     {
       return $this->SerialNumberId;
     }
@@ -317,7 +317,7 @@ class CustomersReservationCreate_Line
      * @param string $SerialNumberId
      * @return CustomersReservationCreate_Line
      */
-    public function setSerialNumberId($SerialNumberId)
+    public function setSerialNumberId(string $SerialNumberId): CustomersReservationCreate_Line
     {
       $this->SerialNumberId = $SerialNumberId;
       return $this;
@@ -326,7 +326,7 @@ class CustomersReservationCreate_Line
     /**
      * @return ArrayOfCreate_Tax
      */
-    public function getTaxes()
+    public function getTaxes(): ArrayOfCreate_Tax
     {
       return $this->Taxes;
     }
@@ -335,7 +335,7 @@ class CustomersReservationCreate_Line
      * @param ArrayOfCreate_Tax $Taxes
      * @return CustomersReservationCreate_Line
      */
-    public function setTaxes($Taxes)
+    public function setTaxes(ArrayOfCreate_Tax $Taxes): CustomersReservationCreate_Line
     {
       $this->Taxes = $Taxes;
       return $this;
@@ -344,7 +344,7 @@ class CustomersReservationCreate_Line
     /**
      * @return float
      */
-    public function getUnitPrice()
+    public function getUnitPrice(): float
     {
       return $this->UnitPrice;
     }
@@ -353,7 +353,7 @@ class CustomersReservationCreate_Line
      * @param float $UnitPrice
      * @return CustomersReservationCreate_Line
      */
-    public function setUnitPrice($UnitPrice)
+    public function setUnitPrice(float $UnitPrice): CustomersReservationCreate_Line
     {
       $this->UnitPrice = $UnitPrice;
       return $this;

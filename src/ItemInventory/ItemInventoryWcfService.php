@@ -73,7 +73,7 @@ class ItemInventoryWcfService extends \SoapClient
      * @param HelloWorld $parameters
      * @return HelloWorldResponse
      */
-    public function HelloWorld(HelloWorld $parameters)
+    public function HelloWorld(HelloWorld $parameters): HelloWorldResponse
     {
         return $this->__soapCall('HelloWorld', array($parameters));
     }
@@ -82,7 +82,7 @@ class ItemInventoryWcfService extends \SoapClient
      * @param GetAvailableQty $parameters
      * @return GetAvailableQtyResponse
      */
-    public function GetAvailableQty(GetAvailableQty $parameters)
+    public function GetAvailableQty(GetAvailableQty $parameters): GetAvailableQtyResponse
     {
         return $this->__soapCall('GetAvailableQty', array($parameters));
     }
@@ -91,7 +91,7 @@ class ItemInventoryWcfService extends \SoapClient
      * @param GetAvailableCumulativeQtyAllStores $parameters
      * @return GetAvailableCumulativeQtyAllStoresResponse
      */
-    public function GetAvailableCumulativeQtyAllStores(GetAvailableCumulativeQtyAllStores $parameters)
+    public function GetAvailableCumulativeQtyAllStores(GetAvailableCumulativeQtyAllStores $parameters): GetAvailableCumulativeQtyAllStoresResponse
     {
         return $this->__soapCall('GetAvailableCumulativeQtyAllStores', array($parameters));
     }
@@ -100,7 +100,7 @@ class ItemInventoryWcfService extends \SoapClient
      * @param GetInventoryDetailByStore $parameters
      * @return GetInventoryDetailByStoreResponse
      */
-    public function GetInventoryDetailByStore(GetInventoryDetailByStore $parameters)
+    public function GetInventoryDetailByStore(GetInventoryDetailByStore $parameters): GetInventoryDetailByStoreResponse
     {
         return $this->__soapCall('GetInventoryDetailByStore', array($parameters));
     }
@@ -109,7 +109,7 @@ class ItemInventoryWcfService extends \SoapClient
      * @param UpdateShoppingCart $parameters
      * @return UpdateShoppingCartResponse
      */
-    public function UpdateShoppingCart(UpdateShoppingCart $parameters)
+    public function UpdateShoppingCart(UpdateShoppingCart $parameters): UpdateShoppingCartResponse
     {
         return $this->__soapCall('UpdateShoppingCart', array($parameters));
     }
@@ -118,7 +118,7 @@ class ItemInventoryWcfService extends \SoapClient
      * @param ResetShoppingCart $parameters
      * @return ResetShoppingCartResponse
      */
-    public function ResetShoppingCart(ResetShoppingCart $parameters)
+    public function ResetShoppingCart(ResetShoppingCart $parameters): ResetShoppingCartResponse
     {
         return $this->__soapCall('ResetShoppingCart', array($parameters));
     }
@@ -127,7 +127,7 @@ class ItemInventoryWcfService extends \SoapClient
      * @param GetListItemInventoryDetailByStore $parameters
      * @return GetListItemInventoryDetailByStoreResponse
      */
-    public function GetListItemInventoryDetailByStore(GetListItemInventoryDetailByStore $parameters)
+    public function GetListItemInventoryDetailByStore(GetListItemInventoryDetailByStore $parameters): GetListItemInventoryDetailByStoreResponse
     {
         return $this->__soapCall('GetListItemInventoryDetailByStore', array($parameters));
     }

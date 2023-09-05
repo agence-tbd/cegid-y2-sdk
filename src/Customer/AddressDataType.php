@@ -63,7 +63,7 @@ class AddressDataType
     /**
      * @return string
      */
-    public function getAddressLine1()
+    public function getAddressLine1(): string
     {
         return $this->AddressLine1;
     }
@@ -73,7 +73,7 @@ class AddressDataType
      *
      * @return AddressDataType
      */
-    public function setAddressLine1($AddressLine1)
+    public function setAddressLine1(string $AddressLine1): AddressDataType
     {
         $this->AddressLine1 = $AddressLine1;
         return $this;
@@ -82,7 +82,7 @@ class AddressDataType
     /**
      * @return string
      */
-    public function getAddressLine2()
+    public function getAddressLine2(): string
     {
         return $this->AddressLine2;
     }
@@ -92,7 +92,7 @@ class AddressDataType
      *
      * @return AddressDataType
      */
-    public function setAddressLine2($AddressLine2)
+    public function setAddressLine2(string $AddressLine2): AddressDataType
     {
         $this->AddressLine2 = $AddressLine2;
         return $this;
@@ -101,7 +101,7 @@ class AddressDataType
     /**
      * @return string
      */
-    public function getAddressLine3()
+    public function getAddressLine3(): string
     {
         return $this->AddressLine3;
     }
@@ -111,7 +111,7 @@ class AddressDataType
      *
      * @return AddressDataType
      */
-    public function setAddressLine3($AddressLine3)
+    public function setAddressLine3(string $AddressLine3): AddressDataType
     {
         $this->AddressLine3 = $AddressLine3;
         return $this;
@@ -120,7 +120,7 @@ class AddressDataType
     /**
      * @return string
      */
-    public function getBrandName()
+    public function getBrandName(): string
     {
         return $this->BrandName;
     }
@@ -130,7 +130,7 @@ class AddressDataType
      *
      * @return AddressDataType
      */
-    public function setBrandName($BrandName)
+    public function setBrandName(string $BrandName): AddressDataType
     {
         $this->BrandName = $BrandName;
         return $this;
@@ -139,7 +139,7 @@ class AddressDataType
     /**
      * @return string
      */
-    public function getCity()
+    public function getCity(): string
     {
         return $this->City;
     }
@@ -149,7 +149,7 @@ class AddressDataType
      *
      * @return AddressDataType
      */
-    public function setCity($City)
+    public function setCity(string $City): AddressDataType
     {
         $this->City = $City;
         return $this;
@@ -158,7 +158,7 @@ class AddressDataType
     /**
      * @return string
      */
-    public function getCountryId()
+    public function getCountryId(): string
     {
         return $this->CountryId;
     }
@@ -168,7 +168,7 @@ class AddressDataType
      *
      * @return AddressDataType
      */
-    public function setCountryId($CountryId)
+    public function setCountryId(string $CountryId): AddressDataType
     {
         $this->CountryId = $CountryId;
         return $this;
@@ -177,7 +177,7 @@ class AddressDataType
     /**
      * @return CountryIdType
      */
-    public function getCountryIdType()
+    public function getCountryIdType(): CountryIdType
     {
         return $this->CountryIdType;
     }
@@ -187,7 +187,7 @@ class AddressDataType
      *
      * @return AddressDataType
      */
-    public function setCountryIdType($CountryIdType)
+    public function setCountryIdType(CountryIdType $CountryIdType): AddressDataType
     {
         $this->CountryIdType = $CountryIdType;
         return $this;
@@ -196,7 +196,7 @@ class AddressDataType
     /**
      * @return boolean
      */
-    public function getNata()
+    public function getNata(): bool
     {
         return $this->Nata;
     }
@@ -206,7 +206,7 @@ class AddressDataType
      *
      * @return AddressDataType
      */
-    public function setNata($Nata)
+    public function setNata(bool $Nata): AddressDataType
     {
         $this->Nata = $Nata;
         return $this;
@@ -215,7 +215,7 @@ class AddressDataType
     /**
      * @return string
      */
-    public function getRegionId()
+    public function getRegionId(): string
     {
         return $this->RegionId;
     }
@@ -225,7 +225,7 @@ class AddressDataType
      *
      * @return AddressDataType
      */
-    public function setRegionId($RegionId)
+    public function setRegionId(string $RegionId): AddressDataType
     {
         $this->RegionId = $RegionId;
         return $this;
@@ -234,7 +234,7 @@ class AddressDataType
     /**
      * @return string
      */
-    public function getZipCode()
+    public function getZipCode(): string
     {
         return $this->ZipCode;
     }
@@ -244,7 +244,7 @@ class AddressDataType
      *
      * @return AddressDataType
      */
-    public function setZipCode($ZipCode)
+    public function setZipCode(string $ZipCode): AddressDataType
     {
         $this->ZipCode = $ZipCode;
         return $this;

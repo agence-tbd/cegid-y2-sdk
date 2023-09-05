@@ -29,7 +29,7 @@ class SaleDocumentReference
     /**
      * @return string
      */
-    public function getCustomerId()
+    public function getCustomerId(): string
     {
       return $this->CustomerId;
     }
@@ -38,7 +38,7 @@ class SaleDocumentReference
      * @param string $CustomerId
      * @return SaleDocumentReference
      */
-    public function setCustomerId($CustomerId)
+    public function setCustomerId(string $CustomerId): SaleDocumentReference
     {
       $this->CustomerId = $CustomerId;
       return $this;
@@ -47,7 +47,7 @@ class SaleDocumentReference
     /**
      * @return string
      */
-    public function getInternalReference()
+    public function getInternalReference(): string
     {
       return $this->InternalReference;
     }
@@ -56,7 +56,7 @@ class SaleDocumentReference
      * @param string $InternalReference
      * @return SaleDocumentReference
      */
-    public function setInternalReference($InternalReference)
+    public function setInternalReference(string $InternalReference): SaleDocumentReference
     {
       $this->InternalReference = $InternalReference;
       return $this;
@@ -65,7 +65,7 @@ class SaleDocumentReference
     /**
      * @return string
      */
-    public function getType()
+    public function getType(): string
     {
       return $this->Type;
     }
@@ -74,7 +74,7 @@ class SaleDocumentReference
      * @param string $Type
      * @return SaleDocumentReference
      */
-    public function setType($Type)
+    public function setType(string $Type): SaleDocumentReference
     {
       $this->Type = $Type;
       return $this;

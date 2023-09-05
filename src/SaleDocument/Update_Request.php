@@ -49,7 +49,7 @@ class Update_Request
     /**
      * @return Address
      */
-    public function getDeliveryAddress()
+    public function getDeliveryAddress(): Address
     {
       return $this->DeliveryAddress;
     }
@@ -58,7 +58,7 @@ class Update_Request
      * @param Address $DeliveryAddress
      * @return Update_Request
      */
-    public function setDeliveryAddress($DeliveryAddress)
+    public function setDeliveryAddress(Address $DeliveryAddress): Update_Request
     {
       $this->DeliveryAddress = $DeliveryAddress;
       return $this;
@@ -67,7 +67,7 @@ class Update_Request
     /**
      * @return Update_Header
      */
-    public function getHeader()
+    public function getHeader(): Update_Header
     {
       return $this->Header;
     }
@@ -76,7 +76,7 @@ class Update_Request
      * @param Update_Header $Header
      * @return Update_Request
      */
-    public function setHeader($Header)
+    public function setHeader(Update_Header $Header): Update_Request
     {
       $this->Header = $Header;
       return $this;
@@ -85,7 +85,7 @@ class Update_Request
     /**
      * @return SaleDocumentIdentifier
      */
-    public function getIdentifier()
+    public function getIdentifier(): SaleDocumentIdentifier
     {
       return $this->Identifier;
     }
@@ -94,7 +94,7 @@ class Update_Request
      * @param SaleDocumentIdentifier $Identifier
      * @return Update_Request
      */
-    public function setIdentifier($Identifier)
+    public function setIdentifier(SaleDocumentIdentifier $Identifier): Update_Request
     {
       $this->Identifier = $Identifier;
       return $this;
@@ -103,7 +103,7 @@ class Update_Request
     /**
      * @return Address
      */
-    public function getInvoicingAddress()
+    public function getInvoicingAddress(): Address
     {
       return $this->InvoicingAddress;
     }
@@ -112,7 +112,7 @@ class Update_Request
      * @param Address $InvoicingAddress
      * @return Update_Request
      */
-    public function setInvoicingAddress($InvoicingAddress)
+    public function setInvoicingAddress(Address $InvoicingAddress): Update_Request
     {
       $this->InvoicingAddress = $InvoicingAddress;
       return $this;
@@ -121,7 +121,7 @@ class Update_Request
     /**
      * @return ArrayOfUpdate_Line
      */
-    public function getLines()
+    public function getLines(): ArrayOfUpdate_Line
     {
       return $this->Lines;
     }
@@ -130,7 +130,7 @@ class Update_Request
      * @param ArrayOfUpdate_Line $Lines
      * @return Update_Request
      */
-    public function setLines($Lines)
+    public function setLines(ArrayOfUpdate_Line $Lines): Update_Request
     {
       $this->Lines = $Lines;
       return $this;
@@ -139,7 +139,7 @@ class Update_Request
     /**
      * @return ArrayOfUpdate_Payment
      */
-    public function getPayments()
+    public function getPayments(): ArrayOfUpdate_Payment
     {
       return $this->Payments;
     }
@@ -148,7 +148,7 @@ class Update_Request
      * @param ArrayOfUpdate_Payment $Payments
      * @return Update_Request
      */
-    public function setPayments($Payments)
+    public function setPayments(ArrayOfUpdate_Payment $Payments): Update_Request
     {
       $this->Payments = $Payments;
       return $this;
@@ -157,7 +157,7 @@ class Update_Request
     /**
      * @return ArrayOfUpdate_ShippingTax
      */
-    public function getShippingTaxes()
+    public function getShippingTaxes(): ArrayOfUpdate_ShippingTax
     {
       return $this->ShippingTaxes;
     }
@@ -166,7 +166,7 @@ class Update_Request
      * @param ArrayOfUpdate_ShippingTax $ShippingTaxes
      * @return Update_Request
      */
-    public function setShippingTaxes($ShippingTaxes)
+    public function setShippingTaxes(ArrayOfUpdate_ShippingTax $ShippingTaxes): Update_Request
     {
       $this->ShippingTaxes = $ShippingTaxes;
       return $this;

@@ -18,7 +18,7 @@ class AddNewCustomer
      * @param CustomerInsertData $customerData
      * @param RetailContext      $clientContext
      */
-    public function __construct($customerData, $clientContext)
+    public function __construct(CustomerInsertData $customerData, RetailContext $clientContext)
     {
         $this->customerData  = $customerData;
         $this->clientContext = $clientContext;
@@ -27,7 +27,7 @@ class AddNewCustomer
     /**
      * @return CustomerInsertData
      */
-    public function getCustomerData()
+    public function getCustomerData(): CustomerInsertData
     {
         return $this->customerData;
     }
@@ -37,7 +37,7 @@ class AddNewCustomer
      *
      * @return AddNewCustomer
      */
-    public function setCustomerData($customerData)
+    public function setCustomerData(CustomerInsertData $customerData): AddNewCustomer
     {
         $this->customerData = $customerData;
         return $this;
@@ -46,7 +46,7 @@ class AddNewCustomer
     /**
      * @return RetailContext
      */
-    public function getClientContext()
+    public function getClientContext(): RetailContext
     {
         return $this->clientContext;
     }
@@ -56,7 +56,7 @@ class AddNewCustomer
      *
      * @return AddNewCustomer
      */
-    public function setClientContext($clientContext)
+    public function setClientContext(RetailContext $clientContext): AddNewCustomer
     {
         $this->clientContext = $clientContext;
         return $this;

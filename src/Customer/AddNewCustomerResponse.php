@@ -12,7 +12,7 @@ class AddNewCustomerResponse
     /**
      * @param string $AddNewCustomerResult
      */
-    public function __construct($AddNewCustomerResult)
+    public function __construct(string $AddNewCustomerResult)
     {
         $this->AddNewCustomerResult = $AddNewCustomerResult;
     }
@@ -20,7 +20,7 @@ class AddNewCustomerResponse
     /**
      * @return string
      */
-    public function getAddNewCustomerResult()
+    public function getAddNewCustomerResult(): string
     {
         return $this->AddNewCustomerResult;
     }
@@ -30,7 +30,7 @@ class AddNewCustomerResponse
      *
      * @return AddNewCustomerResponse
      */
-    public function setAddNewCustomerResult($AddNewCustomerResult)
+    public function setAddNewCustomerResult(string $AddNewCustomerResult): AddNewCustomerResponse
     {
         $this->AddNewCustomerResult = $AddNewCustomerResult;
         return $this;

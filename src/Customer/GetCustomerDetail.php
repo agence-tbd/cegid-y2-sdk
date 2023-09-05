@@ -18,7 +18,7 @@ class GetCustomerDetail
      * @param string        $customerId
      * @param RetailContext $clientContext
      */
-    public function __construct($customerId, $clientContext)
+    public function __construct(string $customerId, RetailContext $clientContext)
     {
         $this->customerId    = $customerId;
         $this->clientContext = $clientContext;
@@ -27,7 +27,7 @@ class GetCustomerDetail
     /**
      * @return string
      */
-    public function getCustomerId()
+    public function getCustomerId(): string
     {
         return $this->customerId;
     }
@@ -37,7 +37,7 @@ class GetCustomerDetail
      *
      * @return GetCustomerDetail
      */
-    public function setCustomerId($customerId)
+    public function setCustomerId(string $customerId): GetCustomerDetail
     {
         $this->customerId = $customerId;
         return $this;
@@ -46,7 +46,7 @@ class GetCustomerDetail
     /**
      * @return RetailContext
      */
-    public function getClientContext()
+    public function getClientContext(): RetailContext
     {
         return $this->clientContext;
     }
@@ -56,7 +56,7 @@ class GetCustomerDetail
      *
      * @return GetCustomerDetail
      */
-    public function setClientContext($clientContext)
+    public function setClientContext(RetailContext $clientContext): GetCustomerDetail
     {
         $this->clientContext = $clientContext;
         return $this;

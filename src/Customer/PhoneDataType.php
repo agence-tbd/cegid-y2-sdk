@@ -32,7 +32,7 @@ class PhoneDataType
     /**
      * @return string
      */
-    public function getAlternativePhoneNumber()
+    public function getAlternativePhoneNumber(): string
     {
         return $this->AlternativePhoneNumber;
     }
@@ -42,7 +42,7 @@ class PhoneDataType
      *
      * @return PhoneDataType
      */
-    public function setAlternativePhoneNumber($AlternativePhoneNumber)
+    public function setAlternativePhoneNumber(string $AlternativePhoneNumber): PhoneDataType
     {
         $this->AlternativePhoneNumber = $AlternativePhoneNumber;
         return $this;
@@ -51,7 +51,7 @@ class PhoneDataType
     /**
      * @return string
      */
-    public function getCellularPhoneNumber()
+    public function getCellularPhoneNumber(): string
     {
         return $this->CellularPhoneNumber;
     }
@@ -61,7 +61,7 @@ class PhoneDataType
      *
      * @return PhoneDataType
      */
-    public function setCellularPhoneNumber($CellularPhoneNumber)
+    public function setCellularPhoneNumber(string $CellularPhoneNumber): PhoneDataType
     {
         $this->CellularPhoneNumber = $CellularPhoneNumber;
         return $this;
@@ -70,7 +70,7 @@ class PhoneDataType
     /**
      * @return string
      */
-    public function getHomePhoneNumber()
+    public function getHomePhoneNumber(): string
     {
         return $this->HomePhoneNumber;
     }
@@ -80,7 +80,7 @@ class PhoneDataType
      *
      * @return PhoneDataType
      */
-    public function setHomePhoneNumber($HomePhoneNumber)
+    public function setHomePhoneNumber(string $HomePhoneNumber): PhoneDataType
     {
         $this->HomePhoneNumber = $HomePhoneNumber;
         return $this;
@@ -89,7 +89,7 @@ class PhoneDataType
     /**
      * @return string
      */
-    public function getOfficePhoneNumber()
+    public function getOfficePhoneNumber(): string
     {
         return $this->OfficePhoneNumber;
     }
@@ -99,7 +99,7 @@ class PhoneDataType
      *
      * @return PhoneDataType
      */
-    public function setOfficePhoneNumber($OfficePhoneNumber)
+    public function setOfficePhoneNumber(string $OfficePhoneNumber): PhoneDataType
     {
         $this->OfficePhoneNumber = $OfficePhoneNumber;
         return $this;

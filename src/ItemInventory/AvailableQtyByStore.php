@@ -27,7 +27,7 @@ class AvailableQtyByStore
     /**
      * @return float
      */
-    public function getAvailableQty()
+    public function getAvailableQty(): float
     {
         return $this->AvailableQty;
     }
@@ -36,7 +36,7 @@ class AvailableQtyByStore
      * @param float $AvailableQty
      * @return AvailableQtyByStore
      */
-    public function setAvailableQty($AvailableQty)
+    public function setAvailableQty(float $AvailableQty): AvailableQtyByStore
     {
         $this->AvailableQty = $AvailableQty;
         return $this;
@@ -45,7 +45,7 @@ class AvailableQtyByStore
     /**
      * @return string
      */
-    public function getStoreDescription()
+    public function getStoreDescription(): string
     {
         return $this->StoreDescription;
     }
@@ -54,7 +54,7 @@ class AvailableQtyByStore
      * @param string $StoreDescription
      * @return AvailableQtyByStore
      */
-    public function setStoreDescription($StoreDescription)
+    public function setStoreDescription(string $StoreDescription): AvailableQtyByStore
     {
         $this->StoreDescription = $StoreDescription;
         return $this;
@@ -63,7 +63,7 @@ class AvailableQtyByStore
     /**
      * @return string
      */
-    public function getStoreId()
+    public function getStoreId(): string
     {
         return $this->StoreId;
     }
@@ -72,7 +72,7 @@ class AvailableQtyByStore
      * @param string $StoreId
      * @return AvailableQtyByStore
      */
-    public function setStoreId($StoreId)
+    public function setStoreId(string $StoreId): AvailableQtyByStore
     {
         $this->StoreId = $StoreId;
         return $this;

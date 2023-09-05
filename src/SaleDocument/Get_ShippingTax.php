@@ -29,7 +29,7 @@ class Get_ShippingTax
     /**
      * @return string
      */
-    public function getShippingTaxCode()
+    public function getShippingTaxCode(): string
     {
       return $this->ShippingTaxCode;
     }
@@ -38,7 +38,7 @@ class Get_ShippingTax
      * @param string $ShippingTaxCode
      * @return Get_ShippingTax
      */
-    public function setShippingTaxCode($ShippingTaxCode)
+    public function setShippingTaxCode(string $ShippingTaxCode): Get_ShippingTax
     {
       $this->ShippingTaxCode = $ShippingTaxCode;
       return $this;
@@ -47,7 +47,7 @@ class Get_ShippingTax
     /**
      * @return float
      */
-    public function getTaxExcludedAmount()
+    public function getTaxExcludedAmount(): float
     {
       return $this->TaxExcludedAmount;
     }
@@ -56,7 +56,7 @@ class Get_ShippingTax
      * @param float $TaxExcludedAmount
      * @return Get_ShippingTax
      */
-    public function setTaxExcludedAmount($TaxExcludedAmount)
+    public function setTaxExcludedAmount(float $TaxExcludedAmount): Get_ShippingTax
     {
       $this->TaxExcludedAmount = $TaxExcludedAmount;
       return $this;
@@ -65,7 +65,7 @@ class Get_ShippingTax
     /**
      * @return float
      */
-    public function getTaxIncludedAmount()
+    public function getTaxIncludedAmount(): float
     {
       return $this->TaxIncludedAmount;
     }
@@ -74,7 +74,7 @@ class Get_ShippingTax
      * @param float $TaxIncludedAmount
      * @return Get_ShippingTax
      */
-    public function setTaxIncludedAmount($TaxIncludedAmount)
+    public function setTaxIncludedAmount(float $TaxIncludedAmount): Get_ShippingTax
     {
       $this->TaxIncludedAmount = $TaxIncludedAmount;
       return $this;

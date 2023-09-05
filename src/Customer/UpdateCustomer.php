@@ -24,7 +24,7 @@ class UpdateCustomer
      * @param CustomerInputData $modifiedData
      * @param RetailContext     $clientContext
      */
-    public function __construct($customerId, $modifiedData, $clientContext)
+    public function __construct(string $customerId, CustomerInputData $modifiedData, RetailContext $clientContext)
     {
         $this->customerId    = $customerId;
         $this->modifiedData  = $modifiedData;
@@ -34,7 +34,7 @@ class UpdateCustomer
     /**
      * @return string
      */
-    public function getCustomerId()
+    public function getCustomerId(): string
     {
         return $this->customerId;
     }
@@ -44,7 +44,7 @@ class UpdateCustomer
      *
      * @return UpdateCustomer
      */
-    public function setCustomerId($customerId)
+    public function setCustomerId(string $customerId): UpdateCustomer
     {
         $this->customerId = $customerId;
         return $this;
@@ -53,7 +53,7 @@ class UpdateCustomer
     /**
      * @return CustomerInputData
      */
-    public function getModifiedData()
+    public function getModifiedData(): CustomerInputData
     {
         return $this->modifiedData;
     }
@@ -63,7 +63,7 @@ class UpdateCustomer
      *
      * @return UpdateCustomer
      */
-    public function setModifiedData($modifiedData)
+    public function setModifiedData(CustomerInputData $modifiedData): UpdateCustomer
     {
         $this->modifiedData = $modifiedData;
         return $this;
@@ -72,7 +72,7 @@ class UpdateCustomer
     /**
      * @return RetailContext
      */
-    public function getClientContext()
+    public function getClientContext(): RetailContext
     {
         return $this->clientContext;
     }
@@ -82,7 +82,7 @@ class UpdateCustomer
      *
      * @return UpdateCustomer
      */
-    public function setClientContext($clientContext)
+    public function setClientContext(RetailContext $clientContext): UpdateCustomer
     {
         $this->clientContext = $clientContext;
         return $this;

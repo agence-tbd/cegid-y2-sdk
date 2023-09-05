@@ -47,7 +47,7 @@ class CreateFrom_Payment
     /**
      * @param int $Id
      */
-    public function __construct($Id)
+    public function __construct(int $Id)
     {
         $this->Id = $Id;
     }
@@ -55,7 +55,7 @@ class CreateFrom_Payment
     /**
      * @return float
      */
-    public function getAmount()
+    public function getAmount(): float
     {
         return $this->Amount;
     }
@@ -64,7 +64,7 @@ class CreateFrom_Payment
      * @param float $Amount
      * @return CreateFrom_Payment
      */
-    public function setAmount($Amount)
+    public function setAmount(float $Amount): CreateFrom_Payment
     {
         $this->Amount = $Amount;
         return $this;
@@ -73,7 +73,7 @@ class CreateFrom_Payment
     /**
      * @return CreditCard
      */
-    public function getCreditCard()
+    public function getCreditCard(): CreditCard
     {
         return $this->CreditCard;
     }
@@ -82,7 +82,7 @@ class CreateFrom_Payment
      * @param CreditCard $CreditCard
      * @return CreateFrom_Payment
      */
-    public function setCreditCard($CreditCard)
+    public function setCreditCard(CreditCard $CreditCard): CreateFrom_Payment
     {
         $this->CreditCard = $CreditCard;
         return $this;
@@ -91,7 +91,7 @@ class CreateFrom_Payment
     /**
      * @return string
      */
-    public function getCurrencyId()
+    public function getCurrencyId(): string
     {
         return $this->CurrencyId;
     }
@@ -100,7 +100,7 @@ class CreateFrom_Payment
      * @param string $CurrencyId
      * @return CreateFrom_Payment
      */
-    public function setCurrencyId($CurrencyId)
+    public function setCurrencyId(string $CurrencyId): CreateFrom_Payment
     {
         $this->CurrencyId = $CurrencyId;
         return $this;
@@ -126,7 +126,7 @@ class CreateFrom_Payment
      * @param \DateTime $DueDate
      * @return CreateFrom_Payment
      */
-    public function setDueDate(\DateTime $DueDate = null, $format=\DateTime::ATOM)
+    public function setDueDate(\DateTime $DueDate = null, $format=\DateTime::ATOM): CreateFrom_Payment
     {
         if ($DueDate == null) {
             $this->DueDate = null;
@@ -139,7 +139,7 @@ class CreateFrom_Payment
     /**
      * @return int
      */
-    public function getId()
+    public function getId(): int
     {
         return $this->Id;
     }
@@ -148,7 +148,7 @@ class CreateFrom_Payment
      * @param int $Id
      * @return CreateFrom_Payment
      */
-    public function setId($Id)
+    public function setId(int $Id): CreateFrom_Payment
     {
         $this->Id = $Id;
         return $this;
@@ -157,7 +157,7 @@ class CreateFrom_Payment
     /**
      * @return string
      */
-    public function getMethodId()
+    public function getMethodId(): string
     {
         return $this->MethodId;
     }
@@ -166,7 +166,7 @@ class CreateFrom_Payment
      * @param string $MethodId
      * @return CreateFrom_Payment
      */
-    public function setMethodId($MethodId)
+    public function setMethodId(string $MethodId): CreateFrom_Payment
     {
         $this->MethodId = $MethodId;
         return $this;
@@ -175,7 +175,7 @@ class CreateFrom_Payment
     /**
      * @return CreateFrom_ReceivedPayment
      */
-    public function getReceivedPayment()
+    public function getReceivedPayment(): CreateFrom_ReceivedPayment
     {
         return $this->ReceivedPayment;
     }
@@ -184,7 +184,7 @@ class CreateFrom_Payment
      * @param CreateFrom_ReceivedPayment
      * @return CreateFrom_Payment
      */
-    public function setReceivedPayment($ReceivedPayment)
+    public function setReceivedPayment($ReceivedPayment): CreateFrom_Payment
     {
         $this->ReceivedPayment = $ReceivedPayment;
         return $this;
@@ -193,7 +193,7 @@ class CreateFrom_Payment
     /**
      * @return string
      */
-    public function getVoucherId()
+    public function getVoucherId(): string
     {
         return $this->VoucherId;
     }
@@ -202,7 +202,7 @@ class CreateFrom_Payment
      * @param string $VoucherId
      * @return CreateFrom_Payment
      */
-    public function setVoucherId($VoucherId)
+    public function setVoucherId(string $VoucherId): CreateFrom_Payment
     {
         $this->VoucherId = $VoucherId;
         return $this;

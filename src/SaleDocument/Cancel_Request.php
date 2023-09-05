@@ -24,7 +24,7 @@ class Cancel_Request
     /**
      * @return SaleDocumentIdentifier
      */
-    public function getIdentifier()
+    public function getIdentifier(): SaleDocumentIdentifier
     {
       return $this->Identifier;
     }
@@ -33,7 +33,7 @@ class Cancel_Request
      * @param SaleDocumentIdentifier $Identifier
      * @return Cancel_Request
      */
-    public function setIdentifier($Identifier)
+    public function setIdentifier(SaleDocumentIdentifier $Identifier): Cancel_Request
     {
       $this->Identifier = $Identifier;
       return $this;
@@ -42,7 +42,7 @@ class Cancel_Request
     /**
      * @return string
      */
-    public function getReasonId()
+    public function getReasonId(): string
     {
       return $this->ReasonId;
     }
@@ -51,7 +51,7 @@ class Cancel_Request
      * @param string $ReasonId
      * @return Cancel_Request
      */
-    public function setReasonId($ReasonId)
+    public function setReasonId(string $ReasonId): Cancel_Request
     {
       $this->ReasonId = $ReasonId;
       return $this;

@@ -19,7 +19,7 @@ class CustomersReservationCreate
      * @param CustomersReservationCreate_Request $customersReservationCreateRequest
      * @param RetailContext $clientContext
      */
-    public function __construct($customersReservationCreateRequest, $clientContext)
+    public function __construct(CustomersReservationCreate_Request $customersReservationCreateRequest, RetailContext $clientContext)
     {
       $this->customersReservationCreateRequest = $customersReservationCreateRequest;
       $this->clientContext = $clientContext;
@@ -28,7 +28,7 @@ class CustomersReservationCreate
     /**
      * @return CustomersReservationCreate_Request
      */
-    public function getCustomersReservationCreateRequest()
+    public function getCustomersReservationCreateRequest(): CustomersReservationCreate_Request
     {
       return $this->customersReservationCreateRequest;
     }
@@ -37,7 +37,7 @@ class CustomersReservationCreate
      * @param CustomersReservationCreate_Request $customersReservationCreateRequest
      * @return CustomersReservationCreate
      */
-    public function setCustomersReservationCreateRequest($customersReservationCreateRequest)
+    public function setCustomersReservationCreateRequest(CustomersReservationCreate_Request $customersReservationCreateRequest): CustomersReservationCreate
     {
       $this->customersReservationCreateRequest = $customersReservationCreateRequest;
       return $this;
@@ -46,7 +46,7 @@ class CustomersReservationCreate
     /**
      * @return RetailContext
      */
-    public function getClientContext()
+    public function getClientContext(): RetailContext
     {
       return $this->clientContext;
     }
@@ -55,7 +55,7 @@ class CustomersReservationCreate
      * @param RetailContext $clientContext
      * @return CustomersReservationCreate
      */
-    public function setClientContext($clientContext)
+    public function setClientContext(RetailContext $clientContext): CustomersReservationCreate
     {
       $this->clientContext = $clientContext;
       return $this;

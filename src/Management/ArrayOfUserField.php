@@ -17,7 +17,7 @@ class ArrayOfUserField implements \ArrayAccess, \Iterator, \Countable
     /**
      * @return UserField[]
      */
-    public function getUserField()
+    public function getUserField(): array
     {
       return $this->UserField;
     }
@@ -26,7 +26,7 @@ class ArrayOfUserField implements \ArrayAccess, \Iterator, \Countable
      * @param UserField[] $UserField
      * @return ArrayOfUserField
      */
-    public function setUserField(array $UserField = null)
+    public function setUserField(array $UserField = null): ArrayOfUserField
     {
       $this->UserField = $UserField;
       return $this;
@@ -38,7 +38,7 @@ class ArrayOfUserField implements \ArrayAccess, \Iterator, \Countable
      * @param mixed $offset An offset to check for
      * @return boolean true on success or false on failure
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
       return isset($this->UserField[$offset]);
     }
@@ -49,7 +49,7 @@ class ArrayOfUserField implements \ArrayAccess, \Iterator, \Countable
      * @param mixed $offset The offset to retrieve
      * @return UserField
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): UserField
     {
       return $this->UserField[$offset];
     }
@@ -61,7 +61,7 @@ class ArrayOfUserField implements \ArrayAccess, \Iterator, \Countable
      * @param UserField $value The value to set
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet(mixed $offset, mixed $value): void
     {
       if (!isset($offset)) {
         $this->UserField[] = $value;
@@ -76,7 +76,7 @@ class ArrayOfUserField implements \ArrayAccess, \Iterator, \Countable
      * @param mixed $offset The offset to unset
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
       unset($this->UserField[$offset]);
     }
@@ -86,7 +86,7 @@ class ArrayOfUserField implements \ArrayAccess, \Iterator, \Countable
      *
      * @return UserField Return the current element
      */
-    public function current()
+    public function current(): UserField
     {
       return current($this->UserField);
     }
@@ -97,7 +97,7 @@ class ArrayOfUserField implements \ArrayAccess, \Iterator, \Countable
      *
      * @return void
      */
-    public function next()
+    public function next(): void
     {
       next($this->UserField);
     }
@@ -107,7 +107,7 @@ class ArrayOfUserField implements \ArrayAccess, \Iterator, \Countable
      *
      * @return string|null Return the key of the current element or null
      */
-    public function key()
+    public function key(): ?string
     {
       return key($this->UserField);
     }
@@ -117,7 +117,7 @@ class ArrayOfUserField implements \ArrayAccess, \Iterator, \Countable
      *
      * @return boolean Return the validity of the current position
      */
-    public function valid()
+    public function valid(): bool
     {
       return $this->key() !== null;
     }
@@ -128,7 +128,7 @@ class ArrayOfUserField implements \ArrayAccess, \Iterator, \Countable
      *
      * @return void
      */
-    public function rewind()
+    public function rewind(): void
     {
       reset($this->UserField);
     }
@@ -138,7 +138,7 @@ class ArrayOfUserField implements \ArrayAccess, \Iterator, \Countable
      *
      * @return int Return count of elements
      */
-    public function count()
+    public function count(): int
     {
       return count($this->UserField);
     }

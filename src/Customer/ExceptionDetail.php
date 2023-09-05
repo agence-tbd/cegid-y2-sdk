@@ -25,7 +25,7 @@ class ExceptionDetail
     protected $StackTrace = null;
 
     /**
-     * @var guid $TrackingId
+     * @var string $TrackingId
      */
     protected $TrackingId = null;
 
@@ -43,7 +43,7 @@ class ExceptionDetail
     /**
      * @return string
      */
-    public function getHelpLink()
+    public function getHelpLink(): string
     {
         return $this->HelpLink;
     }
@@ -53,7 +53,7 @@ class ExceptionDetail
      *
      * @return ExceptionDetail
      */
-    public function setHelpLink($HelpLink)
+    public function setHelpLink(string $HelpLink): ExceptionDetail
     {
         $this->HelpLink = $HelpLink;
         return $this;
@@ -62,7 +62,7 @@ class ExceptionDetail
     /**
      * @return ExceptionDetail
      */
-    public function getInnerException()
+    public function getInnerException(): ExceptionDetail
     {
         return $this->InnerException;
     }
@@ -72,7 +72,7 @@ class ExceptionDetail
      *
      * @return ExceptionDetail
      */
-    public function setInnerException($InnerException)
+    public function setInnerException(ExceptionDetail $InnerException): ExceptionDetail
     {
         $this->InnerException = $InnerException;
         return $this;
@@ -81,7 +81,7 @@ class ExceptionDetail
     /**
      * @return string
      */
-    public function getMessage()
+    public function getMessage(): string
     {
         return $this->Message;
     }
@@ -91,7 +91,7 @@ class ExceptionDetail
      *
      * @return ExceptionDetail
      */
-    public function setMessage($Message)
+    public function setMessage(string $Message): ExceptionDetail
     {
         $this->Message = $Message;
         return $this;
@@ -100,7 +100,7 @@ class ExceptionDetail
     /**
      * @return string
      */
-    public function getStackTrace()
+    public function getStackTrace(): string
     {
         return $this->StackTrace;
     }
@@ -110,26 +110,26 @@ class ExceptionDetail
      *
      * @return ExceptionDetail
      */
-    public function setStackTrace($StackTrace)
+    public function setStackTrace(string $StackTrace): ExceptionDetail
     {
         $this->StackTrace = $StackTrace;
         return $this;
     }
 
     /**
-     * @return guid
+     * @return string
      */
-    public function getTrackingId()
+    public function getTrackingId(): string
     {
         return $this->TrackingId;
     }
 
     /**
-     * @param guid $TrackingId
+     * @param string $TrackingId
      *
      * @return ExceptionDetail
      */
-    public function setTrackingId($TrackingId)
+    public function setTrackingId(string $TrackingId): ExceptionDetail
     {
         $this->TrackingId = $TrackingId;
         return $this;
@@ -138,7 +138,7 @@ class ExceptionDetail
     /**
      * @return string
      */
-    public function getType()
+    public function getType(): string
     {
         return $this->Type;
     }
@@ -148,7 +148,7 @@ class ExceptionDetail
      *
      * @return ExceptionDetail
      */
-    public function setType($Type)
+    public function setType(string $Type): ExceptionDetail
     {
         $this->Type = $Type;
         return $this;

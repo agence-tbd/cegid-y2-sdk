@@ -18,7 +18,7 @@ class ArrayOfUserDefinedBoolean implements \ArrayAccess, \Iterator, \Countable
     /**
      * @return UserDefinedBoolean[]
      */
-    public function getUserDefinedBoolean()
+    public function getUserDefinedBoolean(): array
     {
         return $this->UserDefinedBoolean;
     }
@@ -28,7 +28,7 @@ class ArrayOfUserDefinedBoolean implements \ArrayAccess, \Iterator, \Countable
      *
      * @return ArrayOfUserDefinedBoolean
      */
-    public function setUserDefinedBoolean(array $UserDefinedBoolean = null)
+    public function setUserDefinedBoolean(array $UserDefinedBoolean = null): ArrayOfUserDefinedBoolean
     {
         $this->UserDefinedBoolean = $UserDefinedBoolean;
         return $this;
@@ -41,7 +41,7 @@ class ArrayOfUserDefinedBoolean implements \ArrayAccess, \Iterator, \Countable
      *
      * @return boolean true on success or false on failure
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->UserDefinedBoolean[$offset]);
     }
@@ -53,7 +53,7 @@ class ArrayOfUserDefinedBoolean implements \ArrayAccess, \Iterator, \Countable
      *
      * @return UserDefinedBoolean
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): UserDefinedBoolean
     {
         return $this->UserDefinedBoolean[$offset];
     }
@@ -66,7 +66,7 @@ class ArrayOfUserDefinedBoolean implements \ArrayAccess, \Iterator, \Countable
      *
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet(mixed $offset, mixed $value): void
     {
         if (!isset($offset)) {
             $this->UserDefinedBoolean[] = $value;
@@ -82,7 +82,7 @@ class ArrayOfUserDefinedBoolean implements \ArrayAccess, \Iterator, \Countable
      *
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         unset($this->UserDefinedBoolean[$offset]);
     }
@@ -92,7 +92,7 @@ class ArrayOfUserDefinedBoolean implements \ArrayAccess, \Iterator, \Countable
      *
      * @return UserDefinedBoolean Return the current element
      */
-    public function current()
+    public function current(): UserDefinedBoolean
     {
         return current($this->UserDefinedBoolean);
     }
@@ -103,7 +103,7 @@ class ArrayOfUserDefinedBoolean implements \ArrayAccess, \Iterator, \Countable
      *
      * @return void
      */
-    public function next()
+    public function next(): void
     {
         next($this->UserDefinedBoolean);
     }
@@ -113,7 +113,7 @@ class ArrayOfUserDefinedBoolean implements \ArrayAccess, \Iterator, \Countable
      *
      * @return string|null Return the key of the current element or null
      */
-    public function key()
+    public function key(): ?string
     {
         return key($this->UserDefinedBoolean);
     }
@@ -123,7 +123,7 @@ class ArrayOfUserDefinedBoolean implements \ArrayAccess, \Iterator, \Countable
      *
      * @return boolean Return the validity of the current position
      */
-    public function valid()
+    public function valid(): bool
     {
         return $this->key() !== null;
     }
@@ -134,7 +134,7 @@ class ArrayOfUserDefinedBoolean implements \ArrayAccess, \Iterator, \Countable
      *
      * @return void
      */
-    public function rewind()
+    public function rewind(): void
     {
         reset($this->UserDefinedBoolean);
     }
@@ -142,9 +142,9 @@ class ArrayOfUserDefinedBoolean implements \ArrayAccess, \Iterator, \Countable
     /**
      * Countable implementation
      *
-     * @return UserDefinedBoolean Return count of elements
+     * @return int Return count of elements
      */
-    public function count()
+    public function count(): int
     {
         return count($this->UserDefinedBoolean);
     }

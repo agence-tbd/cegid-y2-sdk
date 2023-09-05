@@ -22,7 +22,7 @@ class ItemIdentifier
     /**
      * @return string
      */
-    public function getId()
+    public function getId(): string
     {
         return $this->Id;
     }
@@ -31,7 +31,7 @@ class ItemIdentifier
      * @param string $Id
      * @return ItemIdentifier
      */
-    public function setId($Id)
+    public function setId(string $Id): ItemIdentifier
     {
         $this->Id = $Id;
         return $this;
@@ -40,7 +40,7 @@ class ItemIdentifier
     /**
      * @return string
      */
-    public function getReference()
+    public function getReference(): string
     {
         return $this->Reference;
     }
@@ -49,7 +49,7 @@ class ItemIdentifier
      * @param string $Reference
      * @return ItemIdentifier
      */
-    public function setReference($Reference)
+    public function setReference(string $Reference): ItemIdentifier
     {
         $this->Reference = $Reference;
         return $this;

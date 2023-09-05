@@ -80,8 +80,9 @@ class CustomerWcfService extends \SoapClient
      * @param HelloWorld $parameters
      *
      * @return HelloWorldResponse
+     * @throws \SoapFault
      */
-    public function HelloWorld(HelloWorld $parameters)
+    public function HelloWorld(HelloWorld $parameters): HelloWorldResponse
     {
         return $this->__soapCall('HelloWorld', array($parameters));
     }
@@ -90,8 +91,9 @@ class CustomerWcfService extends \SoapClient
      * @param GetCustomerIdByReference $parameters
      *
      * @return GetCustomerIdByReferenceResponse
+     * @throws \SoapFault
      */
-    public function GetCustomerIdByReference(GetCustomerIdByReference $parameters)
+    public function GetCustomerIdByReference(GetCustomerIdByReference $parameters): GetCustomerIdByReferenceResponse
     {
         return $this->__soapCall('GetCustomerIdByReference', array($parameters));
     }
@@ -100,8 +102,9 @@ class CustomerWcfService extends \SoapClient
      * @param GetCustomerDetail $parameters
      *
      * @return GetCustomerDetailResponse
+     * @throws \SoapFault
      */
-    public function GetCustomerDetail(GetCustomerDetail $parameters)
+    public function GetCustomerDetail(GetCustomerDetail $parameters): GetCustomerDetailResponse
     {
         return $this->__soapCall('GetCustomerDetail', array($parameters));
     }
@@ -110,8 +113,9 @@ class CustomerWcfService extends \SoapClient
      * @param SearchCustomerIds $parameters
      *
      * @return SearchCustomerIdsResponse
+     * @throws \SoapFault
      */
-    public function SearchCustomerIds(SearchCustomerIds $parameters)
+    public function SearchCustomerIds(SearchCustomerIds $parameters): SearchCustomerIdsResponse
     {
         return $this->__soapCall('SearchCustomerIds', array($parameters));
     }
@@ -120,8 +124,9 @@ class CustomerWcfService extends \SoapClient
      * @param AddNewCustomer $parameters
      *
      * @return AddNewCustomerResponse
+     * @throws \SoapFault
      */
-    public function AddNewCustomer(AddNewCustomer $parameters)
+    public function AddNewCustomer(AddNewCustomer $parameters): AddNewCustomerResponse
     {
         return $this->__soapCall('AddNewCustomer', array($parameters));
     }
@@ -130,8 +135,9 @@ class CustomerWcfService extends \SoapClient
      * @param UpdateCustomer $parameters
      *
      * @return UpdateCustomerResponse
+     * @throws \SoapFault
      */
-    public function UpdateCustomer(UpdateCustomer $parameters)
+    public function UpdateCustomer(UpdateCustomer $parameters): UpdateCustomerResponse
     {
         return $this->__soapCall('UpdateCustomer', array($parameters));
     }

@@ -22,7 +22,7 @@ class CbpExceptionDetail extends ExceptionDetail
     /**
      * @return string
      */
-    public function getId()
+    public function getId(): string
     {
         return $this->Id;
     }
@@ -31,7 +31,7 @@ class CbpExceptionDetail extends ExceptionDetail
      * @param string $Id
      * @return CbpExceptionDetail
      */
-    public function setId($Id)
+    public function setId(string $Id): CbpExceptionDetail
     {
         $this->Id = $Id;
         return $this;
@@ -40,7 +40,7 @@ class CbpExceptionDetail extends ExceptionDetail
     /**
      * @return string
      */
-    public function getToDo()
+    public function getToDo(): string
     {
         return $this->ToDo;
     }
@@ -49,7 +49,7 @@ class CbpExceptionDetail extends ExceptionDetail
      * @param string $ToDo
      * @return CbpExceptionDetail
      */
-    public function setToDo($ToDo)
+    public function setToDo(string $ToDo): CbpExceptionDetail
     {
         $this->ToDo = $ToDo;
         return $this;

@@ -109,7 +109,7 @@ class Get_Header
     /**
      * @return boolean
      */
-    public function getActive()
+    public function getActive(): bool
     {
       return $this->Active;
     }
@@ -118,7 +118,7 @@ class Get_Header
      * @param boolean $Active
      * @return Get_Header
      */
-    public function setActive($Active)
+    public function setActive(bool $Active): Get_Header
     {
       $this->Active = $Active;
       return $this;
@@ -127,7 +127,7 @@ class Get_Header
     /**
      * @return string
      */
-    public function getComment()
+    public function getComment(): string
     {
       return $this->Comment;
     }
@@ -136,7 +136,7 @@ class Get_Header
      * @param string $Comment
      * @return Get_Header
      */
-    public function setComment($Comment)
+    public function setComment(string $Comment): Get_Header
     {
       $this->Comment = $Comment;
       return $this;
@@ -145,7 +145,7 @@ class Get_Header
     /**
      * @return string
      */
-    public function getCurrencyId()
+    public function getCurrencyId(): string
     {
       return $this->CurrencyId;
     }
@@ -154,7 +154,7 @@ class Get_Header
      * @param string $CurrencyId
      * @return Get_Header
      */
-    public function setCurrencyId($CurrencyId)
+    public function setCurrencyId(string $CurrencyId): Get_Header
     {
       $this->CurrencyId = $CurrencyId;
       return $this;
@@ -163,7 +163,7 @@ class Get_Header
     /**
      * @return string
      */
-    public function getCustomerId()
+    public function getCustomerId(): string
     {
       return $this->CustomerId;
     }
@@ -172,7 +172,7 @@ class Get_Header
      * @param string $CustomerId
      * @return Get_Header
      */
-    public function setCustomerId($CustomerId)
+    public function setCustomerId(string $CustomerId): Get_Header
     {
       $this->CustomerId = $CustomerId;
       return $this;
@@ -199,7 +199,7 @@ class Get_Header
      * @param string $format
      * @return Get_Header
      */
-    public function setDate(\DateTime $Date = null, $format=\DateTime::ATOM)
+    public function setDate(\DateTime $Date = null, string $format=\DateTime::ATOM): Get_Header
     {
       if ($Date == null) {
        $this->Date = null;
@@ -212,7 +212,7 @@ class Get_Header
     /**
      * @return string
      */
-    public function getInternalReference()
+    public function getInternalReference(): string
     {
       return $this->InternalReference;
     }
@@ -221,7 +221,7 @@ class Get_Header
      * @param string $InternalReference
      * @return Get_Header
      */
-    public function setInternalReference($InternalReference)
+    public function setInternalReference(string $InternalReference): Get_Header
     {
       $this->InternalReference = $InternalReference;
       return $this;
@@ -230,7 +230,7 @@ class Get_Header
     /**
      * @return SaleDocumentKey
      */
-    public function getKey()
+    public function getKey(): SaleDocumentKey
     {
       return $this->Key;
     }
@@ -239,7 +239,7 @@ class Get_Header
      * @param SaleDocumentKey $Key
      * @return Get_Header
      */
-    public function setKey($Key)
+    public function setKey(SaleDocumentKey $Key): Get_Header
     {
       $this->Key = $Key;
       return $this;
@@ -248,7 +248,7 @@ class Get_Header
     /**
      * @return OmniChannel
      */
-    public function getOmniChannel()
+    public function getOmniChannel(): OmniChannel
     {
       return $this->OmniChannel;
     }
@@ -257,7 +257,7 @@ class Get_Header
      * @param OmniChannel $OmniChannel
      * @return Get_Header
      */
-    public function setOmniChannel($OmniChannel)
+    public function setOmniChannel(OmniChannel $OmniChannel): Get_Header
     {
       $this->OmniChannel = $OmniChannel;
       return $this;
@@ -266,7 +266,7 @@ class Get_Header
     /**
      * @return DocumentOrigin
      */
-    public function getOrigin()
+    public function getOrigin(): DocumentOrigin
     {
       return $this->Origin;
     }
@@ -275,7 +275,7 @@ class Get_Header
      * @param DocumentOrigin $Origin
      * @return Get_Header
      */
-    public function setOrigin($Origin)
+    public function setOrigin(DocumentOrigin $Origin): Get_Header
     {
       $this->Origin = $Origin;
       return $this;
@@ -284,7 +284,7 @@ class Get_Header
     /**
      * @return string
      */
-    public function getSalesPersonId()
+    public function getSalesPersonId(): string
     {
       return $this->SalesPersonId;
     }
@@ -293,7 +293,7 @@ class Get_Header
      * @param string $SalesPersonId
      * @return Get_Header
      */
-    public function setSalesPersonId($SalesPersonId)
+    public function setSalesPersonId(string $SalesPersonId): Get_Header
     {
       $this->SalesPersonId = $SalesPersonId;
       return $this;
@@ -302,7 +302,7 @@ class Get_Header
     /**
      * @return DocumentStatus
      */
-    public function getStatus()
+    public function getStatus(): DocumentStatus
     {
       return $this->Status;
     }
@@ -311,7 +311,7 @@ class Get_Header
      * @param DocumentStatus $Status
      * @return Get_Header
      */
-    public function setStatus($Status)
+    public function setStatus(DocumentStatus $Status): Get_Header
     {
       $this->Status = $Status;
       return $this;
@@ -320,7 +320,7 @@ class Get_Header
     /**
      * @return string
      */
-    public function getStoreId()
+    public function getStoreId(): string
     {
       return $this->StoreId;
     }
@@ -329,7 +329,7 @@ class Get_Header
      * @param string $StoreId
      * @return Get_Header
      */
-    public function setStoreId($StoreId)
+    public function setStoreId(string $StoreId): Get_Header
     {
       $this->StoreId = $StoreId;
       return $this;
@@ -338,7 +338,7 @@ class Get_Header
     /**
      * @return float
      */
-    public function getTaxExcludedTotalAmount()
+    public function getTaxExcludedTotalAmount(): float
     {
       return $this->TaxExcludedTotalAmount;
     }
@@ -347,7 +347,7 @@ class Get_Header
      * @param float $TaxExcludedTotalAmount
      * @return Get_Header
      */
-    public function setTaxExcludedTotalAmount($TaxExcludedTotalAmount)
+    public function setTaxExcludedTotalAmount(float $TaxExcludedTotalAmount): Get_Header
     {
       $this->TaxExcludedTotalAmount = $TaxExcludedTotalAmount;
       return $this;
@@ -356,7 +356,7 @@ class Get_Header
     /**
      * @return float
      */
-    public function getTaxIncludedTotalAmount()
+    public function getTaxIncludedTotalAmount(): float
     {
       return $this->TaxIncludedTotalAmount;
     }
@@ -365,7 +365,7 @@ class Get_Header
      * @param float $TaxIncludedTotalAmount
      * @return Get_Header
      */
-    public function setTaxIncludedTotalAmount($TaxIncludedTotalAmount)
+    public function setTaxIncludedTotalAmount(float $TaxIncludedTotalAmount): Get_Header
     {
       $this->TaxIncludedTotalAmount = $TaxIncludedTotalAmount;
       return $this;
@@ -374,7 +374,7 @@ class Get_Header
     /**
      * @return float
      */
-    public function getTotalQuantity()
+    public function getTotalQuantity(): float
     {
       return $this->TotalQuantity;
     }
@@ -383,7 +383,7 @@ class Get_Header
      * @param float $TotalQuantity
      * @return Get_Header
      */
-    public function setTotalQuantity($TotalQuantity)
+    public function setTotalQuantity(float $TotalQuantity): Get_Header
     {
       $this->TotalQuantity = $TotalQuantity;
       return $this;
@@ -392,7 +392,7 @@ class Get_Header
     /**
      * @return ArrayOfUserDefinedDate
      */
-    public function getUserDefinedDates()
+    public function getUserDefinedDates(): ArrayOfUserDefinedDate
     {
       return $this->UserDefinedDates;
     }
@@ -401,7 +401,7 @@ class Get_Header
      * @param ArrayOfUserDefinedDate $UserDefinedDates
      * @return Get_Header
      */
-    public function setUserDefinedDates($UserDefinedDates)
+    public function setUserDefinedDates(ArrayOfUserDefinedDate $UserDefinedDates): Get_Header
     {
       $this->UserDefinedDates = $UserDefinedDates;
       return $this;
@@ -410,7 +410,7 @@ class Get_Header
     /**
      * @return ArrayOfUserDefinedTable
      */
-    public function getUserDefinedTables()
+    public function getUserDefinedTables(): ArrayOfUserDefinedTable
     {
       return $this->UserDefinedTables;
     }
@@ -419,7 +419,7 @@ class Get_Header
      * @param ArrayOfUserDefinedTable $UserDefinedTables
      * @return Get_Header
      */
-    public function setUserDefinedTables($UserDefinedTables)
+    public function setUserDefinedTables(ArrayOfUserDefinedTable $UserDefinedTables): Get_Header
     {
       $this->UserDefinedTables = $UserDefinedTables;
       return $this;
@@ -428,7 +428,7 @@ class Get_Header
     /**
      * @return ArrayOfUserField
      */
-    public function getUserFields()
+    public function getUserFields(): ArrayOfUserField
     {
       return $this->UserFields;
     }
@@ -437,7 +437,7 @@ class Get_Header
      * @param ArrayOfUserField $UserFields
      * @return Get_Header
      */
-    public function setUserFields($UserFields)
+    public function setUserFields(ArrayOfUserField $UserFields): Get_Header
     {
       $this->UserFields = $UserFields;
       return $this;
@@ -446,7 +446,7 @@ class Get_Header
     /**
      * @return string
      */
-    public function getWarehouseId()
+    public function getWarehouseId(): string
     {
       return $this->WarehouseId;
     }
@@ -455,7 +455,7 @@ class Get_Header
      * @param string $WarehouseId
      * @return Get_Header
      */
-    public function setWarehouseId($WarehouseId)
+    public function setWarehouseId(string $WarehouseId): Get_Header
     {
       $this->WarehouseId = $WarehouseId;
       return $this;

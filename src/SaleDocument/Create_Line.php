@@ -71,7 +71,8 @@ class Create_Line
     protected $OmniChannel = null;
 
     /**
-     * @var DocumentOrigin $Origin
+     * @see DocumentOrigin
+     * @var string $Origin
      */
     protected $Origin = null;
 
@@ -114,7 +115,7 @@ class Create_Line
     /**
      * @return string
      */
-    public function getBonId()
+    public function getBonId(): string
     {
         return $this->BonId;
     }
@@ -124,7 +125,7 @@ class Create_Line
      *
      * @return Create_Line
      */
-    public function setBonId($BonId)
+    public function setBonId(string $BonId): Create_Line
     {
         $this->BonId = $BonId;
         return $this;
@@ -133,7 +134,7 @@ class Create_Line
     /**
      * @return string
      */
-    public function getCatalogReference()
+    public function getCatalogReference(): string
     {
         return $this->CatalogReference;
     }
@@ -143,7 +144,7 @@ class Create_Line
      *
      * @return Create_Line
      */
-    public function setCatalogReference($CatalogReference)
+    public function setCatalogReference(string $CatalogReference): Create_Line
     {
         $this->CatalogReference = $CatalogReference;
         return $this;
@@ -152,7 +153,7 @@ class Create_Line
     /**
      * @return string
      */
-    public function getComment()
+    public function getComment(): string
     {
         return $this->Comment;
     }
@@ -162,7 +163,7 @@ class Create_Line
      *
      * @return Create_Line
      */
-    public function setComment($Comment)
+    public function setComment(string $Comment): Create_Line
     {
         $this->Comment = $Comment;
         return $this;
@@ -171,7 +172,7 @@ class Create_Line
     /**
      * @return string
      */
-    public function getComplementaryDescription()
+    public function getComplementaryDescription(): string
     {
         return $this->ComplementaryDescription;
     }
@@ -181,7 +182,7 @@ class Create_Line
      *
      * @return Create_Line
      */
-    public function setComplementaryDescription($ComplementaryDescription)
+    public function setComplementaryDescription(string $ComplementaryDescription): Create_Line
     {
         $this->ComplementaryDescription = $ComplementaryDescription;
         return $this;
@@ -208,7 +209,7 @@ class Create_Line
      * @param string $format
      * @return Create_Line
      */
-    public function setDeliveryDate(\DateTime $DeliveryDate = null, $format=\DateTime::ATOM)
+    public function setDeliveryDate(\DateTime $DeliveryDate = null, string $format=\DateTime::ATOM): Create_Line
     {
         if ($DeliveryDate == null) {
             $this->DeliveryDate = null;
@@ -221,7 +222,7 @@ class Create_Line
     /**
      * @return string
      */
-    public function getDiscountTypeId()
+    public function getDiscountTypeId(): string
     {
         return $this->DiscountTypeId;
     }
@@ -231,7 +232,7 @@ class Create_Line
      *
      * @return Create_Line
      */
-    public function setDiscountTypeId($DiscountTypeId)
+    public function setDiscountTypeId(string $DiscountTypeId): Create_Line
     {
         $this->DiscountTypeId = $DiscountTypeId;
         return $this;
@@ -240,7 +241,7 @@ class Create_Line
     /**
      * @return string
      */
-    public function getExternalReference()
+    public function getExternalReference(): string
     {
         return $this->ExternalReference;
     }
@@ -250,7 +251,7 @@ class Create_Line
      *
      * @return Create_Line
      */
-    public function setExternalReference($ExternalReference)
+    public function setExternalReference(string $ExternalReference): Create_Line
     {
         $this->ExternalReference = $ExternalReference;
         return $this;
@@ -277,7 +278,7 @@ class Create_Line
      * @param string $format
      * @return Create_Line
      */
-    public function setInitialDeliveryDate(\DateTime $InitialDeliveryDate = null, $format=\DateTime::ATOM)
+    public function setInitialDeliveryDate(\DateTime $InitialDeliveryDate = null, string $format=\DateTime::ATOM): Create_Line
     {
         if ($InitialDeliveryDate == null) {
             $this->InitialDeliveryDate = null;
@@ -290,7 +291,7 @@ class Create_Line
     /**
      * @return ItemIdentifier
      */
-    public function getItemIdentifier()
+    public function getItemIdentifier(): ItemIdentifier
     {
         return $this->ItemIdentifier;
     }
@@ -300,7 +301,7 @@ class Create_Line
      *
      * @return Create_Line
      */
-    public function setItemIdentifier($ItemIdentifier)
+    public function setItemIdentifier(ItemIdentifier $ItemIdentifier): Create_Line
     {
         $this->ItemIdentifier = $ItemIdentifier;
         return $this;
@@ -309,7 +310,7 @@ class Create_Line
     /**
      * @return string
      */
-    public function getLabel()
+    public function getLabel(): string
     {
         return $this->Label;
     }
@@ -319,7 +320,7 @@ class Create_Line
      *
      * @return Create_Line
      */
-    public function setLabel($Label)
+    public function setLabel(string $Label): Create_Line
     {
         $this->Label = $Label;
         return $this;
@@ -328,7 +329,7 @@ class Create_Line
     /**
      * @return string
      */
-    public function getMovementReasonId()
+    public function getMovementReasonId(): string
     {
         return $this->MovementReasonId;
     }
@@ -338,7 +339,7 @@ class Create_Line
      *
      * @return Create_Line
      */
-    public function setMovementReasonId($MovementReasonId)
+    public function setMovementReasonId(string $MovementReasonId): Create_Line
     {
         $this->MovementReasonId = $MovementReasonId;
         return $this;
@@ -347,7 +348,7 @@ class Create_Line
     /**
      * @return float
      */
-    public function getNetUnitPrice()
+    public function getNetUnitPrice(): float
     {
         return $this->NetUnitPrice;
     }
@@ -357,7 +358,7 @@ class Create_Line
      *
      * @return Create_Line
      */
-    public function setNetUnitPrice($NetUnitPrice)
+    public function setNetUnitPrice(float $NetUnitPrice): Create_Line
     {
         $this->NetUnitPrice = $NetUnitPrice;
         return $this;
@@ -366,7 +367,7 @@ class Create_Line
     /**
      * @return OmniChannelLine
      */
-    public function getOmniChannel()
+    public function getOmniChannel(): OmniChannelLine
     {
         return $this->OmniChannel;
     }
@@ -376,7 +377,7 @@ class Create_Line
      *
      * @return Create_Line
      */
-    public function setOmniChannel($OmniChannel)
+    public function setOmniChannel(OmniChannelLine $OmniChannel): Create_Line
     {
         $this->OmniChannel = $OmniChannel;
         return $this;
@@ -385,7 +386,7 @@ class Create_Line
     /**
      * @return string
      */
-    public function getOrigin()
+    public function getOrigin(): string
     {
         return $this->Origin;
     }
@@ -395,7 +396,7 @@ class Create_Line
      *
      * @return Create_Line
      */
-    public function setOrigin($Origin)
+    public function setOrigin(string $Origin): Create_Line
     {
         $this->Origin = $Origin;
         return $this;
@@ -404,7 +405,7 @@ class Create_Line
     /**
      * @return string
      */
-    public function getPackageReference()
+    public function getPackageReference(): string
     {
         return $this->PackageReference;
     }
@@ -414,7 +415,7 @@ class Create_Line
      *
      * @return Create_Line
      */
-    public function setPackageReference($PackageReference)
+    public function setPackageReference(string $PackageReference): Create_Line
     {
         $this->PackageReference = $PackageReference;
         return $this;
@@ -423,7 +424,7 @@ class Create_Line
     /**
      * @return float
      */
-    public function getQuantity()
+    public function getQuantity(): float
     {
         return $this->Quantity;
     }
@@ -433,7 +434,7 @@ class Create_Line
      *
      * @return Create_Line
      */
-    public function setQuantity($Quantity)
+    public function setQuantity(float $Quantity): Create_Line
     {
         $this->Quantity = $Quantity;
         return $this;
@@ -442,7 +443,7 @@ class Create_Line
     /**
      * @return string
      */
-    public function getSalesPersonId()
+    public function getSalesPersonId(): string
     {
         return $this->SalesPersonId;
     }
@@ -452,7 +453,7 @@ class Create_Line
      *
      * @return Create_Line
      */
-    public function setSalesPersonId($SalesPersonId)
+    public function setSalesPersonId(string $SalesPersonId): Create_Line
     {
         $this->SalesPersonId = $SalesPersonId;
         return $this;
@@ -461,7 +462,7 @@ class Create_Line
     /**
      * @return string
      */
-    public function getSerialNumberId()
+    public function getSerialNumberId(): string
     {
         return $this->SerialNumberId;
     }
@@ -471,7 +472,7 @@ class Create_Line
      *
      * @return Create_Line
      */
-    public function setSerialNumberId($SerialNumberId)
+    public function setSerialNumberId(string $SerialNumberId): Create_Line
     {
         $this->SerialNumberId = $SerialNumberId;
         return $this;
@@ -480,7 +481,7 @@ class Create_Line
     /**
      * @return ArrayOfCreate_Tax
      */
-    public function getTaxes()
+    public function getTaxes(): ArrayOfCreate_Tax
     {
         return $this->Taxes;
     }
@@ -490,7 +491,7 @@ class Create_Line
      *
      * @return Create_Line
      */
-    public function setTaxes($Taxes)
+    public function setTaxes(ArrayOfCreate_Tax $Taxes): Create_Line
     {
         $this->Taxes = $Taxes;
         return $this;
@@ -499,7 +500,7 @@ class Create_Line
     /**
      * @return float
      */
-    public function getUnitPrice()
+    public function getUnitPrice(): float
     {
         return $this->UnitPrice;
     }
@@ -509,7 +510,7 @@ class Create_Line
      *
      * @return Create_Line
      */
-    public function setUnitPrice($UnitPrice)
+    public function setUnitPrice(float $UnitPrice): Create_Line
     {
         $this->UnitPrice = $UnitPrice;
         return $this;
