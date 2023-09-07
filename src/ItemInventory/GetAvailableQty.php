@@ -48,7 +48,7 @@ class GetAvailableQty
     /**
      * @return string
      */
-    public function getItemId(): string
+    public function getItemId(): ?string
     {
         return $this->itemId;
     }
@@ -67,7 +67,7 @@ class GetAvailableQty
     /**
      * @return ItemIdentifier
      */
-    public function getItemIdentifier(): ItemIdentifier
+    public function getItemIdentifier(): ?ItemIdentifier
     {
         return $this->itemIdentifier;
     }
@@ -86,7 +86,7 @@ class GetAvailableQty
     /**
      * @return string
      */
-    public function getStoreId(): string
+    public function getStoreId(): ?string
     {
         return $this->storeId;
     }
@@ -105,7 +105,7 @@ class GetAvailableQty
     /**
      * @return string
      */
-    public function getWarehouseId(): string
+    public function getWarehouseId(): ?string
     {
         return $this->warehouseId;
     }
@@ -124,7 +124,7 @@ class GetAvailableQty
     /**
      * @return RetailContext
      */
-    public function getClientContext(): RetailContext
+    public function getClientContext(): ?RetailContext
     {
         return $this->clientContext;
     }

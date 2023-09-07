@@ -57,7 +57,7 @@ class CreateFrom_Line
     /**
      * @return string
      */
-    public function getAdditionalDescription(): string
+    public function getAdditionalDescription(): ?string
     {
         return $this->AdditionalDescription;
     }
@@ -75,7 +75,7 @@ class CreateFrom_Line
     /**
      * @return string
      */
-    public function getCatalogReference(): string
+    public function getCatalogReference(): ?string
     {
         return $this->CatalogReference;
     }
@@ -93,7 +93,7 @@ class CreateFrom_Line
     /**
      * @return string
      */
-    public function getExternalReference(): string
+    public function getExternalReference(): ?string
     {
         return $this->ExternalReference;
     }
@@ -111,7 +111,7 @@ class CreateFrom_Line
     /**
      * @return ItemIdentifier
      */
-    public function getItemIdentifier(): ItemIdentifier
+    public function getItemIdentifier(): ?ItemIdentifier
     {
         return $this->ItemIdentifier;
     }
@@ -129,7 +129,7 @@ class CreateFrom_Line
     /**
      * @return string
      */
-    public function getPackageReference(): string
+    public function getPackageReference(): ?string
     {
         return $this->PackageReference;
     }
@@ -147,7 +147,7 @@ class CreateFrom_Line
     /**
      * @return float
      */
-    public function getQuantity(): float
+    public function getQuantity(): ?float
     {
         return $this->Quantity;
     }
@@ -165,7 +165,7 @@ class CreateFrom_Line
     /**
      * @return string
      */
-    public function getSalesPersonId(): string
+    public function getSalesPersonId(): ?string
     {
         return $this->SalesPersonId;
     }
@@ -183,7 +183,7 @@ class CreateFrom_Line
     /**
      * @return string
      */
-    public function getSerialNumberId(): string
+    public function getSerialNumberId(): ?string
     {
         return $this->SerialNumberId;
     }
@@ -201,7 +201,7 @@ class CreateFrom_Line
     /**
      * @return string
      */
-    public function getWarehouseId(): string
+    public function getWarehouseId(): ?string
     {
         return $this->WarehouseId;
     }

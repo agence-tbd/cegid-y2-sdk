@@ -55,7 +55,7 @@ class CreateFrom_Payment
     /**
      * @return float
      */
-    public function getAmount(): float
+    public function getAmount(): ?float
     {
         return $this->Amount;
     }
@@ -73,7 +73,7 @@ class CreateFrom_Payment
     /**
      * @return CreditCard
      */
-    public function getCreditCard(): CreditCard
+    public function getCreditCard(): ?CreditCard
     {
         return $this->CreditCard;
     }
@@ -91,7 +91,7 @@ class CreateFrom_Payment
     /**
      * @return string
      */
-    public function getCurrencyId(): string
+    public function getCurrencyId(): ?string
     {
         return $this->CurrencyId;
     }
@@ -139,7 +139,7 @@ class CreateFrom_Payment
     /**
      * @return int
      */
-    public function getId(): int
+    public function getId(): ?int
     {
         return $this->Id;
     }
@@ -157,7 +157,7 @@ class CreateFrom_Payment
     /**
      * @return string
      */
-    public function getMethodId(): string
+    public function getMethodId(): ?string
     {
         return $this->MethodId;
     }
@@ -175,7 +175,7 @@ class CreateFrom_Payment
     /**
      * @return CreateFrom_ReceivedPayment
      */
-    public function getReceivedPayment(): CreateFrom_ReceivedPayment
+    public function getReceivedPayment(): ?CreateFrom_ReceivedPayment
     {
         return $this->ReceivedPayment;
     }
@@ -193,7 +193,7 @@ class CreateFrom_Payment
     /**
      * @return string
      */
-    public function getVoucherId(): string
+    public function getVoucherId(): ?string
     {
         return $this->VoucherId;
     }

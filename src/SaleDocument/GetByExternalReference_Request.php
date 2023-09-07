@@ -24,7 +24,7 @@ class GetByExternalReference_Request
     /**
      * @return string
      */
-    public function getExternalReference(): string
+    public function getExternalReference(): ?string
     {
       return $this->ExternalReference;
     }
@@ -42,7 +42,7 @@ class GetByExternalReference_Request
     /**
      * @return string
      */
-    public function getType(): string
+    public function getType(): ?string
     {
       return $this->Type;
     }

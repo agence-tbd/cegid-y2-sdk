@@ -17,7 +17,7 @@ class ArrayOfUserDefinedTableCustomer implements \ArrayAccess, \Iterator, \Count
     /**
      * @return UserDefinedTableCustomer[]
      */
-    public function getUserDefinedTableCustomer(): array
+    public function getUserDefinedTableCustomer(): ?array
     {
       return $this->UserDefinedTableCustomer;
     }

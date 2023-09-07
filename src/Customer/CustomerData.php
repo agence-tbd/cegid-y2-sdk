@@ -153,7 +153,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getActivityCode(): string
+    public function getActivityCode(): ?string
     {
         return $this->ActivityCode;
     }
@@ -172,7 +172,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getBarcode(): string
+    public function getBarcode(): ?string
     {
         return $this->Barcode;
     }
@@ -191,7 +191,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return BirthDateDataType
      */
-    public function getBirthDateData(): BirthDateDataType
+    public function getBirthDateData(): ?BirthDateDataType
     {
         return $this->BirthDateData;
     }
@@ -210,7 +210,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getCompanyIdNumber(): string
+    public function getCompanyIdNumber(): ?string
     {
         return $this->CompanyIdNumber;
     }
@@ -229,7 +229,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getCompanyTitleId(): string
+    public function getCompanyTitleId(): ?string
     {
         return $this->CompanyTitleId;
     }
@@ -248,7 +248,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getCurrencyId(): string
+    public function getCurrencyId(): ?string
     {
         return $this->CurrencyId;
     }
@@ -267,7 +267,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return boolean
      */
-    public function getDirectMail(): bool
+    public function getDirectMail(): ?bool
     {
         return $this->DirectMail;
     }
@@ -286,7 +286,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getFiscalId(): string
+    public function getFiscalId(): ?string
     {
         return $this->FiscalId;
     }
@@ -305,7 +305,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getItalianFiscalId(): string
+    public function getItalianFiscalId(): ?string
     {
         return $this->ItalianFiscalId;
     }
@@ -324,7 +324,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getLanguageId(): string
+    public function getLanguageId(): ?string
     {
         return $this->LanguageId;
     }
@@ -343,7 +343,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getLongDescription(): string
+    public function getLongDescription(): ?string
     {
         return $this->LongDescription;
     }
@@ -362,7 +362,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getNationalityId(): string
+    public function getNationalityId(): ?string
     {
         return $this->NationalityId;
     }
@@ -381,7 +381,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getOptinAlternativeEmail(): string
+    public function getOptinAlternativeEmail(): ?string
     {
         return $this->OptinAlternativeEmail;
     }
@@ -400,7 +400,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getOptinEmail(): string
+    public function getOptinEmail(): ?string
     {
         return $this->OptinEmail;
     }
@@ -419,7 +419,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getOptinHomePhone(): string
+    public function getOptinHomePhone(): ?string
     {
         return $this->OptinHomePhone;
     }
@@ -438,7 +438,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getOptinMobile(): string
+    public function getOptinMobile(): ?string
     {
         return $this->OptinMobile;
     }
@@ -457,7 +457,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getOptinOfficePhone(): string
+    public function getOptinOfficePhone(): ?string
     {
         return $this->OptinOfficePhone;
     }
@@ -476,7 +476,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getOptinPostal(): string
+    public function getOptinPostal(): ?string
     {
         return $this->OptinPostal;
     }
@@ -495,7 +495,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getPassportNumber(): string
+    public function getPassportNumber(): ?string
     {
         return $this->PassportNumber;
     }
@@ -514,7 +514,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getSex(): string
+    public function getSex(): ?string
     {
         return $this->Sex;
     }
@@ -533,7 +533,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getShortName(): string
+    public function getShortName(): ?string
     {
         return $this->ShortName;
     }
@@ -552,7 +552,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return ArrayOfUserField
      */
-    public function getUserFields(): ArrayOfUserField
+    public function getUserFields(): ?ArrayOfUserField
     {
         return $this->UserFields;
     }
@@ -571,7 +571,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return string
      */
-    public function getVATSystem(): string
+    public function getVATSystem(): ?string
     {
         return $this->VATSystem;
     }
@@ -590,7 +590,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return boolean
      */
-    public function getValidAlternativeEmail(): bool
+    public function getValidAlternativeEmail(): ?bool
     {
         return $this->ValidAlternativeEmail;
     }
@@ -609,7 +609,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return boolean
      */
-    public function getValidEmail(): bool
+    public function getValidEmail(): ?bool
     {
         return $this->ValidEmail;
     }
@@ -628,7 +628,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return boolean
      */
-    public function getValidHomePhone(): bool
+    public function getValidHomePhone(): ?bool
     {
         return $this->ValidHomePhone;
     }
@@ -647,7 +647,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return boolean
      */
-    public function getValidMobile(): bool
+    public function getValidMobile(): ?bool
     {
         return $this->ValidMobile;
     }
@@ -666,7 +666,7 @@ class CustomerData extends CustomerDataBase
     /**
      * @return boolean
      */
-    public function getValidOfficePhone(): bool
+    public function getValidOfficePhone(): ?bool
     {
         return $this->ValidOfficePhone;
     }

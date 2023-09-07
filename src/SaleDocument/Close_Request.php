@@ -19,7 +19,7 @@ class Close_Request
     /**
      * @return SaleDocumentIdentifier
      */
-    public function getIdentifier(): SaleDocumentIdentifier
+    public function getIdentifier(): ?SaleDocumentIdentifier
     {
       return $this->Identifier;
     }

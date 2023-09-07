@@ -19,7 +19,7 @@ class ArrayOfUpdate_Payment implements \ArrayAccess, \Iterator, \Countable
     /**
      * @return Update_Payment[]
      */
-    public function getUpdate_Payment(): array
+    public function getUpdate_Payment(): ?array
     {
       return $this->Update_Payment;
     }

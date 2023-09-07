@@ -42,7 +42,7 @@ class AvailableSkuQty
     /**
      * @return float
      */
-    public function getAvailableQty(): float
+    public function getAvailableQty(): ?float
     {
         return $this->AvailableQty;
     }

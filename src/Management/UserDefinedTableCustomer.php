@@ -22,7 +22,7 @@ class UserDefinedTableCustomer
     /**
      * @return int
      */
-    public function getId(): int
+    public function getId(): ?int
     {
       return $this->Id;
     }
@@ -40,7 +40,7 @@ class UserDefinedTableCustomer
     /**
      * @return string
      */
-    public function getValue(): string
+    public function getValue(): ?string
     {
       return $this->Value;
     }

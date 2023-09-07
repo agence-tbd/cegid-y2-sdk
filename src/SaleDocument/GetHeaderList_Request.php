@@ -49,7 +49,7 @@ class GetHeaderList_Request
     /**
      * @return boolean
      */
-    public function getActive(): bool
+    public function getActive(): ?bool
     {
       return $this->Active;
     }
@@ -98,7 +98,7 @@ class GetHeaderList_Request
     /**
      * @return string
      */
-    public function getCustomerId(): string
+    public function getCustomerId(): ?string
     {
       return $this->CustomerId;
     }
@@ -116,7 +116,7 @@ class GetHeaderList_Request
     /**
      * @return ArrayOfSaleDocumentType
      */
-    public function getDocumentTypes(): ArrayOfSaleDocumentType
+    public function getDocumentTypes(): ?ArrayOfSaleDocumentType
     {
       return $this->DocumentTypes;
     }
@@ -165,7 +165,7 @@ class GetHeaderList_Request
     /**
      * @return Pager
      */
-    public function getPager(): Pager
+    public function getPager(): ?Pager
     {
       return $this->Pager;
     }
@@ -183,7 +183,7 @@ class GetHeaderList_Request
     /**
      * @return ArrayOfstring
      */
-    public function getStoreIds(): ArrayOfstring
+    public function getStoreIds(): ?ArrayOfstring
     {
       return $this->StoreIds;
     }

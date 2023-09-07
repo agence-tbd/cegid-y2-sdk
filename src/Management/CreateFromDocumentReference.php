@@ -28,7 +28,7 @@ class CreateFromDocumentReference
     /**
      * @return string
      */
-    public function getCustomerId(): string
+    public function getCustomerId(): ?string
     {
       return $this->CustomerId;
     }
@@ -46,7 +46,7 @@ class CreateFromDocumentReference
     /**
      * @return string
      */
-    public function getInternalReference(): string
+    public function getInternalReference(): ?string
     {
       return $this->InternalReference;
     }
@@ -64,7 +64,7 @@ class CreateFromDocumentReference
     /**
      * @return string
      */
-    public function getType(): string
+    public function getType(): ?string
     {
       return $this->Type;
     }

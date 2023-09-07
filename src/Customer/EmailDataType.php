@@ -32,7 +32,7 @@ class EmailDataType
     /**
      * @return string
      */
-    public function getAlternativeEmail(): string
+    public function getAlternativeEmail(): ?string
     {
         return $this->AlternativeEmail;
     }
@@ -51,7 +51,7 @@ class EmailDataType
     /**
      * @return string
      */
-    public function getEmail(): string
+    public function getEmail(): ?string
     {
         return $this->Email;
     }
@@ -70,7 +70,7 @@ class EmailDataType
     /**
      * @return boolean
      */
-    public function getEmailingAccepted(): bool
+    public function getEmailingAccepted(): ?bool
     {
         return $this->EmailingAccepted;
     }
@@ -89,7 +89,7 @@ class EmailDataType
     /**
      * @return boolean
      */
-    public function getSendReceiptByMail(): bool
+    public function getSendReceiptByMail(): ?bool
     {
         return $this->SendReceiptByMail;
     }

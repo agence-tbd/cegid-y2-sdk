@@ -17,7 +17,7 @@ class BusinessFaultDetail extends CbpFaultDetail
     /**
      * @return ArrayOfstring
      */
-    public function getMemberNames(): ArrayOfstring
+    public function getMemberNames(): ?ArrayOfstring
     {
         return $this->MemberNames;
     }

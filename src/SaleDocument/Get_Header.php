@@ -109,7 +109,7 @@ class Get_Header
     /**
      * @return boolean
      */
-    public function getActive(): bool
+    public function getActive(): ?bool
     {
       return $this->Active;
     }
@@ -127,7 +127,7 @@ class Get_Header
     /**
      * @return string
      */
-    public function getComment(): string
+    public function getComment(): ?string
     {
       return $this->Comment;
     }
@@ -145,7 +145,7 @@ class Get_Header
     /**
      * @return string
      */
-    public function getCurrencyId(): string
+    public function getCurrencyId(): ?string
     {
       return $this->CurrencyId;
     }
@@ -163,7 +163,7 @@ class Get_Header
     /**
      * @return string
      */
-    public function getCustomerId(): string
+    public function getCustomerId(): ?string
     {
       return $this->CustomerId;
     }
@@ -212,7 +212,7 @@ class Get_Header
     /**
      * @return string
      */
-    public function getInternalReference(): string
+    public function getInternalReference(): ?string
     {
       return $this->InternalReference;
     }
@@ -230,7 +230,7 @@ class Get_Header
     /**
      * @return SaleDocumentKey
      */
-    public function getKey(): SaleDocumentKey
+    public function getKey(): ?SaleDocumentKey
     {
       return $this->Key;
     }
@@ -248,7 +248,7 @@ class Get_Header
     /**
      * @return OmniChannel
      */
-    public function getOmniChannel(): OmniChannel
+    public function getOmniChannel(): ?OmniChannel
     {
       return $this->OmniChannel;
     }
@@ -266,7 +266,7 @@ class Get_Header
     /**
      * @return DocumentOrigin
      */
-    public function getOrigin(): DocumentOrigin
+    public function getOrigin(): ?DocumentOrigin
     {
       return $this->Origin;
     }
@@ -284,7 +284,7 @@ class Get_Header
     /**
      * @return string
      */
-    public function getSalesPersonId(): string
+    public function getSalesPersonId(): ?string
     {
       return $this->SalesPersonId;
     }
@@ -302,7 +302,7 @@ class Get_Header
     /**
      * @return DocumentStatus
      */
-    public function getStatus(): DocumentStatus
+    public function getStatus(): ?DocumentStatus
     {
       return $this->Status;
     }
@@ -320,7 +320,7 @@ class Get_Header
     /**
      * @return string
      */
-    public function getStoreId(): string
+    public function getStoreId(): ?string
     {
       return $this->StoreId;
     }
@@ -338,7 +338,7 @@ class Get_Header
     /**
      * @return float
      */
-    public function getTaxExcludedTotalAmount(): float
+    public function getTaxExcludedTotalAmount(): ?float
     {
       return $this->TaxExcludedTotalAmount;
     }
@@ -356,7 +356,7 @@ class Get_Header
     /**
      * @return float
      */
-    public function getTaxIncludedTotalAmount(): float
+    public function getTaxIncludedTotalAmount(): ?float
     {
       return $this->TaxIncludedTotalAmount;
     }
@@ -374,7 +374,7 @@ class Get_Header
     /**
      * @return float
      */
-    public function getTotalQuantity(): float
+    public function getTotalQuantity(): ?float
     {
       return $this->TotalQuantity;
     }
@@ -392,7 +392,7 @@ class Get_Header
     /**
      * @return ArrayOfUserDefinedDate
      */
-    public function getUserDefinedDates(): ArrayOfUserDefinedDate
+    public function getUserDefinedDates(): ?ArrayOfUserDefinedDate
     {
       return $this->UserDefinedDates;
     }
@@ -410,7 +410,7 @@ class Get_Header
     /**
      * @return ArrayOfUserDefinedTable
      */
-    public function getUserDefinedTables(): ArrayOfUserDefinedTable
+    public function getUserDefinedTables(): ?ArrayOfUserDefinedTable
     {
       return $this->UserDefinedTables;
     }
@@ -428,7 +428,7 @@ class Get_Header
     /**
      * @return ArrayOfUserField
      */
-    public function getUserFields(): ArrayOfUserField
+    public function getUserFields(): ?ArrayOfUserField
     {
       return $this->UserFields;
     }
@@ -446,7 +446,7 @@ class Get_Header
     /**
      * @return string
      */
-    public function getWarehouseId(): string
+    public function getWarehouseId(): ?string
     {
       return $this->WarehouseId;
     }

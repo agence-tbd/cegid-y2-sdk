@@ -122,7 +122,7 @@ class OmniChannel
     /**
      * @return string
      */
-    public function getBillingStatus(): string
+    public function getBillingStatus(): ?string
     {
       return $this->BillingStatus;
     }
@@ -171,7 +171,7 @@ class OmniChannel
     /**
      * @return string
      */
-    public function getCancelReasonId(): string
+    public function getCancelReasonId(): ?string
     {
       return $this->CancelReasonId;
     }
@@ -189,7 +189,7 @@ class OmniChannel
     /**
      * @return string
      */
-    public function getCancelStatus(): string
+    public function getCancelStatus(): ?string
     {
       return $this->CancelStatus;
     }
@@ -207,7 +207,7 @@ class OmniChannel
     /**
      * @return string
      */
-    public function getComment(): string
+    public function getComment(): ?string
     {
       return $this->Comment;
     }
@@ -225,7 +225,7 @@ class OmniChannel
     /**
      * @return string
      */
-    public function getDeliveryStoreId(): string
+    public function getDeliveryStoreId(): ?string
     {
       return $this->DeliveryStoreId;
     }
@@ -243,7 +243,7 @@ class OmniChannel
     /**
      * @return string
      */
-    public function getDeliveryType(): string
+    public function getDeliveryType(): ?string
     {
       return $this->DeliveryType;
     }
@@ -261,7 +261,7 @@ class OmniChannel
     /**
      * @return string
      */
-    public function getDeliveryWarehouseId(): string
+    public function getDeliveryWarehouseId(): ?string
     {
       return $this->DeliveryWarehouseId;
     }
@@ -279,7 +279,7 @@ class OmniChannel
     /**
      * @return string
      */
-    public function getFollowUpStatus(): string
+    public function getFollowUpStatus(): ?string
     {
       return $this->FollowUpStatus;
     }
@@ -297,7 +297,7 @@ class OmniChannel
     /**
      * @return string
      */
-    public function getGiftMessage(): string
+    public function getGiftMessage(): ?string
     {
       return $this->GiftMessage;
     }
@@ -315,7 +315,7 @@ class OmniChannel
     /**
      * @return GiftMessageType
      */
-    public function getGiftMessageType(): GiftMessageType
+    public function getGiftMessageType(): ?GiftMessageType
     {
       return $this->GiftMessageType;
     }
@@ -364,7 +364,7 @@ class OmniChannel
     /**
      * @return SaleDocumentIdentifier
      */
-    public function getOriginalDocument(): SaleDocumentIdentifier
+    public function getOriginalDocument(): ?SaleDocumentIdentifier
     {
       return $this->OriginalDocument;
     }
@@ -382,7 +382,7 @@ class OmniChannel
     /**
      * @return string
      */
-    public function getPaymentMethodId(): string
+    public function getPaymentMethodId(): ?string
     {
       return $this->PaymentMethodId;
     }
@@ -400,7 +400,7 @@ class OmniChannel
     /**
      * @return string
      */
-    public function getPaymentStatus(): string
+    public function getPaymentStatus(): ?string
     {
       return $this->PaymentStatus;
     }
@@ -418,7 +418,7 @@ class OmniChannel
     /**
      * @return string
      */
-    public function getReturnStatus(): string
+    public function getReturnStatus(): ?string
     {
       return $this->ReturnStatus;
     }
@@ -436,7 +436,7 @@ class OmniChannel
     /**
      * @return string
      */
-    public function getReturnType(): string
+    public function getReturnType(): ?string
     {
       return $this->ReturnType;
     }
@@ -454,7 +454,7 @@ class OmniChannel
     /**
      * @return string
      */
-    public function getShippingStatus(): string
+    public function getShippingStatus(): ?string
     {
       return $this->ShippingStatus;
     }
@@ -472,7 +472,7 @@ class OmniChannel
     /**
      * @return string
      */
-    public function getTracking(): string
+    public function getTracking(): ?string
     {
       return $this->Tracking;
     }
@@ -490,7 +490,7 @@ class OmniChannel
     /**
      * @return string
      */
-    public function getTransporter(): string
+    public function getTransporter(): ?string
     {
       return $this->Transporter;
     }

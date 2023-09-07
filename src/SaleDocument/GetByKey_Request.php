@@ -19,7 +19,7 @@ class GetByKey_Request
     /**
      * @return SaleDocumentKey
      */
-    public function getKey(): SaleDocumentKey
+    public function getKey(): ?SaleDocumentKey
     {
       return $this->Key;
     }

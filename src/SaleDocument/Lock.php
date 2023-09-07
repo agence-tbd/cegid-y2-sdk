@@ -28,7 +28,7 @@ class Lock
     /**
      * @return Lock_Request
      */
-    public function getLockRequest(): Lock_Request
+    public function getLockRequest(): ?Lock_Request
     {
       return $this->lockRequest;
     }
@@ -46,7 +46,7 @@ class Lock
     /**
      * @return RetailContext
      */
-    public function getClientContext(): RetailContext
+    public function getClientContext(): ?RetailContext
     {
       return $this->clientContext;
     }

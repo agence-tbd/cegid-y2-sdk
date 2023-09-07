@@ -19,7 +19,7 @@ class ArrayOfCreate_Tax implements \ArrayAccess, \Iterator, \Countable
     /**
      * @return Create_Tax[]
      */
-    public function getCreate_Tax(): array
+    public function getCreate_Tax(): ?array
     {
       return $this->Create_Tax;
     }

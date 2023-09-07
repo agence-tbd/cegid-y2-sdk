@@ -19,7 +19,7 @@ class ArrayOfGet_Line implements \ArrayAccess, \Iterator, \Countable
     /**
      * @return Get_Line[]
      */
-    public function getGet_Line(): array
+    public function getGet_Line(): ?array
     {
       return $this->Get_Line;
     }

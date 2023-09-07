@@ -22,7 +22,7 @@ class ItemIdentifier
     /**
      * @return string
      */
-    public function getId(): string
+    public function getId(): ?string
     {
       return $this->Id;
     }
@@ -40,7 +40,7 @@ class ItemIdentifier
     /**
      * @return string
      */
-    public function getReference(): string
+    public function getReference(): ?string
     {
       return $this->Reference;
     }

@@ -19,7 +19,7 @@ class ArrayOfSaleDocumentType implements \ArrayAccess, \Iterator, \Countable
     /**
      * @return SaleDocumentType[]
      */
-    public function getSaleDocumentType(): array
+    public function getSaleDocumentType(): ?array
     {
       return $this->SaleDocumentType;
     }

@@ -27,7 +27,7 @@ class CreateFromDocumentKey
     /**
      * @return int
      */
-    public function getNumber(): int
+    public function getNumber(): ?int
     {
       return $this->Number;
     }
@@ -45,7 +45,7 @@ class CreateFromDocumentKey
     /**
      * @return string
      */
-    public function getStub(): string
+    public function getStub(): ?string
     {
       return $this->Stub;
     }
@@ -63,7 +63,7 @@ class CreateFromDocumentKey
     /**
      * @return string
      */
-    public function getType(): string
+    public function getType(): ?string
     {
       return $this->Type;
     }

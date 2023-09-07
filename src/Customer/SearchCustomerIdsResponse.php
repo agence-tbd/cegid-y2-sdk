@@ -21,7 +21,7 @@ class SearchCustomerIdsResponse
     /**
      * @return ArrayOfCustomerQueryData
      */
-    public function getSearchCustomerIdsResult(): ArrayOfCustomerQueryData
+    public function getSearchCustomerIdsResult(): ?ArrayOfCustomerQueryData
     {
         return $this->SearchCustomerIdsResult;
     }

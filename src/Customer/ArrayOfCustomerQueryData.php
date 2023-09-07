@@ -5,9 +5,9 @@ namespace Y2\Customer;
 class ArrayOfCustomerQueryData implements \ArrayAccess, \Iterator, \Countable
 {
     /**
-     * @var CustomerQueryData[] $CustomerQueryData
+     * @var ?CustomerQueryData[] $CustomerQueryData
      */
-    protected array|null $CustomerQueryData = null;
+    protected ?array $CustomerQueryData = null;
 
     public function __construct()
     {
@@ -15,15 +15,15 @@ class ArrayOfCustomerQueryData implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * @return CustomerQueryData[]
+     * @return ?CustomerQueryData[]
      */
-    public function getCustomerQueryData(): array
+    public function getCustomerQueryData(): ?array
     {
         return $this->CustomerQueryData;
     }
 
     /**
-     * @param CustomerQueryData[] $CustomerQueryData
+     * @param ?CustomerQueryData[] $CustomerQueryData
      *
      * @return ArrayOfCustomerQueryData
      */

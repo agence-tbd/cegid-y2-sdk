@@ -17,7 +17,7 @@ class ArrayOfCreateFrom_Line implements \ArrayAccess, \Iterator, \Countable
     /**
      * @return CreateFrom_Line[]
      */
-    public function getLine(): array
+    public function getLine(): ?array
     {
       return $this->Line;
     }

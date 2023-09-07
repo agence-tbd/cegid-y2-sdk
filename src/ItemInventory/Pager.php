@@ -22,7 +22,7 @@ class Pager
     /**
      * @return int
      */
-    public function getPageIndex(): int
+    public function getPageIndex(): ?int
     {
         return $this->PageIndex;
     }
@@ -40,7 +40,7 @@ class Pager
     /**
      * @return int
      */
-    public function getPageSize(): int
+    public function getPageSize(): ?int
     {
         return $this->PageSize;
     }

@@ -49,7 +49,7 @@ class UserField
     /**
      * @return boolean
      */
-    public function getBooleanValue(): bool
+    public function getBooleanValue(): ?bool
     {
       return $this->BooleanValue;
     }
@@ -98,7 +98,7 @@ class UserField
     /**
      * @return int
      */
-    public function getId(): int
+    public function getId(): ?int
     {
       return $this->Id;
     }
@@ -116,7 +116,7 @@ class UserField
     /**
      * @return string
      */
-    public function getListElementValue(): string
+    public function getListElementValue(): ?string
     {
       return $this->ListElementValue;
     }
@@ -134,7 +134,7 @@ class UserField
     /**
      * @return float
      */
-    public function getNumberValue(): float
+    public function getNumberValue(): ?float
     {
       return $this->NumberValue;
     }
@@ -152,7 +152,7 @@ class UserField
     /**
      * @return string
      */
-    public function getTextValue(): string
+    public function getTextValue(): ?string
     {
       return $this->TextValue;
     }
@@ -170,7 +170,7 @@ class UserField
     /**
      * @return UserFieldKind
      */
-    public function getValueType(): UserFieldKind
+    public function getValueType(): ?UserFieldKind
     {
       return $this->ValueType;
     }

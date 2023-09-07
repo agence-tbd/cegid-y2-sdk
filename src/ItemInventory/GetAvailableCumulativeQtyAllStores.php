@@ -34,7 +34,7 @@ class GetAvailableCumulativeQtyAllStores
     /**
      * @return string
      */
-    public function getItemId(): string
+    public function getItemId(): ?string
     {
         return $this->itemId;
     }
@@ -52,7 +52,7 @@ class GetAvailableCumulativeQtyAllStores
     /**
      * @return ItemIdentifier
      */
-    public function getItemIdentifier(): ItemIdentifier
+    public function getItemIdentifier(): ?ItemIdentifier
     {
         return $this->itemIdentifier;
     }
@@ -70,7 +70,7 @@ class GetAvailableCumulativeQtyAllStores
     /**
      * @return RetailContext
      */
-    public function getClientContext(): RetailContext
+    public function getClientContext(): ?RetailContext
     {
         return $this->clientContext;
     }

@@ -20,7 +20,7 @@ class GetCustomerIdByReferenceResponse
     /**
      * @return string
      */
-    public function getGetCustomerIdByReferenceResult(): string
+    public function getGetCustomerIdByReferenceResult(): ?string
     {
         return $this->GetCustomerIdByReferenceResult;
     }

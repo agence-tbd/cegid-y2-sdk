@@ -120,7 +120,7 @@ class AddressDataType
     /**
      * @return string
      */
-    public function getBrandName(): string
+    public function getBrandName(): ?string
     {
         return $this->BrandName;
     }
@@ -139,7 +139,7 @@ class AddressDataType
     /**
      * @return string
      */
-    public function getCity(): string
+    public function getCity(): ?string
     {
         return $this->City;
     }
@@ -158,7 +158,7 @@ class AddressDataType
     /**
      * @return string
      */
-    public function getCountryId(): string
+    public function getCountryId(): ?string
     {
         return $this->CountryId;
     }
@@ -177,7 +177,7 @@ class AddressDataType
     /**
      * @return CountryIdType
      */
-    public function getCountryIdType(): CountryIdType
+    public function getCountryIdType(): ?CountryIdType
     {
         return $this->CountryIdType;
     }
@@ -196,7 +196,7 @@ class AddressDataType
     /**
      * @return boolean
      */
-    public function getNata(): bool
+    public function getNata(): ?bool
     {
         return $this->Nata;
     }
@@ -215,7 +215,7 @@ class AddressDataType
     /**
      * @return string
      */
-    public function getRegionId(): string
+    public function getRegionId(): ?string
     {
         return $this->RegionId;
     }
@@ -234,7 +234,7 @@ class AddressDataType
     /**
      * @return string
      */
-    public function getZipCode(): string
+    public function getZipCode(): ?string
     {
         return $this->ZipCode;
     }

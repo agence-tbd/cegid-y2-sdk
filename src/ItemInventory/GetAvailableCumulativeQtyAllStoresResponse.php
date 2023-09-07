@@ -20,7 +20,7 @@ class GetAvailableCumulativeQtyAllStoresResponse
     /**
      * @return AvailableQtyReturn
      */
-    public function getGetAvailableCumulativeQtyAllStoresResult(): AvailableQtyReturn
+    public function getGetAvailableCumulativeQtyAllStoresResult(): ?AvailableQtyReturn
     {
         return $this->GetAvailableCumulativeQtyAllStoresResult;
     }

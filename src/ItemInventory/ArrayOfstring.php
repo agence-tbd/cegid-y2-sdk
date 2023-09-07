@@ -17,7 +17,7 @@ class ArrayOfstring implements \ArrayAccess, \Iterator, \Countable
     /**
      * @return string[]
      */
-    public function getString(): array
+    public function getString(): ?array
     {
         return $this->string;
     }

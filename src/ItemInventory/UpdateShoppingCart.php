@@ -27,7 +27,7 @@ class UpdateShoppingCart
     /**
      * @return UpdateShoppingCart_Request
      */
-    public function getRequest(): UpdateShoppingCart_Request
+    public function getRequest(): ?UpdateShoppingCart_Request
     {
         return $this->request;
     }
@@ -45,7 +45,7 @@ class UpdateShoppingCart
     /**
      * @return RetailContext
      */
-    public function getClientContext(): RetailContext
+    public function getClientContext(): ?RetailContext
     {
         return $this->clientContext;
     }

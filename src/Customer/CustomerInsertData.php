@@ -22,7 +22,7 @@ class CustomerInsertData extends CustomerInputData
     /**
      * @return InternalGuid
      */
-    public function getCustomerGuid(): InternalGuid
+    public function getCustomerGuid(): ?InternalGuid
     {
         return $this->CustomerGuid;
     }
@@ -41,7 +41,7 @@ class CustomerInsertData extends CustomerInputData
     /**
      * @return string
      */
-    public function getCustomerId(): string
+    public function getCustomerId(): ?string
     {
         return $this->CustomerId;
     }

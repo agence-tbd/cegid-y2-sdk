@@ -84,7 +84,7 @@ class CustomersReservationCreate_Line
     /**
      * @return string
      */
-    public function getCatalogReference(): string
+    public function getCatalogReference(): ?string
     {
       return $this->CatalogReference;
     }
@@ -102,7 +102,7 @@ class CustomersReservationCreate_Line
     /**
      * @return string
      */
-    public function getComplementaryDescription(): string
+    public function getComplementaryDescription(): ?string
     {
       return $this->ComplementaryDescription;
     }
@@ -151,7 +151,7 @@ class CustomersReservationCreate_Line
     /**
      * @return string
      */
-    public function getDiscountTypeId(): string
+    public function getDiscountTypeId(): ?string
     {
       return $this->DiscountTypeId;
     }
@@ -169,7 +169,7 @@ class CustomersReservationCreate_Line
     /**
      * @return string
      */
-    public function getExternalReference(): string
+    public function getExternalReference(): ?string
     {
       return $this->ExternalReference;
     }
@@ -218,7 +218,7 @@ class CustomersReservationCreate_Line
     /**
      * @return ItemIdentifier
      */
-    public function getItemIdentifier(): ItemIdentifier
+    public function getItemIdentifier(): ?ItemIdentifier
     {
       return $this->ItemIdentifier;
     }
@@ -236,7 +236,7 @@ class CustomersReservationCreate_Line
     /**
      * @return string
      */
-    public function getLabel(): string
+    public function getLabel(): ?string
     {
       return $this->Label;
     }
@@ -254,7 +254,7 @@ class CustomersReservationCreate_Line
     /**
      * @return float
      */
-    public function getNetUnitPrice(): float
+    public function getNetUnitPrice(): ?float
     {
       return $this->NetUnitPrice;
     }
@@ -272,7 +272,7 @@ class CustomersReservationCreate_Line
     /**
      * @return float
      */
-    public function getQuantity(): float
+    public function getQuantity(): ?float
     {
       return $this->Quantity;
     }
@@ -290,7 +290,7 @@ class CustomersReservationCreate_Line
     /**
      * @return string
      */
-    public function getSalesPersonId(): string
+    public function getSalesPersonId(): ?string
     {
       return $this->SalesPersonId;
     }
@@ -308,7 +308,7 @@ class CustomersReservationCreate_Line
     /**
      * @return string
      */
-    public function getSerialNumberId(): string
+    public function getSerialNumberId(): ?string
     {
       return $this->SerialNumberId;
     }
@@ -326,7 +326,7 @@ class CustomersReservationCreate_Line
     /**
      * @return ArrayOfCreate_Tax
      */
-    public function getTaxes(): ArrayOfCreate_Tax
+    public function getTaxes(): ?ArrayOfCreate_Tax
     {
       return $this->Taxes;
     }
@@ -344,7 +344,7 @@ class CustomersReservationCreate_Line
     /**
      * @return float
      */
-    public function getUnitPrice(): float
+    public function getUnitPrice(): ?float
     {
       return $this->UnitPrice;
     }

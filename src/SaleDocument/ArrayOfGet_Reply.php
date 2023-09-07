@@ -19,7 +19,7 @@ class ArrayOfGet_Reply implements \ArrayAccess, \Iterator, \Countable
     /**
      * @return Get_Reply[]
      */
-    public function getGet_Reply(): array
+    public function getGet_Reply(): ?array
     {
       return $this->Get_Reply;
     }

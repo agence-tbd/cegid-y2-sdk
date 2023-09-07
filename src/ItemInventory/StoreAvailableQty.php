@@ -32,7 +32,7 @@ class StoreAvailableQty
     /**
      * @return float
      */
-    public function getAvailableQuantity(): float
+    public function getAvailableQuantity(): ?float
     {
         return $this->AvailableQuantity;
     }
@@ -50,7 +50,7 @@ class StoreAvailableQty
     /**
      * @return ArrayOfAvailableSkuQty
      */
-    public function getAvailableSkusQty(): ArrayOfAvailableSkuQty
+    public function getAvailableSkusQty(): ?ArrayOfAvailableSkuQty
     {
         return $this->AvailableSkusQty;
     }
@@ -68,7 +68,7 @@ class StoreAvailableQty
     /**
      * @return string
      */
-    public function getStoreId(): string
+    public function getStoreId(): ?string
     {
         return $this->StoreId;
     }
@@ -86,7 +86,7 @@ class StoreAvailableQty
     /**
      * @return string
      */
-    public function getStoreName(): string
+    public function getStoreName(): ?string
     {
         return $this->StoreName;
     }

@@ -32,7 +32,7 @@ class CustomerInputData extends CustomerData
     /**
      * @return boolean
      */
-    public function getClosed(): bool
+    public function getClosed(): ?bool
     {
         return $this->Closed;
     }
@@ -51,7 +51,7 @@ class CustomerInputData extends CustomerData
     /**
      * @return string
      */
-    public function getInvoiceCustomerId(): string
+    public function getInvoiceCustomerId(): ?string
     {
         return $this->InvoiceCustomerId;
     }
@@ -70,7 +70,7 @@ class CustomerInputData extends CustomerData
     /**
      * @return boolean
      */
-    public function getIsProspect(): bool
+    public function getIsProspect(): ?bool
     {
         return $this->IsProspect;
     }
@@ -89,7 +89,7 @@ class CustomerInputData extends CustomerData
     /**
      * @return string
      */
-    public function getNotepad(): string
+    public function getNotepad(): ?string
     {
         return $this->Notepad;
     }

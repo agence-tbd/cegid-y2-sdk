@@ -29,7 +29,7 @@ class SaleDocumentKey
     /**
      * @return int
      */
-    public function getNumber(): int
+    public function getNumber(): ?int
     {
       return $this->Number;
     }
@@ -47,7 +47,7 @@ class SaleDocumentKey
     /**
      * @return string
      */
-    public function getStump(): string
+    public function getStump(): ?string
     {
       return $this->Stump;
     }
@@ -65,7 +65,7 @@ class SaleDocumentKey
     /**
      * @return string
      */
-    public function getType(): string
+    public function getType(): ?string
     {
       return $this->Type;
     }

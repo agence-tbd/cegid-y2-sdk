@@ -29,7 +29,7 @@ class SaleDocumentReference
     /**
      * @return string
      */
-    public function getCustomerId(): string
+    public function getCustomerId(): ?string
     {
       return $this->CustomerId;
     }
@@ -47,7 +47,7 @@ class SaleDocumentReference
     /**
      * @return string
      */
-    public function getInternalReference(): string
+    public function getInternalReference(): ?string
     {
       return $this->InternalReference;
     }
@@ -65,7 +65,7 @@ class SaleDocumentReference
     /**
      * @return string
      */
-    public function getType(): string
+    public function getType(): ?string
     {
       return $this->Type;
     }

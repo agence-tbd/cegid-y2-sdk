@@ -34,7 +34,7 @@ class UpdateCustomer
     /**
      * @return string
      */
-    public function getCustomerId(): string
+    public function getCustomerId(): ?string
     {
         return $this->customerId;
     }
@@ -53,7 +53,7 @@ class UpdateCustomer
     /**
      * @return CustomerInputData
      */
-    public function getModifiedData(): CustomerInputData
+    public function getModifiedData(): ?CustomerInputData
     {
         return $this->modifiedData;
     }
@@ -72,7 +72,7 @@ class UpdateCustomer
     /**
      * @return RetailContext
      */
-    public function getClientContext(): RetailContext
+    public function getClientContext(): ?RetailContext
     {
         return $this->clientContext;
     }

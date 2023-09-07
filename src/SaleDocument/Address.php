@@ -80,7 +80,7 @@ class Address
     /**
      * @return string
      */
-    public function getCity(): string
+    public function getCity(): ?string
     {
       return $this->City;
     }
@@ -98,7 +98,7 @@ class Address
     /**
      * @return int
      */
-    public function getContactNumber(): int
+    public function getContactNumber(): ?int
     {
       return $this->ContactNumber;
     }
@@ -116,7 +116,7 @@ class Address
     /**
      * @return string
      */
-    public function getCountryId(): string
+    public function getCountryId(): ?string
     {
       return $this->CountryId;
     }
@@ -134,7 +134,7 @@ class Address
     /**
      * @return string
      */
-    public function getCountryIdType(): string
+    public function getCountryIdType(): ?string
     {
       return $this->CountryIdType;
     }
@@ -152,7 +152,7 @@ class Address
     /**
      * @return string
      */
-    public function getFirstName(): string
+    public function getFirstName(): ?string
     {
       return $this->FirstName;
     }
@@ -170,7 +170,7 @@ class Address
     /**
      * @return string
      */
-    public function getLastName(): string
+    public function getLastName(): ?string
     {
       return $this->LastName;
     }
@@ -242,7 +242,7 @@ class Address
     /**
      * @return string
      */
-    public function getPhoneNumber(): string
+    public function getPhoneNumber(): ?string
     {
       return $this->PhoneNumber;
     }
@@ -260,7 +260,7 @@ class Address
     /**
      * @return string
      */
-    public function getRegion(): string
+    public function getRegion(): ?string
     {
       return $this->Region;
     }
@@ -278,7 +278,7 @@ class Address
     /**
      * @return string
      */
-    public function getTitleId(): string
+    public function getTitleId(): ?string
     {
       return $this->TitleId;
     }
@@ -296,7 +296,7 @@ class Address
     /**
      * @return string
      */
-    public function getZipCode(): string
+    public function getZipCode(): ?string
     {
       return $this->ZipCode;
     }

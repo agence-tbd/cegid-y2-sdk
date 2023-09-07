@@ -27,7 +27,7 @@ class AvailableQtyByStore
     /**
      * @return float
      */
-    public function getAvailableQty(): float
+    public function getAvailableQty(): ?float
     {
         return $this->AvailableQty;
     }
@@ -45,7 +45,7 @@ class AvailableQtyByStore
     /**
      * @return string
      */
-    public function getStoreDescription(): string
+    public function getStoreDescription(): ?string
     {
         return $this->StoreDescription;
     }
@@ -63,7 +63,7 @@ class AvailableQtyByStore
     /**
      * @return string
      */
-    public function getStoreId(): string
+    public function getStoreId(): ?string
     {
         return $this->StoreId;
     }

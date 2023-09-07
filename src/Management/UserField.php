@@ -27,7 +27,7 @@ class UserField
     /**
      * @return int
      */
-    public function getId(): int
+    public function getId(): ?int
     {
         return $this->Id;
     }
@@ -45,7 +45,7 @@ class UserField
     /**
      * @return UserFieldValue
      */
-    public function getValue(): UserFieldValue
+    public function getValue(): ?UserFieldValue
     {
         return $this->Value;
     }

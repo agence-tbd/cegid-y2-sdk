@@ -22,7 +22,7 @@ class UserDefinedBoolean
     /**
      * @return UserDefinedId
      */
-    public function getId(): UserDefinedId
+    public function getId(): ?UserDefinedId
     {
         return $this->Id;
     }
@@ -41,7 +41,7 @@ class UserDefinedBoolean
     /**
      * @return boolean
      */
-    public function getValue(): bool
+    public function getValue(): ?bool
     {
         return $this->Value;
     }

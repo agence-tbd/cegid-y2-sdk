@@ -19,7 +19,7 @@ class ArrayOfGet_Payment implements \ArrayAccess, \Iterator, \Countable
     /**
      * @return Get_Payment[]
      */
-    public function getGet_Payment(): array
+    public function getGet_Payment(): ?array
     {
       return $this->Get_Payment;
     }

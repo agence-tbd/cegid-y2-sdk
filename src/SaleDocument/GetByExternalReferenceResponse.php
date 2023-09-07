@@ -21,7 +21,7 @@ class GetByExternalReferenceResponse
     /**
      * @return GetByExternalReference_Reply
      */
-    public function getGetByExternalReferenceResult(): GetByExternalReference_Reply
+    public function getGetByExternalReferenceResult(): ?GetByExternalReference_Reply
     {
       return $this->GetByExternalReferenceResult;
     }

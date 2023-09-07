@@ -17,7 +17,7 @@ class RetailContext
     /**
      * @return string
      */
-    public function getDatabaseId(): string
+    public function getDatabaseId(): ?string
     {
         return $this->DatabaseId;
     }

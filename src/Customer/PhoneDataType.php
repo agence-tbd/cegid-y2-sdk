@@ -32,7 +32,7 @@ class PhoneDataType
     /**
      * @return string
      */
-    public function getAlternativePhoneNumber(): string
+    public function getAlternativePhoneNumber(): ?string
     {
         return $this->AlternativePhoneNumber;
     }
@@ -51,7 +51,7 @@ class PhoneDataType
     /**
      * @return string
      */
-    public function getCellularPhoneNumber(): string
+    public function getCellularPhoneNumber(): ?string
     {
         return $this->CellularPhoneNumber;
     }
@@ -70,7 +70,7 @@ class PhoneDataType
     /**
      * @return string
      */
-    public function getHomePhoneNumber(): string
+    public function getHomePhoneNumber(): ?string
     {
         return $this->HomePhoneNumber;
     }
@@ -89,7 +89,7 @@ class PhoneDataType
     /**
      * @return string
      */
-    public function getOfficePhoneNumber(): string
+    public function getOfficePhoneNumber(): ?string
     {
         return $this->OfficePhoneNumber;
     }

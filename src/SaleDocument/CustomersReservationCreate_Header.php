@@ -114,7 +114,7 @@ class CustomersReservationCreate_Header
     /**
      * @return boolean
      */
-    public function getActive(): bool
+    public function getActive(): ?bool
     {
       return $this->Active;
     }
@@ -132,7 +132,7 @@ class CustomersReservationCreate_Header
     /**
      * @return string
      */
-    public function getComment(): string
+    public function getComment(): ?string
     {
       return $this->Comment;
     }
@@ -150,7 +150,7 @@ class CustomersReservationCreate_Header
     /**
      * @return string
      */
-    public function getCurrencyId(): string
+    public function getCurrencyId(): ?string
     {
       return $this->CurrencyId;
     }
@@ -168,7 +168,7 @@ class CustomersReservationCreate_Header
     /**
      * @return string
      */
-    public function getCustomerId(): string
+    public function getCustomerId(): ?string
     {
       return $this->CustomerId;
     }
@@ -217,7 +217,7 @@ class CustomersReservationCreate_Header
     /**
      * @return SaleDocumentLineIdentifier
      */
-    public function getDeposit(): SaleDocumentLineIdentifier
+    public function getDeposit(): ?SaleDocumentLineIdentifier
     {
       return $this->Deposit;
     }
@@ -266,7 +266,7 @@ class CustomersReservationCreate_Header
     /**
      * @return string
      */
-    public function getExternalReference(): string
+    public function getExternalReference(): ?string
     {
       return $this->ExternalReference;
     }
@@ -315,7 +315,7 @@ class CustomersReservationCreate_Header
     /**
      * @return string
      */
-    public function getFollowedReference(): string
+    public function getFollowedReference(): ?string
     {
       return $this->FollowedReference;
     }
@@ -333,7 +333,7 @@ class CustomersReservationCreate_Header
     /**
      * @return string
      */
-    public function getInternalReference(): string
+    public function getInternalReference(): ?string
     {
       return $this->InternalReference;
     }
@@ -351,7 +351,7 @@ class CustomersReservationCreate_Header
     /**
      * @return boolean
      */
-    public function getLinesUnmodifiable(): bool
+    public function getLinesUnmodifiable(): ?bool
     {
       return $this->LinesUnmodifiable;
     }
@@ -369,7 +369,7 @@ class CustomersReservationCreate_Header
     /**
      * @return string
      */
-    public function getSalesPersonId(): string
+    public function getSalesPersonId(): ?string
     {
       return $this->SalesPersonId;
     }
@@ -387,7 +387,7 @@ class CustomersReservationCreate_Header
     /**
      * @return string
      */
-    public function getStoreId(): string
+    public function getStoreId(): ?string
     {
       return $this->StoreId;
     }
@@ -405,7 +405,7 @@ class CustomersReservationCreate_Header
     /**
      * @return boolean
      */
-    public function getTaxExcluded(): bool
+    public function getTaxExcluded(): ?bool
     {
       return $this->TaxExcluded;
     }
@@ -423,7 +423,7 @@ class CustomersReservationCreate_Header
     /**
      * @return ArrayOfUserDefinedDate
      */
-    public function getUserDefinedDates(): ArrayOfUserDefinedDate
+    public function getUserDefinedDates(): ?ArrayOfUserDefinedDate
     {
       return $this->UserDefinedDates;
     }
@@ -441,7 +441,7 @@ class CustomersReservationCreate_Header
     /**
      * @return ArrayOfUserDefinedTableCustomer
      */
-    public function getUserDefinedTableCustomers(): ArrayOfUserDefinedTableCustomer
+    public function getUserDefinedTableCustomers(): ?ArrayOfUserDefinedTableCustomer
     {
       return $this->UserDefinedTableCustomers;
     }
@@ -459,7 +459,7 @@ class CustomersReservationCreate_Header
     /**
      * @return ArrayOfUserDefinedTable
      */
-    public function getUserDefinedTables(): ArrayOfUserDefinedTable
+    public function getUserDefinedTables(): ?ArrayOfUserDefinedTable
     {
       return $this->UserDefinedTables;
     }
@@ -477,7 +477,7 @@ class CustomersReservationCreate_Header
     /**
      * @return ArrayOfUserField
      */
-    public function getUserFields(): ArrayOfUserField
+    public function getUserFields(): ?ArrayOfUserField
     {
       return $this->UserFields;
     }
@@ -495,7 +495,7 @@ class CustomersReservationCreate_Header
     /**
      * @return string
      */
-    public function getWarehouseId(): string
+    public function getWarehouseId(): ?string
     {
       return $this->WarehouseId;
     }

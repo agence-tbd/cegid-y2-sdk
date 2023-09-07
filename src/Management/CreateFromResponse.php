@@ -20,7 +20,7 @@ class CreateFromResponse
     /**
      * @return CreateFrom_Reply
      */
-    public function getCreateFromResult(): CreateFrom_Reply
+    public function getCreateFromResult(): ?CreateFrom_Reply
     {
       return $this->CreateFromResult;
     }

@@ -27,7 +27,7 @@ class HelloWorld
     /**
      * @return string
      */
-    public function getText(): string
+    public function getText(): ?string
     {
         return $this->text;
     }
@@ -45,7 +45,7 @@ class HelloWorld
     /**
      * @return RetailContext
      */
-    public function getClientContext(): RetailContext
+    public function getClientContext(): ?RetailContext
     {
         return $this->clientContext;
     }

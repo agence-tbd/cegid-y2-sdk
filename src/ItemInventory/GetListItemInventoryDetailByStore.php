@@ -27,7 +27,7 @@ class GetListItemInventoryDetailByStore
     /**
      * @return GetListItemInventoryDetailByStore_Request
      */
-    public function getInventoryStoreItemDetailRequest(): GetListItemInventoryDetailByStore_Request
+    public function getInventoryStoreItemDetailRequest(): ?GetListItemInventoryDetailByStore_Request
     {
         return $this->inventoryStoreItemDetailRequest;
     }
@@ -45,7 +45,7 @@ class GetListItemInventoryDetailByStore
     /**
      * @return RetailContext
      */
-    public function getClientContext(): RetailContext
+    public function getClientContext(): ?RetailContext
     {
         return $this->clientContext;
     }

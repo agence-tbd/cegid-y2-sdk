@@ -17,7 +17,7 @@ class ArrayOfAvailableSkuQty implements \ArrayAccess, \Iterator, \Countable
     /**
      * @return AvailableSkuQty[]
      */
-    public function getAvailableSkuQty(): array
+    public function getAvailableSkuQty(): ?array
     {
         return $this->AvailableSkuQty;
     }

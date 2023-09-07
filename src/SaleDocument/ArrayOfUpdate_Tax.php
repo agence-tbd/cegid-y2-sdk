@@ -19,7 +19,7 @@ class ArrayOfUpdate_Tax implements \ArrayAccess, \Iterator, \Countable
     /**
      * @return Update_Tax[]
      */
-    public function getUpdate_Tax(): array
+    public function getUpdate_Tax(): ?array
     {
       return $this->Update_Tax;
     }

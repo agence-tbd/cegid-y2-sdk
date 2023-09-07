@@ -19,7 +19,7 @@ class ArrayOfGet_ShippingTax implements \ArrayAccess, \Iterator, \Countable
     /**
      * @return Get_ShippingTax[]
      */
-    public function getGet_ShippingTax(): array
+    public function getGet_ShippingTax(): ?array
     {
       return $this->Get_ShippingTax;
     }

@@ -19,7 +19,7 @@ class ArrayOfUserField implements \ArrayAccess, \Iterator, \Countable
     /**
      * @return UserField[]
      */
-    public function getUserField(): array
+    public function getUserField(): ?array
     {
       return $this->UserField;
     }

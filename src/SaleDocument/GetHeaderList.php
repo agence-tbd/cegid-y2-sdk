@@ -28,7 +28,7 @@ class GetHeaderList
     /**
      * @return GetHeaderList_Request
      */
-    public function getSearchRequest(): GetHeaderList_Request
+    public function getSearchRequest(): ?GetHeaderList_Request
     {
       return $this->searchRequest;
     }
@@ -46,7 +46,7 @@ class GetHeaderList
     /**
      * @return RetailContext
      */
-    public function getClientContext(): RetailContext
+    public function getClientContext(): ?RetailContext
     {
       return $this->clientContext;
     }

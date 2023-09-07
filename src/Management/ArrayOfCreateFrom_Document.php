@@ -17,7 +17,7 @@ class ArrayOfCreateFrom_Document implements \ArrayAccess, \Iterator, \Countable
     /**
      * @return CreateFrom_Document[]
      */
-    public function getDocument(): array
+    public function getDocument(): ?array
     {
       return $this->Document;
     }

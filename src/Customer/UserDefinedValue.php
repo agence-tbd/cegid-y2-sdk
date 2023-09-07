@@ -23,7 +23,7 @@ class UserDefinedValue
     /**
      * @return UserDefinedId
      */
-    public function getId(): UserDefinedId
+    public function getId(): ?UserDefinedId
     {
         return $this->Id;
     }
@@ -42,7 +42,7 @@ class UserDefinedValue
     /**
      * @return float
      */
-    public function getValue(): float
+    public function getValue(): ?float
     {
         return $this->Value;
     }

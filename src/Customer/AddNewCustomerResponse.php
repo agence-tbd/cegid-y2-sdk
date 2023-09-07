@@ -20,7 +20,7 @@ class AddNewCustomerResponse
     /**
      * @return string
      */
-    public function getAddNewCustomerResult(): string
+    public function getAddNewCustomerResult(): ?string
     {
         return $this->AddNewCustomerResult;
     }

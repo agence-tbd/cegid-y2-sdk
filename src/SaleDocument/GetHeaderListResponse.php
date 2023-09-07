@@ -21,7 +21,7 @@ class GetHeaderListResponse
     /**
      * @return GetHeaderList_Reply
      */
-    public function getGetHeaderListResult(): GetHeaderList_Reply
+    public function getGetHeaderListResult(): ?GetHeaderList_Reply
     {
       return $this->GetHeaderListResult;
     }

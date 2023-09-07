@@ -21,7 +21,7 @@ class HelloWorldResponse
     /**
      * @return string
      */
-    public function getHelloWorldResult(): string
+    public function getHelloWorldResult(): ?string
     {
       return $this->HelloWorldResult;
     }

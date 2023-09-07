@@ -28,7 +28,7 @@ class Update
     /**
      * @return Update_Request
      */
-    public function getUpdateRequest(): Update_Request
+    public function getUpdateRequest(): ?Update_Request
     {
       return $this->updateRequest;
     }
@@ -46,7 +46,7 @@ class Update
     /**
      * @return RetailContext
      */
-    public function getClientContext(): RetailContext
+    public function getClientContext(): ?RetailContext
     {
       return $this->clientContext;
     }

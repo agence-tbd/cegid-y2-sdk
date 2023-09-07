@@ -27,7 +27,7 @@ class ResetShoppingCart
     /**
      * @return ResetShoppingCart_Request
      */
-    public function getRequest(): ResetShoppingCart_Request
+    public function getRequest(): ?ResetShoppingCart_Request
     {
         return $this->request;
     }
@@ -45,7 +45,7 @@ class ResetShoppingCart
     /**
      * @return RetailContext
      */
-    public function getClientContext(): RetailContext
+    public function getClientContext(): ?RetailContext
     {
         return $this->clientContext;
     }

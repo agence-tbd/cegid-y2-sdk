@@ -24,7 +24,7 @@ class Update_ShippingTax
     /**
      * @return float
      */
-    public function getAmount(): float
+    public function getAmount(): ?float
     {
       return $this->Amount;
     }
@@ -42,7 +42,7 @@ class Update_ShippingTax
     /**
      * @return string
      */
-    public function getId(): string
+    public function getId(): ?string
     {
       return $this->Id;
     }

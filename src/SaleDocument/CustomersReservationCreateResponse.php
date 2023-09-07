@@ -21,7 +21,7 @@ class CustomersReservationCreateResponse
     /**
      * @return CustomersReservationCreate_Reply
      */
-    public function getCustomersReservationCreateResult(): CustomersReservationCreate_Reply
+    public function getCustomersReservationCreateResult(): ?CustomersReservationCreate_Reply
     {
       return $this->CustomersReservationCreateResult;
     }

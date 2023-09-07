@@ -7,7 +7,7 @@ class ArrayOfAvailableQtyByItemByStore implements \ArrayAccess, \Iterator, \Coun
     /**
      * @var AvailableQtyByItemByStore[] $AvailableQtyByItemByStore
      */
-    protected $AvailableQtyByItemByStore = null;
+    protected $AvailableQtyByItemByStore = [];
 
     public function __construct()
     {
@@ -17,7 +17,7 @@ class ArrayOfAvailableQtyByItemByStore implements \ArrayAccess, \Iterator, \Coun
     /**
      * @return AvailableQtyByItemByStore[]
      */
-    public function getAvailableQtyByItemByStore(): array
+    public function getAvailableQtyByItemByStore(): ?array
     {
         return $this->AvailableQtyByItemByStore;
     }

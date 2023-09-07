@@ -17,7 +17,7 @@ class CreateFromRemainderManagement
     /**
      * @return boolean
      */
-    public function getCloseDocument(): bool
+    public function getCloseDocument(): ?bool
     {
       return $this->CloseDocument;
     }

@@ -17,7 +17,7 @@ class ArrayOfUserDefinedTable implements \ArrayAccess, \Iterator, \Countable
     /**
      * @return UserDefinedTable[]
      */
-    public function getUserDefinedTable(): array
+    public function getUserDefinedTable(): ?array
     {
       return $this->UserDefinedTable;
     }

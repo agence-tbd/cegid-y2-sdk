@@ -24,7 +24,7 @@ class Update_Tax
     /**
      * @return float
      */
-    public function getAmount(): float
+    public function getAmount(): ?float
     {
       return $this->Amount;
     }
@@ -42,7 +42,7 @@ class Update_Tax
     /**
      * @return string
      */
-    public function getFamilyId(): string
+    public function getFamilyId(): ?string
     {
       return $this->FamilyId;
     }

@@ -24,7 +24,7 @@ class UserDefinedDate
     /**
      * @return UserDefinedId
      */
-    public function getId(): UserDefinedId
+    public function getId(): ?UserDefinedId
     {
       return $this->Id;
     }

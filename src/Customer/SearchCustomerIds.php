@@ -27,7 +27,7 @@ class SearchCustomerIds
     /**
      * @return CustomerSearchDataType
      */
-    public function getSearchData(): CustomerSearchDataType
+    public function getSearchData(): ?CustomerSearchDataType
     {
         return $this->searchData;
     }
@@ -46,7 +46,7 @@ class SearchCustomerIds
     /**
      * @return RetailContext
      */
-    public function getClientContext(): RetailContext
+    public function getClientContext(): ?RetailContext
     {
         return $this->clientContext;
     }

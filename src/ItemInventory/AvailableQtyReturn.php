@@ -22,7 +22,7 @@ class AvailableQtyReturn
     /**
      * @return float
      */
-    public function getAvailableQty(): float
+    public function getAvailableQty(): ?float
     {
         return $this->AvailableQty;
     }
@@ -40,7 +40,7 @@ class AvailableQtyReturn
     /**
      * @return QueryExecutionStatus
      */
-    public function getQueryStatus(): QueryExecutionStatus
+    public function getQueryStatus(): ?QueryExecutionStatus
     {
         return $this->QueryStatus;
     }

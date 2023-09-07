@@ -24,7 +24,7 @@ class SaleDocumentLineIdentifier
     /**
      * @return SaleDocumentIdentifier
      */
-    public function getDocumentId(): SaleDocumentIdentifier
+    public function getDocumentId(): ?SaleDocumentIdentifier
     {
       return $this->DocumentId;
     }
@@ -42,7 +42,7 @@ class SaleDocumentLineIdentifier
     /**
      * @return int
      */
-    public function getLineId(): int
+    public function getLineId(): ?int
     {
       return $this->LineId;
     }

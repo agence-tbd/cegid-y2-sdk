@@ -49,7 +49,7 @@ class Update_Request
     /**
      * @return Address
      */
-    public function getDeliveryAddress(): Address
+    public function getDeliveryAddress(): ?Address
     {
       return $this->DeliveryAddress;
     }
@@ -67,7 +67,7 @@ class Update_Request
     /**
      * @return Update_Header
      */
-    public function getHeader(): Update_Header
+    public function getHeader(): ?Update_Header
     {
       return $this->Header;
     }
@@ -85,7 +85,7 @@ class Update_Request
     /**
      * @return SaleDocumentIdentifier
      */
-    public function getIdentifier(): SaleDocumentIdentifier
+    public function getIdentifier(): ?SaleDocumentIdentifier
     {
       return $this->Identifier;
     }
@@ -103,7 +103,7 @@ class Update_Request
     /**
      * @return Address
      */
-    public function getInvoicingAddress(): Address
+    public function getInvoicingAddress(): ?Address
     {
       return $this->InvoicingAddress;
     }
@@ -121,7 +121,7 @@ class Update_Request
     /**
      * @return ArrayOfUpdate_Line
      */
-    public function getLines(): ArrayOfUpdate_Line
+    public function getLines(): ?ArrayOfUpdate_Line
     {
       return $this->Lines;
     }
@@ -139,7 +139,7 @@ class Update_Request
     /**
      * @return ArrayOfUpdate_Payment
      */
-    public function getPayments(): ArrayOfUpdate_Payment
+    public function getPayments(): ?ArrayOfUpdate_Payment
     {
       return $this->Payments;
     }
@@ -157,7 +157,7 @@ class Update_Request
     /**
      * @return ArrayOfUpdate_ShippingTax
      */
-    public function getShippingTaxes(): ArrayOfUpdate_ShippingTax
+    public function getShippingTaxes(): ?ArrayOfUpdate_ShippingTax
     {
       return $this->ShippingTaxes;
     }

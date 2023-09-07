@@ -19,7 +19,7 @@ class ArrayOfUpdate_Line implements \ArrayAccess, \Iterator, \Countable
     /**
      * @return Update_Line[]
      */
-    public function getUpdate_Line(): array
+    public function getUpdate_Line(): ?array
     {
       return $this->Update_Line;
     }

@@ -27,7 +27,7 @@ class CreateFrom_Request
     /**
      * @return CreateFrom_Header
      */
-    public function getHeader(): CreateFrom_Header
+    public function getHeader(): ?CreateFrom_Header
     {
       return $this->Header;
     }
@@ -45,7 +45,7 @@ class CreateFrom_Request
     /**
      * @return ArrayOfCreateFrom_Line
      */
-    public function getLines(): ArrayOfCreateFrom_Line
+    public function getLines(): ?ArrayOfCreateFrom_Line
     {
       return $this->Lines;
     }
@@ -63,7 +63,7 @@ class CreateFrom_Request
     /**
      * @return ArrayOfCreateFrom_Payment
      */
-    public function getPayments(): ArrayOfCreateFrom_Payment
+    public function getPayments(): ?ArrayOfCreateFrom_Payment
     {
       return $this->Payments;
     }

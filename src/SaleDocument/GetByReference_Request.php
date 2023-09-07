@@ -19,7 +19,7 @@ class GetByReference_Request
     /**
      * @return SaleDocumentReference
      */
-    public function getReference(): SaleDocumentReference
+    public function getReference(): ?SaleDocumentReference
     {
       return $this->Reference;
     }

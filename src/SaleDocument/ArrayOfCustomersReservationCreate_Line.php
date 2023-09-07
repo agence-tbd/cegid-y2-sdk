@@ -19,7 +19,7 @@ class ArrayOfCustomersReservationCreate_Line implements \ArrayAccess, \Iterator,
     /**
      * @return CustomersReservationCreate_Line[]
      */
-    public function getCustomersReservationCreate_Line(): array
+    public function getCustomersReservationCreate_Line(): ?array
     {
       return $this->CustomersReservationCreate_Line;
     }

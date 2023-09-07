@@ -29,7 +29,7 @@ class CustomersReservationCreate_Request
     /**
      * @return CustomersReservationCreate_Header
      */
-    public function getHeader(): CustomersReservationCreate_Header
+    public function getHeader(): ?CustomersReservationCreate_Header
     {
       return $this->Header;
     }
@@ -47,7 +47,7 @@ class CustomersReservationCreate_Request
     /**
      * @return ArrayOfCustomersReservationCreate_Line
      */
-    public function getLines(): ArrayOfCustomersReservationCreate_Line
+    public function getLines(): ?ArrayOfCustomersReservationCreate_Line
     {
       return $this->Lines;
     }
@@ -65,7 +65,7 @@ class CustomersReservationCreate_Request
     /**
      * @return ArrayOfCreate_Payment
      */
-    public function getPayments(): ArrayOfCreate_Payment
+    public function getPayments(): ?ArrayOfCreate_Payment
     {
       return $this->Payments;
     }

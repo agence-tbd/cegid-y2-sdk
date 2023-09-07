@@ -20,7 +20,7 @@ class GetInventoryDetailByStoreResponse
     /**
      * @return ArrayOfAvailableQtyByStore
      */
-    public function getGetInventoryDetailByStoreResult(): ArrayOfAvailableQtyByStore
+    public function getGetInventoryDetailByStoreResult(): ?ArrayOfAvailableQtyByStore
     {
         return $this->GetInventoryDetailByStoreResult;
     }

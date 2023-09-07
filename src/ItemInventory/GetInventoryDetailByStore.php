@@ -34,7 +34,7 @@ class GetInventoryDetailByStore
     /**
      * @return string
      */
-    public function getItemId(): string
+    public function getItemId(): ?string
     {
         return $this->itemId;
     }
@@ -52,7 +52,7 @@ class GetInventoryDetailByStore
     /**
      * @return ItemIdentifier
      */
-    public function getItemIdentifier(): ItemIdentifier
+    public function getItemIdentifier(): ?ItemIdentifier
     {
         return $this->itemIdentifier;
     }
@@ -70,7 +70,7 @@ class GetInventoryDetailByStore
     /**
      * @return RetailContext
      */
-    public function getClientContext(): RetailContext
+    public function getClientContext(): ?RetailContext
     {
         return $this->clientContext;
     }

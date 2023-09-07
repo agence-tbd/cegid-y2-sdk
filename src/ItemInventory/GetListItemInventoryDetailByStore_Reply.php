@@ -17,7 +17,7 @@ class GetListItemInventoryDetailByStore_Reply
     /**
      * @return ArrayOfAvailableQtyByItemByStore
      */
-    public function getInventoryDetailsByStore(): ArrayOfAvailableQtyByItemByStore
+    public function getInventoryDetailsByStore(): ?ArrayOfAvailableQtyByItemByStore
     {
         return $this->InventoryDetailsByStore;
     }

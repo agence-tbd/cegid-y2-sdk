@@ -134,7 +134,7 @@ class Get_Line
     /**
      * @return string
      */
-    public function getCatalogReference(): string
+    public function getCatalogReference(): ?string
     {
       return $this->CatalogReference;
     }
@@ -152,7 +152,7 @@ class Get_Line
     /**
      * @return string
      */
-    public function getComment(): string
+    public function getComment(): ?string
     {
       return $this->Comment;
     }
@@ -170,7 +170,7 @@ class Get_Line
     /**
      * @return string
      */
-    public function getComplementaryDescription(): string
+    public function getComplementaryDescription(): ?string
     {
       return $this->ComplementaryDescription;
     }
@@ -219,7 +219,7 @@ class Get_Line
     /**
      * @return string
      */
-    public function getDiscountTypeId(): string
+    public function getDiscountTypeId(): ?string
     {
       return $this->DiscountTypeId;
     }
@@ -237,7 +237,7 @@ class Get_Line
     /**
      * @return string
      */
-    public function getExternalReference(): string
+    public function getExternalReference(): ?string
     {
       return $this->ExternalReference;
     }
@@ -286,7 +286,7 @@ class Get_Line
     /**
      * @return string
      */
-    public function getItemCode(): string
+    public function getItemCode(): ?string
     {
       return $this->ItemCode;
     }
@@ -304,7 +304,7 @@ class Get_Line
     /**
      * @return string
      */
-    public function getItemId(): string
+    public function getItemId(): ?string
     {
       return $this->ItemId;
     }
@@ -322,7 +322,7 @@ class Get_Line
     /**
      * @return string
      */
-    public function getItemReference(): string
+    public function getItemReference(): ?string
     {
       return $this->ItemReference;
     }
@@ -340,7 +340,7 @@ class Get_Line
     /**
      * @return string
      */
-    public function getLabel(): string
+    public function getLabel(): ?string
     {
       return $this->Label;
     }
@@ -358,7 +358,7 @@ class Get_Line
     /**
      * @return string
      */
-    public function getMovementReasonId(): string
+    public function getMovementReasonId(): ?string
     {
       return $this->MovementReasonId;
     }
@@ -376,7 +376,7 @@ class Get_Line
     /**
      * @return GetOmniChannelLine
      */
-    public function getOmniChannel(): GetOmniChannelLine
+    public function getOmniChannel(): ?GetOmniChannelLine
     {
       return $this->OmniChannel;
     }
@@ -394,7 +394,7 @@ class Get_Line
     /**
      * @return DocumentOrigin
      */
-    public function getOrigin(): DocumentOrigin
+    public function getOrigin(): ?DocumentOrigin
     {
       return $this->Origin;
     }
@@ -412,7 +412,7 @@ class Get_Line
     /**
      * @return string
      */
-    public function getPackageReference(): string
+    public function getPackageReference(): ?string
     {
       return $this->PackageReference;
     }
@@ -430,7 +430,7 @@ class Get_Line
     /**
      * @return float
      */
-    public function getQuantity(): float
+    public function getQuantity(): ?float
     {
       return $this->Quantity;
     }
@@ -448,7 +448,7 @@ class Get_Line
     /**
      * @return int
      */
-    public function getRank(): int
+    public function getRank(): ?int
     {
       return $this->Rank;
     }
@@ -466,7 +466,7 @@ class Get_Line
     /**
      * @return string
      */
-    public function getSalesPersonId(): string
+    public function getSalesPersonId(): ?string
     {
       return $this->SalesPersonId;
     }
@@ -484,7 +484,7 @@ class Get_Line
     /**
      * @return string
      */
-    public function getSerialNumberId(): string
+    public function getSerialNumberId(): ?string
     {
       return $this->SerialNumberId;
     }
@@ -502,7 +502,7 @@ class Get_Line
     /**
      * @return float
      */
-    public function getTaxExcludedNetUnitPrice(): float
+    public function getTaxExcludedNetUnitPrice(): ?float
     {
       return $this->TaxExcludedNetUnitPrice;
     }
@@ -520,7 +520,7 @@ class Get_Line
     /**
      * @return float
      */
-    public function getTaxExcludedUnitPrice(): float
+    public function getTaxExcludedUnitPrice(): ?float
     {
       return $this->TaxExcludedUnitPrice;
     }
@@ -538,7 +538,7 @@ class Get_Line
     /**
      * @return float
      */
-    public function getTaxIncludedNetUnitPrice(): float
+    public function getTaxIncludedNetUnitPrice(): ?float
     {
       return $this->TaxIncludedNetUnitPrice;
     }
@@ -556,7 +556,7 @@ class Get_Line
     /**
      * @return float
      */
-    public function getTaxIncludedUnitPrice(): float
+    public function getTaxIncludedUnitPrice(): ?float
     {
       return $this->TaxIncludedUnitPrice;
     }
@@ -574,7 +574,7 @@ class Get_Line
     /**
      * @return string
      */
-    public function getWarehouseId(): string
+    public function getWarehouseId(): ?string
     {
       return $this->WarehouseId;
     }

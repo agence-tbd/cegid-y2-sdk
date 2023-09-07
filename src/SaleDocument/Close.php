@@ -28,7 +28,7 @@ class Close
     /**
      * @return Close_Request
      */
-    public function getCloseRequest(): Close_Request
+    public function getCloseRequest(): ?Close_Request
     {
       return $this->closeRequest;
     }
@@ -46,7 +46,7 @@ class Close
     /**
      * @return RetailContext
      */
-    public function getClientContext(): RetailContext
+    public function getClientContext(): ?RetailContext
     {
       return $this->clientContext;
     }

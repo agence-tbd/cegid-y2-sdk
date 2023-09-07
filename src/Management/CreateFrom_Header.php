@@ -127,7 +127,7 @@ class CreateFrom_Header
     /**
      * @return string
      */
-    public function getDeviceId(): string
+    public function getDeviceId(): ?string
     {
         return $this->DeviceId;
     }
@@ -163,7 +163,7 @@ class CreateFrom_Header
     /**
      * @return string
      */
-    public function getExternalReference(): string
+    public function getExternalReference(): ?string
     {
         return $this->ExternalReference;
     }
@@ -181,7 +181,7 @@ class CreateFrom_Header
     /**
      * @return string
      */
-    public function getFollowUpReference(): string
+    public function getFollowUpReference(): ?string
     {
         return $this->FollowUpReference;
     }
@@ -199,7 +199,7 @@ class CreateFrom_Header
     /**
      * @return string
      */
-    public function getInternalReference(): string
+    public function getInternalReference(): ?string
     {
         return $this->InternalReference;
     }
@@ -217,7 +217,7 @@ class CreateFrom_Header
     /**
      * @return string
      */
-    public function getMovementReasonId(): string
+    public function getMovementReasonId(): ?string
     {
         return $this->MovementReasonId;
     }
@@ -235,7 +235,7 @@ class CreateFrom_Header
     /**
      * @return string
      */
-    public function getOperationUid(): string
+    public function getOperationUid(): ?string
     {
         return $this->OperationUid;
     }
@@ -253,7 +253,7 @@ class CreateFrom_Header
     /**
      * @return CreateFromDocumentIdentifier
      */
-    public function getOriginalDocumentIdentifier(): CreateFromDocumentIdentifier
+    public function getOriginalDocumentIdentifier(): ?CreateFromDocumentIdentifier
     {
         return $this->OriginalDocumentIdentifier;
     }
@@ -271,7 +271,7 @@ class CreateFrom_Header
     /**
      * @return CreateFromRemainderManagement
      */
-    public function getRemainderManagement(): CreateFromRemainderManagement
+    public function getRemainderManagement(): ?CreateFromRemainderManagement
     {
         return $this->RemainderManagement;
     }
@@ -289,7 +289,7 @@ class CreateFrom_Header
     /**
      * @return string
      */
-    public function getSalesPersonId(): string
+    public function getSalesPersonId(): ?string
     {
         return $this->SalesPersonId;
     }
@@ -307,7 +307,7 @@ class CreateFrom_Header
     /**
      * @return CreateFromCustomerOrderDocumentTypeCreat
      */
-    public function getType(): CreateFromCustomerOrderDocumentTypeCreat
+    public function getType(): ?CreateFromCustomerOrderDocumentTypeCreat
     {
         return $this->Type;
     }
@@ -325,7 +325,7 @@ class CreateFrom_Header
     /**
      * @return ArrayOfUserDefinedDate
      */
-    public function getUserDefinedDates(): ArrayOfUserDefinedDate
+    public function getUserDefinedDates(): ?ArrayOfUserDefinedDate
     {
         return $this->UserDefinedDates;
     }
@@ -343,7 +343,7 @@ class CreateFrom_Header
     /**
      * @return ArrayOfUserDefinedTableCustomer
      */
-    public function getUserDefinedTableCustomers(): ArrayOfUserDefinedTableCustomer
+    public function getUserDefinedTableCustomers(): ?ArrayOfUserDefinedTableCustomer
     {
         return $this->UserDefinedTableCustomers;
     }
@@ -361,7 +361,7 @@ class CreateFrom_Header
     /**
      * @return ArrayOfUserDefinedTable
      */
-    public function getUserDefinedTables(): ArrayOfUserDefinedTable
+    public function getUserDefinedTables(): ?ArrayOfUserDefinedTable
     {
         return $this->UserDefinedTables;
     }
@@ -379,7 +379,7 @@ class CreateFrom_Header
     /**
      * @return ArrayOfUserField
      */
-    public function getUserFields(): ArrayOfUserField
+    public function getUserFields(): ?ArrayOfUserField
     {
         return $this->UserFields;
     }
@@ -397,7 +397,7 @@ class CreateFrom_Header
     /**
      * @return string
      */
-    public function getWarehouseId(): string
+    public function getWarehouseId(): ?string
     {
         return $this->WarehouseId;
     }

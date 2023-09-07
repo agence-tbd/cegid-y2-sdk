@@ -20,7 +20,7 @@ class GetAvailableQtyResponse
     /**
      * @return AvailableQtyReturn
      */
-    public function getGetAvailableQtyResult(): AvailableQtyReturn
+    public function getGetAvailableQtyResult(): ?AvailableQtyReturn
     {
         return $this->GetAvailableQtyResult;
     }

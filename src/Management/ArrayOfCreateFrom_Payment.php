@@ -17,7 +17,7 @@ class ArrayOfCreateFrom_Payment implements \ArrayAccess, \Iterator, \Countable
     /**
      * @return CreateFrom_Payment[]
      */
-    public function getPayment(): array
+    public function getPayment(): ?array
     {
       return $this->Payment;
     }

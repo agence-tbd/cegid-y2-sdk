@@ -22,7 +22,7 @@ class CreateFrom_Reply
     /**
      * @return boolean
      */
-    public function getDocumentCreated(): bool
+    public function getDocumentCreated(): ?bool
     {
       return $this->DocumentCreated;
     }
@@ -40,7 +40,7 @@ class CreateFrom_Reply
     /**
      * @return ArrayOfCreateFrom_Document
      */
-    public function getDocuments(): ArrayOfCreateFrom_Document
+    public function getDocuments(): ?ArrayOfCreateFrom_Document
     {
         return $this->Documents;
     }

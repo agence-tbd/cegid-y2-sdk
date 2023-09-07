@@ -47,7 +47,7 @@ class GetListItemInventoryDetailByStore_Request
     /**
      * @return boolean
      */
-    public function getAllAvailableWarehouse(): bool
+    public function getAllAvailableWarehouse(): ?bool
     {
         return $this->AllAvailableWarehouse;
     }
@@ -65,7 +65,7 @@ class GetListItemInventoryDetailByStore_Request
     /**
      * @return boolean
      */
-    public function getDetailSku(): bool
+    public function getDetailSku(): ?bool
     {
         return $this->DetailSku;
     }
@@ -83,7 +83,7 @@ class GetListItemInventoryDetailByStore_Request
     /**
      * @return ArrayOfItemIdentifier
      */
-    public function getItemIdentifiers(): ArrayOfItemIdentifier
+    public function getItemIdentifiers(): ?ArrayOfItemIdentifier
     {
         return $this->ItemIdentifiers;
     }
@@ -101,7 +101,7 @@ class GetListItemInventoryDetailByStore_Request
     /**
      * @return boolean
      */
-    public function getOnlyAvailableStock(): bool
+    public function getOnlyAvailableStock(): ?bool
     {
         return $this->OnlyAvailableStock;
     }
@@ -119,7 +119,7 @@ class GetListItemInventoryDetailByStore_Request
     /**
      * @return Pager
      */
-    public function getPager(): Pager
+    public function getPager(): ?Pager
     {
         return $this->Pager;
     }
@@ -137,7 +137,7 @@ class GetListItemInventoryDetailByStore_Request
     /**
      * @return ArrayOfstring
      */
-    public function getStoreIds(): ArrayOfstring
+    public function getStoreIds(): ?ArrayOfstring
     {
         return $this->StoreIds;
     }
@@ -155,7 +155,7 @@ class GetListItemInventoryDetailByStore_Request
     /**
      * @return boolean
      */
-    public function getWithStoreName(): bool
+    public function getWithStoreName(): ?bool
     {
         return $this->WithStoreName;
     }

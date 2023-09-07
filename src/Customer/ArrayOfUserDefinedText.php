@@ -17,7 +17,7 @@ class ArrayOfUserDefinedText implements \ArrayAccess, \Iterator, \Countable
     /**
      * @return UserDefinedText[]
      */
-    public function getUserDefinedText(): array
+    public function getUserDefinedText(): ?array
     {
         return $this->UserDefinedText;
     }

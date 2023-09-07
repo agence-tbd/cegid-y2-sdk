@@ -24,7 +24,7 @@ class GetOmniChannelLine
     /**
      * @return string
      */
-    public function getFollowUpStatus(): string
+    public function getFollowUpStatus(): ?string
     {
       return $this->FollowUpStatus;
     }
@@ -42,7 +42,7 @@ class GetOmniChannelLine
     /**
      * @return string
      */
-    public function getWarehouseId(): string
+    public function getWarehouseId(): ?string
     {
       return $this->WarehouseId;
     }

@@ -20,7 +20,7 @@ class UpdateCustomerResponse
     /**
      * @return string
      */
-    public function getUpdateCustomerResult(): string
+    public function getUpdateCustomerResult(): ?string
     {
         return $this->UpdateCustomerResult;
     }

@@ -22,7 +22,7 @@ class UserDefinedText
     /**
      * @return UserDefinedId
      */
-    public function getId(): UserDefinedId
+    public function getId(): ?UserDefinedId
     {
         return $this->Id;
     }
@@ -41,7 +41,7 @@ class UserDefinedText
     /**
      * @return string
      */
-    public function getValue(): string
+    public function getValue(): ?string
     {
         return $this->Value;
     }

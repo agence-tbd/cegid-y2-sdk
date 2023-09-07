@@ -22,7 +22,7 @@ class CreateFrom_Document
     /**
      * @return string
      */
-    public function getReference(): string
+    public function getReference(): ?string
     {
         return $this->InternalReference;
     }
@@ -40,7 +40,7 @@ class CreateFrom_Document
     /**
      * @return CreateFromDocumentKey
      */
-    public function getKey(): CreateFromDocumentKey
+    public function getKey(): ?CreateFromDocumentKey
     {
       return $this->Key;
     }

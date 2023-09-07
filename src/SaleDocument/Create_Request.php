@@ -44,7 +44,7 @@ class Create_Request
     /**
      * @return Address
      */
-    public function getDeliveryAddress(): Address
+    public function getDeliveryAddress(): ?Address
     {
       return $this->DeliveryAddress;
     }
@@ -62,7 +62,7 @@ class Create_Request
     /**
      * @return Create_Header
      */
-    public function getHeader(): Create_Header
+    public function getHeader(): ?Create_Header
     {
       return $this->Header;
     }
@@ -80,7 +80,7 @@ class Create_Request
     /**
      * @return Address
      */
-    public function getInvoicingAddress(): Address
+    public function getInvoicingAddress(): ?Address
     {
       return $this->InvoicingAddress;
     }
@@ -98,7 +98,7 @@ class Create_Request
     /**
      * @return ArrayOfCreate_Line
      */
-    public function getLines(): ArrayOfCreate_Line
+    public function getLines(): ?ArrayOfCreate_Line
     {
       return $this->Lines;
     }
@@ -116,7 +116,7 @@ class Create_Request
     /**
      * @return ArrayOfCreate_Payment
      */
-    public function getPayments(): ArrayOfCreate_Payment
+    public function getPayments(): ?ArrayOfCreate_Payment
     {
       return $this->Payments;
     }
@@ -134,7 +134,7 @@ class Create_Request
     /**
      * @return ArrayOfCreate_ShippingTax
      */
-    public function getShippingTaxes(): ArrayOfCreate_ShippingTax
+    public function getShippingTaxes(): ?ArrayOfCreate_ShippingTax
     {
       return $this->ShippingTaxes;
     }

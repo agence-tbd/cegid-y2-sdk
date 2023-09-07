@@ -84,7 +84,7 @@ class Update_Header
     /**
      * @return boolean
      */
-    public function getActive(): bool
+    public function getActive(): ?bool
     {
       return $this->Active;
     }
@@ -102,7 +102,7 @@ class Update_Header
     /**
      * @return string
      */
-    public function getComment(): string
+    public function getComment(): ?string
     {
       return $this->Comment;
     }
@@ -151,7 +151,7 @@ class Update_Header
     /**
      * @return string
      */
-    public function getExternalReference(): string
+    public function getExternalReference(): ?string
     {
       return $this->ExternalReference;
     }
@@ -200,7 +200,7 @@ class Update_Header
     /**
      * @return string
      */
-    public function getFollowedReference(): string
+    public function getFollowedReference(): ?string
     {
       return $this->FollowedReference;
     }
@@ -218,7 +218,7 @@ class Update_Header
     /**
      * @return boolean
      */
-    public function getLinesUnmodifiable(): bool
+    public function getLinesUnmodifiable(): ?bool
     {
       return $this->LinesUnmodifiable;
     }
@@ -236,7 +236,7 @@ class Update_Header
     /**
      * @return OmniChannel
      */
-    public function getOmniChannel(): OmniChannel
+    public function getOmniChannel(): ?OmniChannel
     {
       return $this->OmniChannel;
     }
@@ -254,7 +254,7 @@ class Update_Header
     /**
      * @return DocumentOrigin
      */
-    public function getOrigin(): DocumentOrigin
+    public function getOrigin(): ?DocumentOrigin
     {
       return $this->Origin;
     }
@@ -272,7 +272,7 @@ class Update_Header
     /**
      * @return string
      */
-    public function getSalesPersonId(): string
+    public function getSalesPersonId(): ?string
     {
       return $this->SalesPersonId;
     }
@@ -290,7 +290,7 @@ class Update_Header
     /**
      * @return boolean
      */
-    public function getTaxExcluded(): bool
+    public function getTaxExcluded(): ?bool
     {
       return $this->TaxExcluded;
     }
@@ -308,7 +308,7 @@ class Update_Header
     /**
      * @return ArrayOfUserDefinedDate
      */
-    public function getUserDefinedDates(): ArrayOfUserDefinedDate
+    public function getUserDefinedDates(): ?ArrayOfUserDefinedDate
     {
       return $this->UserDefinedDates;
     }
@@ -326,7 +326,7 @@ class Update_Header
     /**
      * @return ArrayOfUserDefinedTable
      */
-    public function getUserDefinedTables(): ArrayOfUserDefinedTable
+    public function getUserDefinedTables(): ?ArrayOfUserDefinedTable
     {
       return $this->UserDefinedTables;
     }
@@ -344,7 +344,7 @@ class Update_Header
     /**
      * @return ArrayOfUserField
      */
-    public function getUserFields(): ArrayOfUserField
+    public function getUserFields(): ?ArrayOfUserField
     {
       return $this->UserFields;
     }

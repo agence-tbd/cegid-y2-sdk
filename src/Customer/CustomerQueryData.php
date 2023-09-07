@@ -53,7 +53,7 @@ class CustomerQueryData extends CustomerData
     /**
      * @return boolean
      */
-    public function getClosed(): bool
+    public function getClosed(): ?bool
     {
         return $this->Closed;
     }
@@ -72,7 +72,7 @@ class CustomerQueryData extends CustomerData
     /**
      * @return string
      */
-    public function getCreationStoreId(): string
+    public function getCreationStoreId(): ?string
     {
         return $this->CreationStoreId;
     }
@@ -91,7 +91,7 @@ class CustomerQueryData extends CustomerData
     /**
      * @return string
      */
-    public function getCustomerId(): string
+    public function getCustomerId(): ?string
     {
         return $this->CustomerId;
     }
@@ -110,7 +110,7 @@ class CustomerQueryData extends CustomerData
     /**
      * @return string
      */
-    public function getInvoiceCustomerId(): string
+    public function getInvoiceCustomerId(): ?string
     {
         return $this->InvoiceCustomerId;
     }
@@ -129,7 +129,7 @@ class CustomerQueryData extends CustomerData
     /**
      * @return boolean
      */
-    public function getIsProspect(): bool
+    public function getIsProspect(): ?bool
     {
         return $this->IsProspect;
     }
@@ -148,7 +148,7 @@ class CustomerQueryData extends CustomerData
     /**
      * @return boolean
      */
-    public function getIsVirtual(): bool
+    public function getIsVirtual(): ?bool
     {
         return $this->IsVirtual;
     }
@@ -194,7 +194,7 @@ class CustomerQueryData extends CustomerData
     /**
      * @return string
      */
-    public function getNotepad(): string
+    public function getNotepad(): ?string
     {
         return $this->Notepad;
     }

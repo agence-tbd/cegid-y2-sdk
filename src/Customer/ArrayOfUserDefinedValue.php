@@ -17,7 +17,7 @@ class ArrayOfUserDefinedValue implements \ArrayAccess, \Iterator, \Countable
     /**
      * @return UserDefinedValue[]
      */
-    public function getUserDefinedValue(): array
+    public function getUserDefinedValue(): ?array
     {
         return $this->UserDefinedValue;
     }

@@ -21,7 +21,7 @@ class GetByReferenceResponse
     /**
      * @return Get_Reply
      */
-    public function getGetByReferenceResult(): Get_Reply
+    public function getGetByReferenceResult(): ?Get_Reply
     {
       return $this->GetByReferenceResult;
     }

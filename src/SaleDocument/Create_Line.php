@@ -115,7 +115,7 @@ class Create_Line
     /**
      * @return string
      */
-    public function getBonId(): string
+    public function getBonId(): ?string
     {
         return $this->BonId;
     }
@@ -134,7 +134,7 @@ class Create_Line
     /**
      * @return string
      */
-    public function getCatalogReference(): string
+    public function getCatalogReference(): ?string
     {
         return $this->CatalogReference;
     }
@@ -153,7 +153,7 @@ class Create_Line
     /**
      * @return string
      */
-    public function getComment(): string
+    public function getComment(): ?string
     {
         return $this->Comment;
     }
@@ -172,7 +172,7 @@ class Create_Line
     /**
      * @return string
      */
-    public function getComplementaryDescription(): string
+    public function getComplementaryDescription(): ?string
     {
         return $this->ComplementaryDescription;
     }
@@ -222,7 +222,7 @@ class Create_Line
     /**
      * @return string
      */
-    public function getDiscountTypeId(): string
+    public function getDiscountTypeId(): ?string
     {
         return $this->DiscountTypeId;
     }
@@ -241,7 +241,7 @@ class Create_Line
     /**
      * @return string
      */
-    public function getExternalReference(): string
+    public function getExternalReference(): ?string
     {
         return $this->ExternalReference;
     }
@@ -291,7 +291,7 @@ class Create_Line
     /**
      * @return ItemIdentifier
      */
-    public function getItemIdentifier(): ItemIdentifier
+    public function getItemIdentifier(): ?ItemIdentifier
     {
         return $this->ItemIdentifier;
     }
@@ -310,7 +310,7 @@ class Create_Line
     /**
      * @return string
      */
-    public function getLabel(): string
+    public function getLabel(): ?string
     {
         return $this->Label;
     }
@@ -329,7 +329,7 @@ class Create_Line
     /**
      * @return string
      */
-    public function getMovementReasonId(): string
+    public function getMovementReasonId(): ?string
     {
         return $this->MovementReasonId;
     }
@@ -348,7 +348,7 @@ class Create_Line
     /**
      * @return float
      */
-    public function getNetUnitPrice(): float
+    public function getNetUnitPrice(): ?float
     {
         return $this->NetUnitPrice;
     }
@@ -367,7 +367,7 @@ class Create_Line
     /**
      * @return OmniChannelLine
      */
-    public function getOmniChannel(): OmniChannelLine
+    public function getOmniChannel(): ?OmniChannelLine
     {
         return $this->OmniChannel;
     }
@@ -386,7 +386,7 @@ class Create_Line
     /**
      * @return string
      */
-    public function getOrigin(): string
+    public function getOrigin(): ?string
     {
         return $this->Origin;
     }
@@ -405,7 +405,7 @@ class Create_Line
     /**
      * @return string
      */
-    public function getPackageReference(): string
+    public function getPackageReference(): ?string
     {
         return $this->PackageReference;
     }
@@ -424,7 +424,7 @@ class Create_Line
     /**
      * @return float
      */
-    public function getQuantity(): float
+    public function getQuantity(): ?float
     {
         return $this->Quantity;
     }
@@ -443,7 +443,7 @@ class Create_Line
     /**
      * @return string
      */
-    public function getSalesPersonId(): string
+    public function getSalesPersonId(): ?string
     {
         return $this->SalesPersonId;
     }
@@ -462,7 +462,7 @@ class Create_Line
     /**
      * @return string
      */
-    public function getSerialNumberId(): string
+    public function getSerialNumberId(): ?string
     {
         return $this->SerialNumberId;
     }
@@ -481,7 +481,7 @@ class Create_Line
     /**
      * @return ArrayOfCreate_Tax
      */
-    public function getTaxes(): ArrayOfCreate_Tax
+    public function getTaxes(): ?ArrayOfCreate_Tax
     {
         return $this->Taxes;
     }
@@ -500,7 +500,7 @@ class Create_Line
     /**
      * @return float
      */
-    public function getUnitPrice(): float
+    public function getUnitPrice(): ?float
     {
         return $this->UnitPrice;
     }

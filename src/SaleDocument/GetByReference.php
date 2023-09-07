@@ -28,7 +28,7 @@ class GetByReference
     /**
      * @return GetByReference_Request
      */
-    public function getSearchRequest(): GetByReference_Request
+    public function getSearchRequest(): ?GetByReference_Request
     {
       return $this->searchRequest;
     }
@@ -46,7 +46,7 @@ class GetByReference
     /**
      * @return RetailContext
      */
-    public function getClientContext(): RetailContext
+    public function getClientContext(): ?RetailContext
     {
       return $this->clientContext;
     }

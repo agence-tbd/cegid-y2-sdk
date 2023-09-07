@@ -28,7 +28,7 @@ class CustomersReservationCreate
     /**
      * @return CustomersReservationCreate_Request
      */
-    public function getCustomersReservationCreateRequest(): CustomersReservationCreate_Request
+    public function getCustomersReservationCreateRequest(): ?CustomersReservationCreate_Request
     {
       return $this->customersReservationCreateRequest;
     }
@@ -46,7 +46,7 @@ class CustomersReservationCreate
     /**
      * @return RetailContext
      */
-    public function getClientContext(): RetailContext
+    public function getClientContext(): ?RetailContext
     {
       return $this->clientContext;
     }

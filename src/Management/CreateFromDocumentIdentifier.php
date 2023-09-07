@@ -22,7 +22,7 @@ class CreateFromDocumentIdentifier
     /**
      * @return CreateFromDocumentKey
      */
-    public function getKey(): CreateFromDocumentKey
+    public function getKey(): ?CreateFromDocumentKey
     {
       return $this->Key;
     }
@@ -40,7 +40,7 @@ class CreateFromDocumentIdentifier
     /**
      * @return CreateFromDocumentReference
      */
-    public function getReference(): CreateFromDocumentReference
+    public function getReference(): ?CreateFromDocumentReference
     {
       return $this->Reference;
     }

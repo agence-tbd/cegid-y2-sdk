@@ -28,7 +28,7 @@ class CreditCard
     /**
      * @return string
      */
-    public function getAuthorizationNumber(): string
+    public function getAuthorizationNumber(): ?string
     {
       return $this->AuthorizationNumber;
     }
@@ -46,7 +46,7 @@ class CreditCard
     /**
      * @return string
      */
-    public function getTransactionNumber(): string
+    public function getTransactionNumber(): ?string
     {
       return $this->TransactionNumber;
     }
@@ -64,7 +64,7 @@ class CreditCard
     /**
      * @return string
      */
-    public function getTransactionIssuer(): string
+    public function getTransactionIssuer(): ?string
     {
         return $this->TransactionIssuer;
     }

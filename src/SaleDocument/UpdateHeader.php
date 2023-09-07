@@ -28,7 +28,7 @@ class UpdateHeader
     /**
      * @return UpdateHeader_Request
      */
-    public function getUpdateHeaderRequest(): UpdateHeader_Request
+    public function getUpdateHeaderRequest(): ?UpdateHeader_Request
     {
       return $this->updateHeaderRequest;
     }
@@ -46,7 +46,7 @@ class UpdateHeader
     /**
      * @return RetailContext
      */
-    public function getClientContext(): RetailContext
+    public function getClientContext(): ?RetailContext
     {
       return $this->clientContext;
     }

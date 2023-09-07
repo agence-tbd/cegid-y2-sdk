@@ -5,14 +5,14 @@ namespace Y2\Customer;
 class AddNewCustomer
 {
     /**
-     * @var CustomerInsertData $customerData
+     * @var CustomerInsertData|null $customerData
      */
-    protected $customerData = null;
+    protected ?CustomerInsertData $customerData = null;
 
     /**
-     * @var RetailContext $clientContext
+     * @var RetailContext|null $clientContext
      */
-    protected $clientContext = null;
+    protected ?RetailContext $clientContext = null;
 
     /**
      * @param CustomerInsertData $customerData
@@ -27,7 +27,7 @@ class AddNewCustomer
     /**
      * @return CustomerInsertData
      */
-    public function getCustomerData(): CustomerInsertData
+    public function getCustomerData(): ?CustomerInsertData
     {
         return $this->customerData;
     }
@@ -46,7 +46,7 @@ class AddNewCustomer
     /**
      * @return RetailContext
      */
-    public function getClientContext(): RetailContext
+    public function getClientContext(): ?RetailContext
     {
         return $this->clientContext;
     }

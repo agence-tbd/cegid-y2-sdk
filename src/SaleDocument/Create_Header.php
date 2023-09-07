@@ -129,7 +129,7 @@ class Create_Header
     /**
      * @return boolean
      */
-    public function getActive(): bool
+    public function getActive(): ?bool
     {
         return $this->Active;
     }
@@ -148,7 +148,7 @@ class Create_Header
     /**
      * @return string
      */
-    public function getComment(): string
+    public function getComment(): ?string
     {
         return $this->Comment;
     }
@@ -167,7 +167,7 @@ class Create_Header
     /**
      * @return string
      */
-    public function getCurrencyId(): string
+    public function getCurrencyId(): ?string
     {
         return $this->CurrencyId;
     }
@@ -186,7 +186,7 @@ class Create_Header
     /**
      * @return string
      */
-    public function getCustomerId(): string
+    public function getCustomerId(): ?string
     {
         return $this->CustomerId;
     }
@@ -236,7 +236,7 @@ class Create_Header
     /**
      * @return SaleDocumentLineIdentifier
      */
-    public function getDeposit(): SaleDocumentLineIdentifier
+    public function getDeposit(): ?SaleDocumentLineIdentifier
     {
         return $this->Deposit;
     }
@@ -255,7 +255,7 @@ class Create_Header
     /**
      * @return string
      */
-    public function getExternalReference(): string
+    public function getExternalReference(): ?string
     {
         return $this->ExternalReference;
     }
@@ -305,7 +305,7 @@ class Create_Header
     /**
      * @return string
      */
-    public function getFollowedReference(): string
+    public function getFollowedReference(): ?string
     {
         return $this->FollowedReference;
     }
@@ -324,7 +324,7 @@ class Create_Header
     /**
      * @return string
      */
-    public function getInternalReference(): string
+    public function getInternalReference(): ?string
     {
         return $this->InternalReference;
     }
@@ -343,7 +343,7 @@ class Create_Header
     /**
      * @return boolean
      */
-    public function getLinesUnmodifiable(): bool
+    public function getLinesUnmodifiable(): ?bool
     {
         return $this->LinesUnmodifiable;
     }
@@ -362,7 +362,7 @@ class Create_Header
     /**
      * @return OmniChannel
      */
-    public function getOmniChannel(): OmniChannel
+    public function getOmniChannel(): ?OmniChannel
     {
         return $this->OmniChannel;
     }
@@ -381,7 +381,7 @@ class Create_Header
     /**
      * @return string
      */
-    public function getOrigin(): string
+    public function getOrigin(): ?string
     {
         return $this->Origin;
     }
@@ -400,7 +400,7 @@ class Create_Header
     /**
      * @return string
      */
-    public function getSalesPersonId(): string
+    public function getSalesPersonId(): ?string
     {
         return $this->SalesPersonId;
     }
@@ -419,7 +419,7 @@ class Create_Header
     /**
      * @return string
      */
-    public function getStoreId(): string
+    public function getStoreId(): ?string
     {
         return $this->StoreId;
     }
@@ -438,7 +438,7 @@ class Create_Header
     /**
      * @return boolean
      */
-    public function getTaxExcluded(): bool
+    public function getTaxExcluded(): ?bool
     {
         return $this->TaxExcluded;
     }
@@ -457,7 +457,7 @@ class Create_Header
     /**
      * @return string
      */
-    public function getType(): string
+    public function getType(): ?string
     {
         return $this->Type;
     }
@@ -476,7 +476,7 @@ class Create_Header
     /**
      * @return ArrayOfUserDefinedDate
      */
-    public function getUserDefinedDates(): ArrayOfUserDefinedDate
+    public function getUserDefinedDates(): ?ArrayOfUserDefinedDate
     {
         return $this->UserDefinedDates;
     }
@@ -495,7 +495,7 @@ class Create_Header
     /**
      * @return ArrayOfUserDefinedTableCustomer
      */
-    public function getUserDefinedTableCustomers(): ArrayOfUserDefinedTableCustomer
+    public function getUserDefinedTableCustomers(): ?ArrayOfUserDefinedTableCustomer
     {
         return $this->UserDefinedTableCustomers;
     }
@@ -514,7 +514,7 @@ class Create_Header
     /**
      * @return ArrayOfUserDefinedTable
      */
-    public function getUserDefinedTables(): ArrayOfUserDefinedTable
+    public function getUserDefinedTables(): ?ArrayOfUserDefinedTable
     {
         return $this->UserDefinedTables;
     }
@@ -533,7 +533,7 @@ class Create_Header
     /**
      * @return ArrayOfUserField
      */
-    public function getUserFields(): ArrayOfUserField
+    public function getUserFields(): ?ArrayOfUserField
     {
         return $this->UserFields;
     }
@@ -552,7 +552,7 @@ class Create_Header
     /**
      * @return string
      */
-    public function getWarehouseId(): string
+    public function getWarehouseId(): ?string
     {
         return $this->WarehouseId;
     }
@@ -571,7 +571,7 @@ class Create_Header
     /**
      * @return string
      */
-    public function getTaxSystemId(): string
+    public function getTaxSystemId(): ?string
     {
         return $this->TaxSystemId;
     }

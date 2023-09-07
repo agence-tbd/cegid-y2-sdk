@@ -17,7 +17,7 @@ class ArrayOfAvailableQtyByStore implements \ArrayAccess, \Iterator, \Countable
     /**
      * @return AvailableQtyByStore[]
      */
-    public function getAvailableQtyByStore(): array
+    public function getAvailableQtyByStore(): ?array
     {
         return $this->AvailableQtyByStore;
     }

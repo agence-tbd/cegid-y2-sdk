@@ -29,7 +29,7 @@ class Get_ShippingTax
     /**
      * @return string
      */
-    public function getShippingTaxCode(): string
+    public function getShippingTaxCode(): ?string
     {
       return $this->ShippingTaxCode;
     }
@@ -47,7 +47,7 @@ class Get_ShippingTax
     /**
      * @return float
      */
-    public function getTaxExcludedAmount(): float
+    public function getTaxExcludedAmount(): ?float
     {
       return $this->TaxExcludedAmount;
     }
@@ -65,7 +65,7 @@ class Get_ShippingTax
     /**
      * @return float
      */
-    public function getTaxIncludedAmount(): float
+    public function getTaxIncludedAmount(): ?float
     {
       return $this->TaxIncludedAmount;
     }

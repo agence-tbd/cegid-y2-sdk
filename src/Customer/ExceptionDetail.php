@@ -43,7 +43,7 @@ class ExceptionDetail
     /**
      * @return string
      */
-    public function getHelpLink(): string
+    public function getHelpLink(): ?string
     {
         return $this->HelpLink;
     }
@@ -62,7 +62,7 @@ class ExceptionDetail
     /**
      * @return ExceptionDetail
      */
-    public function getInnerException(): ExceptionDetail
+    public function getInnerException(): ?ExceptionDetail
     {
         return $this->InnerException;
     }
@@ -81,7 +81,7 @@ class ExceptionDetail
     /**
      * @return string
      */
-    public function getMessage(): string
+    public function getMessage(): ?string
     {
         return $this->Message;
     }
@@ -100,7 +100,7 @@ class ExceptionDetail
     /**
      * @return string
      */
-    public function getStackTrace(): string
+    public function getStackTrace(): ?string
     {
         return $this->StackTrace;
     }
@@ -119,7 +119,7 @@ class ExceptionDetail
     /**
      * @return string
      */
-    public function getTrackingId(): string
+    public function getTrackingId(): ?string
     {
         return $this->TrackingId;
     }
@@ -138,7 +138,7 @@ class ExceptionDetail
     /**
      * @return string
      */
-    public function getType(): string
+    public function getType(): ?string
     {
         return $this->Type;
     }

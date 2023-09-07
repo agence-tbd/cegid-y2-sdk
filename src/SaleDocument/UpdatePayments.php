@@ -28,7 +28,7 @@ class UpdatePayments
     /**
      * @return UpdatePayments_Request
      */
-    public function getUpdatePaymentsRequest(): UpdatePayments_Request
+    public function getUpdatePaymentsRequest(): ?UpdatePayments_Request
     {
       return $this->updatePaymentsRequest;
     }
@@ -46,7 +46,7 @@ class UpdatePayments
     /**
      * @return RetailContext
      */
-    public function getClientContext(): RetailContext
+    public function getClientContext(): ?RetailContext
     {
       return $this->clientContext;
     }

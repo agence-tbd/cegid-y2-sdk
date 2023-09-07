@@ -20,7 +20,7 @@ class GetCustomerDetailResponse
     /**
      * @return CustomerQueryData
      */
-    public function getGetCustomerDetailResult(): CustomerQueryData
+    public function getGetCustomerDetailResult(): ?CustomerQueryData
     {
         return $this->GetCustomerDetailResult;
     }

@@ -44,7 +44,7 @@ class Get_Reply
     /**
      * @return Address
      */
-    public function getDeliveryAddress(): Address
+    public function getDeliveryAddress(): ?Address
     {
       return $this->DeliveryAddress;
     }
@@ -62,7 +62,7 @@ class Get_Reply
     /**
      * @return Get_Header
      */
-    public function getHeader(): Get_Header
+    public function getHeader(): ?Get_Header
     {
       return $this->Header;
     }
@@ -80,7 +80,7 @@ class Get_Reply
     /**
      * @return Address
      */
-    public function getInvoicingAddress(): Address
+    public function getInvoicingAddress(): ?Address
     {
       return $this->InvoicingAddress;
     }
@@ -98,7 +98,7 @@ class Get_Reply
     /**
      * @return ArrayOfGet_Line
      */
-    public function getLines(): ArrayOfGet_Line
+    public function getLines(): ?ArrayOfGet_Line
     {
       return $this->Lines;
     }
@@ -116,7 +116,7 @@ class Get_Reply
     /**
      * @return ArrayOfGet_Payment
      */
-    public function getPayments(): ArrayOfGet_Payment
+    public function getPayments(): ?ArrayOfGet_Payment
     {
       return $this->Payments;
     }
@@ -134,7 +134,7 @@ class Get_Reply
     /**
      * @return ArrayOfGet_ShippingTax
      */
-    public function getShippingTaxes(): ArrayOfGet_ShippingTax
+    public function getShippingTaxes(): ?ArrayOfGet_ShippingTax
     {
       return $this->ShippingTaxes;
     }

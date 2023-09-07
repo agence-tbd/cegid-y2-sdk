@@ -24,7 +24,7 @@ class UpdatePayments_Request
     /**
      * @return SaleDocumentIdentifier
      */
-    public function getIdentifier(): SaleDocumentIdentifier
+    public function getIdentifier(): ?SaleDocumentIdentifier
     {
       return $this->Identifier;
     }
@@ -42,7 +42,7 @@ class UpdatePayments_Request
     /**
      * @return ArrayOfUpdate_Payment
      */
-    public function getPayments(): ArrayOfUpdate_Payment
+    public function getPayments(): ?ArrayOfUpdate_Payment
     {
       return $this->Payments;
     }

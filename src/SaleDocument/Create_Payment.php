@@ -61,7 +61,7 @@ class Create_Payment
     /**
      * @return float
      */
-    public function getAmount(): float
+    public function getAmount(): ?float
     {
         return $this->Amount;
     }
@@ -80,7 +80,7 @@ class Create_Payment
     /**
      * @return string
      */
-    public function getBonId(): string
+    public function getBonId(): ?string
     {
         return $this->BonId;
     }
@@ -99,7 +99,7 @@ class Create_Payment
     /**
      * @return CreditCard
      */
-    public function getCreditCard(): CreditCard
+    public function getCreditCard(): ?CreditCard
     {
         return $this->CreditCard;
     }
@@ -118,7 +118,7 @@ class Create_Payment
     /**
      * @return string
      */
-    public function getCurrencyId(): string
+    public function getCurrencyId(): ?string
     {
         return $this->CurrencyId;
     }
@@ -168,7 +168,7 @@ class Create_Payment
     /**
      * @return int
      */
-    public function getId(): int
+    public function getId(): ?int
     {
         return $this->Id;
     }
@@ -187,7 +187,7 @@ class Create_Payment
     /**
      * @return boolean
      */
-    public function getIsReceivedPayment(): bool
+    public function getIsReceivedPayment(): ?bool
     {
         return $this->IsReceivedPayment;
     }
@@ -206,7 +206,7 @@ class Create_Payment
     /**
      * @return string
      */
-    public function getMethodId(): string
+    public function getMethodId(): ?string
     {
         return $this->MethodId;
     }
@@ -225,7 +225,7 @@ class Create_Payment
     /**
      * @return string
      */
-    public function getRegisterOperationForReceivedPayment(): string
+    public function getRegisterOperationForReceivedPayment(): ?string
     {
         return $this->RegisterOperationForReceivedPayment;
     }

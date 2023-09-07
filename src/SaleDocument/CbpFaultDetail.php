@@ -44,7 +44,7 @@ class CbpFaultDetail
     /**
      * @return string
      */
-    public function getCause(): string
+    public function getCause(): ?string
     {
       return $this->Cause;
     }
@@ -62,7 +62,7 @@ class CbpFaultDetail
     /**
      * @return string
      */
-    public function getDescription(): string
+    public function getDescription(): ?string
     {
       return $this->Description;
     }
@@ -80,7 +80,7 @@ class CbpFaultDetail
     /**
      * @return string
      */
-    public function getId(): string
+    public function getId(): ?string
     {
       return $this->Id;
     }
@@ -98,7 +98,7 @@ class CbpFaultDetail
     /**
      * @return string
      */
-    public function getMessage(): string
+    public function getMessage(): ?string
     {
       return $this->Message;
     }
@@ -116,7 +116,7 @@ class CbpFaultDetail
     /**
      * @return string
      */
-    public function getSourceLocation(): string
+    public function getSourceLocation(): ?string
     {
       return $this->SourceLocation;
     }
@@ -134,7 +134,7 @@ class CbpFaultDetail
     /**
      * @return string
      */
-    public function getToDo(): string
+    public function getToDo(): ?string
     {
       return $this->ToDo;
     }

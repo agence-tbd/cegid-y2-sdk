@@ -99,7 +99,7 @@ class Update_Line
     /**
      * @return string
      */
-    public function getCatalogReference(): string
+    public function getCatalogReference(): ?string
     {
       return $this->CatalogReference;
     }
@@ -117,7 +117,7 @@ class Update_Line
     /**
      * @return string
      */
-    public function getComment(): string
+    public function getComment(): ?string
     {
       return $this->Comment;
     }
@@ -135,7 +135,7 @@ class Update_Line
     /**
      * @return string
      */
-    public function getComplementaryDescription(): string
+    public function getComplementaryDescription(): ?string
     {
       return $this->ComplementaryDescription;
     }
@@ -184,7 +184,7 @@ class Update_Line
     /**
      * @return string
      */
-    public function getDiscountTypeId(): string
+    public function getDiscountTypeId(): ?string
     {
       return $this->DiscountTypeId;
     }
@@ -233,7 +233,7 @@ class Update_Line
     /**
      * @return ItemIdentifier
      */
-    public function getItemIdentifier(): ItemIdentifier
+    public function getItemIdentifier(): ?ItemIdentifier
     {
       return $this->ItemIdentifier;
     }
@@ -251,7 +251,7 @@ class Update_Line
     /**
      * @return string
      */
-    public function getLabel(): string
+    public function getLabel(): ?string
     {
       return $this->Label;
     }
@@ -269,7 +269,7 @@ class Update_Line
     /**
      * @return float
      */
-    public function getNetUnitPrice(): float
+    public function getNetUnitPrice(): ?float
     {
       return $this->NetUnitPrice;
     }
@@ -287,7 +287,7 @@ class Update_Line
     /**
      * @return OmniChannelLine
      */
-    public function getOmniChannel(): OmniChannelLine
+    public function getOmniChannel(): ?OmniChannelLine
     {
       return $this->OmniChannel;
     }
@@ -305,7 +305,7 @@ class Update_Line
     /**
      * @return DocumentOrigin
      */
-    public function getOrigin(): DocumentOrigin
+    public function getOrigin(): ?DocumentOrigin
     {
       return $this->Origin;
     }
@@ -323,7 +323,7 @@ class Update_Line
     /**
      * @return string
      */
-    public function getPackageReference(): string
+    public function getPackageReference(): ?string
     {
       return $this->PackageReference;
     }
@@ -341,7 +341,7 @@ class Update_Line
     /**
      * @return float
      */
-    public function getQuantity(): float
+    public function getQuantity(): ?float
     {
       return $this->Quantity;
     }
@@ -359,7 +359,7 @@ class Update_Line
     /**
      * @return string
      */
-    public function getSalesPersonId(): string
+    public function getSalesPersonId(): ?string
     {
       return $this->SalesPersonId;
     }
@@ -377,7 +377,7 @@ class Update_Line
     /**
      * @return string
      */
-    public function getSerialNumberId(): string
+    public function getSerialNumberId(): ?string
     {
       return $this->SerialNumberId;
     }
@@ -395,7 +395,7 @@ class Update_Line
     /**
      * @return ArrayOfUpdate_Tax
      */
-    public function getTaxes(): ArrayOfUpdate_Tax
+    public function getTaxes(): ?ArrayOfUpdate_Tax
     {
       return $this->Taxes;
     }
@@ -413,7 +413,7 @@ class Update_Line
     /**
      * @return float
      */
-    public function getUnitPrice(): float
+    public function getUnitPrice(): ?float
     {
       return $this->UnitPrice;
     }

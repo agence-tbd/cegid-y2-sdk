@@ -17,7 +17,7 @@ class ArrayOfItemIdentifier implements \ArrayAccess, \Iterator, \Countable
     /**
      * @return ItemIdentifier[]
      */
-    public function getItemIdentifier(): array
+    public function getItemIdentifier(): ?array
     {
         return $this->ItemIdentifier;
     }

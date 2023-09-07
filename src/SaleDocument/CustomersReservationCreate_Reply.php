@@ -19,7 +19,7 @@ class CustomersReservationCreate_Reply
     /**
      * @return SaleDocumentKey
      */
-    public function getKey(): SaleDocumentKey
+    public function getKey(): ?SaleDocumentKey
     {
       return $this->Key;
     }

@@ -21,7 +21,7 @@ class CreateResponse
     /**
      * @return Create_Reply
      */
-    public function getCreateResult(): Create_Reply
+    public function getCreateResult(): ?Create_Reply
     {
       return $this->CreateResult;
     }

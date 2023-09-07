@@ -28,7 +28,7 @@ class Create
     /**
      * @return Create_Request
      */
-    public function getCreateRequest(): Create_Request
+    public function getCreateRequest(): ?Create_Request
     {
       return $this->createRequest;
     }
@@ -46,7 +46,7 @@ class Create
     /**
      * @return RetailContext
      */
-    public function getClientContext(): RetailContext
+    public function getClientContext(): ?RetailContext
     {
       return $this->clientContext;
     }

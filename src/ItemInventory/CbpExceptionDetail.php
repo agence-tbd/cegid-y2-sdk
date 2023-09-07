@@ -22,7 +22,7 @@ class CbpExceptionDetail extends ExceptionDetail
     /**
      * @return string
      */
-    public function getId(): string
+    public function getId(): ?string
     {
         return $this->Id;
     }
@@ -40,7 +40,7 @@ class CbpExceptionDetail extends ExceptionDetail
     /**
      * @return string
      */
-    public function getToDo(): string
+    public function getToDo(): ?string
     {
         return $this->ToDo;
     }

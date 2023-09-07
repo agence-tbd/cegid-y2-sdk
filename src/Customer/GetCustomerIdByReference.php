@@ -27,7 +27,7 @@ class GetCustomerIdByReference
     /**
      * @return string
      */
-    public function getCustomerReference(): string
+    public function getCustomerReference(): ?string
     {
         return $this->customerReference;
     }
@@ -46,7 +46,7 @@ class GetCustomerIdByReference
     /**
      * @return RetailContext
      */
-    public function getClientContext(): RetailContext
+    public function getClientContext(): ?RetailContext
     {
         return $this->clientContext;
     }

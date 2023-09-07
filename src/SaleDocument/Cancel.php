@@ -28,7 +28,7 @@ class Cancel
     /**
      * @return Cancel_Request
      */
-    public function getCancelRequest(): Cancel_Request
+    public function getCancelRequest(): ?Cancel_Request
     {
       return $this->cancelRequest;
     }
@@ -46,7 +46,7 @@ class Cancel
     /**
      * @return RetailContext
      */
-    public function getClientContext(): RetailContext
+    public function getClientContext(): ?RetailContext
     {
       return $this->clientContext;
     }

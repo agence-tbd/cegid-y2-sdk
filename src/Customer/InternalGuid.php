@@ -22,7 +22,7 @@ class InternalGuid
     /**
      * @return boolean
      */
-    public function getCheckGuid(): bool
+    public function getCheckGuid(): ?bool
     {
         return $this->CheckGuid;
     }
@@ -41,7 +41,7 @@ class InternalGuid
     /**
      * @return string
      */
-    public function getGuid(): string
+    public function getGuid(): ?string
     {
         return $this->Guid;
     }

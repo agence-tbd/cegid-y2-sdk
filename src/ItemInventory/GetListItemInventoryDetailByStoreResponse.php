@@ -20,7 +20,7 @@ class GetListItemInventoryDetailByStoreResponse
     /**
      * @return GetListItemInventoryDetailByStore_Reply
      */
-    public function getGetListItemInventoryDetailByStoreResult(): GetListItemInventoryDetailByStore_Reply
+    public function getGetListItemInventoryDetailByStoreResult(): ?GetListItemInventoryDetailByStore_Reply
     {
         return $this->GetListItemInventoryDetailByStoreResult;
     }

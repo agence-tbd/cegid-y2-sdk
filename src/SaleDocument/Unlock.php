@@ -28,7 +28,7 @@ class Unlock
     /**
      * @return Unlock_Request
      */
-    public function getUnlockRequest(): Unlock_Request
+    public function getUnlockRequest(): ?Unlock_Request
     {
       return $this->unlockRequest;
     }
@@ -46,7 +46,7 @@ class Unlock
     /**
      * @return RetailContext
      */
-    public function getClientContext(): RetailContext
+    public function getClientContext(): ?RetailContext
     {
       return $this->clientContext;
     }

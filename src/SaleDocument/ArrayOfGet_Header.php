@@ -19,7 +19,7 @@ class ArrayOfGet_Header implements \ArrayAccess, \Iterator, \Countable
     /**
      * @return Get_Header[]
      */
-    public function getGet_Header(): array
+    public function getGet_Header(): ?array
     {
       return $this->Get_Header;
     }

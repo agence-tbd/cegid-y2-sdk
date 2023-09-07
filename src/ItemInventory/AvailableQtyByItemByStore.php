@@ -22,7 +22,7 @@ class AvailableQtyByItemByStore
     /**
      * @return string
      */
-    public function getItemCode(): string
+    public function getItemCode(): ?string
     {
         return $this->ItemCode;
     }
@@ -40,7 +40,7 @@ class AvailableQtyByItemByStore
     /**
      * @return ArrayOfStoreAvailableQty
      */
-    public function getStoresAvailableQty(): ArrayOfStoreAvailableQty
+    public function getStoresAvailableQty(): ?ArrayOfStoreAvailableQty
     {
         return $this->StoresAvailableQty;
     }

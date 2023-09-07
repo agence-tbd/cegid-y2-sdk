@@ -28,7 +28,7 @@ class GetByKey
     /**
      * @return GetByKey_Request
      */
-    public function getSearchRequest(): GetByKey_Request
+    public function getSearchRequest(): ?GetByKey_Request
     {
       return $this->searchRequest;
     }
@@ -46,7 +46,7 @@ class GetByKey
     /**
      * @return RetailContext
      */
-    public function getClientContext(): RetailContext
+    public function getClientContext(): ?RetailContext
     {
       return $this->clientContext;
     }

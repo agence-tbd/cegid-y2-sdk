@@ -79,7 +79,7 @@ class UpdateHeader_Request
     /**
      * @return string
      */
-    public function getComment(): string
+    public function getComment(): ?string
     {
       return $this->Comment;
     }
@@ -97,7 +97,7 @@ class UpdateHeader_Request
     /**
      * @return Address
      */
-    public function getDeliveryAddress(): Address
+    public function getDeliveryAddress(): ?Address
     {
       return $this->DeliveryAddress;
     }
@@ -115,7 +115,7 @@ class UpdateHeader_Request
     /**
      * @return string
      */
-    public function getExternalReference(): string
+    public function getExternalReference(): ?string
     {
       return $this->ExternalReference;
     }
@@ -164,7 +164,7 @@ class UpdateHeader_Request
     /**
      * @return string
      */
-    public function getFollowedReference(): string
+    public function getFollowedReference(): ?string
     {
       return $this->FollowedReference;
     }
@@ -182,7 +182,7 @@ class UpdateHeader_Request
     /**
      * @return SaleDocumentIdentifier
      */
-    public function getIdentifier(): SaleDocumentIdentifier
+    public function getIdentifier(): ?SaleDocumentIdentifier
     {
       return $this->Identifier;
     }
@@ -200,7 +200,7 @@ class UpdateHeader_Request
     /**
      * @return Address
      */
-    public function getInvoicingAddress(): Address
+    public function getInvoicingAddress(): ?Address
     {
       return $this->InvoicingAddress;
     }
@@ -218,7 +218,7 @@ class UpdateHeader_Request
     /**
      * @return boolean
      */
-    public function getLinesUnmodifiable(): bool
+    public function getLinesUnmodifiable(): ?bool
     {
       return $this->LinesUnmodifiable;
     }
@@ -236,7 +236,7 @@ class UpdateHeader_Request
     /**
      * @return OmniChannel
      */
-    public function getOmniChannel(): OmniChannel
+    public function getOmniChannel(): ?OmniChannel
     {
       return $this->OmniChannel;
     }
@@ -254,7 +254,7 @@ class UpdateHeader_Request
     /**
      * @return string
      */
-    public function getSalesPersonId(): string
+    public function getSalesPersonId(): ?string
     {
       return $this->SalesPersonId;
     }
@@ -272,7 +272,7 @@ class UpdateHeader_Request
     /**
      * @return ArrayOfUserDefinedDate
      */
-    public function getUserDefinedDates(): ArrayOfUserDefinedDate
+    public function getUserDefinedDates(): ?ArrayOfUserDefinedDate
     {
       return $this->UserDefinedDates;
     }
@@ -290,7 +290,7 @@ class UpdateHeader_Request
     /**
      * @return ArrayOfUserDefinedTable
      */
-    public function getUserDefinedTables(): ArrayOfUserDefinedTable
+    public function getUserDefinedTables(): ?ArrayOfUserDefinedTable
     {
       return $this->UserDefinedTables;
     }
@@ -308,7 +308,7 @@ class UpdateHeader_Request
     /**
      * @return ArrayOfUserField
      */
-    public function getUserFields(): ArrayOfUserField
+    public function getUserFields(): ?ArrayOfUserField
     {
       return $this->UserFields;
     }

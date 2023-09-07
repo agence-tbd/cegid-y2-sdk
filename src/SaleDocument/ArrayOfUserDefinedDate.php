@@ -19,7 +19,7 @@ class ArrayOfUserDefinedDate implements \ArrayAccess, \Iterator, \Countable
     /**
      * @return UserDefinedDate[]
      */
-    public function getUserDefinedDate(): array
+    public function getUserDefinedDate(): ?array
     {
       return $this->UserDefinedDate;
     }

@@ -148,7 +148,7 @@ class CustomerDataBase
     /**
      * @return string
      */
-    public function getActivitySectorCode(): string
+    public function getActivitySectorCode(): ?string
     {
         return $this->ActivitySectorCode;
     }
@@ -167,7 +167,7 @@ class CustomerDataBase
     /**
      * @return AddressDataType
      */
-    public function getAddressData(): AddressDataType
+    public function getAddressData(): ?AddressDataType
     {
         return $this->AddressData;
     }
@@ -186,7 +186,7 @@ class CustomerDataBase
     /**
      * @return string
      */
-    public function getAlternateFirstName(): string
+    public function getAlternateFirstName(): ?string
     {
         return $this->AlternateFirstName;
     }
@@ -205,7 +205,7 @@ class CustomerDataBase
     /**
      * @return string
      */
-    public function getAlternateLastName(): string
+    public function getAlternateLastName(): ?string
     {
         return $this->AlternateLastName;
     }
@@ -224,7 +224,7 @@ class CustomerDataBase
     /**
      * @return string
      */
-    public function getBusinessAreaCode(): string
+    public function getBusinessAreaCode(): ?string
     {
         return $this->BusinessAreaCode;
     }
@@ -243,7 +243,7 @@ class CustomerDataBase
     /**
      * @return string
      */
-    public function getCpfCnpjCode(): string
+    public function getCpfCnpjCode(): ?string
     {
         return $this->CpfCnpjCode;
     }
@@ -262,7 +262,7 @@ class CustomerDataBase
     /**
      * @return EmailDataType
      */
-    public function getEmailData(): EmailDataType
+    public function getEmailData(): ?EmailDataType
     {
         return $this->EmailData;
     }
@@ -281,7 +281,7 @@ class CustomerDataBase
     /**
      * @return string
      */
-    public function getFirstName(): string
+    public function getFirstName(): ?string
     {
         return $this->FirstName;
     }
@@ -300,7 +300,7 @@ class CustomerDataBase
     /**
      * @return boolean
      */
-    public function getIsCompany(): bool
+    public function getIsCompany(): ?bool
     {
         return $this->IsCompany;
     }
@@ -346,7 +346,7 @@ class CustomerDataBase
     /**
      * @return string
      */
-    public function getLastName(): string
+    public function getLastName(): ?string
     {
         return $this->LastName;
     }
@@ -365,7 +365,7 @@ class CustomerDataBase
     /**
      * @return string
      */
-    public function getMunicipalRegistration(): string
+    public function getMunicipalRegistration(): ?string
     {
         return $this->MunicipalRegistration;
     }
@@ -384,7 +384,7 @@ class CustomerDataBase
     /**
      * @return string
      */
-    public function getOriginCode(): string
+    public function getOriginCode(): ?string
     {
         return $this->OriginCode;
     }
@@ -403,7 +403,7 @@ class CustomerDataBase
     /**
      * @return PhoneDataType
      */
-    public function getPhoneData(): PhoneDataType
+    public function getPhoneData(): ?PhoneDataType
     {
         return $this->PhoneData;
     }
@@ -422,7 +422,7 @@ class CustomerDataBase
     /**
      * @return string
      */
-    public function getPriceListCode(): string
+    public function getPriceListCode(): ?string
     {
         return $this->PriceListCode;
     }
@@ -441,7 +441,7 @@ class CustomerDataBase
     /**
      * @return string
      */
-    public function getRegionalRegistration(): string
+    public function getRegionalRegistration(): ?string
     {
         return $this->RegionalRegistration;
     }
@@ -460,7 +460,7 @@ class CustomerDataBase
     /**
      * @return string
      */
-    public function getRiskLevel(): string
+    public function getRiskLevel(): ?string
     {
         return $this->RiskLevel;
     }
@@ -517,7 +517,7 @@ class CustomerDataBase
     /**
      * @return string
      */
-    public function getSalesPersonId(): string
+    public function getSalesPersonId(): ?string
     {
         return $this->SalesPersonId;
     }
@@ -536,7 +536,7 @@ class CustomerDataBase
     /**
      * @return string
      */
-    public function getTitleId(): string
+    public function getTitleId(): ?string
     {
         return $this->TitleId;
     }
@@ -555,7 +555,7 @@ class CustomerDataBase
     /**
      * @return ArrayOfUserDefinedBoolean
      */
-    public function getUserDefinedBooleans(): ArrayOfUserDefinedBoolean
+    public function getUserDefinedBooleans(): ?ArrayOfUserDefinedBoolean
     {
         return $this->UserDefinedBooleans;
     }
@@ -574,7 +574,7 @@ class CustomerDataBase
     /**
      * @return UserDefinedDataType
      */
-    public function getUserDefinedData(): UserDefinedDataType
+    public function getUserDefinedData(): ?UserDefinedDataType
     {
         return $this->UserDefinedData;
     }
@@ -593,7 +593,7 @@ class CustomerDataBase
     /**
      * @return ArrayOfUserDefinedDate
      */
-    public function getUserDefinedDates(): ArrayOfUserDefinedDate
+    public function getUserDefinedDates(): ?ArrayOfUserDefinedDate
     {
         return $this->UserDefinedDates;
     }
@@ -612,7 +612,7 @@ class CustomerDataBase
     /**
      * @return ArrayOfUserDefinedText
      */
-    public function getUserDefinedTexts(): ArrayOfUserDefinedText
+    public function getUserDefinedTexts(): ?ArrayOfUserDefinedText
     {
         return $this->UserDefinedTexts;
     }
@@ -631,7 +631,7 @@ class CustomerDataBase
     /**
      * @return ArrayOfUserDefinedValue
      */
-    public function getUserDefinedValues(): ArrayOfUserDefinedValue
+    public function getUserDefinedValues(): ?ArrayOfUserDefinedValue
     {
         return $this->UserDefinedValues;
     }
@@ -650,7 +650,7 @@ class CustomerDataBase
     /**
      * @return string
      */
-    public function getUsualStoreId(): string
+    public function getUsualStoreId(): ?string
     {
         return $this->UsualStoreId;
     }

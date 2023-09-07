@@ -59,7 +59,7 @@ class Get_Payment
     /**
      * @return float
      */
-    public function getAmount(): float
+    public function getAmount(): ?float
     {
       return $this->Amount;
     }
@@ -77,7 +77,7 @@ class Get_Payment
     /**
      * @return float
      */
-    public function getCashAmount(): float
+    public function getCashAmount(): ?float
     {
       return $this->CashAmount;
     }
@@ -95,7 +95,7 @@ class Get_Payment
     /**
      * @return string
      */
-    public function getCode(): string
+    public function getCode(): ?string
     {
       return $this->Code;
     }
@@ -113,7 +113,7 @@ class Get_Payment
     /**
      * @return CreditCard
      */
-    public function getCreditCard(): CreditCard
+    public function getCreditCard(): ?CreditCard
     {
       return $this->CreditCard;
     }
@@ -131,7 +131,7 @@ class Get_Payment
     /**
      * @return string
      */
-    public function getCurrency(): string
+    public function getCurrency(): ?string
     {
       return $this->Currency;
     }
@@ -149,7 +149,7 @@ class Get_Payment
     /**
      * @return string
      */
-    public function getCurrencySymbol(): string
+    public function getCurrencySymbol(): ?string
     {
       return $this->CurrencySymbol;
     }
@@ -198,7 +198,7 @@ class Get_Payment
     /**
      * @return boolean
      */
-    public function getIsReceivedPayment(): bool
+    public function getIsReceivedPayment(): ?bool
     {
       return $this->IsReceivedPayment;
     }
@@ -216,7 +216,7 @@ class Get_Payment
     /**
      * @return string
      */
-    public function getLabel(): string
+    public function getLabel(): ?string
     {
       return $this->Label;
     }

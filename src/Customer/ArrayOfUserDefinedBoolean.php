@@ -18,7 +18,7 @@ class ArrayOfUserDefinedBoolean implements \ArrayAccess, \Iterator, \Countable
     /**
      * @return UserDefinedBoolean[]
      */
-    public function getUserDefinedBoolean(): array
+    public function getUserDefinedBoolean(): ?array
     {
         return $this->UserDefinedBoolean;
     }

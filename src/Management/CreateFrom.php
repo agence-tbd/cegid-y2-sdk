@@ -27,7 +27,7 @@ class CreateFrom
     /**
      * @return CreateFrom_Request
      */
-    public function getRequest(): CreateFrom_Request
+    public function getRequest(): ?CreateFrom_Request
     {
       return $this->Request;
     }
@@ -45,7 +45,7 @@ class CreateFrom
     /**
      * @return RetailContext
      */
-    public function getContext(): RetailContext
+    public function getContext(): ?RetailContext
     {
       return $this->Context;
     }

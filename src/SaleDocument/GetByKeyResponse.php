@@ -21,7 +21,7 @@ class GetByKeyResponse
     /**
      * @return Get_Reply
      */
-    public function getGetByKeyResult(): Get_Reply
+    public function getGetByKeyResult(): ?Get_Reply
     {
       return $this->GetByKeyResult;
     }
