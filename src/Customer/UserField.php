@@ -35,7 +35,7 @@ class UserField
     protected $TextValue = null;
 
     /**
-     * @var UserFieldKind $ValueType
+     * @var ?string $ValueType
      */
     protected $ValueType = null;
 
@@ -167,19 +167,19 @@ class UserField
     }
 
     /**
-     * @return UserFieldKind
+     * @return ?string
      */
-    public function getValueType(): ?UserFieldKind
+    public function getValueType(): ?string
     {
         return $this->ValueType;
     }
 
     /**
-     * @param UserFieldKind $ValueType
+     * @param ?string $ValueType
      *
      * @return UserField
      */
-    public function setValueType(UserFieldKind $ValueType): UserField
+    public function setValueType(?string $ValueType): UserField
     {
         $this->ValueType = $ValueType;
         return $this;

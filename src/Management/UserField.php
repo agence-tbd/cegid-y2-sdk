@@ -15,7 +15,7 @@ class UserField
     protected $Value;
 
     /**
-     * @var UserFieldKind $ValueType
+     * @var ?string $ValueType
      */
     protected $ValueType = null;
 
