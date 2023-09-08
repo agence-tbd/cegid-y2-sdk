@@ -29,7 +29,7 @@ class GetAvailableCumulativeQtyAllStoresResponse
      * @param AvailableQtyReturn $GetAvailableCumulativeQtyAllStoresResult
      * @return GetAvailableCumulativeQtyAllStoresResponse
      */
-    public function setGetAvailableCumulativeQtyAllStoresResult(AvailableQtyReturn $GetAvailableCumulativeQtyAllStoresResult): GetAvailableCumulativeQtyAllStoresResponse
+    public function setGetAvailableCumulativeQtyAllStoresResult(?AvailableQtyReturn $GetAvailableCumulativeQtyAllStoresResult): GetAvailableCumulativeQtyAllStoresResponse
     {
         $this->GetAvailableCumulativeQtyAllStoresResult = $GetAvailableCumulativeQtyAllStoresResult;
         return $this;

@@ -123,7 +123,7 @@ class CustomersReservationCreate_Header
      * @param boolean $Active
      * @return CustomersReservationCreate_Header
      */
-    public function setActive(bool $Active): CustomersReservationCreate_Header
+    public function setActive(?bool $Active): CustomersReservationCreate_Header
     {
       $this->Active = $Active;
       return $this;
@@ -141,7 +141,7 @@ class CustomersReservationCreate_Header
      * @param string $Comment
      * @return CustomersReservationCreate_Header
      */
-    public function setComment(string $Comment): CustomersReservationCreate_Header
+    public function setComment(?string $Comment): CustomersReservationCreate_Header
     {
       $this->Comment = $Comment;
       return $this;
@@ -159,7 +159,7 @@ class CustomersReservationCreate_Header
      * @param string $CurrencyId
      * @return CustomersReservationCreate_Header
      */
-    public function setCurrencyId(string $CurrencyId): CustomersReservationCreate_Header
+    public function setCurrencyId(?string $CurrencyId): CustomersReservationCreate_Header
     {
       $this->CurrencyId = $CurrencyId;
       return $this;
@@ -177,7 +177,7 @@ class CustomersReservationCreate_Header
      * @param string $CustomerId
      * @return CustomersReservationCreate_Header
      */
-    public function setCustomerId(string $CustomerId): CustomersReservationCreate_Header
+    public function setCustomerId(?string $CustomerId): CustomersReservationCreate_Header
     {
       $this->CustomerId = $CustomerId;
       return $this;
@@ -226,7 +226,7 @@ class CustomersReservationCreate_Header
      * @param SaleDocumentLineIdentifier $Deposit
      * @return CustomersReservationCreate_Header
      */
-    public function setDeposit(SaleDocumentLineIdentifier $Deposit): CustomersReservationCreate_Header
+    public function setDeposit(?SaleDocumentLineIdentifier $Deposit): CustomersReservationCreate_Header
     {
       $this->Deposit = $Deposit;
       return $this;
@@ -275,7 +275,7 @@ class CustomersReservationCreate_Header
      * @param string $ExternalReference
      * @return CustomersReservationCreate_Header
      */
-    public function setExternalReference(string $ExternalReference): CustomersReservationCreate_Header
+    public function setExternalReference(?string $ExternalReference): CustomersReservationCreate_Header
     {
       $this->ExternalReference = $ExternalReference;
       return $this;
@@ -324,7 +324,7 @@ class CustomersReservationCreate_Header
      * @param string $FollowedReference
      * @return CustomersReservationCreate_Header
      */
-    public function setFollowedReference(string $FollowedReference): CustomersReservationCreate_Header
+    public function setFollowedReference(?string $FollowedReference): CustomersReservationCreate_Header
     {
       $this->FollowedReference = $FollowedReference;
       return $this;
@@ -342,7 +342,7 @@ class CustomersReservationCreate_Header
      * @param string $InternalReference
      * @return CustomersReservationCreate_Header
      */
-    public function setInternalReference(string $InternalReference): CustomersReservationCreate_Header
+    public function setInternalReference(?string $InternalReference): CustomersReservationCreate_Header
     {
       $this->InternalReference = $InternalReference;
       return $this;
@@ -360,7 +360,7 @@ class CustomersReservationCreate_Header
      * @param boolean $LinesUnmodifiable
      * @return CustomersReservationCreate_Header
      */
-    public function setLinesUnmodifiable(bool $LinesUnmodifiable): CustomersReservationCreate_Header
+    public function setLinesUnmodifiable(?bool $LinesUnmodifiable): CustomersReservationCreate_Header
     {
       $this->LinesUnmodifiable = $LinesUnmodifiable;
       return $this;
@@ -378,7 +378,7 @@ class CustomersReservationCreate_Header
      * @param string $SalesPersonId
      * @return CustomersReservationCreate_Header
      */
-    public function setSalesPersonId(string $SalesPersonId): CustomersReservationCreate_Header
+    public function setSalesPersonId(?string $SalesPersonId): CustomersReservationCreate_Header
     {
       $this->SalesPersonId = $SalesPersonId;
       return $this;
@@ -396,7 +396,7 @@ class CustomersReservationCreate_Header
      * @param string $StoreId
      * @return CustomersReservationCreate_Header
      */
-    public function setStoreId(string $StoreId): CustomersReservationCreate_Header
+    public function setStoreId(?string $StoreId): CustomersReservationCreate_Header
     {
       $this->StoreId = $StoreId;
       return $this;
@@ -414,7 +414,7 @@ class CustomersReservationCreate_Header
      * @param boolean $TaxExcluded
      * @return CustomersReservationCreate_Header
      */
-    public function setTaxExcluded(bool $TaxExcluded): CustomersReservationCreate_Header
+    public function setTaxExcluded(?bool $TaxExcluded): CustomersReservationCreate_Header
     {
       $this->TaxExcluded = $TaxExcluded;
       return $this;
@@ -432,7 +432,7 @@ class CustomersReservationCreate_Header
      * @param ArrayOfUserDefinedDate $UserDefinedDates
      * @return CustomersReservationCreate_Header
      */
-    public function setUserDefinedDates(ArrayOfUserDefinedDate $UserDefinedDates): CustomersReservationCreate_Header
+    public function setUserDefinedDates(?ArrayOfUserDefinedDate $UserDefinedDates): CustomersReservationCreate_Header
     {
       $this->UserDefinedDates = $UserDefinedDates;
       return $this;
@@ -450,7 +450,7 @@ class CustomersReservationCreate_Header
      * @param ArrayOfUserDefinedTableCustomer $UserDefinedTableCustomers
      * @return CustomersReservationCreate_Header
      */
-    public function setUserDefinedTableCustomers(ArrayOfUserDefinedTableCustomer $UserDefinedTableCustomers): CustomersReservationCreate_Header
+    public function setUserDefinedTableCustomers(?ArrayOfUserDefinedTableCustomer $UserDefinedTableCustomers): CustomersReservationCreate_Header
     {
       $this->UserDefinedTableCustomers = $UserDefinedTableCustomers;
       return $this;
@@ -468,7 +468,7 @@ class CustomersReservationCreate_Header
      * @param ArrayOfUserDefinedTable $UserDefinedTables
      * @return CustomersReservationCreate_Header
      */
-    public function setUserDefinedTables(ArrayOfUserDefinedTable $UserDefinedTables): CustomersReservationCreate_Header
+    public function setUserDefinedTables(?ArrayOfUserDefinedTable $UserDefinedTables): CustomersReservationCreate_Header
     {
       $this->UserDefinedTables = $UserDefinedTables;
       return $this;
@@ -486,7 +486,7 @@ class CustomersReservationCreate_Header
      * @param ArrayOfUserField $UserFields
      * @return CustomersReservationCreate_Header
      */
-    public function setUserFields(ArrayOfUserField $UserFields): CustomersReservationCreate_Header
+    public function setUserFields(?ArrayOfUserField $UserFields): CustomersReservationCreate_Header
     {
       $this->UserFields = $UserFields;
       return $this;
@@ -504,7 +504,7 @@ class CustomersReservationCreate_Header
      * @param string $WarehouseId
      * @return CustomersReservationCreate_Header
      */
-    public function setWarehouseId(string $WarehouseId): CustomersReservationCreate_Header
+    public function setWarehouseId(?string $WarehouseId): CustomersReservationCreate_Header
     {
       $this->WarehouseId = $WarehouseId;
       return $this;

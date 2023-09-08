@@ -30,7 +30,7 @@ class HelloWorldResponse
      *
      * @return HelloWorldResponse
      */
-    public function setHelloWorldResult(string $HelloWorldResult): HelloWorldResponse
+    public function setHelloWorldResult(?string $HelloWorldResult): HelloWorldResponse
     {
         $this->HelloWorldResult = $HelloWorldResult;
         return $this;

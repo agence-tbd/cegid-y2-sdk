@@ -57,7 +57,7 @@ class UserField
      *
      * @return UserField
      */
-    public function setBooleanValue(bool $BooleanValue): UserField
+    public function setBooleanValue(?bool $BooleanValue): UserField
     {
         $this->BooleanValue = $BooleanValue;
         return $this;
@@ -103,7 +103,7 @@ class UserField
      *
      * @return UserField
      */
-    public function setId(int $Id): UserField
+    public function setId(?int $Id): UserField
     {
         $this->Id = $Id;
         return $this;
@@ -122,7 +122,7 @@ class UserField
      *
      * @return UserField
      */
-    public function setListElementValue(string $ListElementValue): UserField
+    public function setListElementValue(?string $ListElementValue): UserField
     {
         $this->ListElementValue = $ListElementValue;
         return $this;
@@ -141,7 +141,7 @@ class UserField
      *
      * @return UserField
      */
-    public function setNumberValue(float $NumberValue): UserField
+    public function setNumberValue(?float $NumberValue): UserField
     {
         $this->NumberValue = $NumberValue;
         return $this;
@@ -160,7 +160,7 @@ class UserField
      *
      * @return UserField
      */
-    public function setTextValue(string $TextValue): UserField
+    public function setTextValue(?string $TextValue): UserField
     {
         $this->TextValue = $TextValue;
         return $this;

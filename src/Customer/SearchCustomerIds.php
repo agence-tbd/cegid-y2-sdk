@@ -37,7 +37,7 @@ class SearchCustomerIds
      *
      * @return SearchCustomerIds
      */
-    public function setSearchData(CustomerSearchDataType $searchData): SearchCustomerIds
+    public function setSearchData(?CustomerSearchDataType $searchData): SearchCustomerIds
     {
         $this->searchData = $searchData;
         return $this;
@@ -56,7 +56,7 @@ class SearchCustomerIds
      *
      * @return SearchCustomerIds
      */
-    public function setClientContext(RetailContext $clientContext): SearchCustomerIds
+    public function setClientContext(?RetailContext $clientContext): SearchCustomerIds
     {
         $this->clientContext = $clientContext;
         return $this;

@@ -30,7 +30,7 @@ class GetCustomerIdByReferenceResponse
      *
      * @return GetCustomerIdByReferenceResponse
      */
-    public function setGetCustomerIdByReferenceResult(string $GetCustomerIdByReferenceResult): GetCustomerIdByReferenceResponse
+    public function setGetCustomerIdByReferenceResult(?string $GetCustomerIdByReferenceResult): GetCustomerIdByReferenceResponse
     {
         $this->GetCustomerIdByReferenceResult = $GetCustomerIdByReferenceResult;
         return $this;

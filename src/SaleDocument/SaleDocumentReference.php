@@ -35,12 +35,12 @@ class SaleDocumentReference
     }
 
     /**
-     * @param string $CustomerId
+     * @param string $customerId
      * @return SaleDocumentReference
      */
-    public function setCustomerId(string $CustomerId): SaleDocumentReference
+    public function setCustomerId(?string $customerId): SaleDocumentReference
     {
-      $this->CustomerId = $CustomerId;
+      $this->CustomerId = $customerId;
       return $this;
     }
 
@@ -56,7 +56,7 @@ class SaleDocumentReference
      * @param string $InternalReference
      * @return SaleDocumentReference
      */
-    public function setInternalReference(string $InternalReference): SaleDocumentReference
+    public function setInternalReference(?string $InternalReference): SaleDocumentReference
     {
       $this->InternalReference = $InternalReference;
       return $this;
@@ -74,7 +74,7 @@ class SaleDocumentReference
      * @param string $Type
      * @return SaleDocumentReference
      */
-    public function setType(string $Type): SaleDocumentReference
+    public function setType(?string $Type): SaleDocumentReference
     {
       $this->Type = $Type;
       return $this;

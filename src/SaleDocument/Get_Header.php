@@ -118,7 +118,7 @@ class Get_Header
      * @param boolean $Active
      * @return Get_Header
      */
-    public function setActive(bool $Active): Get_Header
+    public function setActive(?bool $Active): Get_Header
     {
       $this->Active = $Active;
       return $this;
@@ -136,7 +136,7 @@ class Get_Header
      * @param string $Comment
      * @return Get_Header
      */
-    public function setComment(string $Comment): Get_Header
+    public function setComment(?string $Comment): Get_Header
     {
       $this->Comment = $Comment;
       return $this;
@@ -154,7 +154,7 @@ class Get_Header
      * @param string $CurrencyId
      * @return Get_Header
      */
-    public function setCurrencyId(string $CurrencyId): Get_Header
+    public function setCurrencyId(?string $CurrencyId): Get_Header
     {
       $this->CurrencyId = $CurrencyId;
       return $this;
@@ -172,7 +172,7 @@ class Get_Header
      * @param string $CustomerId
      * @return Get_Header
      */
-    public function setCustomerId(string $CustomerId): Get_Header
+    public function setCustomerId(?string $CustomerId): Get_Header
     {
       $this->CustomerId = $CustomerId;
       return $this;
@@ -221,7 +221,7 @@ class Get_Header
      * @param string $InternalReference
      * @return Get_Header
      */
-    public function setInternalReference(string $InternalReference): Get_Header
+    public function setInternalReference(?string $InternalReference): Get_Header
     {
       $this->InternalReference = $InternalReference;
       return $this;
@@ -239,7 +239,7 @@ class Get_Header
      * @param SaleDocumentKey $Key
      * @return Get_Header
      */
-    public function setKey(SaleDocumentKey $Key): Get_Header
+    public function setKey(?SaleDocumentKey $Key): Get_Header
     {
       $this->Key = $Key;
       return $this;
@@ -257,7 +257,7 @@ class Get_Header
      * @param OmniChannel $OmniChannel
      * @return Get_Header
      */
-    public function setOmniChannel(OmniChannel $OmniChannel): Get_Header
+    public function setOmniChannel(?OmniChannel $OmniChannel): Get_Header
     {
       $this->OmniChannel = $OmniChannel;
       return $this;
@@ -275,7 +275,7 @@ class Get_Header
      * @param DocumentOrigin $Origin
      * @return Get_Header
      */
-    public function setOrigin(DocumentOrigin $Origin): Get_Header
+    public function setOrigin(?DocumentOrigin $Origin): Get_Header
     {
       $this->Origin = $Origin;
       return $this;
@@ -293,7 +293,7 @@ class Get_Header
      * @param string $SalesPersonId
      * @return Get_Header
      */
-    public function setSalesPersonId(string $SalesPersonId): Get_Header
+    public function setSalesPersonId(?string $SalesPersonId): Get_Header
     {
       $this->SalesPersonId = $SalesPersonId;
       return $this;
@@ -311,7 +311,7 @@ class Get_Header
      * @param DocumentStatus $Status
      * @return Get_Header
      */
-    public function setStatus(DocumentStatus $Status): Get_Header
+    public function setStatus(?DocumentStatus $Status): Get_Header
     {
       $this->Status = $Status;
       return $this;
@@ -329,7 +329,7 @@ class Get_Header
      * @param string $StoreId
      * @return Get_Header
      */
-    public function setStoreId(string $StoreId): Get_Header
+    public function setStoreId(?string $StoreId): Get_Header
     {
       $this->StoreId = $StoreId;
       return $this;
@@ -347,7 +347,7 @@ class Get_Header
      * @param float $TaxExcludedTotalAmount
      * @return Get_Header
      */
-    public function setTaxExcludedTotalAmount(float $TaxExcludedTotalAmount): Get_Header
+    public function setTaxExcludedTotalAmount(?float $TaxExcludedTotalAmount): Get_Header
     {
       $this->TaxExcludedTotalAmount = $TaxExcludedTotalAmount;
       return $this;
@@ -365,7 +365,7 @@ class Get_Header
      * @param float $TaxIncludedTotalAmount
      * @return Get_Header
      */
-    public function setTaxIncludedTotalAmount(float $TaxIncludedTotalAmount): Get_Header
+    public function setTaxIncludedTotalAmount(?float $TaxIncludedTotalAmount): Get_Header
     {
       $this->TaxIncludedTotalAmount = $TaxIncludedTotalAmount;
       return $this;
@@ -383,7 +383,7 @@ class Get_Header
      * @param float $TotalQuantity
      * @return Get_Header
      */
-    public function setTotalQuantity(float $TotalQuantity): Get_Header
+    public function setTotalQuantity(?float $TotalQuantity): Get_Header
     {
       $this->TotalQuantity = $TotalQuantity;
       return $this;
@@ -401,7 +401,7 @@ class Get_Header
      * @param ArrayOfUserDefinedDate $UserDefinedDates
      * @return Get_Header
      */
-    public function setUserDefinedDates(ArrayOfUserDefinedDate $UserDefinedDates): Get_Header
+    public function setUserDefinedDates(?ArrayOfUserDefinedDate $UserDefinedDates): Get_Header
     {
       $this->UserDefinedDates = $UserDefinedDates;
       return $this;
@@ -419,7 +419,7 @@ class Get_Header
      * @param ArrayOfUserDefinedTable $UserDefinedTables
      * @return Get_Header
      */
-    public function setUserDefinedTables(ArrayOfUserDefinedTable $UserDefinedTables): Get_Header
+    public function setUserDefinedTables(?ArrayOfUserDefinedTable $UserDefinedTables): Get_Header
     {
       $this->UserDefinedTables = $UserDefinedTables;
       return $this;
@@ -437,7 +437,7 @@ class Get_Header
      * @param ArrayOfUserField $UserFields
      * @return Get_Header
      */
-    public function setUserFields(ArrayOfUserField $UserFields): Get_Header
+    public function setUserFields(?ArrayOfUserField $UserFields): Get_Header
     {
       $this->UserFields = $UserFields;
       return $this;
@@ -455,7 +455,7 @@ class Get_Header
      * @param string $WarehouseId
      * @return Get_Header
      */
-    public function setWarehouseId(string $WarehouseId): Get_Header
+    public function setWarehouseId(?string $WarehouseId): Get_Header
     {
       $this->WarehouseId = $WarehouseId;
       return $this;

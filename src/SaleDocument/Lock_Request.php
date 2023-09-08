@@ -33,7 +33,7 @@ class Lock_Request
      * @param SaleDocumentIdentifier $Identifier
      * @return Lock_Request
      */
-    public function setIdentifier(SaleDocumentIdentifier $Identifier): Lock_Request
+    public function setIdentifier(?SaleDocumentIdentifier $Identifier): Lock_Request
     {
       $this->Identifier = $Identifier;
       return $this;
@@ -51,7 +51,7 @@ class Lock_Request
      * @param string $ReasonId
      * @return Lock_Request
      */
-    public function setReasonId(string $ReasonId): Lock_Request
+    public function setReasonId(?string $ReasonId): Lock_Request
     {
       $this->ReasonId = $ReasonId;
       return $this;

@@ -33,7 +33,7 @@ class Pager
      * @param int $PageIndex
      * @return Pager
      */
-    public function setPageIndex(int $PageIndex): Pager
+    public function setPageIndex(?int $PageIndex): Pager
     {
       $this->PageIndex = $PageIndex;
       return $this;
@@ -51,7 +51,7 @@ class Pager
      * @param int $PageSize
      * @return Pager
      */
-    public function setPageSize(int $PageSize): Pager
+    public function setPageSize(?int $PageSize): Pager
     {
       $this->PageSize = $PageSize;
       return $this;

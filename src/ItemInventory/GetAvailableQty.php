@@ -58,7 +58,7 @@ class GetAvailableQty
      *
      * @return GetAvailableQty
      */
-    public function setItemId(string $itemId): GetAvailableQty
+    public function setItemId(?string $itemId): GetAvailableQty
     {
         $this->itemId = $itemId;
         return $this;
@@ -77,7 +77,7 @@ class GetAvailableQty
      *
      * @return GetAvailableQty
      */
-    public function setItemIdentifier(ItemIdentifier $itemIdentifier): GetAvailableQty
+    public function setItemIdentifier(?ItemIdentifier $itemIdentifier): GetAvailableQty
     {
         $this->itemIdentifier = $itemIdentifier;
         return $this;
@@ -96,7 +96,7 @@ class GetAvailableQty
      *
      * @return GetAvailableQty
      */
-    public function setStoreId(string $storeId): GetAvailableQty
+    public function setStoreId(?string $storeId): GetAvailableQty
     {
         $this->storeId = $storeId;
         return $this;
@@ -115,7 +115,7 @@ class GetAvailableQty
      *
      * @return GetAvailableQty
      */
-    public function setWarehouseId(string $warehouseId): GetAvailableQty
+    public function setWarehouseId(?string $warehouseId): GetAvailableQty
     {
         $this->warehouseId = $warehouseId;
         return $this;
@@ -134,7 +134,7 @@ class GetAvailableQty
      *
      * @return GetAvailableQty
      */
-    public function setClientContext(RetailContext $clientContext): GetAvailableQty
+    public function setClientContext(?RetailContext $clientContext): GetAvailableQty
     {
         $this->clientContext = $clientContext;
         return $this;

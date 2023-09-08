@@ -42,7 +42,7 @@ class CustomerInputData extends CustomerData
      *
      * @return CustomerInputData
      */
-    public function setClosed(bool $Closed): CustomerInputData
+    public function setClosed(?bool $Closed): CustomerInputData
     {
         $this->Closed = $Closed;
         return $this;
@@ -61,7 +61,7 @@ class CustomerInputData extends CustomerData
      *
      * @return CustomerInputData
      */
-    public function setInvoiceCustomerId(string $InvoiceCustomerId): CustomerInputData
+    public function setInvoiceCustomerId(?string $InvoiceCustomerId): CustomerInputData
     {
         $this->InvoiceCustomerId = $InvoiceCustomerId;
         return $this;
@@ -80,7 +80,7 @@ class CustomerInputData extends CustomerData
      *
      * @return CustomerInputData
      */
-    public function setIsProspect(bool $IsProspect): CustomerInputData
+    public function setIsProspect(?bool $IsProspect): CustomerInputData
     {
         $this->IsProspect = $IsProspect;
         return $this;
@@ -99,7 +99,7 @@ class CustomerInputData extends CustomerData
      *
      * @return CustomerInputData
      */
-    public function setNotepad(string $Notepad): CustomerInputData
+    public function setNotepad(?string $Notepad): CustomerInputData
     {
         $this->Notepad = $Notepad;
         return $this;

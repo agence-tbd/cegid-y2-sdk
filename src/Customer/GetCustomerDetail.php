@@ -37,7 +37,7 @@ class GetCustomerDetail
      *
      * @return GetCustomerDetail
      */
-    public function setCustomerId(string $customerId): GetCustomerDetail
+    public function setCustomerId(?string $customerId): GetCustomerDetail
     {
         $this->customerId = $customerId;
         return $this;
@@ -56,7 +56,7 @@ class GetCustomerDetail
      *
      * @return GetCustomerDetail
      */
-    public function setClientContext(RetailContext $clientContext): GetCustomerDetail
+    public function setClientContext(?RetailContext $clientContext): GetCustomerDetail
     {
         $this->clientContext = $clientContext;
         return $this;

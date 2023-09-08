@@ -30,7 +30,7 @@ class UpdateCustomerResponse
      *
      * @return UpdateCustomerResponse
      */
-    public function setUpdateCustomerResult(string $UpdateCustomerResult): UpdateCustomerResponse
+    public function setUpdateCustomerResult(?string $UpdateCustomerResult): UpdateCustomerResponse
     {
         $this->UpdateCustomerResult = $UpdateCustomerResult;
         return $this;

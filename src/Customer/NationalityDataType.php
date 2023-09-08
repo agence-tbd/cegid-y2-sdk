@@ -104,7 +104,7 @@ class NationalityDataType
      *
      * @return NationalityDataType
      */
-    public function setId(string $Id): NationalityDataType
+    public function setId(?string $Id): NationalityDataType
     {
         $this->Id = $Id;
         return $this;
@@ -123,7 +123,7 @@ class NationalityDataType
      *
      * @return NationalityDataType
      */
-    public function setLabel(string $Label): NationalityDataType
+    public function setLabel(?string $Label): NationalityDataType
     {
         $this->Label = $Label;
         return $this;

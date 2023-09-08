@@ -26,7 +26,7 @@ class CreateFromRemainderManagement
      * @param boolean $CloseDocument
      * @return CreateFromRemainderManagement
      */
-    public function setCloseDocument(bool $CloseDocument): CreateFromRemainderManagement
+    public function setCloseDocument(?bool $CloseDocument): CreateFromRemainderManagement
     {
       $this->CloseDocument = $CloseDocument;
       return $this;

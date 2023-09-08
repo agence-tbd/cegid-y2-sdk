@@ -37,7 +37,7 @@ class UpdatePayments
      * @param UpdatePayments_Request $updatePaymentsRequest
      * @return UpdatePayments
      */
-    public function setUpdatePaymentsRequest(UpdatePayments_Request $updatePaymentsRequest): UpdatePayments
+    public function setUpdatePaymentsRequest(?UpdatePayments_Request $updatePaymentsRequest): UpdatePayments
     {
       $this->updatePaymentsRequest = $updatePaymentsRequest;
       return $this;
@@ -55,7 +55,7 @@ class UpdatePayments
      * @param RetailContext $clientContext
      * @return UpdatePayments
      */
-    public function setClientContext(RetailContext $clientContext): UpdatePayments
+    public function setClientContext(?RetailContext $clientContext): UpdatePayments
     {
       $this->clientContext = $clientContext;
       return $this;

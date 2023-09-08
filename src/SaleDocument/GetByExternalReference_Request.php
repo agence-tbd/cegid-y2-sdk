@@ -33,7 +33,7 @@ class GetByExternalReference_Request
      * @param string $ExternalReference
      * @return GetByExternalReference_Request
      */
-    public function setExternalReference(string $ExternalReference): GetByExternalReference_Request
+    public function setExternalReference(?string $ExternalReference): GetByExternalReference_Request
     {
       $this->ExternalReference = $ExternalReference;
       return $this;
@@ -51,7 +51,7 @@ class GetByExternalReference_Request
      * @param string $Type
      * @return GetByExternalReference_Request
      */
-    public function setType(string $Type): GetByExternalReference_Request
+    public function setType(?string $Type): GetByExternalReference_Request
     {
       $this->Type = $Type;
       return $this;

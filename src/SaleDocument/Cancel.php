@@ -34,10 +34,10 @@ class Cancel
     }
 
     /**
-     * @param Cancel_Request $cancelRequest
+     * @param ?Cancel_Request $cancelRequest
      * @return Cancel
      */
-    public function setCancelRequest(Cancel_Request $cancelRequest): Cancel
+    public function setCancelRequest(?Cancel_Request $cancelRequest): Cancel
     {
       $this->cancelRequest = $cancelRequest;
       return $this;
@@ -55,7 +55,7 @@ class Cancel
      * @param RetailContext $clientContext
      * @return Cancel
      */
-    public function setClientContext(RetailContext $clientContext): Cancel
+    public function setClientContext(?RetailContext $clientContext): Cancel
     {
       $this->clientContext = $clientContext;
       return $this;

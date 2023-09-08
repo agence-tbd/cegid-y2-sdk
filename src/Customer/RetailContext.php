@@ -27,7 +27,7 @@ class RetailContext
      *
      * @return RetailContext
      */
-    public function setDatabaseId(string $DatabaseId): RetailContext
+    public function setDatabaseId(?string $DatabaseId): RetailContext
     {
         $this->DatabaseId = $DatabaseId;
         return $this;

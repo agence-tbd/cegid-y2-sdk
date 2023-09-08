@@ -6,7 +6,7 @@ class Create_Request
 {
 
     /**
-     * @var Address $DeliveryAddress
+     * @var ?Address $DeliveryAddress
      */
     protected $DeliveryAddress = null;
 
@@ -42,7 +42,7 @@ class Create_Request
     }
 
     /**
-     * @return Address
+     * @return ?Address
      */
     public function getDeliveryAddress(): ?Address
     {
@@ -50,10 +50,10 @@ class Create_Request
     }
 
     /**
-     * @param Address $DeliveryAddress
+     * @param ?Address $DeliveryAddress
      * @return Create_Request
      */
-    public function setDeliveryAddress(Address $DeliveryAddress): Create_Request
+    public function setDeliveryAddress(?Address $DeliveryAddress): Create_Request
     {
       $this->DeliveryAddress = $DeliveryAddress;
       return $this;
@@ -71,7 +71,7 @@ class Create_Request
      * @param Create_Header $Header
      * @return Create_Request
      */
-    public function setHeader(Create_Header $Header): Create_Request
+    public function setHeader(?Create_Header $Header): Create_Request
     {
       $this->Header = $Header;
       return $this;
@@ -89,7 +89,7 @@ class Create_Request
      * @param Address $InvoicingAddress
      * @return Create_Request
      */
-    public function setInvoicingAddress(Address $InvoicingAddress): Create_Request
+    public function setInvoicingAddress(?Address $InvoicingAddress): Create_Request
     {
       $this->InvoicingAddress = $InvoicingAddress;
       return $this;
@@ -107,7 +107,7 @@ class Create_Request
      * @param ArrayOfCreate_Line $Lines
      * @return Create_Request
      */
-    public function setLines(ArrayOfCreate_Line $Lines): Create_Request
+    public function setLines(?ArrayOfCreate_Line $Lines): Create_Request
     {
       $this->Lines = $Lines;
       return $this;
@@ -125,7 +125,7 @@ class Create_Request
      * @param ArrayOfCreate_Payment $Payments
      * @return Create_Request
      */
-    public function setPayments(ArrayOfCreate_Payment $Payments): Create_Request
+    public function setPayments(?ArrayOfCreate_Payment $Payments): Create_Request
     {
       $this->Payments = $Payments;
       return $this;
@@ -143,7 +143,7 @@ class Create_Request
      * @param ArrayOfCreate_ShippingTax $ShippingTaxes
      * @return Create_Request
      */
-    public function setShippingTaxes(ArrayOfCreate_ShippingTax $ShippingTaxes): Create_Request
+    public function setShippingTaxes(?ArrayOfCreate_ShippingTax $ShippingTaxes): Create_Request
     {
       $this->ShippingTaxes = $ShippingTaxes;
       return $this;

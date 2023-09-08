@@ -36,7 +36,7 @@ class UserField
      * @param int $Id
      * @return UserField
      */
-    public function setId(int $Id): UserField
+    public function setId(?int $Id): UserField
     {
         $this->Id = $Id;
         return $this;
@@ -54,7 +54,7 @@ class UserField
      * @param UserFieldValue $Value
      * @return UserField
      */
-    public function setValue(UserFieldValue $Value): UserField
+    public function setValue(?UserFieldValue $Value): UserField
     {
         $this->Value = $Value;
         return $this;

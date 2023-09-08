@@ -38,7 +38,7 @@ class SaleDocumentKey
      * @param int $Number
      * @return SaleDocumentKey
      */
-    public function setNumber(int $Number): SaleDocumentKey
+    public function setNumber(?int $Number): SaleDocumentKey
     {
       $this->Number = $Number;
       return $this;
@@ -56,7 +56,7 @@ class SaleDocumentKey
      * @param string $Stump
      * @return SaleDocumentKey
      */
-    public function setStump(string $Stump): SaleDocumentKey
+    public function setStump(?string $Stump): SaleDocumentKey
     {
       $this->Stump = $Stump;
       return $this;
@@ -74,7 +74,7 @@ class SaleDocumentKey
      * @param string $Type
      * @return SaleDocumentKey
      */
-    public function setType(string $Type): SaleDocumentKey
+    public function setType(?string $Type): SaleDocumentKey
     {
       $this->Type = $Type;
       return $this;

@@ -32,7 +32,7 @@ class UserDefinedBoolean
      *
      * @return UserDefinedBoolean
      */
-    public function setId(UserDefinedId $Id): UserDefinedBoolean
+    public function setId(?UserDefinedId $Id): UserDefinedBoolean
     {
         $this->Id = $Id;
         return $this;
@@ -51,7 +51,7 @@ class UserDefinedBoolean
      *
      * @return UserDefinedBoolean
      */
-    public function setValue(bool $Value): UserDefinedBoolean
+    public function setValue(?bool $Value): UserDefinedBoolean
     {
         $this->Value = $Value;
         return $this;

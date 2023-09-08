@@ -31,7 +31,7 @@ class ResetShoppingCart_Request
      * @param ItemIdentifier $ItemIdentifier
      * @return ResetShoppingCart_Request
      */
-    public function setItemIdentifier(ItemIdentifier $ItemIdentifier): ResetShoppingCart_Request
+    public function setItemIdentifier(?ItemIdentifier $ItemIdentifier): ResetShoppingCart_Request
     {
         $this->ItemIdentifier = $ItemIdentifier;
         return $this;
@@ -49,7 +49,7 @@ class ResetShoppingCart_Request
      * @param string $WarehouseId
      * @return ResetShoppingCart_Request
      */
-    public function setWarehouseId(string $WarehouseId): ResetShoppingCart_Request
+    public function setWarehouseId(?string $WarehouseId): ResetShoppingCart_Request
     {
         $this->WarehouseId = $WarehouseId;
         return $this;

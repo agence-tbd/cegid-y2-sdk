@@ -37,7 +37,7 @@ class Lock
      * @param Lock_Request $lockRequest
      * @return Lock
      */
-    public function setLockRequest(Lock_Request $lockRequest): Lock
+    public function setLockRequest(?Lock_Request $lockRequest): Lock
     {
       $this->lockRequest = $lockRequest;
       return $this;
@@ -55,7 +55,7 @@ class Lock
      * @param RetailContext $clientContext
      * @return Lock
      */
-    public function setClientContext(RetailContext $clientContext): Lock
+    public function setClientContext(?RetailContext $clientContext): Lock
     {
       $this->clientContext = $clientContext;
       return $this;

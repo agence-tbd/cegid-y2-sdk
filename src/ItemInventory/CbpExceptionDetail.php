@@ -31,7 +31,7 @@ class CbpExceptionDetail extends ExceptionDetail
      * @param string $Id
      * @return CbpExceptionDetail
      */
-    public function setId(string $Id): CbpExceptionDetail
+    public function setId(?string $Id): CbpExceptionDetail
     {
         $this->Id = $Id;
         return $this;
@@ -49,7 +49,7 @@ class CbpExceptionDetail extends ExceptionDetail
      * @param string $ToDo
      * @return CbpExceptionDetail
      */
-    public function setToDo(string $ToDo): CbpExceptionDetail
+    public function setToDo(?string $ToDo): CbpExceptionDetail
     {
         $this->ToDo = $ToDo;
         return $this;

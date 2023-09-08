@@ -36,7 +36,7 @@ class GetListItemInventoryDetailByStore
      * @param GetListItemInventoryDetailByStore_Request $inventoryStoreItemDetailRequest
      * @return GetListItemInventoryDetailByStore
      */
-    public function setInventoryStoreItemDetailRequest(GetListItemInventoryDetailByStore_Request $inventoryStoreItemDetailRequest): GetListItemInventoryDetailByStore
+    public function setInventoryStoreItemDetailRequest(?GetListItemInventoryDetailByStore_Request $inventoryStoreItemDetailRequest): GetListItemInventoryDetailByStore
     {
         $this->inventoryStoreItemDetailRequest = $inventoryStoreItemDetailRequest;
         return $this;
@@ -54,7 +54,7 @@ class GetListItemInventoryDetailByStore
      * @param RetailContext $clientContext
      * @return GetListItemInventoryDetailByStore
      */
-    public function setClientContext(RetailContext $clientContext): GetListItemInventoryDetailByStore
+    public function setClientContext(?RetailContext $clientContext): GetListItemInventoryDetailByStore
     {
         $this->clientContext = $clientContext;
         return $this;

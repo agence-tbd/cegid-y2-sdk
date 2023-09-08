@@ -33,7 +33,7 @@ class Create_Tax
      * @param float $Amount
      * @return Create_Tax
      */
-    public function setAmount(float $Amount): Create_Tax
+    public function setAmount(?float $Amount): Create_Tax
     {
       $this->Amount = $Amount;
       return $this;
@@ -51,7 +51,7 @@ class Create_Tax
      * @param string $FamilyId
      * @return Create_Tax
      */
-    public function setFamilyId(string $FamilyId): Create_Tax
+    public function setFamilyId(?string $FamilyId): Create_Tax
     {
       $this->FamilyId = $FamilyId;
       return $this;

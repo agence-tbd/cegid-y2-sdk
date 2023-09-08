@@ -51,7 +51,7 @@ class ExceptionDetail
      * @param string $HelpLink
      * @return ExceptionDetail
      */
-    public function setHelpLink(string $HelpLink): ExceptionDetail
+    public function setHelpLink(?string $HelpLink): ExceptionDetail
     {
         $this->HelpLink = $HelpLink;
         return $this;
@@ -69,7 +69,7 @@ class ExceptionDetail
      * @param ExceptionDetail $InnerException
      * @return ExceptionDetail
      */
-    public function setInnerException(ExceptionDetail $InnerException): ExceptionDetail
+    public function setInnerException(?ExceptionDetail $InnerException): ExceptionDetail
     {
         $this->InnerException = $InnerException;
         return $this;
@@ -87,7 +87,7 @@ class ExceptionDetail
      * @param string $Message
      * @return ExceptionDetail
      */
-    public function setMessage(string $Message): ExceptionDetail
+    public function setMessage(?string $Message): ExceptionDetail
     {
         $this->Message = $Message;
         return $this;
@@ -105,7 +105,7 @@ class ExceptionDetail
      * @param string $StackTrace
      * @return ExceptionDetail
      */
-    public function setStackTrace(string $StackTrace): ExceptionDetail
+    public function setStackTrace(?string $StackTrace): ExceptionDetail
     {
         $this->StackTrace = $StackTrace;
         return $this;
@@ -123,7 +123,7 @@ class ExceptionDetail
      * @param string $TrackingId
      * @return ExceptionDetail
      */
-    public function setTrackingId(string $TrackingId): ExceptionDetail
+    public function setTrackingId(?string $TrackingId): ExceptionDetail
     {
         $this->TrackingId = $TrackingId;
         return $this;
@@ -141,7 +141,7 @@ class ExceptionDetail
      * @param string $Type
      * @return ExceptionDetail
      */
-    public function setType(string $Type): ExceptionDetail
+    public function setType(?string $Type): ExceptionDetail
     {
         $this->Type = $Type;
         return $this;

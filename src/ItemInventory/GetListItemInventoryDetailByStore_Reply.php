@@ -26,7 +26,7 @@ class GetListItemInventoryDetailByStore_Reply
      * @param ArrayOfAvailableQtyByItemByStore $InventoryDetailsByStore
      * @return GetListItemInventoryDetailByStore_Reply
      */
-    public function setInventoryDetailsByStore(ArrayOfAvailableQtyByItemByStore $InventoryDetailsByStore): GetListItemInventoryDetailByStore_Reply
+    public function setInventoryDetailsByStore(?ArrayOfAvailableQtyByItemByStore $InventoryDetailsByStore): GetListItemInventoryDetailByStore_Reply
     {
         $this->InventoryDetailsByStore = $InventoryDetailsByStore;
         return $this;

@@ -30,7 +30,7 @@ class GetByExternalReferenceResponse
      * @param GetByExternalReference_Reply $GetByExternalReferenceResult
      * @return GetByExternalReferenceResponse
      */
-    public function setGetByExternalReferenceResult(GetByExternalReference_Reply $GetByExternalReferenceResult): GetByExternalReferenceResponse
+    public function setGetByExternalReferenceResult(?GetByExternalReference_Reply $GetByExternalReferenceResult): GetByExternalReferenceResponse
     {
       $this->GetByExternalReferenceResult = $GetByExternalReferenceResult;
       return $this;

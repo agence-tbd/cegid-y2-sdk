@@ -88,7 +88,7 @@ class UpdateHeader_Request
      * @param string $Comment
      * @return UpdateHeader_Request
      */
-    public function setComment(string $Comment): UpdateHeader_Request
+    public function setComment(?string $Comment): UpdateHeader_Request
     {
       $this->Comment = $Comment;
       return $this;
@@ -106,7 +106,7 @@ class UpdateHeader_Request
      * @param Address $DeliveryAddress
      * @return UpdateHeader_Request
      */
-    public function setDeliveryAddress(Address $DeliveryAddress): UpdateHeader_Request
+    public function setDeliveryAddress(?Address $DeliveryAddress): UpdateHeader_Request
     {
       $this->DeliveryAddress = $DeliveryAddress;
       return $this;
@@ -124,7 +124,7 @@ class UpdateHeader_Request
      * @param string $ExternalReference
      * @return UpdateHeader_Request
      */
-    public function setExternalReference(string $ExternalReference): UpdateHeader_Request
+    public function setExternalReference(?string $ExternalReference): UpdateHeader_Request
     {
       $this->ExternalReference = $ExternalReference;
       return $this;
@@ -173,7 +173,7 @@ class UpdateHeader_Request
      * @param string $FollowedReference
      * @return UpdateHeader_Request
      */
-    public function setFollowedReference(string $FollowedReference): UpdateHeader_Request
+    public function setFollowedReference(?string $FollowedReference): UpdateHeader_Request
     {
       $this->FollowedReference = $FollowedReference;
       return $this;
@@ -191,7 +191,7 @@ class UpdateHeader_Request
      * @param SaleDocumentIdentifier $Identifier
      * @return UpdateHeader_Request
      */
-    public function setIdentifier(SaleDocumentIdentifier $Identifier): UpdateHeader_Request
+    public function setIdentifier(?SaleDocumentIdentifier $Identifier): UpdateHeader_Request
     {
       $this->Identifier = $Identifier;
       return $this;
@@ -209,7 +209,7 @@ class UpdateHeader_Request
      * @param Address $InvoicingAddress
      * @return UpdateHeader_Request
      */
-    public function setInvoicingAddress(Address $InvoicingAddress): UpdateHeader_Request
+    public function setInvoicingAddress(?Address $InvoicingAddress): UpdateHeader_Request
     {
       $this->InvoicingAddress = $InvoicingAddress;
       return $this;
@@ -227,7 +227,7 @@ class UpdateHeader_Request
      * @param boolean $LinesUnmodifiable
      * @return UpdateHeader_Request
      */
-    public function setLinesUnmodifiable(bool $LinesUnmodifiable): UpdateHeader_Request
+    public function setLinesUnmodifiable(?bool $LinesUnmodifiable): UpdateHeader_Request
     {
       $this->LinesUnmodifiable = $LinesUnmodifiable;
       return $this;
@@ -245,7 +245,7 @@ class UpdateHeader_Request
      * @param OmniChannel $OmniChannel
      * @return UpdateHeader_Request
      */
-    public function setOmniChannel(OmniChannel $OmniChannel): UpdateHeader_Request
+    public function setOmniChannel(?OmniChannel $OmniChannel): UpdateHeader_Request
     {
       $this->OmniChannel = $OmniChannel;
       return $this;
@@ -263,7 +263,7 @@ class UpdateHeader_Request
      * @param string $SalesPersonId
      * @return UpdateHeader_Request
      */
-    public function setSalesPersonId(string $SalesPersonId): UpdateHeader_Request
+    public function setSalesPersonId(?string $SalesPersonId): UpdateHeader_Request
     {
       $this->SalesPersonId = $SalesPersonId;
       return $this;
@@ -281,7 +281,7 @@ class UpdateHeader_Request
      * @param ArrayOfUserDefinedDate $UserDefinedDates
      * @return UpdateHeader_Request
      */
-    public function setUserDefinedDates(ArrayOfUserDefinedDate $UserDefinedDates): UpdateHeader_Request
+    public function setUserDefinedDates(?ArrayOfUserDefinedDate $UserDefinedDates): UpdateHeader_Request
     {
       $this->UserDefinedDates = $UserDefinedDates;
       return $this;
@@ -299,7 +299,7 @@ class UpdateHeader_Request
      * @param ArrayOfUserDefinedTable $UserDefinedTables
      * @return UpdateHeader_Request
      */
-    public function setUserDefinedTables(ArrayOfUserDefinedTable $UserDefinedTables): UpdateHeader_Request
+    public function setUserDefinedTables(?ArrayOfUserDefinedTable $UserDefinedTables): UpdateHeader_Request
     {
       $this->UserDefinedTables = $UserDefinedTables;
       return $this;
@@ -317,7 +317,7 @@ class UpdateHeader_Request
      * @param ArrayOfUserField $UserFields
      * @return UpdateHeader_Request
      */
-    public function setUserFields(ArrayOfUserField $UserFields): UpdateHeader_Request
+    public function setUserFields(?ArrayOfUserField $UserFields): UpdateHeader_Request
     {
       $this->UserFields = $UserFields;
       return $this;

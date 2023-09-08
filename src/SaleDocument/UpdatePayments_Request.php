@@ -33,7 +33,7 @@ class UpdatePayments_Request
      * @param SaleDocumentIdentifier $Identifier
      * @return UpdatePayments_Request
      */
-    public function setIdentifier(SaleDocumentIdentifier $Identifier): UpdatePayments_Request
+    public function setIdentifier(?SaleDocumentIdentifier $Identifier): UpdatePayments_Request
     {
       $this->Identifier = $Identifier;
       return $this;
@@ -51,7 +51,7 @@ class UpdatePayments_Request
      * @param ArrayOfUpdate_Payment $Payments
      * @return UpdatePayments_Request
      */
-    public function setPayments(ArrayOfUpdate_Payment $Payments): UpdatePayments_Request
+    public function setPayments(?ArrayOfUpdate_Payment $Payments): UpdatePayments_Request
     {
       $this->Payments = $Payments;
       return $this;

@@ -37,7 +37,7 @@ class HelloWorld
      *
      * @return HelloWorld
      */
-    public function setText(string $text): HelloWorld
+    public function setText(?string $text): HelloWorld
     {
         $this->text = $text;
         return $this;
@@ -56,7 +56,7 @@ class HelloWorld
      *
      * @return HelloWorld
      */
-    public function setClientContext(RetailContext $clientContext): HelloWorld
+    public function setClientContext(?RetailContext $clientContext): HelloWorld
     {
         $this->clientContext = $clientContext;
         return $this;

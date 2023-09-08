@@ -28,7 +28,7 @@ class Close_Request
      * @param SaleDocumentIdentifier $Identifier
      * @return Close_Request
      */
-    public function setIdentifier(SaleDocumentIdentifier $Identifier): Close_Request
+    public function setIdentifier(?SaleDocumentIdentifier $Identifier): Close_Request
     {
       $this->Identifier = $Identifier;
       return $this;

@@ -30,7 +30,7 @@ class CustomersReservationCreateResponse
      * @param CustomersReservationCreate_Reply $CustomersReservationCreateResult
      * @return CustomersReservationCreateResponse
      */
-    public function setCustomersReservationCreateResult(CustomersReservationCreate_Reply $CustomersReservationCreateResult): CustomersReservationCreateResponse
+    public function setCustomersReservationCreateResult(?CustomersReservationCreate_Reply $CustomersReservationCreateResult): CustomersReservationCreateResponse
     {
       $this->CustomersReservationCreateResult = $CustomersReservationCreateResult;
       return $this;

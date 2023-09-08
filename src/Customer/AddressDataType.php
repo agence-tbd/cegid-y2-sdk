@@ -130,7 +130,7 @@ class AddressDataType
      *
      * @return AddressDataType
      */
-    public function setBrandName(string $BrandName): AddressDataType
+    public function setBrandName(?string $BrandName): AddressDataType
     {
         $this->BrandName = $BrandName;
         return $this;
@@ -149,7 +149,7 @@ class AddressDataType
      *
      * @return AddressDataType
      */
-    public function setCity(string $City): AddressDataType
+    public function setCity(?string $City): AddressDataType
     {
         $this->City = $City;
         return $this;
@@ -168,7 +168,7 @@ class AddressDataType
      *
      * @return AddressDataType
      */
-    public function setCountryId(string $CountryId): AddressDataType
+    public function setCountryId(?string $CountryId): AddressDataType
     {
         $this->CountryId = $CountryId;
         return $this;
@@ -187,7 +187,7 @@ class AddressDataType
      *
      * @return AddressDataType
      */
-    public function setCountryIdType(CountryIdType $CountryIdType): AddressDataType
+    public function setCountryIdType(?CountryIdType $CountryIdType): AddressDataType
     {
         $this->CountryIdType = $CountryIdType;
         return $this;
@@ -206,7 +206,7 @@ class AddressDataType
      *
      * @return AddressDataType
      */
-    public function setNata(bool $Nata): AddressDataType
+    public function setNata(?bool $Nata): AddressDataType
     {
         $this->Nata = $Nata;
         return $this;
@@ -225,7 +225,7 @@ class AddressDataType
      *
      * @return AddressDataType
      */
-    public function setRegionId(string $RegionId): AddressDataType
+    public function setRegionId(?string $RegionId): AddressDataType
     {
         $this->RegionId = $RegionId;
         return $this;
@@ -244,7 +244,7 @@ class AddressDataType
      *
      * @return AddressDataType
      */
-    public function setZipCode(string $ZipCode): AddressDataType
+    public function setZipCode(?string $ZipCode): AddressDataType
     {
         $this->ZipCode = $ZipCode;
         return $this;

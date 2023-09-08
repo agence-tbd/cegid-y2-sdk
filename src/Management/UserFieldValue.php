@@ -46,7 +46,7 @@ class UserFieldValue
      * @param boolean $BooleanValue
      * @return UserFieldValue
      */
-    public function setBooleanValue(bool $BooleanValue): UserFieldValue
+    public function setBooleanValue(?bool $BooleanValue): UserFieldValue
     {
         $this->BooleanValue = $BooleanValue;
         return $this;
@@ -94,7 +94,7 @@ class UserFieldValue
      * @param string $ListElementValue
      * @return UserFieldValue
      */
-    public function setListElementValue(string $ListElementValue): UserFieldValue
+    public function setListElementValue(?string $ListElementValue): UserFieldValue
     {
         $this->ListElementValue = $ListElementValue;
         return $this;
@@ -112,7 +112,7 @@ class UserFieldValue
      * @param float $NumberValue
      * @return UserFieldValue
      */
-    public function setNumberValue(float $NumberValue): UserFieldValue
+    public function setNumberValue(?float $NumberValue): UserFieldValue
     {
         $this->NumberValue = $NumberValue;
         return $this;
@@ -130,7 +130,7 @@ class UserFieldValue
      * @param string $TextValue
      * @return UserFieldValue
      */
-    public function setTextValue(string $TextValue): UserFieldValue
+    public function setTextValue(?string $TextValue): UserFieldValue
     {
         $this->TextValue = $TextValue;
         return $this;

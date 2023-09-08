@@ -64,7 +64,7 @@ class CreateFrom_Payment
      * @param float $Amount
      * @return CreateFrom_Payment
      */
-    public function setAmount(float $Amount): CreateFrom_Payment
+    public function setAmount(?float $Amount): CreateFrom_Payment
     {
         $this->Amount = $Amount;
         return $this;
@@ -82,7 +82,7 @@ class CreateFrom_Payment
      * @param CreditCard $CreditCard
      * @return CreateFrom_Payment
      */
-    public function setCreditCard(CreditCard $CreditCard): CreateFrom_Payment
+    public function setCreditCard(?CreditCard $CreditCard): CreateFrom_Payment
     {
         $this->CreditCard = $CreditCard;
         return $this;
@@ -100,7 +100,7 @@ class CreateFrom_Payment
      * @param string $CurrencyId
      * @return CreateFrom_Payment
      */
-    public function setCurrencyId(string $CurrencyId): CreateFrom_Payment
+    public function setCurrencyId(?string $CurrencyId): CreateFrom_Payment
     {
         $this->CurrencyId = $CurrencyId;
         return $this;
@@ -148,7 +148,7 @@ class CreateFrom_Payment
      * @param int $Id
      * @return CreateFrom_Payment
      */
-    public function setId(int $Id): CreateFrom_Payment
+    public function setId(?int $Id): CreateFrom_Payment
     {
         $this->Id = $Id;
         return $this;
@@ -166,7 +166,7 @@ class CreateFrom_Payment
      * @param string $MethodId
      * @return CreateFrom_Payment
      */
-    public function setMethodId(string $MethodId): CreateFrom_Payment
+    public function setMethodId(?string $MethodId): CreateFrom_Payment
     {
         $this->MethodId = $MethodId;
         return $this;
@@ -202,7 +202,7 @@ class CreateFrom_Payment
      * @param string $VoucherId
      * @return CreateFrom_Payment
      */
-    public function setVoucherId(string $VoucherId): CreateFrom_Payment
+    public function setVoucherId(?string $VoucherId): CreateFrom_Payment
     {
         $this->VoucherId = $VoucherId;
         return $this;

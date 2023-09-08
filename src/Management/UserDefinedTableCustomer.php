@@ -31,7 +31,7 @@ class UserDefinedTableCustomer
      * @param int $Id
      * @return UserDefinedTableCustomer
      */
-    public function setId(int $Id): UserDefinedTableCustomer
+    public function setId(?int $Id): UserDefinedTableCustomer
     {
       $this->Id = $Id;
       return $this;
@@ -49,7 +49,7 @@ class UserDefinedTableCustomer
      * @param string $Value
      * @return UserDefinedTableCustomer
      */
-    public function setValue(string $Value): UserDefinedTableCustomer
+    public function setValue(?string $Value): UserDefinedTableCustomer
     {
       $this->Value = $Value;
       return $this;

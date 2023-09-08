@@ -28,7 +28,7 @@ class BusinessFaultDetail extends CbpFaultDetail
      * @param ArrayOfstring $MemberNames
      * @return BusinessFaultDetail
      */
-    public function setMemberNames(ArrayOfstring $MemberNames): BusinessFaultDetail
+    public function setMemberNames(?ArrayOfstring $MemberNames): BusinessFaultDetail
     {
       $this->MemberNames = $MemberNames;
       return $this;

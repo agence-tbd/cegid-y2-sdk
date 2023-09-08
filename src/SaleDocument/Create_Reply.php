@@ -28,7 +28,7 @@ class Create_Reply
      * @param SaleDocumentKey $Key
      * @return Create_Reply
      */
-    public function setKey(SaleDocumentKey $Key): Create_Reply
+    public function setKey(?SaleDocumentKey $Key): Create_Reply
     {
       $this->Key = $Key;
       return $this;

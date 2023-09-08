@@ -66,7 +66,7 @@ class CreateFrom_Line
      * @param string $AdditionalDescription
      * @return CreateFrom_Line
      */
-    public function setAdditionalDescription(string $AdditionalDescription): CreateFrom_Line
+    public function setAdditionalDescription(?string $AdditionalDescription): CreateFrom_Line
     {
         $this->AdditionalDescription = $AdditionalDescription;
         return $this;
@@ -84,7 +84,7 @@ class CreateFrom_Line
      * @param string $CatalogReference
      * @return CreateFrom_Line
      */
-    public function setCatalogReference(string $CatalogReference): CreateFrom_Line
+    public function setCatalogReference(?string $CatalogReference): CreateFrom_Line
     {
         $this->CatalogReference = $CatalogReference;
         return $this;
@@ -102,7 +102,7 @@ class CreateFrom_Line
      * @param string $ExternalReference
      * @return CreateFrom_Line
      */
-    public function setExternalReference(string $ExternalReference): CreateFrom_Line
+    public function setExternalReference(?string $ExternalReference): CreateFrom_Line
     {
         $this->ExternalReference = $ExternalReference;
         return $this;
@@ -120,7 +120,7 @@ class CreateFrom_Line
      * @param ItemIdentifier $ItemIdentifier
      * @return CreateFrom_Line
      */
-    public function setItemIdentifier(ItemIdentifier $ItemIdentifier): CreateFrom_Line
+    public function setItemIdentifier(?ItemIdentifier $ItemIdentifier): CreateFrom_Line
     {
         $this->ItemIdentifier = $ItemIdentifier;
         return $this;
@@ -138,7 +138,7 @@ class CreateFrom_Line
      * @param string $PackageReference
      * @return CreateFrom_Line
      */
-    public function setPackageReference(string $PackageReference): CreateFrom_Line
+    public function setPackageReference(?string $PackageReference): CreateFrom_Line
     {
         $this->PackageReference = $PackageReference;
         return $this;
@@ -156,7 +156,7 @@ class CreateFrom_Line
      * @param float $Quantity
      * @return CreateFrom_Line
      */
-    public function setQuantity(float $Quantity): CreateFrom_Line
+    public function setQuantity(?float $Quantity): CreateFrom_Line
     {
         $this->Quantity = $Quantity;
         return $this;
@@ -174,7 +174,7 @@ class CreateFrom_Line
      * @param string $SalesPersonId
      * @return CreateFrom_Line
      */
-    public function setSalesPersonId(string $SalesPersonId): CreateFrom_Line
+    public function setSalesPersonId(?string $SalesPersonId): CreateFrom_Line
     {
         $this->SalesPersonId = $SalesPersonId;
         return $this;
@@ -192,7 +192,7 @@ class CreateFrom_Line
      * @param string $SerialNumberId
      * @return CreateFrom_Line
      */
-    public function setSerialNumberId(string $SerialNumberId): CreateFrom_Line
+    public function setSerialNumberId(?string $SerialNumberId): CreateFrom_Line
     {
         $this->SerialNumberId = $SerialNumberId;
         return $this;
@@ -210,7 +210,7 @@ class CreateFrom_Line
      * @param string $WarehouseId
      * @return CreateFrom_Line
      */
-    public function setWarehouseId(string $WarehouseId): CreateFrom_Line
+    public function setWarehouseId(?string $WarehouseId): CreateFrom_Line
     {
         $this->WarehouseId = $WarehouseId;
         return $this;

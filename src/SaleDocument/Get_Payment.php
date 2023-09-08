@@ -68,7 +68,7 @@ class Get_Payment
      * @param float $Amount
      * @return Get_Payment
      */
-    public function setAmount(float $Amount): Get_Payment
+    public function setAmount(?float $Amount): Get_Payment
     {
       $this->Amount = $Amount;
       return $this;
@@ -86,7 +86,7 @@ class Get_Payment
      * @param float $CashAmount
      * @return Get_Payment
      */
-    public function setCashAmount(float $CashAmount): Get_Payment
+    public function setCashAmount(?float $CashAmount): Get_Payment
     {
       $this->CashAmount = $CashAmount;
       return $this;
@@ -104,7 +104,7 @@ class Get_Payment
      * @param string $Code
      * @return Get_Payment
      */
-    public function setCode(string $Code): Get_Payment
+    public function setCode(?string $Code): Get_Payment
     {
       $this->Code = $Code;
       return $this;
@@ -122,7 +122,7 @@ class Get_Payment
      * @param CreditCard $CreditCard
      * @return Get_Payment
      */
-    public function setCreditCard(CreditCard $CreditCard): Get_Payment
+    public function setCreditCard(?CreditCard $CreditCard): Get_Payment
     {
       $this->CreditCard = $CreditCard;
       return $this;
@@ -140,7 +140,7 @@ class Get_Payment
      * @param string $Currency
      * @return Get_Payment
      */
-    public function setCurrency(string $Currency): Get_Payment
+    public function setCurrency(?string $Currency): Get_Payment
     {
       $this->Currency = $Currency;
       return $this;
@@ -158,7 +158,7 @@ class Get_Payment
      * @param string $CurrencySymbol
      * @return Get_Payment
      */
-    public function setCurrencySymbol(string $CurrencySymbol): Get_Payment
+    public function setCurrencySymbol(?string $CurrencySymbol): Get_Payment
     {
       $this->CurrencySymbol = $CurrencySymbol;
       return $this;
@@ -207,7 +207,7 @@ class Get_Payment
      * @param boolean $IsReceivedPayment
      * @return Get_Payment
      */
-    public function setIsReceivedPayment(bool $IsReceivedPayment): Get_Payment
+    public function setIsReceivedPayment(?bool $IsReceivedPayment): Get_Payment
     {
       $this->IsReceivedPayment = $IsReceivedPayment;
       return $this;
@@ -225,7 +225,7 @@ class Get_Payment
      * @param string $Label
      * @return Get_Payment
      */
-    public function setLabel(string $Label): Get_Payment
+    public function setLabel(?string $Label): Get_Payment
     {
       $this->Label = $Label;
       return $this;

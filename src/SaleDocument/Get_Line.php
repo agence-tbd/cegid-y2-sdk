@@ -143,7 +143,7 @@ class Get_Line
      * @param string $CatalogReference
      * @return Get_Line
      */
-    public function setCatalogReference(string $CatalogReference): Get_Line
+    public function setCatalogReference(?string $CatalogReference): Get_Line
     {
       $this->CatalogReference = $CatalogReference;
       return $this;
@@ -161,7 +161,7 @@ class Get_Line
      * @param string $Comment
      * @return Get_Line
      */
-    public function setComment(string $Comment): Get_Line
+    public function setComment(?string $Comment): Get_Line
     {
       $this->Comment = $Comment;
       return $this;
@@ -179,7 +179,7 @@ class Get_Line
      * @param string $ComplementaryDescription
      * @return Get_Line
      */
-    public function setComplementaryDescription(string $ComplementaryDescription): Get_Line
+    public function setComplementaryDescription(?string $ComplementaryDescription): Get_Line
     {
       $this->ComplementaryDescription = $ComplementaryDescription;
       return $this;
@@ -228,7 +228,7 @@ class Get_Line
      * @param string $DiscountTypeId
      * @return Get_Line
      */
-    public function setDiscountTypeId(string $DiscountTypeId): Get_Line
+    public function setDiscountTypeId(?string $DiscountTypeId): Get_Line
     {
       $this->DiscountTypeId = $DiscountTypeId;
       return $this;
@@ -246,7 +246,7 @@ class Get_Line
      * @param string $ExternalReference
      * @return Get_Line
      */
-    public function setExternalReference(string $ExternalReference): Get_Line
+    public function setExternalReference(?string $ExternalReference): Get_Line
     {
       $this->ExternalReference = $ExternalReference;
       return $this;
@@ -295,7 +295,7 @@ class Get_Line
      * @param string $ItemCode
      * @return Get_Line
      */
-    public function setItemCode(string $ItemCode): Get_Line
+    public function setItemCode(?string $ItemCode): Get_Line
     {
       $this->ItemCode = $ItemCode;
       return $this;
@@ -313,7 +313,7 @@ class Get_Line
      * @param string $ItemId
      * @return Get_Line
      */
-    public function setItemId(string $ItemId): Get_Line
+    public function setItemId(?string $ItemId): Get_Line
     {
       $this->ItemId = $ItemId;
       return $this;
@@ -331,7 +331,7 @@ class Get_Line
      * @param string $ItemReference
      * @return Get_Line
      */
-    public function setItemReference(string $ItemReference): Get_Line
+    public function setItemReference(?string $ItemReference): Get_Line
     {
       $this->ItemReference = $ItemReference;
       return $this;
@@ -349,7 +349,7 @@ class Get_Line
      * @param string $Label
      * @return Get_Line
      */
-    public function setLabel(string $Label): Get_Line
+    public function setLabel(?string $Label): Get_Line
     {
       $this->Label = $Label;
       return $this;
@@ -367,7 +367,7 @@ class Get_Line
      * @param string $MovementReasonId
      * @return Get_Line
      */
-    public function setMovementReasonId(string $MovementReasonId): Get_Line
+    public function setMovementReasonId(?string $MovementReasonId): Get_Line
     {
       $this->MovementReasonId = $MovementReasonId;
       return $this;
@@ -385,7 +385,7 @@ class Get_Line
      * @param GetOmniChannelLine $OmniChannel
      * @return Get_Line
      */
-    public function setOmniChannel(GetOmniChannelLine $OmniChannel): Get_Line
+    public function setOmniChannel(?GetOmniChannelLine $OmniChannel): Get_Line
     {
       $this->OmniChannel = $OmniChannel;
       return $this;
@@ -403,7 +403,7 @@ class Get_Line
      * @param DocumentOrigin $Origin
      * @return Get_Line
      */
-    public function setOrigin(DocumentOrigin $Origin): Get_Line
+    public function setOrigin(?DocumentOrigin $Origin): Get_Line
     {
       $this->Origin = $Origin;
       return $this;
@@ -421,7 +421,7 @@ class Get_Line
      * @param string $PackageReference
      * @return Get_Line
      */
-    public function setPackageReference(string $PackageReference): Get_Line
+    public function setPackageReference(?string $PackageReference): Get_Line
     {
       $this->PackageReference = $PackageReference;
       return $this;
@@ -439,7 +439,7 @@ class Get_Line
      * @param float $Quantity
      * @return Get_Line
      */
-    public function setQuantity(float $Quantity): Get_Line
+    public function setQuantity(?float $Quantity): Get_Line
     {
       $this->Quantity = $Quantity;
       return $this;
@@ -457,7 +457,7 @@ class Get_Line
      * @param int $Rank
      * @return Get_Line
      */
-    public function setRank(int $Rank): Get_Line
+    public function setRank(?int $Rank): Get_Line
     {
       $this->Rank = $Rank;
       return $this;
@@ -475,7 +475,7 @@ class Get_Line
      * @param string $SalesPersonId
      * @return Get_Line
      */
-    public function setSalesPersonId(string $SalesPersonId): Get_Line
+    public function setSalesPersonId(?string $SalesPersonId): Get_Line
     {
       $this->SalesPersonId = $SalesPersonId;
       return $this;
@@ -493,7 +493,7 @@ class Get_Line
      * @param string $SerialNumberId
      * @return Get_Line
      */
-    public function setSerialNumberId(string $SerialNumberId): Get_Line
+    public function setSerialNumberId(?string $SerialNumberId): Get_Line
     {
       $this->SerialNumberId = $SerialNumberId;
       return $this;
@@ -511,7 +511,7 @@ class Get_Line
      * @param float $TaxExcludedNetUnitPrice
      * @return Get_Line
      */
-    public function setTaxExcludedNetUnitPrice(float $TaxExcludedNetUnitPrice): Get_Line
+    public function setTaxExcludedNetUnitPrice(?float $TaxExcludedNetUnitPrice): Get_Line
     {
       $this->TaxExcludedNetUnitPrice = $TaxExcludedNetUnitPrice;
       return $this;
@@ -529,7 +529,7 @@ class Get_Line
      * @param float $TaxExcludedUnitPrice
      * @return Get_Line
      */
-    public function setTaxExcludedUnitPrice(float $TaxExcludedUnitPrice): Get_Line
+    public function setTaxExcludedUnitPrice(?float $TaxExcludedUnitPrice): Get_Line
     {
       $this->TaxExcludedUnitPrice = $TaxExcludedUnitPrice;
       return $this;
@@ -547,7 +547,7 @@ class Get_Line
      * @param float $TaxIncludedNetUnitPrice
      * @return Get_Line
      */
-    public function setTaxIncludedNetUnitPrice(float $TaxIncludedNetUnitPrice): Get_Line
+    public function setTaxIncludedNetUnitPrice(?float $TaxIncludedNetUnitPrice): Get_Line
     {
       $this->TaxIncludedNetUnitPrice = $TaxIncludedNetUnitPrice;
       return $this;
@@ -565,7 +565,7 @@ class Get_Line
      * @param float $TaxIncludedUnitPrice
      * @return Get_Line
      */
-    public function setTaxIncludedUnitPrice(float $TaxIncludedUnitPrice): Get_Line
+    public function setTaxIncludedUnitPrice(?float $TaxIncludedUnitPrice): Get_Line
     {
       $this->TaxIncludedUnitPrice = $TaxIncludedUnitPrice;
       return $this;
@@ -583,7 +583,7 @@ class Get_Line
      * @param string $WarehouseId
      * @return Get_Line
      */
-    public function setWarehouseId(string $WarehouseId): Get_Line
+    public function setWarehouseId(?string $WarehouseId): Get_Line
     {
       $this->WarehouseId = $WarehouseId;
       return $this;

@@ -33,7 +33,7 @@ class Cancel_Request
      * @param SaleDocumentIdentifier $Identifier
      * @return Cancel_Request
      */
-    public function setIdentifier(SaleDocumentIdentifier $Identifier): Cancel_Request
+    public function setIdentifier(?SaleDocumentIdentifier $Identifier): Cancel_Request
     {
       $this->Identifier = $Identifier;
       return $this;
@@ -51,7 +51,7 @@ class Cancel_Request
      * @param string $ReasonId
      * @return Cancel_Request
      */
-    public function setReasonId(string $ReasonId): Cancel_Request
+    public function setReasonId(?string $ReasonId): Cancel_Request
     {
       $this->ReasonId = $ReasonId;
       return $this;

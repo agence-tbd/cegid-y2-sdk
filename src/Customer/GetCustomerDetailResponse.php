@@ -30,7 +30,7 @@ class GetCustomerDetailResponse
      *
      * @return GetCustomerDetailResponse
      */
-    public function setGetCustomerDetailResult(CustomerQueryData $GetCustomerDetailResult): GetCustomerDetailResponse
+    public function setGetCustomerDetailResult(?CustomerQueryData $GetCustomerDetailResult): GetCustomerDetailResponse
     {
         $this->GetCustomerDetailResult = $GetCustomerDetailResult;
         return $this;

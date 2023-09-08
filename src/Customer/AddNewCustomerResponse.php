@@ -30,7 +30,7 @@ class AddNewCustomerResponse
      *
      * @return AddNewCustomerResponse
      */
-    public function setAddNewCustomerResult(string $AddNewCustomerResult): AddNewCustomerResponse
+    public function setAddNewCustomerResult(?string $AddNewCustomerResult): AddNewCustomerResponse
     {
         $this->AddNewCustomerResult = $AddNewCustomerResult;
         return $this;

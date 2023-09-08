@@ -28,7 +28,7 @@ class CustomersReservationCreate_Reply
      * @param SaleDocumentKey $Key
      * @return CustomersReservationCreate_Reply
      */
-    public function setKey(SaleDocumentKey $Key): CustomersReservationCreate_Reply
+    public function setKey(?SaleDocumentKey $Key): CustomersReservationCreate_Reply
     {
       $this->Key = $Key;
       return $this;

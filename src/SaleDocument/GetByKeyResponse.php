@@ -30,7 +30,7 @@ class GetByKeyResponse
      * @param Get_Reply $GetByKeyResult
      * @return GetByKeyResponse
      */
-    public function setGetByKeyResult(Get_Reply $GetByKeyResult): GetByKeyResponse
+    public function setGetByKeyResult(?Get_Reply $GetByKeyResult): GetByKeyResponse
     {
       $this->GetByKeyResult = $GetByKeyResult;
       return $this;

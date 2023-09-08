@@ -131,7 +131,7 @@ class OmniChannel
      * @param string $BillingStatus
      * @return OmniChannel
      */
-    public function setBillingStatus(string $BillingStatus): OmniChannel
+    public function setBillingStatus(?string $BillingStatus): OmniChannel
     {
       $this->BillingStatus = $BillingStatus;
       return $this;
@@ -180,7 +180,7 @@ class OmniChannel
      * @param string $CancelReasonId
      * @return OmniChannel
      */
-    public function setCancelReasonId(string $CancelReasonId): OmniChannel
+    public function setCancelReasonId(?string $CancelReasonId): OmniChannel
     {
       $this->CancelReasonId = $CancelReasonId;
       return $this;
@@ -198,7 +198,7 @@ class OmniChannel
      * @param string $CancelStatus
      * @return OmniChannel
      */
-    public function setCancelStatus(string $CancelStatus): OmniChannel
+    public function setCancelStatus(?string $CancelStatus): OmniChannel
     {
       $this->CancelStatus = $CancelStatus;
       return $this;
@@ -216,7 +216,7 @@ class OmniChannel
      * @param string $Comment
      * @return OmniChannel
      */
-    public function setComment(string $Comment): OmniChannel
+    public function setComment(?string $Comment): OmniChannel
     {
       $this->Comment = $Comment;
       return $this;
@@ -234,7 +234,7 @@ class OmniChannel
      * @param string $DeliveryStoreId
      * @return OmniChannel
      */
-    public function setDeliveryStoreId(string $DeliveryStoreId): OmniChannel
+    public function setDeliveryStoreId(?string $DeliveryStoreId): OmniChannel
     {
       $this->DeliveryStoreId = $DeliveryStoreId;
       return $this;
@@ -252,7 +252,7 @@ class OmniChannel
      * @param string $DeliveryType
      * @return OmniChannel
      */
-    public function setDeliveryType(string $DeliveryType): OmniChannel
+    public function setDeliveryType(?string $DeliveryType): OmniChannel
     {
       $this->DeliveryType = $DeliveryType;
       return $this;
@@ -270,7 +270,7 @@ class OmniChannel
      * @param string $DeliveryWarehouseId
      * @return OmniChannel
      */
-    public function setDeliveryWarehouseId(string $DeliveryWarehouseId): OmniChannel
+    public function setDeliveryWarehouseId(?string $DeliveryWarehouseId): OmniChannel
     {
       $this->DeliveryWarehouseId = $DeliveryWarehouseId;
       return $this;
@@ -288,7 +288,7 @@ class OmniChannel
      * @param string $FollowUpStatus
      * @return OmniChannel
      */
-    public function setFollowUpStatus(string $FollowUpStatus): OmniChannel
+    public function setFollowUpStatus(?string $FollowUpStatus): OmniChannel
     {
       $this->FollowUpStatus = $FollowUpStatus;
       return $this;
@@ -306,7 +306,7 @@ class OmniChannel
      * @param string $GiftMessage
      * @return OmniChannel
      */
-    public function setGiftMessage(string $GiftMessage): OmniChannel
+    public function setGiftMessage(?string $GiftMessage): OmniChannel
     {
       $this->GiftMessage = $GiftMessage;
       return $this;
@@ -324,7 +324,7 @@ class OmniChannel
      * @param GiftMessageType $GiftMessageType
      * @return OmniChannel
      */
-    public function setGiftMessageType(GiftMessageType $GiftMessageType): OmniChannel
+    public function setGiftMessageType(?GiftMessageType $GiftMessageType): OmniChannel
     {
       $this->GiftMessageType = $GiftMessageType;
       return $this;
@@ -373,7 +373,7 @@ class OmniChannel
      * @param SaleDocumentIdentifier $OriginalDocument
      * @return OmniChannel
      */
-    public function setOriginalDocument(SaleDocumentIdentifier $OriginalDocument): OmniChannel
+    public function setOriginalDocument(?SaleDocumentIdentifier $OriginalDocument): OmniChannel
     {
       $this->OriginalDocument = $OriginalDocument;
       return $this;
@@ -391,7 +391,7 @@ class OmniChannel
      * @param string $PaymentMethodId
      * @return OmniChannel
      */
-    public function setPaymentMethodId(string $PaymentMethodId): OmniChannel
+    public function setPaymentMethodId(?string $PaymentMethodId): OmniChannel
     {
       $this->PaymentMethodId = $PaymentMethodId;
       return $this;
@@ -409,7 +409,7 @@ class OmniChannel
      * @param string $PaymentStatus
      * @return OmniChannel
      */
-    public function setPaymentStatus(string $PaymentStatus): OmniChannel
+    public function setPaymentStatus(?string $PaymentStatus): OmniChannel
     {
       $this->PaymentStatus = $PaymentStatus;
       return $this;
@@ -427,7 +427,7 @@ class OmniChannel
      * @param string $ReturnStatus
      * @return OmniChannel
      */
-    public function setReturnStatus(string $ReturnStatus): OmniChannel
+    public function setReturnStatus(?string $ReturnStatus): OmniChannel
     {
       $this->ReturnStatus = $ReturnStatus;
       return $this;
@@ -445,7 +445,7 @@ class OmniChannel
      * @param string $ReturnType
      * @return OmniChannel
      */
-    public function setReturnType(string $ReturnType): OmniChannel
+    public function setReturnType(?string $ReturnType): OmniChannel
     {
       $this->ReturnType = $ReturnType;
       return $this;
@@ -463,7 +463,7 @@ class OmniChannel
      * @param string $ShippingStatus
      * @return OmniChannel
      */
-    public function setShippingStatus(string $ShippingStatus): OmniChannel
+    public function setShippingStatus(?string $ShippingStatus): OmniChannel
     {
       $this->ShippingStatus = $ShippingStatus;
       return $this;
@@ -481,7 +481,7 @@ class OmniChannel
      * @param string $Tracking
      * @return OmniChannel
      */
-    public function setTracking(string $Tracking): OmniChannel
+    public function setTracking(?string $Tracking): OmniChannel
     {
       $this->Tracking = $Tracking;
       return $this;
@@ -499,7 +499,7 @@ class OmniChannel
      * @param string $Transporter
      * @return OmniChannel
      */
-    public function setTransporter(string $Transporter): OmniChannel
+    public function setTransporter(?string $Transporter): OmniChannel
     {
       $this->Transporter = $Transporter;
       return $this;

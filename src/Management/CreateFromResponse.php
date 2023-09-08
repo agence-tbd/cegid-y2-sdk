@@ -29,7 +29,7 @@ class CreateFromResponse
      * @param CreateFrom_Reply $CreateFromResult
      * @return CreateFromResponse
      */
-    public function setCreateFromResult(CreateFrom_Reply $CreateFromResult): CreateFromResponse
+    public function setCreateFromResult(?CreateFrom_Reply $CreateFromResult): CreateFromResponse
     {
       $this->CreateFromResult = $CreateFromResult;
       return $this;

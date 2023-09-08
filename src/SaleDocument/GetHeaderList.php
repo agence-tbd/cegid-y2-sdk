@@ -37,7 +37,7 @@ class GetHeaderList
      * @param GetHeaderList_Request $searchRequest
      * @return GetHeaderList
      */
-    public function setSearchRequest(GetHeaderList_Request $searchRequest): GetHeaderList
+    public function setSearchRequest(?GetHeaderList_Request $searchRequest): GetHeaderList
     {
       $this->searchRequest = $searchRequest;
       return $this;
@@ -55,7 +55,7 @@ class GetHeaderList
      * @param RetailContext $clientContext
      * @return GetHeaderList
      */
-    public function setClientContext(RetailContext $clientContext): GetHeaderList
+    public function setClientContext(?RetailContext $clientContext): GetHeaderList
     {
       $this->clientContext = $clientContext;
       return $this;

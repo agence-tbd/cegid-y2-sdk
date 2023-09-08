@@ -93,7 +93,7 @@ class CustomersReservationCreate_Line
      * @param string $CatalogReference
      * @return CustomersReservationCreate_Line
      */
-    public function setCatalogReference(string $CatalogReference): CustomersReservationCreate_Line
+    public function setCatalogReference(?string $CatalogReference): CustomersReservationCreate_Line
     {
       $this->CatalogReference = $CatalogReference;
       return $this;
@@ -111,7 +111,7 @@ class CustomersReservationCreate_Line
      * @param string $ComplementaryDescription
      * @return CustomersReservationCreate_Line
      */
-    public function setComplementaryDescription(string $ComplementaryDescription): CustomersReservationCreate_Line
+    public function setComplementaryDescription(?string $ComplementaryDescription): CustomersReservationCreate_Line
     {
       $this->ComplementaryDescription = $ComplementaryDescription;
       return $this;
@@ -160,7 +160,7 @@ class CustomersReservationCreate_Line
      * @param string $DiscountTypeId
      * @return CustomersReservationCreate_Line
      */
-    public function setDiscountTypeId(string $DiscountTypeId): CustomersReservationCreate_Line
+    public function setDiscountTypeId(?string $DiscountTypeId): CustomersReservationCreate_Line
     {
       $this->DiscountTypeId = $DiscountTypeId;
       return $this;
@@ -178,7 +178,7 @@ class CustomersReservationCreate_Line
      * @param string $ExternalReference
      * @return CustomersReservationCreate_Line
      */
-    public function setExternalReference(string $ExternalReference): CustomersReservationCreate_Line
+    public function setExternalReference(?string $ExternalReference): CustomersReservationCreate_Line
     {
       $this->ExternalReference = $ExternalReference;
       return $this;
@@ -227,7 +227,7 @@ class CustomersReservationCreate_Line
      * @param ItemIdentifier $ItemIdentifier
      * @return CustomersReservationCreate_Line
      */
-    public function setItemIdentifier(ItemIdentifier $ItemIdentifier): CustomersReservationCreate_Line
+    public function setItemIdentifier(?ItemIdentifier $ItemIdentifier): CustomersReservationCreate_Line
     {
       $this->ItemIdentifier = $ItemIdentifier;
       return $this;
@@ -245,7 +245,7 @@ class CustomersReservationCreate_Line
      * @param string $Label
      * @return CustomersReservationCreate_Line
      */
-    public function setLabel(string $Label): CustomersReservationCreate_Line
+    public function setLabel(?string $Label): CustomersReservationCreate_Line
     {
       $this->Label = $Label;
       return $this;
@@ -263,7 +263,7 @@ class CustomersReservationCreate_Line
      * @param float $NetUnitPrice
      * @return CustomersReservationCreate_Line
      */
-    public function setNetUnitPrice(float $NetUnitPrice): CustomersReservationCreate_Line
+    public function setNetUnitPrice(?float $NetUnitPrice): CustomersReservationCreate_Line
     {
       $this->NetUnitPrice = $NetUnitPrice;
       return $this;
@@ -281,7 +281,7 @@ class CustomersReservationCreate_Line
      * @param float $Quantity
      * @return CustomersReservationCreate_Line
      */
-    public function setQuantity(float $Quantity): CustomersReservationCreate_Line
+    public function setQuantity(?float $Quantity): CustomersReservationCreate_Line
     {
       $this->Quantity = $Quantity;
       return $this;
@@ -299,7 +299,7 @@ class CustomersReservationCreate_Line
      * @param string $SalesPersonId
      * @return CustomersReservationCreate_Line
      */
-    public function setSalesPersonId(string $SalesPersonId): CustomersReservationCreate_Line
+    public function setSalesPersonId(?string $SalesPersonId): CustomersReservationCreate_Line
     {
       $this->SalesPersonId = $SalesPersonId;
       return $this;
@@ -317,7 +317,7 @@ class CustomersReservationCreate_Line
      * @param string $SerialNumberId
      * @return CustomersReservationCreate_Line
      */
-    public function setSerialNumberId(string $SerialNumberId): CustomersReservationCreate_Line
+    public function setSerialNumberId(?string $SerialNumberId): CustomersReservationCreate_Line
     {
       $this->SerialNumberId = $SerialNumberId;
       return $this;
@@ -335,7 +335,7 @@ class CustomersReservationCreate_Line
      * @param ArrayOfCreate_Tax $Taxes
      * @return CustomersReservationCreate_Line
      */
-    public function setTaxes(ArrayOfCreate_Tax $Taxes): CustomersReservationCreate_Line
+    public function setTaxes(?ArrayOfCreate_Tax $Taxes): CustomersReservationCreate_Line
     {
       $this->Taxes = $Taxes;
       return $this;
@@ -353,7 +353,7 @@ class CustomersReservationCreate_Line
      * @param float $UnitPrice
      * @return CustomersReservationCreate_Line
      */
-    public function setUnitPrice(float $UnitPrice): CustomersReservationCreate_Line
+    public function setUnitPrice(?float $UnitPrice): CustomersReservationCreate_Line
     {
       $this->UnitPrice = $UnitPrice;
       return $this;

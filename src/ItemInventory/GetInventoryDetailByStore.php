@@ -43,7 +43,7 @@ class GetInventoryDetailByStore
      * @param string $itemId
      * @return GetInventoryDetailByStore
      */
-    public function setItemId(string $itemId): GetInventoryDetailByStore
+    public function setItemId(?string $itemId): GetInventoryDetailByStore
     {
         $this->itemId = $itemId;
         return $this;
@@ -61,7 +61,7 @@ class GetInventoryDetailByStore
      * @param ItemIdentifier $itemIdentifier
      * @return GetInventoryDetailByStore
      */
-    public function setItemIdentifier(ItemIdentifier $itemIdentifier): GetInventoryDetailByStore
+    public function setItemIdentifier(?ItemIdentifier $itemIdentifier): GetInventoryDetailByStore
     {
         $this->itemIdentifier = $itemIdentifier;
         return $this;
@@ -79,7 +79,7 @@ class GetInventoryDetailByStore
      * @param RetailContext $clientContext
      * @return GetInventoryDetailByStore
      */
-    public function setClientContext(RetailContext $clientContext): GetInventoryDetailByStore
+    public function setClientContext(?RetailContext $clientContext): GetInventoryDetailByStore
     {
         $this->clientContext = $clientContext;
         return $this;

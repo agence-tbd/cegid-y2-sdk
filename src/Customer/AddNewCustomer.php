@@ -37,7 +37,7 @@ class AddNewCustomer
      *
      * @return AddNewCustomer
      */
-    public function setCustomerData(CustomerInsertData $customerData): AddNewCustomer
+    public function setCustomerData(?CustomerInsertData $customerData): AddNewCustomer
     {
         $this->customerData = $customerData;
         return $this;
@@ -56,7 +56,7 @@ class AddNewCustomer
      *
      * @return AddNewCustomer
      */
-    public function setClientContext(RetailContext $clientContext): AddNewCustomer
+    public function setClientContext(?RetailContext $clientContext): AddNewCustomer
     {
         $this->clientContext = $clientContext;
         return $this;

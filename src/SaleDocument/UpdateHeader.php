@@ -37,7 +37,7 @@ class UpdateHeader
      * @param UpdateHeader_Request $updateHeaderRequest
      * @return UpdateHeader
      */
-    public function setUpdateHeaderRequest(UpdateHeader_Request $updateHeaderRequest): UpdateHeader
+    public function setUpdateHeaderRequest(?UpdateHeader_Request $updateHeaderRequest): UpdateHeader
     {
       $this->updateHeaderRequest = $updateHeaderRequest;
       return $this;
@@ -55,7 +55,7 @@ class UpdateHeader
      * @param RetailContext $clientContext
      * @return UpdateHeader
      */
-    public function setClientContext(RetailContext $clientContext): UpdateHeader
+    public function setClientContext(?RetailContext $clientContext): UpdateHeader
     {
       $this->clientContext = $clientContext;
       return $this;

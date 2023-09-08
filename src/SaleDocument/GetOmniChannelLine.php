@@ -33,7 +33,7 @@ class GetOmniChannelLine
      * @param string $FollowUpStatus
      * @return GetOmniChannelLine
      */
-    public function setFollowUpStatus(string $FollowUpStatus): GetOmniChannelLine
+    public function setFollowUpStatus(?string $FollowUpStatus): GetOmniChannelLine
     {
       $this->FollowUpStatus = $FollowUpStatus;
       return $this;
@@ -51,7 +51,7 @@ class GetOmniChannelLine
      * @param string $WarehouseId
      * @return GetOmniChannelLine
      */
-    public function setWarehouseId(string $WarehouseId): GetOmniChannelLine
+    public function setWarehouseId(?string $WarehouseId): GetOmniChannelLine
     {
       $this->WarehouseId = $WarehouseId;
       return $this;

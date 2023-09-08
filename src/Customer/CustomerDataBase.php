@@ -158,7 +158,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setActivitySectorCode(string $ActivitySectorCode): CustomerDataBase
+    public function setActivitySectorCode(?string $ActivitySectorCode): CustomerDataBase
     {
         $this->ActivitySectorCode = $ActivitySectorCode;
         return $this;
@@ -177,7 +177,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setAddressData(AddressDataType $AddressData): CustomerDataBase
+    public function setAddressData(?AddressDataType $AddressData): CustomerDataBase
     {
         $this->AddressData = $AddressData;
         return $this;
@@ -196,7 +196,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setAlternateFirstName(string $AlternateFirstName): CustomerDataBase
+    public function setAlternateFirstName(?string $AlternateFirstName): CustomerDataBase
     {
         $this->AlternateFirstName = $AlternateFirstName;
         return $this;
@@ -215,7 +215,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setAlternateLastName(string $AlternateLastName): CustomerDataBase
+    public function setAlternateLastName(?string $AlternateLastName): CustomerDataBase
     {
         $this->AlternateLastName = $AlternateLastName;
         return $this;
@@ -234,7 +234,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setBusinessAreaCode(string $BusinessAreaCode): CustomerDataBase
+    public function setBusinessAreaCode(?string $BusinessAreaCode): CustomerDataBase
     {
         $this->BusinessAreaCode = $BusinessAreaCode;
         return $this;
@@ -253,7 +253,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setCpfCnpjCode(string $CpfCnpjCode): CustomerDataBase
+    public function setCpfCnpjCode(?string $CpfCnpjCode): CustomerDataBase
     {
         $this->CpfCnpjCode = $CpfCnpjCode;
         return $this;
@@ -272,7 +272,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setEmailData(EmailDataType $EmailData): CustomerDataBase
+    public function setEmailData(?EmailDataType $EmailData): CustomerDataBase
     {
         $this->EmailData = $EmailData;
         return $this;
@@ -291,7 +291,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setFirstName(string $FirstName): CustomerDataBase
+    public function setFirstName(?string $FirstName): CustomerDataBase
     {
         $this->FirstName = $FirstName;
         return $this;
@@ -310,7 +310,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setIsCompany(bool $IsCompany): CustomerDataBase
+    public function setIsCompany(?bool $IsCompany): CustomerDataBase
     {
         $this->IsCompany = $IsCompany;
         return $this;
@@ -356,7 +356,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setLastName(string $LastName): CustomerDataBase
+    public function setLastName(?string $LastName): CustomerDataBase
     {
         $this->LastName = $LastName;
         return $this;
@@ -375,7 +375,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setMunicipalRegistration(string $MunicipalRegistration): CustomerDataBase
+    public function setMunicipalRegistration(?string $MunicipalRegistration): CustomerDataBase
     {
         $this->MunicipalRegistration = $MunicipalRegistration;
         return $this;
@@ -394,7 +394,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setOriginCode(string $OriginCode): CustomerDataBase
+    public function setOriginCode(?string $OriginCode): CustomerDataBase
     {
         $this->OriginCode = $OriginCode;
         return $this;
@@ -413,7 +413,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setPhoneData(PhoneDataType $PhoneData): CustomerDataBase
+    public function setPhoneData(?PhoneDataType $PhoneData): CustomerDataBase
     {
         $this->PhoneData = $PhoneData;
         return $this;
@@ -432,7 +432,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setPriceListCode(string $PriceListCode): CustomerDataBase
+    public function setPriceListCode(?string $PriceListCode): CustomerDataBase
     {
         $this->PriceListCode = $PriceListCode;
         return $this;
@@ -451,7 +451,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setRegionalRegistration(string $RegionalRegistration): CustomerDataBase
+    public function setRegionalRegistration(?string $RegionalRegistration): CustomerDataBase
     {
         $this->RegionalRegistration = $RegionalRegistration;
         return $this;
@@ -470,7 +470,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setRiskLevel(string $RiskLevel): CustomerDataBase
+    public function setRiskLevel(?string $RiskLevel): CustomerDataBase
     {
         $this->RiskLevel = $RiskLevel;
         return $this;
@@ -527,7 +527,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setSalesPersonId(string $SalesPersonId): CustomerDataBase
+    public function setSalesPersonId(?string $SalesPersonId): CustomerDataBase
     {
         $this->SalesPersonId = $SalesPersonId;
         return $this;
@@ -546,7 +546,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setTitleId(string $TitleId): CustomerDataBase
+    public function setTitleId(?string $TitleId): CustomerDataBase
     {
         $this->TitleId = $TitleId;
         return $this;
@@ -565,7 +565,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setUserDefinedBooleans(ArrayOfUserDefinedBoolean $UserDefinedBooleans): CustomerDataBase
+    public function setUserDefinedBooleans(?ArrayOfUserDefinedBoolean $UserDefinedBooleans): CustomerDataBase
     {
         $this->UserDefinedBooleans = $UserDefinedBooleans;
         return $this;
@@ -584,7 +584,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setUserDefinedData(UserDefinedDataType $UserDefinedData): CustomerDataBase
+    public function setUserDefinedData(?UserDefinedDataType $UserDefinedData): CustomerDataBase
     {
         $this->UserDefinedData = $UserDefinedData;
         return $this;
@@ -603,7 +603,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setUserDefinedDates(ArrayOfUserDefinedDate $UserDefinedDates): CustomerDataBase
+    public function setUserDefinedDates(?ArrayOfUserDefinedDate $UserDefinedDates): CustomerDataBase
     {
         $this->UserDefinedDates = $UserDefinedDates;
         return $this;
@@ -622,7 +622,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setUserDefinedTexts(ArrayOfUserDefinedText $UserDefinedTexts): CustomerDataBase
+    public function setUserDefinedTexts(?ArrayOfUserDefinedText $UserDefinedTexts): CustomerDataBase
     {
         $this->UserDefinedTexts = $UserDefinedTexts;
         return $this;
@@ -641,7 +641,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setUserDefinedValues(ArrayOfUserDefinedValue $UserDefinedValues): CustomerDataBase
+    public function setUserDefinedValues(?ArrayOfUserDefinedValue $UserDefinedValues): CustomerDataBase
     {
         $this->UserDefinedValues = $UserDefinedValues;
         return $this;
@@ -660,7 +660,7 @@ class CustomerDataBase
      *
      * @return CustomerDataBase
      */
-    public function setUsualStoreId(string $UsualStoreId): CustomerDataBase
+    public function setUsualStoreId(?string $UsualStoreId): CustomerDataBase
     {
         $this->UsualStoreId = $UsualStoreId;
         return $this;

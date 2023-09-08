@@ -33,7 +33,7 @@ class SaleDocumentLineIdentifier
      * @param SaleDocumentIdentifier $DocumentId
      * @return SaleDocumentLineIdentifier
      */
-    public function setDocumentId(SaleDocumentIdentifier $DocumentId): SaleDocumentLineIdentifier
+    public function setDocumentId(?SaleDocumentIdentifier $DocumentId): SaleDocumentLineIdentifier
     {
       $this->DocumentId = $DocumentId;
       return $this;
@@ -51,7 +51,7 @@ class SaleDocumentLineIdentifier
      * @param int $LineId
      * @return SaleDocumentLineIdentifier
      */
-    public function setLineId(int $LineId): SaleDocumentLineIdentifier
+    public function setLineId(?int $LineId): SaleDocumentLineIdentifier
     {
       $this->LineId = $LineId;
       return $this;

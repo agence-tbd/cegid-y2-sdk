@@ -32,7 +32,7 @@ class InternalGuid
      *
      * @return InternalGuid
      */
-    public function setCheckGuid(bool $CheckGuid): InternalGuid
+    public function setCheckGuid(?bool $CheckGuid): InternalGuid
     {
         $this->CheckGuid = $CheckGuid;
         return $this;
@@ -51,7 +51,7 @@ class InternalGuid
      *
      * @return InternalGuid
      */
-    public function setGuid(string $Guid): InternalGuid
+    public function setGuid(?string $Guid): InternalGuid
     {
         $this->Guid = $Guid;
         return $this;

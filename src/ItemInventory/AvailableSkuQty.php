@@ -51,7 +51,7 @@ class AvailableSkuQty
      * @param float $AvailableQty
      * @return AvailableSkuQty
      */
-    public function setAvailableQty(float $AvailableQty): AvailableSkuQty
+    public function setAvailableQty(?float $AvailableQty): AvailableSkuQty
     {
         $this->AvailableQty = $AvailableQty;
         return $this;

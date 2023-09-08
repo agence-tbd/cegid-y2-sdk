@@ -30,7 +30,7 @@ class GetByReferenceResponse
      * @param Get_Reply $GetByReferenceResult
      * @return GetByReferenceResponse
      */
-    public function setGetByReferenceResult(Get_Reply $GetByReferenceResult): GetByReferenceResponse
+    public function setGetByReferenceResult(?Get_Reply $GetByReferenceResult): GetByReferenceResponse
     {
       $this->GetByReferenceResult = $GetByReferenceResult;
       return $this;

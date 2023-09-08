@@ -36,7 +36,7 @@ class ResetShoppingCart
      * @param ResetShoppingCart_Request $request
      * @return ResetShoppingCart
      */
-    public function setRequest(ResetShoppingCart_Request $request): ResetShoppingCart
+    public function setRequest(?ResetShoppingCart_Request $request): ResetShoppingCart
     {
         $this->request = $request;
         return $this;
@@ -54,7 +54,7 @@ class ResetShoppingCart
      * @param RetailContext $clientContext
      * @return ResetShoppingCart
      */
-    public function setClientContext(RetailContext $clientContext): ResetShoppingCart
+    public function setClientContext(?RetailContext $clientContext): ResetShoppingCart
     {
         $this->clientContext = $clientContext;
         return $this;

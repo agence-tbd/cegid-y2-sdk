@@ -37,7 +37,7 @@ class GetByReference
      * @param GetByReference_Request $searchRequest
      * @return GetByReference
      */
-    public function setSearchRequest(GetByReference_Request $searchRequest): GetByReference
+    public function setSearchRequest(?GetByReference_Request $searchRequest): GetByReference
     {
       $this->searchRequest = $searchRequest;
       return $this;
@@ -55,7 +55,7 @@ class GetByReference
      * @param RetailContext $clientContext
      * @return GetByReference
      */
-    public function setClientContext(RetailContext $clientContext): GetByReference
+    public function setClientContext(?RetailContext $clientContext): GetByReference
     {
       $this->clientContext = $clientContext;
       return $this;

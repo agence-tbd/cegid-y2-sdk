@@ -42,7 +42,7 @@ class EmailDataType
      *
      * @return EmailDataType
      */
-    public function setAlternativeEmail(string $AlternativeEmail): EmailDataType
+    public function setAlternativeEmail(?string $AlternativeEmail): EmailDataType
     {
         $this->AlternativeEmail = $AlternativeEmail;
         return $this;
@@ -61,7 +61,7 @@ class EmailDataType
      *
      * @return EmailDataType
      */
-    public function setEmail(string $Email): EmailDataType
+    public function setEmail(?string $Email): EmailDataType
     {
         $this->Email = $Email;
         return $this;
@@ -80,7 +80,7 @@ class EmailDataType
      *
      * @return EmailDataType
      */
-    public function setEmailingAccepted(bool $EmailingAccepted): EmailDataType
+    public function setEmailingAccepted(?bool $EmailingAccepted): EmailDataType
     {
         $this->EmailingAccepted = $EmailingAccepted;
         return $this;
@@ -99,7 +99,7 @@ class EmailDataType
      *
      * @return EmailDataType
      */
-    public function setSendReceiptByMail(bool $SendReceiptByMail): EmailDataType
+    public function setSendReceiptByMail(?bool $SendReceiptByMail): EmailDataType
     {
         $this->SendReceiptByMail = $SendReceiptByMail;
         return $this;

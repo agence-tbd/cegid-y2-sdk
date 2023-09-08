@@ -39,7 +39,7 @@ class UpdateShoppingCart_Request
      * @param ItemIdentifier $ItemIdentifier
      * @return UpdateShoppingCart_Request
      */
-    public function setItemIdentifier(ItemIdentifier $ItemIdentifier): UpdateShoppingCart_Request
+    public function setItemIdentifier(?ItemIdentifier $ItemIdentifier): UpdateShoppingCart_Request
     {
         $this->ItemIdentifier = $ItemIdentifier;
         return $this;
@@ -57,7 +57,7 @@ class UpdateShoppingCart_Request
      * @param float $Quantity
      * @return UpdateShoppingCart_Request
      */
-    public function setQuantity(float $Quantity): UpdateShoppingCart_Request
+    public function setQuantity(?float $Quantity): UpdateShoppingCart_Request
     {
         $this->Quantity = $Quantity;
         return $this;
@@ -75,7 +75,7 @@ class UpdateShoppingCart_Request
      * @param string $WarehouseId
      * @return UpdateShoppingCart_Request
      */
-    public function setWarehouseId(string $WarehouseId): UpdateShoppingCart_Request
+    public function setWarehouseId(?string $WarehouseId): UpdateShoppingCart_Request
     {
         $this->WarehouseId = $WarehouseId;
         return $this;

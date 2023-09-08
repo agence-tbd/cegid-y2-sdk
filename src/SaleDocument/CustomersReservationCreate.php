@@ -37,7 +37,7 @@ class CustomersReservationCreate
      * @param CustomersReservationCreate_Request $customersReservationCreateRequest
      * @return CustomersReservationCreate
      */
-    public function setCustomersReservationCreateRequest(CustomersReservationCreate_Request $customersReservationCreateRequest): CustomersReservationCreate
+    public function setCustomersReservationCreateRequest(?CustomersReservationCreate_Request $customersReservationCreateRequest): CustomersReservationCreate
     {
       $this->customersReservationCreateRequest = $customersReservationCreateRequest;
       return $this;
@@ -55,7 +55,7 @@ class CustomersReservationCreate
      * @param RetailContext $clientContext
      * @return CustomersReservationCreate
      */
-    public function setClientContext(RetailContext $clientContext): CustomersReservationCreate
+    public function setClientContext(?RetailContext $clientContext): CustomersReservationCreate
     {
       $this->clientContext = $clientContext;
       return $this;

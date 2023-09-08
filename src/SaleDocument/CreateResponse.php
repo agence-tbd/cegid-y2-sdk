@@ -30,7 +30,7 @@ class CreateResponse
      * @param Create_Reply $CreateResult
      * @return CreateResponse
      */
-    public function setCreateResult(Create_Reply $CreateResult): CreateResponse
+    public function setCreateResult(?Create_Reply $CreateResult): CreateResponse
     {
       $this->CreateResult = $CreateResult;
       return $this;

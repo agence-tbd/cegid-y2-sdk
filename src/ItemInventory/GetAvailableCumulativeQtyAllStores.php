@@ -43,7 +43,7 @@ class GetAvailableCumulativeQtyAllStores
      * @param string $itemId
      * @return GetAvailableCumulativeQtyAllStores
      */
-    public function setItemId(string $itemId): GetAvailableCumulativeQtyAllStores
+    public function setItemId(?string $itemId): GetAvailableCumulativeQtyAllStores
     {
         $this->itemId = $itemId;
         return $this;
@@ -61,7 +61,7 @@ class GetAvailableCumulativeQtyAllStores
      * @param ItemIdentifier $itemIdentifier
      * @return GetAvailableCumulativeQtyAllStores
      */
-    public function setItemIdentifier(ItemIdentifier $itemIdentifier): GetAvailableCumulativeQtyAllStores
+    public function setItemIdentifier(?ItemIdentifier $itemIdentifier): GetAvailableCumulativeQtyAllStores
     {
         $this->itemIdentifier = $itemIdentifier;
         return $this;
@@ -79,7 +79,7 @@ class GetAvailableCumulativeQtyAllStores
      * @param RetailContext $clientContext
      * @return GetAvailableCumulativeQtyAllStores
      */
-    public function setClientContext(RetailContext $clientContext): GetAvailableCumulativeQtyAllStores
+    public function setClientContext(?RetailContext $clientContext): GetAvailableCumulativeQtyAllStores
     {
         $this->clientContext = $clientContext;
         return $this;

@@ -36,7 +36,7 @@ class CreateFrom_Request
      * @param CreateFrom_Header $Header
      * @return CreateFrom_Request
      */
-    public function setHeader(CreateFrom_Header $Header): CreateFrom_Request
+    public function setHeader(?CreateFrom_Header $Header): CreateFrom_Request
     {
       $this->Header = $Header;
       return $this;
@@ -54,7 +54,7 @@ class CreateFrom_Request
      * @param ArrayOfCreateFrom_Line $Lines
      * @return CreateFrom_Request
      */
-    public function setLines(ArrayOfCreateFrom_Line $Lines): CreateFrom_Request
+    public function setLines(?ArrayOfCreateFrom_Line $Lines): CreateFrom_Request
     {
       $this->Lines = $Lines;
       return $this;
@@ -72,7 +72,7 @@ class CreateFrom_Request
      * @param ArrayOfCreateFrom_Payment $Payments
      * @return CreateFrom_Request
      */
-    public function setPayments(ArrayOfCreateFrom_Payment $Payments): CreateFrom_Request
+    public function setPayments(?ArrayOfCreateFrom_Payment $Payments): CreateFrom_Request
     {
       $this->Payments = $Payments;
       return $this;

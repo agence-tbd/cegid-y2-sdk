@@ -42,7 +42,7 @@ class PhoneDataType
      *
      * @return PhoneDataType
      */
-    public function setAlternativePhoneNumber(string $AlternativePhoneNumber): PhoneDataType
+    public function setAlternativePhoneNumber(?string $AlternativePhoneNumber): PhoneDataType
     {
         $this->AlternativePhoneNumber = $AlternativePhoneNumber;
         return $this;
@@ -61,7 +61,7 @@ class PhoneDataType
      *
      * @return PhoneDataType
      */
-    public function setCellularPhoneNumber(string $CellularPhoneNumber): PhoneDataType
+    public function setCellularPhoneNumber(?string $CellularPhoneNumber): PhoneDataType
     {
         $this->CellularPhoneNumber = $CellularPhoneNumber;
         return $this;
@@ -80,7 +80,7 @@ class PhoneDataType
      *
      * @return PhoneDataType
      */
-    public function setHomePhoneNumber(string $HomePhoneNumber): PhoneDataType
+    public function setHomePhoneNumber(?string $HomePhoneNumber): PhoneDataType
     {
         $this->HomePhoneNumber = $HomePhoneNumber;
         return $this;
@@ -99,7 +99,7 @@ class PhoneDataType
      *
      * @return PhoneDataType
      */
-    public function setOfficePhoneNumber(string $OfficePhoneNumber): PhoneDataType
+    public function setOfficePhoneNumber(?string $OfficePhoneNumber): PhoneDataType
     {
         $this->OfficePhoneNumber = $OfficePhoneNumber;
         return $this;

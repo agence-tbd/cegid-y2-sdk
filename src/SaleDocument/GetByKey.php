@@ -37,7 +37,7 @@ class GetByKey
      * @param GetByKey_Request $searchRequest
      * @return GetByKey
      */
-    public function setSearchRequest(GetByKey_Request $searchRequest): GetByKey
+    public function setSearchRequest(?GetByKey_Request $searchRequest): GetByKey
     {
       $this->searchRequest = $searchRequest;
       return $this;
@@ -55,7 +55,7 @@ class GetByKey
      * @param RetailContext $clientContext
      * @return GetByKey
      */
-    public function setClientContext(RetailContext $clientContext): GetByKey
+    public function setClientContext(?RetailContext $clientContext): GetByKey
     {
       $this->clientContext = $clientContext;
       return $this;

@@ -89,7 +89,7 @@ class Address
      * @param string $City
      * @return Address
      */
-    public function setCity(string $City): Address
+    public function setCity(?string $City): Address
     {
       $this->City = $City;
       return $this;
@@ -107,7 +107,7 @@ class Address
      * @param int $ContactNumber
      * @return Address
      */
-    public function setContactNumber(int $ContactNumber): Address
+    public function setContactNumber(?int $ContactNumber): Address
     {
       $this->ContactNumber = $ContactNumber;
       return $this;
@@ -125,7 +125,7 @@ class Address
      * @param string $CountryId
      * @return Address
      */
-    public function setCountryId(string $CountryId): Address
+    public function setCountryId(?string $CountryId): Address
     {
       $this->CountryId = $CountryId;
       return $this;
@@ -143,7 +143,7 @@ class Address
      * @param string $CountryIdType
      * @return Address
      */
-    public function setCountryIdType(string $CountryIdType): Address
+    public function setCountryIdType(?string $CountryIdType): Address
     {
       $this->CountryIdType = $CountryIdType;
       return $this;
@@ -161,7 +161,7 @@ class Address
      * @param string $FirstName
      * @return Address
      */
-    public function setFirstName(string $FirstName): Address
+    public function setFirstName(?string $FirstName): Address
     {
       $this->FirstName = $FirstName;
       return $this;
@@ -179,7 +179,7 @@ class Address
      * @param string $LastName
      * @return Address
      */
-    public function setLastName(string $LastName): Address
+    public function setLastName(?string $LastName): Address
     {
       $this->LastName = $LastName;
       return $this;
@@ -251,7 +251,7 @@ class Address
      * @param string $PhoneNumber
      * @return Address
      */
-    public function setPhoneNumber(string $PhoneNumber): Address
+    public function setPhoneNumber(?string $PhoneNumber): Address
     {
       $this->PhoneNumber = $PhoneNumber;
       return $this;
@@ -269,7 +269,7 @@ class Address
      * @param string $Region
      * @return Address
      */
-    public function setRegion(string $Region): Address
+    public function setRegion(?string $Region): Address
     {
       $this->Region = $Region;
       return $this;
@@ -287,7 +287,7 @@ class Address
      * @param string $TitleId
      * @return Address
      */
-    public function setTitleId(string $TitleId): Address
+    public function setTitleId(?string $TitleId): Address
     {
       $this->TitleId = $TitleId;
       return $this;
@@ -305,7 +305,7 @@ class Address
      * @param string $ZipCode
      * @return Address
      */
-    public function setZipCode(string $ZipCode): Address
+    public function setZipCode(?string $ZipCode): Address
     {
       $this->ZipCode = $ZipCode;
       return $this;

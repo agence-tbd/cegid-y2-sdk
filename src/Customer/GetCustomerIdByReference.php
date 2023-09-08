@@ -37,7 +37,7 @@ class GetCustomerIdByReference
      *
      * @return GetCustomerIdByReference
      */
-    public function setCustomerReference(string $customerReference): GetCustomerIdByReference
+    public function setCustomerReference(?string $customerReference): GetCustomerIdByReference
     {
         $this->customerReference = $customerReference;
         return $this;
@@ -56,7 +56,7 @@ class GetCustomerIdByReference
      *
      * @return GetCustomerIdByReference
      */
-    public function setClientContext(RetailContext $clientContext): GetCustomerIdByReference
+    public function setClientContext(?RetailContext $clientContext): GetCustomerIdByReference
     {
         $this->clientContext = $clientContext;
         return $this;

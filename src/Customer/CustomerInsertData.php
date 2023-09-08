@@ -32,7 +32,7 @@ class CustomerInsertData extends CustomerInputData
      *
      * @return CustomerInsertData
      */
-    public function setCustomerGuid(InternalGuid $CustomerGuid): CustomerInsertData
+    public function setCustomerGuid(?InternalGuid $CustomerGuid): CustomerInsertData
     {
         $this->CustomerGuid = $CustomerGuid;
         return $this;
@@ -47,13 +47,13 @@ class CustomerInsertData extends CustomerInputData
     }
 
     /**
-     * @param string $CustomerId
+     * @param string $customerId
      *
      * @return CustomerInsertData
      */
-    public function setCustomerId(string $CustomerId): CustomerInsertData
+    public function setCustomerId(?string $customerId): CustomerInsertData
     {
-        $this->CustomerId = $CustomerId;
+        $this->CustomerId = $customerId;
         return $this;
     }
 

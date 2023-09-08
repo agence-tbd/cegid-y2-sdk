@@ -37,7 +37,7 @@ class Create
      * @param Create_Request $createRequest
      * @return Create
      */
-    public function setCreateRequest(Create_Request $createRequest): Create
+    public function setCreateRequest(?Create_Request $createRequest): Create
     {
       $this->createRequest = $createRequest;
       return $this;
@@ -55,7 +55,7 @@ class Create
      * @param RetailContext $clientContext
      * @return Create
      */
-    public function setClientContext(RetailContext $clientContext): Create
+    public function setClientContext(?RetailContext $clientContext): Create
     {
       $this->clientContext = $clientContext;
       return $this;

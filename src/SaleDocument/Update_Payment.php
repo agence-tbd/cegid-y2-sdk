@@ -70,7 +70,7 @@ class Update_Payment
      * @param float $Amount
      * @return Update_Payment
      */
-    public function setAmount(float $Amount): Update_Payment
+    public function setAmount(?float $Amount): Update_Payment
     {
       $this->Amount = $Amount;
       return $this;
@@ -88,7 +88,7 @@ class Update_Payment
      * @param string $BonId
      * @return Update_Payment
      */
-    public function setBonId(string $BonId): Update_Payment
+    public function setBonId(?string $BonId): Update_Payment
     {
       $this->BonId = $BonId;
       return $this;
@@ -106,7 +106,7 @@ class Update_Payment
      * @param CreditCard $CreditCard
      * @return Update_Payment
      */
-    public function setCreditCard(CreditCard $CreditCard): Update_Payment
+    public function setCreditCard(?CreditCard $CreditCard): Update_Payment
     {
       $this->CreditCard = $CreditCard;
       return $this;
@@ -124,7 +124,7 @@ class Update_Payment
      * @param string $CurrencyId
      * @return Update_Payment
      */
-    public function setCurrencyId(string $CurrencyId): Update_Payment
+    public function setCurrencyId(?string $CurrencyId): Update_Payment
     {
       $this->CurrencyId = $CurrencyId;
       return $this;
@@ -173,7 +173,7 @@ class Update_Payment
      * @param int $Id
      * @return Update_Payment
      */
-    public function setId(int $Id): Update_Payment
+    public function setId(?int $Id): Update_Payment
     {
       $this->Id = $Id;
       return $this;
@@ -191,7 +191,7 @@ class Update_Payment
      * @param boolean $IsReceivedPayment
      * @return Update_Payment
      */
-    public function setIsReceivedPayment(bool $IsReceivedPayment): Update_Payment
+    public function setIsReceivedPayment(?bool $IsReceivedPayment): Update_Payment
     {
       $this->IsReceivedPayment = $IsReceivedPayment;
       return $this;
@@ -209,7 +209,7 @@ class Update_Payment
      * @param string $MethodId
      * @return Update_Payment
      */
-    public function setMethodId(string $MethodId): Update_Payment
+    public function setMethodId(?string $MethodId): Update_Payment
     {
       $this->MethodId = $MethodId;
       return $this;
@@ -227,7 +227,7 @@ class Update_Payment
      * @param string $RegisterOperationForReceivedPayment
      * @return Update_Payment
      */
-    public function setRegisterOperationForReceivedPayment(string $RegisterOperationForReceivedPayment): Update_Payment
+    public function setRegisterOperationForReceivedPayment(?string $RegisterOperationForReceivedPayment): Update_Payment
     {
       $this->RegisterOperationForReceivedPayment = $RegisterOperationForReceivedPayment;
       return $this;

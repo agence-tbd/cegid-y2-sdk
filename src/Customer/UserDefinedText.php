@@ -32,7 +32,7 @@ class UserDefinedText
      *
      * @return UserDefinedText
      */
-    public function setId(UserDefinedId $Id): UserDefinedText
+    public function setId(?UserDefinedId $Id): UserDefinedText
     {
         $this->Id = $Id;
         return $this;
@@ -51,7 +51,7 @@ class UserDefinedText
      *
      * @return UserDefinedText
      */
-    public function setValue(string $Value): UserDefinedText
+    public function setValue(?string $Value): UserDefinedText
     {
         $this->Value = $Value;
         return $this;

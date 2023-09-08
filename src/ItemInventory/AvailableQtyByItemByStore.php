@@ -31,7 +31,7 @@ class AvailableQtyByItemByStore
      * @param string $ItemCode
      * @return AvailableQtyByItemByStore
      */
-    public function setItemCode(string $ItemCode): AvailableQtyByItemByStore
+    public function setItemCode(?string $ItemCode): AvailableQtyByItemByStore
     {
         $this->ItemCode = $ItemCode;
         return $this;
@@ -49,7 +49,7 @@ class AvailableQtyByItemByStore
      * @param ArrayOfStoreAvailableQty $StoresAvailableQty
      * @return AvailableQtyByItemByStore
      */
-    public function setStoresAvailableQty(ArrayOfStoreAvailableQty $StoresAvailableQty): AvailableQtyByItemByStore
+    public function setStoresAvailableQty(?ArrayOfStoreAvailableQty $StoresAvailableQty): AvailableQtyByItemByStore
     {
         $this->StoresAvailableQty = $StoresAvailableQty;
         return $this;

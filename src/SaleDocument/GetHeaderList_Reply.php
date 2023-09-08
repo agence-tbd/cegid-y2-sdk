@@ -28,7 +28,7 @@ class GetHeaderList_Reply
      * @param ArrayOfGet_Header $Headers
      * @return GetHeaderList_Reply
      */
-    public function setHeaders(ArrayOfGet_Header $Headers): GetHeaderList_Reply
+    public function setHeaders(?ArrayOfGet_Header $Headers): GetHeaderList_Reply
     {
       $this->Headers = $Headers;
       return $this;

@@ -36,7 +36,7 @@ class UpdateShoppingCart
      * @param UpdateShoppingCart_Request $request
      * @return UpdateShoppingCart
      */
-    public function setRequest(UpdateShoppingCart_Request $request): UpdateShoppingCart
+    public function setRequest(?UpdateShoppingCart_Request $request): UpdateShoppingCart
     {
         $this->request = $request;
         return $this;
@@ -54,7 +54,7 @@ class UpdateShoppingCart
      * @param RetailContext $clientContext
      * @return UpdateShoppingCart
      */
-    public function setClientContext(RetailContext $clientContext): UpdateShoppingCart
+    public function setClientContext(?RetailContext $clientContext): UpdateShoppingCart
     {
         $this->clientContext = $clientContext;
         return $this;

@@ -36,7 +36,7 @@ class CreateFromDocumentKey
      * @param int $Number
      * @return CreateFromDocumentKey
      */
-    public function setNumber(int $Number): CreateFromDocumentKey
+    public function setNumber(?int $Number): CreateFromDocumentKey
     {
       $this->Number = $Number;
       return $this;
@@ -54,7 +54,7 @@ class CreateFromDocumentKey
      * @param string $Stub
      * @return CreateFromDocumentKey
      */
-    public function setStub(string $Stub): CreateFromDocumentKey
+    public function setStub(?string $Stub): CreateFromDocumentKey
     {
       $this->Stub = $Stub;
       return $this;
@@ -72,7 +72,7 @@ class CreateFromDocumentKey
      * @param string $Type
      * @return CreateFromDocumentKey
      */
-    public function setType(string $Type): CreateFromDocumentKey
+    public function setType(?string $Type): CreateFromDocumentKey
     {
       $this->Type = $Type;
       return $this;

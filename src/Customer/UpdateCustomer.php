@@ -44,7 +44,7 @@ class UpdateCustomer
      *
      * @return UpdateCustomer
      */
-    public function setCustomerId(string $customerId): UpdateCustomer
+    public function setCustomerId(?string $customerId): UpdateCustomer
     {
         $this->customerId = $customerId;
         return $this;
@@ -63,7 +63,7 @@ class UpdateCustomer
      *
      * @return UpdateCustomer
      */
-    public function setModifiedData(CustomerInputData $modifiedData): UpdateCustomer
+    public function setModifiedData(?CustomerInputData $modifiedData): UpdateCustomer
     {
         $this->modifiedData = $modifiedData;
         return $this;
@@ -82,7 +82,7 @@ class UpdateCustomer
      *
      * @return UpdateCustomer
      */
-    public function setClientContext(RetailContext $clientContext): UpdateCustomer
+    public function setClientContext(?RetailContext $clientContext): UpdateCustomer
     {
         $this->clientContext = $clientContext;
         return $this;

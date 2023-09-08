@@ -55,7 +55,7 @@ class Update
      * @param RetailContext $clientContext
      * @return Update
      */
-    public function setClientContext(RetailContext $clientContext): Update
+    public function setClientContext(?RetailContext $clientContext): Update
     {
       $this->clientContext = $clientContext;
       return $this;

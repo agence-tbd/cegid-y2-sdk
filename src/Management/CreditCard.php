@@ -36,7 +36,7 @@ class CreditCard
      * @param string $AuthorizationNumber
      * @return CreditCard
      */
-    public function setAuthorizationNumber(string $AuthorizationNumber): CreditCard
+    public function setAuthorizationNumber(?string $AuthorizationNumber): CreditCard
     {
       $this->AuthorizationNumber = $AuthorizationNumber;
       return $this;
@@ -54,7 +54,7 @@ class CreditCard
      * @param string $TransactionNumber
      * @return CreditCard
      */
-    public function setTransactionNumber(string $TransactionNumber): CreditCard
+    public function setTransactionNumber(?string $TransactionNumber): CreditCard
     {
       $this->TransactionNumber = $TransactionNumber;
       return $this;
@@ -72,7 +72,7 @@ class CreditCard
      * @param string $TransactionIssuer
      * @return CreditCard
      */
-    public function setTransactionIssuer(string $TransactionIssuer): CreditCard
+    public function setTransactionIssuer(?string $TransactionIssuer): CreditCard
     {
         $this->TransactionIssuer = $TransactionIssuer;
         return $this;

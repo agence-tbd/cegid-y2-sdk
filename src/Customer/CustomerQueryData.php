@@ -63,7 +63,7 @@ class CustomerQueryData extends CustomerData
      *
      * @return CustomerQueryData
      */
-    public function setClosed(bool $Closed): CustomerQueryData
+    public function setClosed(?bool $Closed): CustomerQueryData
     {
         $this->Closed = $Closed;
         return $this;
@@ -82,7 +82,7 @@ class CustomerQueryData extends CustomerData
      *
      * @return CustomerQueryData
      */
-    public function setCreationStoreId(string $CreationStoreId): CustomerQueryData
+    public function setCreationStoreId(?string $CreationStoreId): CustomerQueryData
     {
         $this->CreationStoreId = $CreationStoreId;
         return $this;
@@ -101,7 +101,7 @@ class CustomerQueryData extends CustomerData
      *
      * @return CustomerQueryData
      */
-    public function setCustomerId(string $CustomerId): CustomerQueryData
+    public function setCustomerId(?string $CustomerId): CustomerQueryData
     {
         $this->CustomerId = $CustomerId;
         return $this;
@@ -120,7 +120,7 @@ class CustomerQueryData extends CustomerData
      *
      * @return CustomerQueryData
      */
-    public function setInvoiceCustomerId(string $InvoiceCustomerId): CustomerQueryData
+    public function setInvoiceCustomerId(?string $InvoiceCustomerId): CustomerQueryData
     {
         $this->InvoiceCustomerId = $InvoiceCustomerId;
         return $this;
@@ -139,7 +139,7 @@ class CustomerQueryData extends CustomerData
      *
      * @return CustomerQueryData
      */
-    public function setIsProspect(bool $IsProspect): CustomerQueryData
+    public function setIsProspect(?bool $IsProspect): CustomerQueryData
     {
         $this->IsProspect = $IsProspect;
         return $this;
@@ -158,7 +158,7 @@ class CustomerQueryData extends CustomerData
      *
      * @return CustomerQueryData
      */
-    public function setIsVirtual(bool $IsVirtual): CustomerQueryData
+    public function setIsVirtual(?bool $IsVirtual): CustomerQueryData
     {
         $this->IsVirtual = $IsVirtual;
         return $this;
@@ -204,7 +204,7 @@ class CustomerQueryData extends CustomerData
      *
      * @return CustomerQueryData
      */
-    public function setNotepad(string $Notepad): CustomerQueryData
+    public function setNotepad(?string $Notepad): CustomerQueryData
     {
         $this->Notepad = $Notepad;
         return $this;

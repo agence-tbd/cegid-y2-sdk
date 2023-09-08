@@ -54,7 +54,7 @@ class CreateFrom_ReceivedPayment
      * @param string $RegisterOperationId
      * @return CreateFrom_ReceivedPayment
      */
-    public function setRegistredOperationId(string $RegisterOperationId): CreateFrom_ReceivedPayment
+    public function setRegistredOperationId(?string $RegisterOperationId): CreateFrom_ReceivedPayment
     {
       $this->RegisterOperationId = $RegisterOperationId;
       return $this;

@@ -31,7 +31,7 @@ class CreateFrom_Reply
      * @param boolean $DocumentCreated
      * @return CreateFrom_Reply
      */
-    public function setDocumentCreated(bool $DocumentCreated): CreateFrom_Reply
+    public function setDocumentCreated(?bool $DocumentCreated): CreateFrom_Reply
     {
       $this->DocumentCreated = $DocumentCreated;
       return $this;
@@ -49,7 +49,7 @@ class CreateFrom_Reply
      * @param ArrayOfCreateFrom_Document $Documents
      * @return CreateFrom_Reply
      */
-    public function setDocuments(ArrayOfCreateFrom_Document $Documents): CreateFrom_Reply
+    public function setDocuments(?ArrayOfCreateFrom_Document $Documents): CreateFrom_Reply
     {
         $this->Documents = $Documents;
         return $this;

@@ -31,7 +31,7 @@ class SearchCustomerIdsResponse
      *
      * @return SearchCustomerIdsResponse
      */
-    public function setSearchCustomerIdsResult(ArrayOfCustomerQueryData $SearchCustomerIdsResult): SearchCustomerIdsResponse
+    public function setSearchCustomerIdsResult(?ArrayOfCustomerQueryData $SearchCustomerIdsResult): SearchCustomerIdsResponse
     {
         $this->SearchCustomerIdsResult = $SearchCustomerIdsResult;
         return $this;

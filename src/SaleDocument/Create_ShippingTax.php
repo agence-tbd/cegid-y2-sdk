@@ -33,7 +33,7 @@ class Create_ShippingTax
      * @param float $Amount
      * @return Create_ShippingTax
      */
-    public function setAmount(float $Amount): Create_ShippingTax
+    public function setAmount(?float $Amount): Create_ShippingTax
     {
       $this->Amount = $Amount;
       return $this;
@@ -51,7 +51,7 @@ class Create_ShippingTax
      * @param string $Id
      * @return Create_ShippingTax
      */
-    public function setId(string $Id): Create_ShippingTax
+    public function setId(?string $Id): Create_ShippingTax
     {
       $this->Id = $Id;
       return $this;

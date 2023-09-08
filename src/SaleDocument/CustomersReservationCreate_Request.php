@@ -38,7 +38,7 @@ class CustomersReservationCreate_Request
      * @param CustomersReservationCreate_Header $Header
      * @return CustomersReservationCreate_Request
      */
-    public function setHeader(CustomersReservationCreate_Header $Header): CustomersReservationCreate_Request
+    public function setHeader(?CustomersReservationCreate_Header $Header): CustomersReservationCreate_Request
     {
       $this->Header = $Header;
       return $this;
@@ -56,7 +56,7 @@ class CustomersReservationCreate_Request
      * @param ArrayOfCustomersReservationCreate_Line $Lines
      * @return CustomersReservationCreate_Request
      */
-    public function setLines(ArrayOfCustomersReservationCreate_Line $Lines): CustomersReservationCreate_Request
+    public function setLines(?ArrayOfCustomersReservationCreate_Line $Lines): CustomersReservationCreate_Request
     {
       $this->Lines = $Lines;
       return $this;
@@ -74,7 +74,7 @@ class CustomersReservationCreate_Request
      * @param ArrayOfCreate_Payment $Payments
      * @return CustomersReservationCreate_Request
      */
-    public function setPayments(ArrayOfCreate_Payment $Payments): CustomersReservationCreate_Request
+    public function setPayments(?ArrayOfCreate_Payment $Payments): CustomersReservationCreate_Request
     {
       $this->Payments = $Payments;
       return $this;

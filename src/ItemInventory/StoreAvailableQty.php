@@ -41,7 +41,7 @@ class StoreAvailableQty
      * @param float $AvailableQuantity
      * @return StoreAvailableQty
      */
-    public function setAvailableQuantity(float $AvailableQuantity): StoreAvailableQty
+    public function setAvailableQuantity(?float $AvailableQuantity): StoreAvailableQty
     {
         $this->AvailableQuantity = $AvailableQuantity;
         return $this;
@@ -59,7 +59,7 @@ class StoreAvailableQty
      * @param ArrayOfAvailableSkuQty $AvailableSkusQty
      * @return StoreAvailableQty
      */
-    public function setAvailableSkusQty(ArrayOfAvailableSkuQty $AvailableSkusQty): StoreAvailableQty
+    public function setAvailableSkusQty(?ArrayOfAvailableSkuQty $AvailableSkusQty): StoreAvailableQty
     {
         $this->AvailableSkusQty = $AvailableSkusQty;
         return $this;
@@ -77,7 +77,7 @@ class StoreAvailableQty
      * @param string $StoreId
      * @return StoreAvailableQty
      */
-    public function setStoreId(string $StoreId): StoreAvailableQty
+    public function setStoreId(?string $StoreId): StoreAvailableQty
     {
         $this->StoreId = $StoreId;
         return $this;
@@ -95,7 +95,7 @@ class StoreAvailableQty
      * @param string $StoreName
      * @return StoreAvailableQty
      */
-    public function setStoreName(string $StoreName): StoreAvailableQty
+    public function setStoreName(?string $StoreName): StoreAvailableQty
     {
         $this->StoreName = $StoreName;
         return $this;

@@ -53,7 +53,7 @@ class Get_Reply
      * @param Address $DeliveryAddress
      * @return Get_Reply
      */
-    public function setDeliveryAddress(Address $DeliveryAddress): Get_Reply
+    public function setDeliveryAddress(?Address $DeliveryAddress): Get_Reply
     {
       $this->DeliveryAddress = $DeliveryAddress;
       return $this;
@@ -71,7 +71,7 @@ class Get_Reply
      * @param Get_Header $Header
      * @return Get_Reply
      */
-    public function setHeader(Get_Header $Header): Get_Reply
+    public function setHeader(?Get_Header $Header): Get_Reply
     {
       $this->Header = $Header;
       return $this;
@@ -89,7 +89,7 @@ class Get_Reply
      * @param Address $InvoicingAddress
      * @return Get_Reply
      */
-    public function setInvoicingAddress(Address $InvoicingAddress): Get_Reply
+    public function setInvoicingAddress(?Address $InvoicingAddress): Get_Reply
     {
       $this->InvoicingAddress = $InvoicingAddress;
       return $this;
@@ -107,7 +107,7 @@ class Get_Reply
      * @param ArrayOfGet_Line $Lines
      * @return Get_Reply
      */
-    public function setLines(ArrayOfGet_Line $Lines): Get_Reply
+    public function setLines(?ArrayOfGet_Line $Lines): Get_Reply
     {
       $this->Lines = $Lines;
       return $this;
@@ -125,7 +125,7 @@ class Get_Reply
      * @param ArrayOfGet_Payment $Payments
      * @return Get_Reply
      */
-    public function setPayments(ArrayOfGet_Payment $Payments): Get_Reply
+    public function setPayments(?ArrayOfGet_Payment $Payments): Get_Reply
     {
       $this->Payments = $Payments;
       return $this;
@@ -143,7 +143,7 @@ class Get_Reply
      * @param ArrayOfGet_ShippingTax $ShippingTaxes
      * @return Get_Reply
      */
-    public function setShippingTaxes(ArrayOfGet_ShippingTax $ShippingTaxes): Get_Reply
+    public function setShippingTaxes(?ArrayOfGet_ShippingTax $ShippingTaxes): Get_Reply
     {
       $this->ShippingTaxes = $ShippingTaxes;
       return $this;

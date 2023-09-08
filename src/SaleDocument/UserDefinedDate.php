@@ -33,7 +33,7 @@ class UserDefinedDate
      * @param UserDefinedId $Id
      * @return UserDefinedDate
      */
-    public function setId(UserDefinedId $Id): UserDefinedDate
+    public function setId(?UserDefinedId $Id): UserDefinedDate
     {
       $this->Id = $Id;
       return $this;

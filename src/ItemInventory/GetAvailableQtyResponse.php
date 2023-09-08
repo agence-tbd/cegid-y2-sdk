@@ -29,7 +29,7 @@ class GetAvailableQtyResponse
      * @param AvailableQtyReturn $GetAvailableQtyResult
      * @return GetAvailableQtyResponse
      */
-    public function setGetAvailableQtyResult(AvailableQtyReturn $GetAvailableQtyResult): GetAvailableQtyResponse
+    public function setGetAvailableQtyResult(?AvailableQtyReturn $GetAvailableQtyResult): GetAvailableQtyResponse
     {
         $this->GetAvailableQtyResult = $GetAvailableQtyResult;
         return $this;

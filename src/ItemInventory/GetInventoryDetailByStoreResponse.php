@@ -29,7 +29,7 @@ class GetInventoryDetailByStoreResponse
      * @param ArrayOfAvailableQtyByStore $GetInventoryDetailByStoreResult
      * @return GetInventoryDetailByStoreResponse
      */
-    public function setGetInventoryDetailByStoreResult(ArrayOfAvailableQtyByStore $GetInventoryDetailByStoreResult): GetInventoryDetailByStoreResponse
+    public function setGetInventoryDetailByStoreResult(?ArrayOfAvailableQtyByStore $GetInventoryDetailByStoreResult): GetInventoryDetailByStoreResponse
     {
         $this->GetInventoryDetailByStoreResult = $GetInventoryDetailByStoreResult;
         return $this;

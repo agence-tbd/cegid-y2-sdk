@@ -28,7 +28,7 @@ class GetByKey_Request
      * @param SaleDocumentKey $Key
      * @return GetByKey_Request
      */
-    public function setKey(SaleDocumentKey $Key): GetByKey_Request
+    public function setKey(?SaleDocumentKey $Key): GetByKey_Request
     {
       $this->Key = $Key;
       return $this;

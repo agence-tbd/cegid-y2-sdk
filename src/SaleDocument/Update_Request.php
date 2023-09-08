@@ -58,7 +58,7 @@ class Update_Request
      * @param Address $DeliveryAddress
      * @return Update_Request
      */
-    public function setDeliveryAddress(Address $DeliveryAddress): Update_Request
+    public function setDeliveryAddress(?Address $DeliveryAddress): Update_Request
     {
       $this->DeliveryAddress = $DeliveryAddress;
       return $this;
@@ -76,7 +76,7 @@ class Update_Request
      * @param Update_Header $Header
      * @return Update_Request
      */
-    public function setHeader(Update_Header $Header): Update_Request
+    public function setHeader(?Update_Header $Header): Update_Request
     {
       $this->Header = $Header;
       return $this;
@@ -94,7 +94,7 @@ class Update_Request
      * @param SaleDocumentIdentifier $Identifier
      * @return Update_Request
      */
-    public function setIdentifier(SaleDocumentIdentifier $Identifier): Update_Request
+    public function setIdentifier(?SaleDocumentIdentifier $Identifier): Update_Request
     {
       $this->Identifier = $Identifier;
       return $this;
@@ -112,7 +112,7 @@ class Update_Request
      * @param Address $InvoicingAddress
      * @return Update_Request
      */
-    public function setInvoicingAddress(Address $InvoicingAddress): Update_Request
+    public function setInvoicingAddress(?Address $InvoicingAddress): Update_Request
     {
       $this->InvoicingAddress = $InvoicingAddress;
       return $this;
@@ -130,7 +130,7 @@ class Update_Request
      * @param ArrayOfUpdate_Line $Lines
      * @return Update_Request
      */
-    public function setLines(ArrayOfUpdate_Line $Lines): Update_Request
+    public function setLines(?ArrayOfUpdate_Line $Lines): Update_Request
     {
       $this->Lines = $Lines;
       return $this;
@@ -148,7 +148,7 @@ class Update_Request
      * @param ArrayOfUpdate_Payment $Payments
      * @return Update_Request
      */
-    public function setPayments(ArrayOfUpdate_Payment $Payments): Update_Request
+    public function setPayments(?ArrayOfUpdate_Payment $Payments): Update_Request
     {
       $this->Payments = $Payments;
       return $this;
@@ -166,7 +166,7 @@ class Update_Request
      * @param ArrayOfUpdate_ShippingTax $ShippingTaxes
      * @return Update_Request
      */
-    public function setShippingTaxes(ArrayOfUpdate_ShippingTax $ShippingTaxes): Update_Request
+    public function setShippingTaxes(?ArrayOfUpdate_ShippingTax $ShippingTaxes): Update_Request
     {
       $this->ShippingTaxes = $ShippingTaxes;
       return $this;

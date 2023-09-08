@@ -31,7 +31,7 @@ class AvailableQtyReturn
      * @param float $AvailableQty
      * @return AvailableQtyReturn
      */
-    public function setAvailableQty(float $AvailableQty): AvailableQtyReturn
+    public function setAvailableQty(?float $AvailableQty): AvailableQtyReturn
     {
         $this->AvailableQty = $AvailableQty;
         return $this;
@@ -49,7 +49,7 @@ class AvailableQtyReturn
      * @param QueryExecutionStatus $QueryStatus
      * @return AvailableQtyReturn
      */
-    public function setQueryStatus(QueryExecutionStatus $QueryStatus): AvailableQtyReturn
+    public function setQueryStatus(?QueryExecutionStatus $QueryStatus): AvailableQtyReturn
     {
         $this->QueryStatus = $QueryStatus;
         return $this;

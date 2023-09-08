@@ -38,7 +38,7 @@ class Get_ShippingTax
      * @param string $ShippingTaxCode
      * @return Get_ShippingTax
      */
-    public function setShippingTaxCode(string $ShippingTaxCode): Get_ShippingTax
+    public function setShippingTaxCode(?string $ShippingTaxCode): Get_ShippingTax
     {
       $this->ShippingTaxCode = $ShippingTaxCode;
       return $this;
@@ -56,7 +56,7 @@ class Get_ShippingTax
      * @param float $TaxExcludedAmount
      * @return Get_ShippingTax
      */
-    public function setTaxExcludedAmount(float $TaxExcludedAmount): Get_ShippingTax
+    public function setTaxExcludedAmount(?float $TaxExcludedAmount): Get_ShippingTax
     {
       $this->TaxExcludedAmount = $TaxExcludedAmount;
       return $this;
@@ -74,7 +74,7 @@ class Get_ShippingTax
      * @param float $TaxIncludedAmount
      * @return Get_ShippingTax
      */
-    public function setTaxIncludedAmount(float $TaxIncludedAmount): Get_ShippingTax
+    public function setTaxIncludedAmount(?float $TaxIncludedAmount): Get_ShippingTax
     {
       $this->TaxIncludedAmount = $TaxIncludedAmount;
       return $this;

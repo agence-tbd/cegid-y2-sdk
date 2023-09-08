@@ -37,7 +37,7 @@ class Close
      * @param Close_Request $closeRequest
      * @return Close
      */
-    public function setCloseRequest(Close_Request $closeRequest): Close
+    public function setCloseRequest(?Close_Request $closeRequest): Close
     {
       $this->closeRequest = $closeRequest;
       return $this;
@@ -55,7 +55,7 @@ class Close
      * @param RetailContext $clientContext
      * @return Close
      */
-    public function setClientContext(RetailContext $clientContext): Close
+    public function setClientContext(?RetailContext $clientContext): Close
     {
       $this->clientContext = $clientContext;
       return $this;

@@ -28,7 +28,7 @@ class OmniChannelLine
      * @param string $WarehouseId
      * @return OmniChannelLine
      */
-    public function setWarehouseId(string $WarehouseId): OmniChannelLine
+    public function setWarehouseId(?string $WarehouseId): OmniChannelLine
     {
       $this->WarehouseId = $WarehouseId;
       return $this;

@@ -33,7 +33,7 @@ class SaleDocumentIdentifier
      * @param SaleDocumentKey $Key
      * @return SaleDocumentIdentifier
      */
-    public function setKey(SaleDocumentKey $Key): SaleDocumentIdentifier
+    public function setKey(?SaleDocumentKey $Key): SaleDocumentIdentifier
     {
       $this->Key = $Key;
       return $this;
@@ -51,7 +51,7 @@ class SaleDocumentIdentifier
      * @param SaleDocumentReference $Reference
      * @return SaleDocumentIdentifier
      */
-    public function setReference(SaleDocumentReference $Reference): SaleDocumentIdentifier
+    public function setReference(?SaleDocumentReference $Reference): SaleDocumentIdentifier
     {
       $this->Reference = $Reference;
       return $this;

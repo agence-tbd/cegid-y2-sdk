@@ -30,7 +30,7 @@ class GetHeaderListResponse
      * @param GetHeaderList_Reply $GetHeaderListResult
      * @return GetHeaderListResponse
      */
-    public function setGetHeaderListResult(GetHeaderList_Reply $GetHeaderListResult): GetHeaderListResponse
+    public function setGetHeaderListResult(?GetHeaderList_Reply $GetHeaderListResult): GetHeaderListResponse
     {
       $this->GetHeaderListResult = $GetHeaderListResult;
       return $this;
