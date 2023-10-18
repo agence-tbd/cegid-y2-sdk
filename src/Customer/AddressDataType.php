@@ -35,7 +35,8 @@ class AddressDataType
     protected $CountryId = null;
 
     /**
-     * @var CountryIdType $CountryIdType
+     * @see CountryIdType
+     * @var string $CountryIdType
      */
     protected $CountryIdType = null;
 
@@ -175,19 +176,19 @@ class AddressDataType
     }
 
     /**
-     * @return CountryIdType
+     * @return string
      */
-    public function getCountryIdType(): ?CountryIdType
+    public function getCountryIdType(): ?string
     {
         return $this->CountryIdType;
     }
 
     /**
-     * @param CountryIdType $CountryIdType
+     * @param string|null $CountryIdType
      *
      * @return AddressDataType
      */
-    public function setCountryIdType(?CountryIdType $CountryIdType): AddressDataType
+    public function setCountryIdType(?string $CountryIdType): AddressDataType
     {
         $this->CountryIdType = $CountryIdType;
         return $this;
