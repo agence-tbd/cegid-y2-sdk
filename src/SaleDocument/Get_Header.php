@@ -46,7 +46,8 @@ class Get_Header
     protected $OmniChannel = null;
 
     /**
-     * @var DocumentOrigin $Origin
+     * @see DocumentOrigin
+     * @var string $Origin
      */
     protected $Origin = null;
 
@@ -264,18 +265,18 @@ class Get_Header
     }
 
     /**
-     * @return DocumentOrigin
+     * @return string
      */
-    public function getOrigin(): ?DocumentOrigin
+    public function getOrigin(): ?string
     {
       return $this->Origin;
     }
 
     /**
-     * @param DocumentOrigin $Origin
+     * @param string $Origin
      * @return Get_Header
      */
-    public function setOrigin(?DocumentOrigin $Origin): Get_Header
+    public function setOrigin(?string $Origin): Get_Header
     {
       $this->Origin = $Origin;
       return $this;

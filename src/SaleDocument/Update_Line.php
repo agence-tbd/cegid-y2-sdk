@@ -56,7 +56,8 @@ class Update_Line
     protected $OmniChannel = null;
 
     /**
-     * @var DocumentOrigin $Origin
+     * @see DocumentOrigin
+     * @var string $Origin
      */
     protected $Origin = null;
 
@@ -303,18 +304,18 @@ class Update_Line
     }
 
     /**
-     * @return DocumentOrigin
+     * @return string
      */
-    public function getOrigin(): ?DocumentOrigin
+    public function getOrigin(): ?string
     {
       return $this->Origin;
     }
 
     /**
-     * @param DocumentOrigin $Origin
+     * @param string $Origin
      * @return Update_Line
      */
-    public function setOrigin(?DocumentOrigin $Origin): Update_Line
+    public function setOrigin(?string $Origin): Update_Line
     {
       $this->Origin = $Origin;
       return $this;
